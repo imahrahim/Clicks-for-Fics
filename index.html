@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fanfiction Visualizer</title>
+    <title>Clicks for Fics</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -13,6 +13,19 @@
         <a href="#" id="harry-potter-link">Harry Potter</a>
         <a href="#" id="marvel-link">Marvel</a>
         <a href="#" id="boku-no-hero-link">Boku No Hero</a>
+    </div>
+    <div class="filters">
+        <div class="relationship-filter">
+            <label>Relationship</label>
+            <select id="relationship-select">
+                <option value="romantic">Romantic</option>
+                <option value="friendship">Friendship</option>
+            </select>
+        </div>
+        <div class="fandom-filter">
+            <label>Fandoms</label>
+            <div id="fandom-checkboxes"></div>
+        </div>
     </div>
     <div id="canvas-container"></div>
     <script src="main.js"></script>

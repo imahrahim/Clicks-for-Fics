@@ -1,21 +1,67 @@
 new p5((sketch) => {
     let harryPotterData;
+    let selectedCharacter = null;
+    let relationshipType = 'romantic';
+    let selectedFandoms = [];
 
     sketch.preload = function() {
         console.log("Preloading data...");
         harryPotterData = sketch.loadJSON('data/harry_potter_love_mono_merged.json', () => {
             console.log("Data loaded:", harryPotterData);
+            populateFandomFilters();
         }, () => {
             console.error("Failed to load data");
         });
     };
 
+    function populateFandomFilters() {
+        const fandomCheckboxes = document.getElementById('fandom-checkboxes');
+        const fandoms = new Set();
+
+        for (let character in harryPotterData) {
+            fandoms.add(harryPotterData[character].fandom);
+        }
+
+        selectedFandoms = Array.from(fandoms);
+
+        fandomCheckboxes.innerHTML = '';
+        selectedFandoms.forEach(fandom => {
+            const container = document.createElement('div');
+            container.className = 'fandom-item';
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.id = `fandom-${fandom}`;
+            checkbox.value = fandom;
+            checkbox.checked = true;
+            checkbox.addEventListener('change', updateSelectedFandoms);
+
+            const label = document.createElement('label');
+            label.htmlFor = `fandom-${fandom}`;
+            label.textContent = fandom;
+
+            container.appendChild(checkbox);
+            container.appendChild(label);
+            fandomCheckboxes.appendChild(container);
+        });
+    }
+
+    function updateSelectedFandoms() {
+        selectedFandoms = Array.from(document.querySelectorAll('#fandom-checkboxes input:checked')).map(checkbox => checkbox.value);
+        sketch.drawVisualization();
+    }
+
+    document.getElementById('relationship-select').addEventListener('change', function () {
+        relationshipType = this.value;
+        sketch.drawVisualization();
+    });
+
     sketch.setup = function() {
         console.log("Setup function called");
-        let canvas = sketch.createCanvas(1200, 800);
+        let canvas = sketch.createCanvas(sketch.windowWidth - 350, 1500);
         console.log("Canvas created");
         canvas.parent('canvas-container');
-        sketch.background(220);  // Setting a light gray background for visibility
+        sketch.background(200, 200, 250);  // Setting a light gray background for visibility
 
         // Zeichnen der Visualisierung
         sketch.drawVisualization();

@@ -4,14 +4,16 @@ body {
   overflow: hidden;
   background-color: palevioletred;
 }
+
 .navbar {
   position: fixed;
   margin: 2rem;
-  margin-left: 5rem;
-  width: 80%;
+  left: 3rem;
+  right: 3rem;
   background-color: #a4a4a4;
   overflow: hidden;
 }
+
 .navbar a {
   float: left;
   display: block;
@@ -20,14 +22,48 @@ body {
   padding: 14px 16px;
   text-decoration: none;
 }
+
 .navbar a:hover {
   background-color: #ddd;
   color: black;
 }
+
+.filters {
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+  background-color: #eee;
+  padding: 10px;
+  z-index: 1;
+  width: 12rem;
+}
+
+.filters label {
+  display: block;
+  font-size: small;
+}
+
+#fandom-checkboxes {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.fandom-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#fandom-checkboxes input[type="checkbox"] {
+  margin-right: 5px;
+}
+
 #canvas-container {
   position: absolute;
   top: 5rem;
   left: 5rem;
-  width: 80%;
-  bottom: 0;
+  right: 20rem; /* Adjusted to fit the filters */
+  bottom: 2rem;
+  background-color: #f0f0f0;
+  overflow-y: auto;  /* Make sure the container has a visible background */
 }
