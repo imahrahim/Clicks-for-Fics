@@ -2,7 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   overflow: hidden;
-  background-color: palevioletred;
+  background-image: url('Wallpaper.png');
+  background-size: cover;
 }
 
 .navbar {
@@ -10,14 +11,14 @@ body {
   margin: 2rem;
   left: 3rem;
   right: 3rem;
-  background-color: #a4a4a4;
+  background-color: #a4a4a444;
   overflow: hidden;
 }
 
 .navbar a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -65,5 +66,7 @@ body {
   right: 5rem; /* Adjusted to fit the filters */
   bottom: 2rem;
   background-color: #f0f0f0;
-  overflow-y: auto;  /* Make sure the container has a visible background */
+  overflow-y: auto; /* Make sure the container has a visible background */
 }
+
+/* Hex Colors: ['#e7dde2', '#bfc1c4', '#959499', '#f9f8f9', '#d593ac', '#b3a8b8', '#636863', '#ecda94', '#abb2d7', '#cfddcb', '#429167', '#e3e0e2', '#b6b7b5', '#7a835b', '#bd9c96', '#8dbfde', '#2f5936', '#eeaeb3', '#909b97', '#d57c7e', '#e277ad', '#c7e3e1', '#99cdce', '#e49fc6', '#e5e8ec', '#59b6a9', '#f9f9fb', '#bfbfc1', '#95a9b7', '#ebc2dc', '#e3e5e7', '#40967d', '#b5ccd0', '#cf80ad', '#fafaf6', '#1b6aa8', '#ecb1cc', '#de3b8f', '#4a8fbe', '#81b0ad', '#f7f7f3', '#83a3a9', '#cf316c', '#e3e5e7', '#126da9', '#de8da8', '#a2bec2', '#19784e', '#59898f', '#c1d4d6']  */
