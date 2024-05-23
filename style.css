@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  overflow: hidden;
+  background-color: palevioletred;
+}
+.navbar {
+  position: fixed;
+  margin: 2rem;
+  margin-left: 5rem;
+  width: 80%;
+  background-color: #a4a4a4;
+  overflow: hidden;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#canvas-container {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 80%;
+  bottom: 0;
+}
