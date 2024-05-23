@@ -1,10 +1,10 @@
 new p5((sketch) => {
   let harryPotterData;
   let selectedCharacter = null;
-  let relationshipType = "romantic";
+  let relationshipType = "romantic"; // Default relationship type
   let fandomPositions = {};
   let w = 1310;
-  let h = 2000;
+  let h = 2100;
   let opacity = 50; // Default opacity for non-highlighted elements
 
   let nodes = [];
@@ -14,7 +14,7 @@ new p5((sketch) => {
   sketch.preload = function () {
     console.log("Preloading data...");
     harryPotterData = sketch.loadJSON(
-      "data/harry_potter_love_mono_merged.json",
+      "/data/Harry_Potter_Relationships.json",
       () => {
         console.log("Data loaded:", harryPotterData);
         sketch.processData(harryPotterData);
@@ -60,13 +60,17 @@ new p5((sketch) => {
       };
       nodes.push(characterNode);
 
-      characterData.connections.forEach((relationship) => {
-        links.push({
-          source: character,
-          target: relationship.target,
-          category: relationship.category,
-          visible: false,
-          frequency: relationship.frequency,
+      // Process both romantic and friendship relationships
+      ["romantic", "friendship"].forEach((type) => {
+        characterData.relationships[type].forEach((relationship) => {
+          links.push({
+            source: character,
+            target: relationship.target,
+            category: relationship.category,
+            type: type,
+            visible: true,
+            frequency: relationship.frequency,
+          });
         });
       });
     });
@@ -80,7 +84,7 @@ new p5((sketch) => {
     yScale = d3
       .scaleLinear()
       .domain([0, nodes.length])
-      .range([50, h - 50]);
+      .range([20, h - 20]);
 
     // Set initial positions for nodes
     nodes.forEach((node, i) => {
@@ -97,6 +101,7 @@ new p5((sketch) => {
     .getElementById("relationship-select")
     .addEventListener("change", function () {
       relationshipType = this.value;
+      sketch.updateVisibility();
       sketch.drawVisualization();
     });
 
@@ -146,7 +151,7 @@ new p5((sketch) => {
         node.visible = true;
       });
       links.forEach((link) => {
-        link.visible = true;
+        link.visible = link.type === relationshipType;
       });
       for (let fandom in fandomPositions) {
         fandomPositions[fandom].visible = true;
@@ -161,10 +166,10 @@ new p5((sketch) => {
         (selectedCharacter &&
           links.some(
             (link) =>
-              (link.source === selectedCharacter && link.target === node.id) ||
-              (link.target === selectedCharacter &&
-                link.source === node.id &&
-                link.visible)
+              link.type === relationshipType &&
+              ((link.source === selectedCharacter && link.target === node.id) ||
+                (link.target === selectedCharacter &&
+                  link.source === node.id))
           ));
       if (node.visible) {
         visibleFandoms.add(node.fandom);
@@ -173,8 +178,8 @@ new p5((sketch) => {
 
     for (let link of links) {
       if (
-        link.source === selectedCharacter ||
-        link.target === selectedCharacter
+        link.type === relationshipType &&
+        (link.source === selectedCharacter || link.target === selectedCharacter)
       ) {
         link.visible = true;
       } else {
@@ -208,7 +213,7 @@ new p5((sketch) => {
           sourceNode.visible &&
           targetNode.visible
         ) {
-          sketch.stroke(255,0,0);
+          sketch.stroke(255, 0, 0);
           sketch.strokeWeight(link.frequency * 0.1);
           sketch.line(sourceNode.x, sourceNode.y, targetNode.x, targetNode.y);
         }
@@ -221,6 +226,7 @@ new p5((sketch) => {
 
     for (let node of nodes) {
       if (node.visible) {
+
         // Draw lines from characters to their fandoms
         if (fandomPositions[node.fandom]) {
           sketch.stroke(10, 20);
