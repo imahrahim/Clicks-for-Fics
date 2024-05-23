@@ -35,7 +35,7 @@ body {
   background-color: #eee;
   padding: 10px;
   z-index: 1;
-  width: 12rem;
+  width: 5.5rem;
 }
 
 .filters label {
@@ -62,7 +62,7 @@ body {
   position: absolute;
   top: 5rem;
   left: 5rem;
-  right: 20rem; /* Adjusted to fit the filters */
+  right: 5rem; /* Adjusted to fit the filters */
   bottom: 2rem;
   background-color: #f0f0f0;
   overflow-y: auto;  /* Make sure the container has a visible background */
