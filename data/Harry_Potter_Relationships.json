@@ -6258,7 +6258,7 @@
     }
   },
   "Sirius Black": {
-    "gender": "multi",
+    "gender": "male",
     "frequency": 43,
     "fandom": "Harry Potter - J. K. Rowling",
     "relationships": {
@@ -6266,174 +6266,174 @@
         {
           "target": "Remus Lupin",
           "frequency": 120,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 7,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Severus Snape",
           "frequency": 6,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Remus Lupin",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "James Potter",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Lily Evans Potter",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Marlene McKinnon",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Petunia Evans Dursley",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Remus Lupin",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Bartemius Crouch Jr.",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Maria Hill",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Mrs Zabini",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Stephen Strange",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Hermione Granger",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Charlie Weasley",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Rodolphus Lestrange",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Hesper Gamp Black",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Remus Lupin",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Lucius Malfoy",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Harry Potter",
           "frequency": 28,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Regulus Black",
           "frequency": 11,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Remus Lupin",
           "frequency": 4,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "James Potter",
           "frequency": 4,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Dudley Dursley",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Severus Snape",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Andromeda Black Tonks",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Hatake Kakashi",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Narcissa Black Malfoy",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Hogward Staff",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Peter Pettigrew",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }

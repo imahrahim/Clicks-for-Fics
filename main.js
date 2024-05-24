@@ -105,6 +105,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 
                 banner.appendChild(tagElement);
             });
+
+            // Duplicate the tags for continuous scrolling
+            data.forEach(tag => {
+                const tagElement = document.createElement('span');
+                tagElement.classList.add('tag');
+                tagElement.style.fontWeight = mapFrequencyToFontWeight(tag.Frequency);
+
+                const categorySymbol = getCategorySymbol(tag.Category);
+                tagElement.innerHTML = `${categorySymbol} ${tag.Tag}`;
+                
+                banner.appendChild(tagElement);
+            });
         }).catch(error => {
             console.error("Error loading CSV data:", error);
         });
@@ -144,4 +156,3 @@ document.addEventListener('DOMContentLoaded', function () {
     // Load the default sketch
     loadSketch('sketches/harrypotter.js');
 });
-

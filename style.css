@@ -27,15 +27,15 @@ body.boku-no-hero {
   position: fixed;
   top: 5rem;
   right: 2rem;
-  left: 77rem;/* Adjust the width as needed */
-  height: 12rem;
+  left: 77rem; /* Adjust the width as needed */
+  /* height: 12rem; */
   background-color: #a4a4a4;
   display: flex;
   flex-direction: column;
-  justify-content: flex;
+  justify-content: flex-start;
   align-items: center;
-  padding: 1rem 0; /* Optional padding for better appearance */
-  overflow:inherit;
+  padding: 1rem ; 
+  /* overflow: hidden; */
   z-index: 1;
 }
 
@@ -43,28 +43,30 @@ body.boku-no-hero {
   width: 100%;
   color: #000000;
   text-align: center;
-  padding: 14px 0;
+  font-size: small;
+  padding: 1rem;
   text-decoration: none;
-  /* border-bottom: 1px solid #bbb; */
-  /* box-sizing: border-box; */
-}
-
-.navbar a:last-child {
-  border-bottom: none; /* Remove border from the last item */
+  background-color: #F1E094;
+  margin: 2px 0;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #dddddd00;
+  background-color: #ddd;
   color: rgb(255, 0, 0);
 }
 
 .filters {
   position: fixed;
-  top: 20rem;
+  top: 25rem;
   right: 2rem;
   left: 77rem;
-  background-color: #ffffff;
-  padding: 10px;
+  bottom: 2rem;
+  background-color: #E2E0E2;
+  padding: 1rem;
   z-index: 1;
 }
 
@@ -73,10 +75,25 @@ body.boku-no-hero {
   font-size: small;
 }
 
+#relationships-btn, #additional-tags-btn {
+  padding: 1rem;
+  background-color: #F1E094;
+  margin: 2px 0;
+  width: 100%;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#relationships-btn:hover, #additional-tags-btn:hover {
+  background-color: #ddd;
+  color: rgb(255, 0, 0);
+}
+
 #filter-container {
   margin-top: 2rem;
   position: relative;
- 
 }
 
 #canvas-container {
@@ -85,9 +102,11 @@ body.boku-no-hero {
   left: 5rem;
   right: 15rem;
   bottom: 2rem;
-  background-color: #f0f0f0;
+  background-color: #E2E0E2;
   overflow-y: auto;
   visibility: visible;
+  border-width: 1rem;
+  border-color: #000000;
 }
 
 #relationship-filter, #additional-tags-container {
@@ -96,7 +115,11 @@ body.boku-no-hero {
   width: 80%;
   padding: 1rem;
   height: auto;
-  background-color: #ffffff;
+  background-color: #E2E0E2;
+}
+#relationship-select {
+  width: 100%;
+  background-color: #F1E094;
 }
 
 #additional-tags-container {
@@ -109,8 +132,8 @@ body.boku-no-hero {
   top: 2rem;
   left: 0;
   width: 100%;
-  height: 3rem; /* Adjust the height as needed */
-  background-color: rgba(255, 255, 255, 0.8);
+  height: 2rem; /* Adjust the height as needed */
+  background-color: #F1E094;
   overflow: hidden;
   z-index: 3;
 }
