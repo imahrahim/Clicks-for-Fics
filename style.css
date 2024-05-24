@@ -2,10 +2,25 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   overflow: hidden;
-  background-image: url('Wallpaper.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+body.overall {
+  background-image: url('overall_background.png');
+}
+
+body.harry-potter {
+  background-image: url('Wallpaper.png');
+}
+
+body.marvel {
+  background-image: url('marvel_background.png');
+}
+
+body.boku-no-hero {
+  background-image: url('bokunohero_background.png');
 }
 
 .navbar {
@@ -48,7 +63,7 @@ body {
   top: 20rem;
   right: 2rem;
   left: 77rem;
-  background-color: #eee;
+  background-color: #ffffff;
   padding: 10px;
   z-index: 1;
 }
@@ -61,13 +76,14 @@ body {
 #filter-container {
   margin-top: 2rem;
   position: relative;
+  right: 2rem;
 }
 
 #canvas-container {
   position: absolute;
   top: 5rem;
   left: 5rem;
-  right: 5rem;
+  right: 15rem;
   bottom: 2rem;
   background-color: #f0f0f0;
   overflow-y: auto;
@@ -78,10 +94,12 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
+  padding: 1rem;
   height: auto;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 #additional-tags-container {
   visibility: hidden;
+  font-size: small;
 }

@@ -2,16 +2,17 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded and parsed");
 
     const links = {
-        'overall-link': 'sketches/overall.js',
-        'harry-potter-link': 'sketches/harrypotter.js',
-        'marvel-link': 'sketches/marvel.js',
-        'boku-no-hero-link': 'sketches/boku_no_hero.js'
+        'overall-link': { script: 'sketches/overall.js', class: 'overall' },
+        'harry-potter-link': { script: 'sketches/harrypotter.js', class: 'harry-potter' },
+        'marvel-link': { script: 'sketches/marvel.js', class: 'marvel' },
+        'boku-no-hero-link': { script: 'sketches/boku_no_hero.js', class: 'boku-no-hero' }
     };
 
     Object.keys(links).forEach(id => {
         document.getElementById(id).addEventListener('click', function (e) {
             e.preventDefault();
-            loadSketch(links[id]);
+            loadSketch(links[id].script);
+            changeBackground(links[id].class);
         });
     });
 
@@ -82,6 +83,10 @@ document.addEventListener('DOMContentLoaded', function () {
             relationshipFilter.style.visibility = 'visible';
             additionalTagsContainer.style.visibility = 'hidden';
         }
+    }
+
+    function changeBackground(className) {
+        document.body.className = className;
     }
 
     // Load the default sketch
