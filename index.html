@@ -15,7 +15,11 @@
         <a href="#" id="boku-no-hero-link">Boku No Hero</a>
     </div>
     <div class="filters">
-        <div class="relationship-filter">
+        <button id="relationships-btn">Show Relationships</button>
+        <div class="additional-tags">
+            <button id="additional-tags-btn">Additional Tags</button>
+        </div>
+        <div id="relationship-filter" class="relationship-filter">
             <label>Relationship</label>
             <select id="relationship-select">
                 <option value="romantic">Romantic</option>
@@ -24,6 +28,10 @@
         </div>
     </div>
     <div id="canvas-container"></div>
+    <div id="additional-tags-container">
+        <!-- Additional tags content goes here -->
+        <p>Here are some additional tags information...</p>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

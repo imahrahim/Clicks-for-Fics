@@ -15,6 +15,14 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    document.getElementById('relationships-btn').addEventListener('click', function () {
+        showRelationships();
+    });
+
+    document.getElementById('additional-tags-btn').addEventListener('click', function () {
+        toggleAdditionalTags();
+    });
+
     function loadSketch(scriptUrl) {
         console.log("Loading sketch:", scriptUrl);
 
@@ -47,6 +55,33 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error("Failed to load sketch:", scriptUrl);
         };
         document.body.appendChild(script);
+
+        // Ensure canvas-container and relationship-filter are visible
+        document.getElementById('canvas-container').style.visibility = 'visible';
+        document.getElementById('relationship-filter').style.visibility = 'visible';
+        document.getElementById('additional-tags-container').style.visibility = 'hidden';
+    }
+
+    function showRelationships() {
+        document.getElementById('canvas-container').style.visibility = 'visible';
+        document.getElementById('relationship-filter').style.visibility = 'visible';
+        document.getElementById('additional-tags-container').style.visibility = 'hidden';
+    }
+
+    function toggleAdditionalTags() {
+        let canvasContainer = document.getElementById('canvas-container');
+        let additionalTagsContainer = document.getElementById('additional-tags-container');
+        let relationshipFilter = document.getElementById('relationship-filter');
+        
+        if (additionalTagsContainer.style.visibility === 'hidden') {
+            canvasContainer.style.visibility = 'hidden';
+            relationshipFilter.style.visibility = 'hidden';
+            additionalTagsContainer.style.visibility = 'visible';
+        } else {
+            canvasContainer.style.visibility = 'visible';
+            relationshipFilter.style.visibility = 'visible';
+            additionalTagsContainer.style.visibility = 'hidden';
+        }
     }
 
     // Load the default sketch

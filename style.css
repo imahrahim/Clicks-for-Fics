@@ -3,7 +3,9 @@ body {
   margin: 0;
   overflow: hidden;
   background-image: url('Wallpaper.png');
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .navbar {
@@ -12,16 +14,25 @@ body {
   left: 3rem;
   right: 3rem;
   background-color: #a4a4a444;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem; /* Optional padding for better appearance */
   overflow: hidden;
 }
 
 .navbar a {
-  float: left;
-  display: block;
+  flex: 1;
   color: #000000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border-right: 1px solid #bbb;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's width */
+}
+
+.navbar a:last-child {
+  border-right: none; /* Remove border from the last item */
 }
 
 .navbar a:hover {
@@ -36,7 +47,7 @@ body {
   background-color: #eee;
   padding: 10px;
   z-index: 1;
-  width: 5.5rem;
+  width: 8rem;
 }
 
 .filters label {
@@ -44,19 +55,8 @@ body {
   font-size: small;
 }
 
-#fandom-checkboxes {
-  max-height: 500px;
-  overflow-y: auto;
-}
-
-.fandom-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-#fandom-checkboxes input[type="checkbox"] {
-  margin-right: 5px;
+.additional-tags {
+  margin-top: 10px;
 }
 
 #canvas-container {
@@ -66,7 +66,21 @@ body {
   right: 5rem; /* Adjusted to fit the filters */
   bottom: 2rem;
   background-color: #f0f0f0;
-  overflow-y: auto; /* Make sure the container has a visible background */
+  overflow-y: auto;
+  visibility: visible;
 }
 
-/* Hex Colors: ['#e7dde2', '#bfc1c4', '#959499', '#f9f8f9', '#d593ac', '#b3a8b8', '#636863', '#ecda94', '#abb2d7', '#cfddcb', '#429167', '#e3e0e2', '#b6b7b5', '#7a835b', '#bd9c96', '#8dbfde', '#2f5936', '#eeaeb3', '#909b97', '#d57c7e', '#e277ad', '#c7e3e1', '#99cdce', '#e49fc6', '#e5e8ec', '#59b6a9', '#f9f9fb', '#bfbfc1', '#95a9b7', '#ebc2dc', '#e3e5e7', '#40967d', '#b5ccd0', '#cf80ad', '#fafaf6', '#1b6aa8', '#ecb1cc', '#de3b8f', '#4a8fbe', '#81b0ad', '#f7f7f3', '#83a3a9', '#cf316c', '#e3e5e7', '#126da9', '#de8da8', '#a2bec2', '#19784e', '#59898f', '#c1d4d6']  */
+#additional-tags-container {
+  position: absolute;
+  top: 11rem;
+  width: 9.3rem;
+  height: 10rem;
+  right: 5rem;
+  background-color: #fff;
+  overflow-y: auto;
+  visibility: hidden;
+}
+
+#relationship-filter {
+  visibility: hidden;
+}
