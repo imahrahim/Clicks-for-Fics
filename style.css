@@ -23,6 +23,10 @@ body.boku-no-hero {
   background-image: url('bokunohero_background.png');
 }
 
+p {
+  font-size: small;
+  text-align: left;
+}
 .navbar {
   position: fixed;
   top: 5rem;
@@ -92,7 +96,7 @@ body.boku-no-hero {
 }
 
 #filter-container {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   position: relative;
 }
 
@@ -113,13 +117,21 @@ body.boku-no-hero {
   position: absolute;
   top: 0;
   width: 80%;
-  padding: 1rem;
+  
+  padding-top: 1rem;
   height: auto;
   background-color: #E2E0E2;
 }
 #relationship-select {
-  width: 100%;
-  background-color: #F1E094;
+  /* appearance: none;
+  -webkit-appearance: none; */
+  background-color: #dddbd6;
+  width: 10rem;
+  font-size: small;
+  padding: 1rem;
+  border: 1px solid #0091ff;
+  color: #000;
+  cursor: pointer;
 }
 
 #additional-tags-container {
