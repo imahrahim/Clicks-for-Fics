@@ -76,7 +76,7 @@ body.boku-no-hero {
 #filter-container {
   margin-top: 2rem;
   position: relative;
-  right: 2rem;
+ 
 }
 
 #canvas-container {
@@ -93,7 +93,7 @@ body.boku-no-hero {
 #relationship-filter, #additional-tags-container {
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 80%;
   padding: 1rem;
   height: auto;
   background-color: #ffffff;
@@ -102,4 +102,36 @@ body.boku-no-hero {
 #additional-tags-container {
   visibility: hidden;
   font-size: small;
+}
+
+#banner-container {
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  width: 100%;
+  height: 3rem; /* Adjust the height as needed */
+  background-color: rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+  z-index: 3;
+}
+
+#banner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.tag {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 3rem;
+  white-space: nowrap;
 }

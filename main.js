@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             loadSketch(links[id].script);
             changeBackground(links[id].class);
+            updateBanner(links[id].class);
         });
     });
 
@@ -89,6 +90,58 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.className = className;
     }
 
+    function updateBanner(pageClass) {
+        const banner = document.getElementById('banner');
+        banner.innerHTML = '';
+
+        d3.csv("/data/Overall_Tags.csv").then(data => {
+            data.forEach(tag => {
+                const tagElement = document.createElement('span');
+                tagElement.classList.add('tag');
+                tagElement.style.fontWeight = mapFrequencyToFontWeight(tag.Frequency);
+
+                const categorySymbol = getCategorySymbol(tag.Category);
+                tagElement.innerHTML = `${categorySymbol} ${tag.Tag}`;
+                
+                banner.appendChild(tagElement);
+            });
+        }).catch(error => {
+            console.error("Error loading CSV data:", error);
+        });
+    }
+
+    function mapFrequencyToFontWeight(frequency) {
+        // Map frequency to font weight between 100 and 900
+        const minWeight = 100;
+        const maxWeight = 900;
+        const minFrequency = 5; // Adjust based on your data
+        const maxFrequency = 183; // Adjust based on your data
+
+        return Math.round(((frequency - minFrequency) / (maxFrequency - minFrequency)) * (maxWeight - minWeight) + minWeight);
+    }
+
+    function getCategorySymbol(category) {
+        // Define symbols or numbers for each category
+        const categorySymbols = {
+            "Romance and Relationships": "❤️",
+            "Angst and Hurt": "💔",
+            "Humor": "😂",
+            "Alternate Universe": "🌌",
+            "Canon": "📖",
+            "Abuse and Trauma": "⚠️",
+            "Sex and Sexuality": "🔥",
+            "Identity and Character": "👤",
+            "Family and Friendship": "👪",
+            "Death and Tragedy": "⚰️",
+            "Warnings and Advisories": "⚠️",
+            "Specific Themes": "🎭",
+            "Other": "🔍"
+        };
+
+        return categorySymbols[category] || "🔹"; // Default symbol
+    }
+
     // Load the default sketch
     loadSketch('sketches/harrypotter.js');
 });
+
