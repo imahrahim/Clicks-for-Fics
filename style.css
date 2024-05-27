@@ -8,19 +8,19 @@ body {
 }
 
 body.overall {
-  background-image: url('overall_background.png');
+  background-image: url('over.png');
 }
 
 body.harry-potter {
-  background-image: url('Wallpaper.png');
+  background-image: url('harry.png');
 }
 
 body.marvel {
-  background-image: url('marvel_background.png');
+  background-image: url('marvell.png');
 }
 
 body.boku-no-hero {
-  background-image: url('bokunohero_background.png');
+  background-image: url('boku.png');
 }
 
 p {
@@ -33,7 +33,7 @@ p {
   right: 2rem;
   left: 77rem; /* Adjust the width as needed */
   /* height: 12rem; */
-  background-color: #a4a4a4;
+  background-color: #a4a4a46e;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -69,7 +69,7 @@ p {
   right: 2rem;
   left: 77rem;
   bottom: 2rem;
-  background-color: #E2E0E2;
+  background-color: #e2e0e27d;
   padding: 1rem;
   z-index: 1;
 }
@@ -104,7 +104,7 @@ p {
   position: absolute;
   top: 5rem;
   left: 5rem;
-  right: 15rem;
+  right: 20rem;
   bottom: 2rem;
   background-color: #E2E0E2;
   overflow-y: auto;
@@ -120,7 +120,7 @@ p {
   
   padding-top: 1rem;
   height: auto;
-  background-color: #E2E0E2;
+  background-color: #e2e0e200;
 }
 #relationship-select {
   /* appearance: none;
@@ -145,7 +145,7 @@ p {
   left: 0;
   width: 100%;
   height: 2rem; /* Adjust the height as needed */
-  background-color: #F1E094;
+  background-color: #f1e0947c;
   overflow: hidden;
   z-index: 3;
 }

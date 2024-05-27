@@ -297,6 +297,15 @@ new p5((sketch) => {
     for (let fandom in fandomPositions) {
       sketch.noStroke();
       sketch.textAlign(sketch.LEFT, sketch.CENTER);
+      if (fandom === "Harry Potter - J. K. Rowling") {
+        sketch.fill(nodesHarry);
+      } else if (fandom === "Marvel") {
+        sketch.fill(nodesMarvel);
+      } else if (fandom === "Boku no Hero Academia") {
+        sketch.fill(nodesBokuNoHero);
+      } else {
+        sketch.fill(fandomLinksColor);
+      }
       sketch.fill(0, fandomPositions[fandom].visible ? 255 : opacity);
       sketch.ellipse(fandomPositions[fandom].x, fandomPositions[fandom].y, 3);
       sketch.fill(0, fandomPositions[fandom].visible ? 255 : opacity);
