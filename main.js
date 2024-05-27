@@ -154,5 +154,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Load the default sketch
-    loadSketch('sketches/harrypotter.js');
+    const defaultLink = 'overall-link';
+    loadSketch(links[defaultLink].script);
+    changeBackground(links[defaultLink].class);
+    updateBanner(links[defaultLink].class);
 });

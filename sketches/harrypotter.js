@@ -23,7 +23,8 @@ new p5((sketch) => {
   sketch.preload = function () {
     console.log("Preloading data...");
     harryPotterData = sketch.loadJSON(
-      "/data/Harry_Potter_Relationships.json",
+      // "/data/Harry_Potter_Relationships.json",
+      "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/Harry_Potter_Relationships.json",
       () => {
         console.log("Data loaded:", harryPotterData);
         sketch.processData(harryPotterData);
@@ -209,8 +210,7 @@ new p5((sketch) => {
     links.forEach((link) => {
       link.visible =
         link.type === relationshipType &&
-        (link.source === selectedCharacter ||
-          link.target === selectedCharacter);
+        (link.source === selectedCharacter || link.target === selectedCharacter);
     });
 
     for (let fandom in fandomPositions) {
@@ -285,7 +285,7 @@ new p5((sketch) => {
         } else {
           sketch.fill(nodesColor);
         }
-        sketch.rect(node.x, node.y, 120, 10); // Rectangle centered
+        sketch.rect(node.x, node.y, 160, 10); // Rectangle centered
 
         sketch.fill(10);
         sketch.textSize(8);
@@ -316,6 +316,29 @@ new p5((sketch) => {
         fandomPositions[fandom].y
       );
     }
+
+    // Update cursor based on hover state
+    sketch.updateCursor();
+  };
+
+  sketch.updateCursor = function () {
+    const mouseX = sketch.mouseX;
+    const mouseY = sketch.mouseY;
+    let overClickableElement = false;
+
+    for (let node of nodes) {
+      let d = sketch.dist(mouseX, mouseY, node.x, node.y);
+      if (d < 10 && node.visible && node.group === "character") {
+        overClickableElement = true;
+        break;
+      }
+    }
+
+    if (overClickableElement) {
+      sketch.cursor('pointer'); // Change to pointer cursor
+    } else {
+      sketch.cursor('default'); // Change back to default cursor
+    }
   };
 
   sketch.windowResized = function () {
@@ -332,5 +355,10 @@ new p5((sketch) => {
       });
       sketch.drawVisualization();
     }
+  };
+
+  sketch.draw = function () {
+    // Call drawVisualization in the draw loop to continuously update the visualization
+    sketch.drawVisualization();
   };
 }, "canvas-container");

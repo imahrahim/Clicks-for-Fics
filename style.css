@@ -1,172 +1,193 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  overflow: hidden;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Background with p5.js</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
-body.overall {
-  background-image: url('over.png');
-}
+        body.overall {
+            background-image: url('over.png');
+        }
 
-body.harry-potter {
-  background-image: url('harry.png');
-}
+        body.harry-potter {
+            background-image: url('harry.png');
+        }
 
-body.marvel {
-  background-image: url('marvell.png');
-}
+        body.marvel {
+            background-image: url('marvell.png');
+        }
 
-body.boku-no-hero {
-  background-image: url('boku.png');
-}
+        body.boku-no-hero {
+            background-image: url('boku.png');
+        }
 
-p {
-  font-size: small;
-  text-align: left;
-}
-.navbar {
-  position: fixed;
-  top: 5rem;
-  right: 2rem;
-  left: 77rem; /* Adjust the width as needed */
-  /* height: 12rem; */
-  background-color: #a4a4a46e;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 1rem ; 
-  /* overflow: hidden; */
-  z-index: 1;
-}
+        p {
+            font-size: small;
+            text-align: left;
+        }
 
-.navbar a {
-  width: 100%;
-  color: #000000;
-  text-align: center;
-  font-size: small;
-  padding: 1rem;
-  text-decoration: none;
-  background-color: #F1E094;
-  margin: 2px 0;
-  border: 1px solid #bbb;
-  box-sizing: border-box;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
-}
+        .navbar {
+            position: fixed;
+            top: 5rem;
+            right: 2rem;
+            left: 77rem;
+            background-color: #a4a4a46e;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1rem;
+            z-index: 1;
+        }
 
-.navbar a:hover {
-  background-color: #ddd;
-  color: rgb(255, 0, 0);
-}
+        .navbar a {
+            width: 100%;
+            color: #000000;
+            text-align: center;
+            font-size: small;
+            padding: 1rem;
+            text-decoration: none;
+            background-color: #F1E094;
+            margin: 2px 0;
+            border: 1px solid #bbb;
+            box-sizing: border-box;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
 
-.filters {
-  position: fixed;
-  top: 25rem;
-  right: 2rem;
-  left: 77rem;
-  bottom: 2rem;
-  background-color: #e2e0e27d;
-  padding: 1rem;
-  z-index: 1;
-}
+        .navbar a:hover {
+            background-color: #ddd;
+            color: rgb(255, 0, 0);
+        }
 
-.filters label {
-  display: block;
-  font-size: small;
-}
+        .filters {
+            position: fixed;
+            top: 25rem;
+            right: 2rem;
+            left: 77rem;
+            bottom: 2rem;
+            background-color: #e2e0e27d;
+            padding: 1rem;
+            z-index: 1;
+        }
 
-#relationships-btn, #additional-tags-btn {
-  padding: 1rem;
-  background-color: #F1E094;
-  margin: 2px 0;
-  width: 100%;
-  border: 1px solid #bbb;
-  border-radius: 4px;
-  box-sizing: border-box;
-  transition: background-color 0.3s, color 0.3s;
-}
+        .filters label {
+            display: block;
+            font-size: small;
+        }
 
-#relationships-btn:hover, #additional-tags-btn:hover {
-  background-color: #ddd;
-  color: rgb(255, 0, 0);
-}
+        #relationships-btn, #additional-tags-btn {
+            padding: 1rem;
+            background-color: #F1E094;
+            margin: 2px 0;
+            width: 100%;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+            cursor: pointer;
+        }
 
-#filter-container {
-  /* margin-top: 2rem; */
-  position: relative;
-}
+        #relationships-btn:hover, #additional-tags-btn:hover {
+            background-color: #ddd;
+            color: rgb(255, 0, 0);
+        }
 
-#canvas-container {
-  position: absolute;
-  top: 5rem;
-  left: 5rem;
-  right: 20rem;
-  bottom: 2rem;
-  background-color: #E2E0E2;
-  overflow-y: auto;
-  visibility: visible;
-  border-width: 1rem;
-  border-color: #000000;
-}
+        #filter-container {
+            position: relative;
+        }
 
-#relationship-filter, #additional-tags-container {
-  position: absolute;
-  top: 0;
-  width: 80%;
-  
-  padding-top: 1rem;
-  height: auto;
-  background-color: #e2e0e200;
-}
-#relationship-select {
-  /* appearance: none;
-  -webkit-appearance: none; */
-  background-color: #dddbd6;
-  width: 10rem;
-  font-size: small;
-  padding: 1rem;
-  border: 1px solid #0091ff;
-  color: #000;
-  cursor: pointer;
-}
+        #canvas-container {
+            position: absolute;
+            top: 5rem;
+            left: 5rem;
+            right: 20rem;
+            bottom: 2rem;
+            background-color: #d7d6d6e5;
+            overflow-y: auto;
+            visibility: visible;
+            z-index: 2;
+        }
 
-#additional-tags-container {
-  visibility: hidden;
-  font-size: small;
-}
+        #background-container {
+            position: absolute;
+            top: 5rem;
+            left: 5rem;
+            right: 20rem;
+            bottom: 2rem;
+            z-index: 1;
+            background-color: #e2e0e2;
+        }
 
-#banner-container {
-  position: fixed;
-  top: 2rem;
-  left: 0;
-  width: 100%;
-  height: 2rem; /* Adjust the height as needed */
-  background-color: #f1e0947c;
-  overflow: hidden;
-  z-index: 3;
-}
+        #relationship-filter, #additional-tags-container {
+            position: absolute;
+            top: 0;
+            width: 80%;
+            padding-top: 1rem;
+            height: auto;
+            background-color: #e2e0e200;
+        }
 
-#banner {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  white-space: nowrap;
-  animation: marquee 30s linear infinite;
-}
+        #relationship-select {
+            background-color: #dddbd6;
+            width: 10rem;
+            font-size: small;
+            padding: 1rem;
+            border: 1px solid #0091ff;
+            color: #000;
+            cursor: pointer;
+        }
 
-@keyframes marquee {
-  0% { transform: translateX(0%); }
-  100% { transform: translateX(-50%); }
-}
+        #additional-tags-container {
+            visibility: hidden;
+            font-size: small;
+        }
 
-.tag {
-  display: inline-block;
-  padding: 0 1rem;
-  font-size: 1rem;
-  line-height: 3rem;
-  white-space: nowrap;
-}
+        #banner-container {
+            position: fixed;
+            top: 2rem;
+            left: 0;
+            width: 100%;
+            height: 2rem;
+            background-color: #f1e0947c;
+            overflow: hidden;
+            z-index: 3;
+        }
+
+        #banner {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            white-space: nowrap;
+            animation: marquee 30s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0 1rem;
+            font-size: 1rem;
+            line-height: 3rem;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body class="overall">
+    <div id="background-container"></div>
+    <div id="canvas-container"></div>
+    <!-- Rest of your HTML content -->
+</body>
+</html>
