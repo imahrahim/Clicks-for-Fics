@@ -24,7 +24,7 @@ new p5((sketch) => {
       console.log("Preloading data...");
       harryPotterData = sketch.loadJSON(
           // "/data/Overall.json",
-          "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/overall.json",
+          "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/Overall.json",
           () => {
               console.log("Data loaded:", harryPotterData);
               sketch.processData(harryPotterData);
