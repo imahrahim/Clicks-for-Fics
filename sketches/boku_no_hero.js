@@ -24,7 +24,7 @@ new p5((sketch) => {
     console.log("Preloading data...");
     harryPotterData = sketch.loadJSON(
       // "/data/boku_no_hero.json",
-      "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/boku_no_hero.json",
+      "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/Boku_No_Hero.json",
       () => {
         console.log("Data loaded:", harryPotterData);
         sketch.processData(harryPotterData);
