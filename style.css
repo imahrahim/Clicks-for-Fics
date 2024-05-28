@@ -172,10 +172,27 @@ p {
   left: 0;
   width: 100%;
   height: 2rem; /* Adjust the height as needed */
-  background-color: #7b075ea0;
+  background-color: #fff20079;
   backdrop-filter: blur(1px);
   overflow: hidden;
   z-index: 3;
+}
+
+/* Hintergrundfarben für spezifische Seiten */
+#banner-container.overall {
+  background-color: #ffff007c;
+}
+
+#banner-container.harry-potter {
+  background-color: #0044ff6c;
+}
+
+#banner-container.marvel {
+  background-color: #ff003777;
+}
+
+#banner-container.boku-no-hero {
+  background-color: #00ff486c;
 }
 
 #banner {
@@ -199,8 +216,8 @@ p {
   white-space: nowrap;
 }
 .tag img {
-  width: 20px; /* Anpassung der Breite */
-  height: 20px; /* Anpassung der Höhe */
-  margin-right: 5px; /* Abstand zwischen Bild und Text */
+  width: 2rem; /* Anpassung der Breite */
+  height:2rem; /* Anpassung der Höhe */
+  margin-right: 0.2rem; /* Abstand zwischen Bild und Text */
   vertical-align: middle; /* Vertikale Ausrichtung des Bildes */
 }

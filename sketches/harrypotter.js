@@ -14,11 +14,13 @@ new p5((sketch) => {
   let connectionsFM = "#D21271";
   let connectionsFF = "#ffaa00";
   let connectionsOther = "#bdb6ba";
-  let fandomLinksColor = "#5252521e";
-  let nodesColor = "#F1E094";
-  let nodesHarry = "#54B5A7";
+  let fandomLinksColor = "#9393933e";
+  let nodesColor = "#ffffd894";
+  let nodesHarry = "#245bf1";
   let nodesMarvel = "#ff0037c0";
-  let nodesBokuNoHero = "#38754D";
+  let nodesBokuNoHero = "#1af558";
+  let font = 'BasementGrotesque';
+
 
   sketch.preload = function () {
     console.log("Preloading data...");
@@ -287,7 +289,16 @@ new p5((sketch) => {
         }
         sketch.rect(node.x, node.y, 160, 10); // Rectangle centered
 
-        sketch.fill(10);
+             sketch.textFont(font)
+              if (node.fandom === "Harry Potter - J. K. Rowling") {
+                sketch.fill(255);
+            } else if (node.fandom === "Marvel") {
+                sketch.fill(255);
+            } else if (node.fandom === "Boku no Hero Academia") {
+                sketch.fill(10);
+            } else {
+                sketch.fill(10);
+            }
         sketch.textSize(8);
         sketch.text(node.id, node.x, node.y); // Text centered
       }

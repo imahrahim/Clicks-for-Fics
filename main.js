@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             loadSketch(links[id].script);
             changeBackground(links[id].class);
             updateBanner(links[id].data);
+            changeBannerColor(links[id].class);
         });
     });
 
@@ -90,6 +91,12 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.className = className;
     }
 
+    function changeBannerColor(className) {
+        const bannerContainer = document.getElementById('banner-container');
+        bannerContainer.className = ''; // Remove any existing class
+        bannerContainer.classList.add('overall', className); // Add the new class
+    }
+
     function updateBanner(dataUrl) {
         const banner = document.getElementById('banner');
         banner.innerHTML = '';
@@ -105,8 +112,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     tagElement.classList.add('tag');
                     tagElement.style.fontVariationSettings = `'wght' ${mapFrequencyToWeight(tag.frequency)}`;
 
-                    const categoryImage = getCategoryImage(tag.category);
-                    tagElement.innerHTML = `<img src="${categoryImage}" alt="${tag.category}" class="category-image" /> ${tag.tag}`;
+                    const categorySymbol = getCategorySymbol(tag.category);
+                    tagElement.innerHTML = `<img src="${categorySymbol}" alt="${tag.category}" style="width: 20px; height: 20px;"> ${tag.tag}`;
 
                     banner.appendChild(tagElement);
                 } else {
@@ -121,8 +128,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     tagElement.classList.add('tag');
                     tagElement.style.fontVariationSettings = `'wght' ${mapFrequencyToWeight(tag.frequency)}`;
 
-                    const categoryImage = getCategoryImage(tag.category);
-                    tagElement.innerHTML = `<img src="${categoryImage}" alt="${tag.category}" class="category-image" /> ${tag.tag}`;
+                    const categorySymbol = getCategorySymbol(tag.category);
+                    tagElement.innerHTML = `<img src="${categorySymbol}" alt="${tag.category}" style="width: 20px; height: 20px;"> ${tag.tag}`;
 
                     banner.appendChild(tagElement);
                 }
@@ -142,8 +149,8 @@ document.addEventListener('DOMContentLoaded', function () {
         return Math.round(((frequency - minFrequency) / (maxFrequency - minFrequency)) * (maxWeight - minWeight) + minWeight);
     }
 
-    function getCategoryImage(category) {
-        // Define image paths for each category
+    function getCategorySymbol(category) {
+        // Define symbols or numbers for each category
         const categorySymbols = {
             "Romance": "/content/tags/love.png",
             "Angst": "/content/tags/angsst.png",
@@ -162,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "Fandom": "/content/tags/fandom.png"
         };
 
-        return categorySymbols[category] || "/content/tags/fandom.png"; // Default image
+        return categorySymbols[category] || "/content/tags/fandom.png"; // Default symbol
     }
 
     // Load the default link
@@ -171,4 +178,5 @@ document.addEventListener('DOMContentLoaded', function () {
     loadSketch(links[defaultLink].script);
     changeBackground(links[defaultLink].class);
     updateBanner(links[defaultLink].data);
+    changeBannerColor(links[defaultLink].class);
 });
