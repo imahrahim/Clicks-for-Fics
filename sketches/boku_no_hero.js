@@ -17,14 +17,14 @@ new p5((sketch) => {
   let fandomLinksColor = "#5252521e";
   let nodesColor = "#F1E094";
   let nodesHarry = "#54B5A7";
-  let nodesMarvel = "#D48587";
+  let nodesMarvel = "#ff0037c0";
   let nodesBokuNoHero = "#38754D";
 
   sketch.preload = function () {
     console.log("Preloading data...");
     harryPotterData = sketch.loadJSON(
-      // "/data/boku_no_hero.json",
-      "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/boku_no_hero.json",
+      "/data/boku_no_hero.json",
+      // "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/boku_no_hero.json",
       () => {
         console.log("Data loaded:", harryPotterData);
         sketch.processData(harryPotterData);
@@ -226,7 +226,7 @@ new p5((sketch) => {
       return;
     }
 
-    sketch.background(backgroundColor);
+    sketch.clear();
 
     // Draw connections
     for (let link of links) {

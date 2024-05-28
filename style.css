@@ -1,193 +1,206 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transparent Background with p5.js</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            overflow: hidden;
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }
+@font-face {
+  font-family: 'BasementGrotesque';
+  src: url('/content/fonts/BasementGrotesque-Black_v1.202.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-        body.overall {
-            background-image: url('over.png');
-        }
+@font-face {
+  font-family: 'Plank';
+  src: url('/content/fonts/PLANK___.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-        body.harry-potter {
-            background-image: url('harry.png');
-        }
+@font-face {
+  font-family: 'Handjet';
+  src: url('/content/fonts/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: 100 'ELSH';
+}
 
-        body.marvel {
-            background-image: url('marvell.png');
-        }
 
-        body.boku-no-hero {
-            background-image: url('boku.png');
-        }
+body {
+  font-family: 'BasementGrotesque', sans-serif;
+  margin: 0;
+  overflow: hidden;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
-        p {
-            font-size: small;
-            text-align: left;
-        }
+body.overall {
+  background-image: url('/content/over.png');
+}
 
-        .navbar {
-            position: fixed;
-            top: 5rem;
-            right: 2rem;
-            left: 77rem;
-            background-color: #a4a4a46e;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            padding: 1rem;
-            z-index: 1;
-        }
+body.harry-potter {
+  background-image: url('/content/harry.png');
+}
 
-        .navbar a {
-            width: 100%;
-            color: #000000;
-            text-align: center;
-            font-size: small;
-            padding: 1rem;
-            text-decoration: none;
-            background-color: #F1E094;
-            margin: 2px 0;
-            border: 1px solid #bbb;
-            box-sizing: border-box;
-            border-radius: 4px;
-            transition: background-color 0.3s, color 0.3s;
-        }
+body.marvel {
+  background-image: url('/content/marvell.png');
+}
 
-        .navbar a:hover {
-            background-color: #ddd;
-            color: rgb(255, 0, 0);
-        }
+body.boku-no-hero {
+  background-image: url('/content/boku.png');
+}
 
-        .filters {
-            position: fixed;
-            top: 25rem;
-            right: 2rem;
-            left: 77rem;
-            bottom: 2rem;
-            background-color: #e2e0e27d;
-            padding: 1rem;
-            z-index: 1;
-        }
+p {
+  font-size: small;
+  text-align: left;
+}
+.navbar {
+  position: fixed;
+  top: 5rem;
+  right: 2rem;
+  width: 200px;
+  background-color: #e2e0e241;
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem ; 
+  /* overflow: hidden; */
+  z-index: 1;
+}
 
-        .filters label {
-            display: block;
-            font-size: small;
-        }
+.navbar a {
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  font-size: small;
+  padding: 1rem;
+  text-decoration: none;
+  /* background-color: #ff0037c0; */
+  margin: 2px 0;
+  border: 1px solid #bbb;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-        #relationships-btn, #additional-tags-btn {
-            padding: 1rem;
-            background-color: #F1E094;
-            margin: 2px 0;
-            width: 100%;
-            border: 1px solid #bbb;
-            border-radius: 4px;
-            box-sizing: border-box;
-            transition: background-color 0.3s, color 0.3s;
-            cursor: pointer;
-        }
+.navbar a:hover {
+  background-color: rgba(255, 0, 55, 0.141);
+  color: rgba(255, 0, 55, 0.754);
+}
 
-        #relationships-btn:hover, #additional-tags-btn:hover {
-            background-color: #ddd;
-            color: rgb(255, 0, 0);
-        }
+.filters {
+  position: fixed;
+  top: 25rem;
+  right: 2rem;
+  width: 200px;
+  bottom: 2rem;
+  background-color: #e2e0e241;
+  backdrop-filter: blur(20px);
+  padding: 1rem;
+  z-index: 1;
+}
 
-        #filter-container {
-            position: relative;
-        }
+.filters label {
+  display: block;
+  font-size: small;
+}
 
-        #canvas-container {
-            position: absolute;
-            top: 5rem;
-            left: 5rem;
-            right: 20rem;
-            bottom: 2rem;
-            background-color: #d7d6d6e5;
-            overflow-y: auto;
-            visibility: visible;
-            z-index: 2;
-        }
+#relationships-btn, #additional-tags-btn {
+  padding: 1rem;
+  background-color: rgba(255, 0, 55, 0.754);
+  margin: 2px 0;
+  width: 100%;
+  border: 1px solid #bbbbbb00;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer; /* Cursor-Stil hinzugefügt */
+  font-family: 'BasementGrotesque', sans-serif;
+}
 
-        #background-container {
-            position: absolute;
-            top: 5rem;
-            left: 5rem;
-            right: 20rem;
-            bottom: 2rem;
-            z-index: 1;
-            background-color: #e2e0e2;
-        }
+#relationships-btn:hover, #additional-tags-btn:hover {
+  background-color: #ddd;
+  color: rgb(255, 0, 0);
+}
 
-        #relationship-filter, #additional-tags-container {
-            position: absolute;
-            top: 0;
-            width: 80%;
-            padding-top: 1rem;
-            height: auto;
-            background-color: #e2e0e200;
-        }
+#filter-container {
+  position: relative;
+}
 
-        #relationship-select {
-            background-color: #dddbd6;
-            width: 10rem;
-            font-size: small;
-            padding: 1rem;
-            border: 1px solid #0091ff;
-            color: #000;
-            cursor: pointer;
-        }
+#canvas-container {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  right: 20rem;
+  bottom: 2rem;
+  background-color: #e2e0e241;
+  backdrop-filter: blur(20px);
+  overflow-y: auto;
+  visibility: visible;
+  border-width: 1rem;
+  border-color: #000000;
+  font-family: 'BasementGrotesque', sans-serif;
+}
 
-        #additional-tags-container {
-            visibility: hidden;
-            font-size: small;
-        }
+#relationship-filter, #additional-tags-container {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  
+  padding-top: 1rem;
+  height: auto;
+  background-color: #e2e0e200;
+}
+#relationship-select {
+  /* appearance: none;
+  -webkit-appearance: none; */
+  background-color: #dddbd6;
+  width: 200px;
+  font-size: small;
+  padding: 1rem;
+  border: 1px solid #0091ff;
+  color: #000;
+  cursor: pointer;
+}
 
-        #banner-container {
-            position: fixed;
-            top: 2rem;
-            left: 0;
-            width: 100%;
-            height: 2rem;
-            background-color: #f1e0947c;
-            overflow: hidden;
-            z-index: 3;
-        }
+#additional-tags-container {
+  visibility: hidden;
+  font-size: small;
+}
 
-        #banner {
-            display: flex;
-            align-items: center;
-            height: 100%;
-            white-space: nowrap;
-            animation: marquee 30s linear infinite;
-        }
+#banner-container {
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  width: 100%;
+  height: 2rem; /* Adjust the height as needed */
+  background-color: #7b075ea0;
+  backdrop-filter: blur(1px);
+  overflow: hidden;
+  z-index: 3;
+}
 
-        @keyframes marquee {
-            0% { transform: translateX(0%); }
-            100% { transform: translateX(-50%); }
-        }
+#banner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+}
 
-        .tag {
-            display: inline-block;
-            padding: 0 1rem;
-            font-size: 1rem;
-            line-height: 3rem;
-            white-space: nowrap;
-        }
-    </style>
-</head>
-<body class="overall">
-    <div id="background-container"></div>
-    <div id="canvas-container"></div>
-    <!-- Rest of your HTML content -->
-</body>
-</html>
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.tag {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  white-space: nowrap;
+}
+.tag img {
+  width: 20px; /* Anpassung der Breite */
+  height: 20px; /* Anpassung der Höhe */
+  margin-right: 5px; /* Abstand zwischen Bild und Text */
+  vertical-align: middle; /* Vertikale Ausrichtung des Bildes */
+}

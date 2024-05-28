@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded and parsed");
 
     const links = {
-        'overall-link': { script: 'sketches/overall.js', class: 'overall' },
-        'harry-potter-link': { script: 'sketches/harrypotter.js', class: 'harry-potter' },
-        'marvel-link': { script: 'sketches/marvel.js', class: 'marvel' },
-        'boku-no-hero-link': { script: 'sketches/boku_no_hero.js', class: 'boku-no-hero' }
+        'overall-link': { script: 'sketches/overall.js', class: 'overall', data: '/data/Additional_Tags_Overall.csv' },
+        'harry-potter-link': { script: 'sketches/harrypotter.js', class: 'harry-potter', data: '/data/Additional_Tags_Harry_Potter.csv' },
+        'marvel-link': { script: 'sketches/marvel.js', class: 'marvel', data: '/data/Additional_Tags_Marvel.csv' },
+        'boku-no-hero-link': { script: 'sketches/boku_no_hero.js', class: 'boku-no-hero', data: '/data/Additional_Tags_Boku_No_Hero.csv' }
     };
 
     Object.keys(links).forEach(id => {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             loadSketch(links[id].script);
             changeBackground(links[id].class);
-            updateBanner(links[id].class);
+            updateBanner(links[id].data);
         });
     });
 
@@ -90,72 +90,85 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.className = className;
     }
 
-    function updateBanner(pageClass) {
+    function updateBanner(dataUrl) {
         const banner = document.getElementById('banner');
         banner.innerHTML = '';
 
-        d3.csv("/data/Overall_Tags.csv").then(data => {
-            data.forEach(tag => {
-                const tagElement = document.createElement('span');
-                tagElement.classList.add('tag');
-                tagElement.style.fontWeight = mapFrequencyToFontWeight(tag.Frequency);
+        d3.csv(dataUrl).then(data => {
+            console.log("CSV Data loaded:", data);
 
-                const categorySymbol = getCategorySymbol(tag.Category);
-                tagElement.innerHTML = `${categorySymbol} ${tag.Tag}`;
-                
-                banner.appendChild(tagElement);
+            data.forEach(tag => {
+                console.log("Processing tag:", tag);
+
+                if (tag.tag && tag.frequency && tag.category) {
+                    const tagElement = document.createElement('span');
+                    tagElement.classList.add('tag');
+                    tagElement.style.fontVariationSettings = `'wght' ${mapFrequencyToWeight(tag.frequency)}`;
+
+                    const categoryImage = getCategoryImage(tag.category);
+                    tagElement.innerHTML = `<img src="${categoryImage}" alt="${tag.category}" class="category-image" /> ${tag.tag}`;
+
+                    banner.appendChild(tagElement);
+                } else {
+                    console.error("Tag data is incomplete:", tag);
+                }
             });
 
             // Duplicate the tags for continuous scrolling
             data.forEach(tag => {
-                const tagElement = document.createElement('span');
-                tagElement.classList.add('tag');
-                tagElement.style.fontWeight = mapFrequencyToFontWeight(tag.Frequency);
+                if (tag.tag && tag.frequency && tag.category) {
+                    const tagElement = document.createElement('span');
+                    tagElement.classList.add('tag');
+                    tagElement.style.fontVariationSettings = `'wght' ${mapFrequencyToWeight(tag.frequency)}`;
 
-                const categorySymbol = getCategorySymbol(tag.Category);
-                tagElement.innerHTML = `${categorySymbol} ${tag.Tag}`;
-                
-                banner.appendChild(tagElement);
+                    const categoryImage = getCategoryImage(tag.category);
+                    tagElement.innerHTML = `<img src="${categoryImage}" alt="${tag.category}" class="category-image" /> ${tag.tag}`;
+
+                    banner.appendChild(tagElement);
+                }
             });
         }).catch(error => {
             console.error("Error loading CSV data:", error);
         });
     }
 
-    function mapFrequencyToFontWeight(frequency) {
+    function mapFrequencyToWeight(frequency) {
         // Map frequency to font weight between 100 and 900
         const minWeight = 100;
         const maxWeight = 900;
-        const minFrequency = 5; // Adjust based on your data
+        const minFrequency = 1; // Adjust based on your data
         const maxFrequency = 183; // Adjust based on your data
 
         return Math.round(((frequency - minFrequency) / (maxFrequency - minFrequency)) * (maxWeight - minWeight) + minWeight);
     }
 
-    function getCategorySymbol(category) {
-        // Define symbols or numbers for each category
+    function getCategoryImage(category) {
+        // Define image paths for each category
         const categorySymbols = {
-            "Romance and Relationships": "❤️",
-            "Angst and Hurt": "💔",
-            "Humor": "😂",
-            "Alternate Universe": "🌌",
-            "Canon": "📖",
-            "Abuse and Trauma": "⚠️",
-            "Sex and Sexuality": "🔥",
-            "Identity and Character": "👤",
-            "Family and Friendship": "👪",
-            "Death and Tragedy": "⚰️",
-            "Warnings and Advisories": "⚠️",
-            "Specific Themes": "🎭",
-            "Other": "🔍"
+            "Romance": "/content/tags/love.png",
+            "Angst": "/content/tags/angsst.png",
+            "Action": "/content/tags/blitz.png",
+            "Fluff": "/content/tags/chick.png",
+            "Alternate Universe": "/content/tags/universe.png",
+            "Canon": "/content/tags/canon.png",
+            "Abuse": "/content/tags/abuse.png",
+            "Sex": "/content/tags/lemonn.png",
+            "Meta": "/content/tags/meta.png",
+            "Family": "/content/tags/familyy.png",
+            "Dark": "/content/tags/tot.png",
+            "Magic": "/content/tags/magic.png",
+            "Mental Health": "/content/tags/butterfly.png",
+            "Other": "/content/tags/otherr.png",
+            "Fandom": "/content/tags/fandom.png"
         };
 
-        return categorySymbols[category] || "🔹"; // Default symbol
+        return categorySymbols[category] || "/content/tags/fandom.png"; // Default image
     }
 
-    // Load the default sketch
+    // Load the default link
     const defaultLink = 'overall-link';
+    console.log(`Loading default link: ${defaultLink}, Script: ${links[defaultLink].script}, Background: ${links[defaultLink].class}, Data: ${links[defaultLink].data}`);
     loadSketch(links[defaultLink].script);
     changeBackground(links[defaultLink].class);
-    updateBanner(links[defaultLink].class);
+    updateBanner(links[defaultLink].data);
 });
