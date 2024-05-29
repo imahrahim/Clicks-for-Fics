@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log("DOM fully loaded and parsed");
 
     const links = {
-        'overall-link': { script: 'sketches/overall.js', class: 'overall', data: '/data/Additional_Tags_Overall.csv' },
-        'harry-potter-link': { script: 'sketches/harrypotter.js', class: 'harry-potter', data: '/data/Additional_Tags_Harry_Potter.csv' },
-        'marvel-link': { script: 'sketches/marvel.js', class: 'marvel', data: '/data/Additional_Tags_Marvel.csv' },
-        'boku-no-hero-link': { script: 'sketches/boku_no_hero.js', class: 'boku-no-hero', data: '/data/Additional_Tags_Boku_No_Hero.csv' }
+        'overall-link': { script: 'sketches/overall.js', class: 'overall', data: 'https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/Additional_Tags_Overall.csv' },
+        'harry-potter-link': { script: 'sketches/harrypotter.js', class: 'harry-potter', data: 'https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/Additional_Tags_Harry_Potter.csv' },
+        'marvel-link': { script: 'sketches/marvel.js', class: 'marvel', data: 'https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/Additional_Tags_Marvel.csv' },
+        'boku-no-hero-link': { script: 'sketches/boku_no_hero.js', class: 'boku-no-hero', data: 'https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/Additional_Tags_Boku_No_Hero.csv' }
     };
 
     Object.keys(links).forEach(id => {
@@ -152,24 +152,24 @@ document.addEventListener('DOMContentLoaded', function () {
     function getCategorySymbol(category) {
         // Define symbols or numbers for each category
         const categorySymbols = {
-            "Romance": "/content/tags/love.png",
-            "Angst": "/content/tags/angsst.png",
-            "Action": "/content/tags/blitz.png",
-            "Fluff": "/content/tags/chick.png",
-            "Alternate Universe": "/content/tags/universe.png",
-            "Canon": "/content/tags/canon.png",
-            "Abuse": "/content/tags/abuse.png",
-            "Sex": "/content/tags/lemonn.png",
-            "Meta": "/content/tags/meta.png",
-            "Family": "/content/tags/familyy.png",
-            "Dark": "/content/tags/tot.png",
-            "Magic": "/content/tags/magic.png",
-            "Mental Health": "/content/tags/butterfly.png",
-            "Other": "/content/tags/otherr.png",
-            "Fandom": "/content/tags/fandom.png"
+            "Romance": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/love.png",
+            "Angst": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/angsst.png",
+            "Action": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/blitz.png",
+            "Fluff": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/chick.png",
+            "Alternate Universe": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/universe.png",
+            "Canon": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/canon.png",
+            "Abuse": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/abuse.png",
+            "Sex": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/lemonn.png",
+            "Meta": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/meta.png",
+            "Family": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/familyy.png",
+            "Dark": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/tot.png",
+            "Magic": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/magic.png",
+            "Mental Health": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/butterfly.png",
+            "Other": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/otherr.png",
+            "Fandom": "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/fandom.png"
         };
 
-        return categorySymbols[category] || "/content/tags/fandom.png"; // Default symbol
+        return categorySymbols[category] || "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/tags/fandom.png"; // Default symbol
     }
 
     // Load the default link
