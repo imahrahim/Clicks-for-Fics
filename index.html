@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clicks for Fics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3" defer></script>
+</head>
+<body>
+    <header>
+        <a href="#" id="home-link" onclick="showHomePage()">Clicks for Fics</a>
+        <button onclick="showPage('relationships')">Relationships</button>
+        <button onclick="showPage('tags')">Additional Tags</button>
+    </header>
+    <div id="main-content">
+        <div id="home-page">
+            <h1>Welcome to Clicks for Fics</h1>
+            <p>Your ultimate source for fan fiction data visualization.</p>
+            <button onclick="showPage('relationships')">Relationships</button>
+            <button onclick="showPage('tags')">Additional Tags</button>
+        </div>
+        <div id="relationships-visualization" style="display: none;">
+            <div>
+                <button onclick="loadData('/data/Overall.json')">Overall</button>
+                <button onclick="loadData('/data/Marvel.json')">Marvel</button>
+                <button onclick="loadData('/data/Harry_Potter_Relationships.json')">Harry Potter</button>
+                <button onclick="loadData('/data/Boku_No_Hero.json')">Boku No Hero</button>
+            </div>
+            <div id="toggle-relationship-container">
+                <label class="switch">
+                    <input type="checkbox" id="toggle-relationship-checkbox" onchange="updateRelationshipType(this.checked ? 'friendship' : 'romantic')">
+                    <span class="slider round"></span>
+                    <div class="labels">
+                        <span class="label left">Romantic</span>
+                        <span class="label right">Friendship</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+        <div id="tags-visualization" style="display: none;">
+            <div>
+                <button onclick="loadTagData('/data/Additional_Tags_Overall.csv')">Overall</button>
+                <button onclick="loadTagData('/data/Additional_Tags_Marvel.csv')">Marvel</button>
+                <button onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv')">Harry Potter</button>
+                <button onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv')">Boku No Hero</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" type="module"></script>
+    <script type="module">
+        import { relationshipsSketch } from './relationships.js';
+        import { tagsSketch } from './tags.js';
+        window.relationshipsSketch = relationshipsSketch;
+        window.tagsSketch = tagsSketch;
+    </script>
+</body>
+</html>
