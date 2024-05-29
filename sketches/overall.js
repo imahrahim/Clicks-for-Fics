@@ -8,6 +8,7 @@ new p5((sketch) => {
   let nodes = [];
   let links = [];
   let xScale, yScale;
+  let h= 2000;
 
   let backgroundColor = "#E2E0E2";
   let connectionsMM = "#609199";
@@ -103,7 +104,7 @@ new p5((sketch) => {
   sketch.updateScales = function () {
       let canvasContainer = document.getElementById("canvas-container");
       let w = canvasContainer.offsetWidth;
-      let h = canvasContainer.offsetHeight;
+
 
       // Define scales for positioning
       xScale = d3
@@ -129,7 +130,7 @@ new p5((sketch) => {
       console.log("Setup function called");
       let canvasContainer = document.getElementById("canvas-container");
       let w = canvasContainer.offsetWidth;
-      let h = canvasContainer.offsetHeight;
+
       let canvas = sketch.createCanvas(w, h);
       console.log("Canvas created");
       canvas.parent("canvas-container");
@@ -221,7 +222,7 @@ new p5((sketch) => {
   };
 
   sketch.drawVisualization = function () {
-      console.log("Drawing visualization...");
+    //   console.log("Drawing visualization...");
 
       if (!harryPotterData) {
           console.error("Data not loaded");
@@ -355,7 +356,6 @@ new p5((sketch) => {
   sketch.windowResized = function () {
       let canvasContainer = document.getElementById("canvas-container");
       let w = canvasContainer.offsetWidth;
-      let h = canvasContainer.offsetHeight;
       sketch.resizeCanvas(w, h);
       sketch.updateScales(); // Update the scales when the window is resized
       if (harryPotterData) {

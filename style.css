@@ -1,55 +1,51 @@
-@font-face {
-  font-family: 'BasementGrotesque';
-  src: url('/content/fonts/BasementGrotesque-Black_v1.202.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Plank';
-  src: url('/content/fonts/PLANK___.TTF') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Handjet';
-  src: url('/content/fonts/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-variation-settings: 100 'ELSH';
-}
-
-
 body {
   font-family: 'BasementGrotesque', sans-serif;
   margin: 0;
-  overflow: hidden;
+  overflow: hidden; /* Verhindert das Scrollen des gesamten Körpers */
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-body.overall {
-  background-image: url('/content/over.png');
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff200;
+  border-bottom: 0.1rem solid #000;
+  z-index: 3;
 }
 
-body.harry-potter {
-  background-image: url('/content/harry.png');
+.home-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.5rem;
+  padding: 1rem;
+  display: inline-block;
 }
 
-body.marvel {
-  background-image: url('/content/marvell.png');
+#home-page {
+  text-align: center;
+  padding: 10rem 1rem;
 }
 
-body.boku-no-hero {
-  background-image: url('/content/boku.png');
+#home-page h1 {
+  font-size: 3rem;
 }
 
-p {
-  font-size: small;
-  text-align: left;
+#home-page p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
+
+#home-page button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
 .navbar {
   position: fixed;
   top: 5rem;
@@ -57,12 +53,13 @@ p {
   width: 200px;
   background-color: #e2e0e241;
   backdrop-filter: blur(20px);
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 1rem ; 
-  /* overflow: hidden; */
   z-index: 1;
 }
 
@@ -73,11 +70,10 @@ p {
   font-size: small;
   padding: 1rem;
   text-decoration: none;
-  /* background-color: #ff0037c0; */
   margin: 2px 0;
   border: 1px solid #bbb;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 0.3rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -86,96 +82,33 @@ p {
   color: rgba(255, 0, 55, 0.754);
 }
 
-.filters {
-  position: fixed;
-  top: 25rem;
-  right: 2rem;
-  width: 200px;
-  bottom: 2rem;
-  background-color: #e2e0e241;
-  backdrop-filter: blur(20px);
+#toggle-relationship-type {
   padding: 1rem;
-  z-index: 1;
-}
-
-.filters label {
-  display: block;
-  font-size: small;
-}
-
-#relationships-btn, #additional-tags-btn {
-  padding: 1rem;
-  background-color: rgba(255, 0, 55, 0.754);
-  margin: 2px 0;
-  width: 100%;
-  border: 1px solid #bbbbbb00;
-  border-radius: 4px;
-  box-sizing: border-box;
-  transition: background-color 0.3s, color 0.3s;
-  cursor: pointer; /* Cursor-Stil hinzugefügt */
-  font-family: 'BasementGrotesque', sans-serif;
-}
-
-#relationships-btn:hover, #additional-tags-btn:hover {
-  background-color: #ddd;
-  color: rgb(255, 0, 0);
-}
-
-#filter-container {
-  position: relative;
-}
-
-#canvas-container {
-  position: absolute;
-  top: 5rem;
-  left: 5rem;
-  right: 20rem;
-  bottom: 2rem;
-  background-color: #e2e0e241;
-  backdrop-filter: blur(20px);
-  overflow-y: auto;
-  visibility: visible;
-  border-width: 1rem;
-  border-color: #000000;
-  font-family: 'BasementGrotesque', sans-serif;
-}
-
-#relationship-filter, #additional-tags-container {
-  position: absolute;
-  top: 0;
-  width: 80%;
-  
-  padding-top: 1rem;
-  height: auto;
-  background-color: #e2e0e200;
-}
-#relationship-select {
-  /* appearance: none;
-  -webkit-appearance: none; */
-  background-color: #dddbd6;
-  width: 200px;
-  font-size: small;
-  padding: 1rem;
-  border: 1px solid #0091ff;
-  color: #000;
+  margin-top: 1rem;
   cursor: pointer;
 }
 
-#additional-tags-container {
-  visibility: hidden;
-  font-size: small;
+#canvas-container {
+  background-color: #e2e0e241;
+  backdrop-filter: blur(20px);
+  overflow: auto; /* Ermöglicht Scrollen innerhalb des Containers */
+  position: fixed; /* Fixiert den Container */
+  top: 5rem; /* Abstand vom oberen Rand */
+  left: 1rem; /* Abstand vom linken Rand */
+  right: 1rem; /* Abstand vom rechten Rand */
+  bottom: 1rem; /* Abstand vom unteren Rand */
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
+  font-family: 'BasementGrotesque', sans-serif;
+  z-index: 2; /* Z-Index setzen, um sicherzustellen, dass es über dem Hintergrund und unter der Navbar liegt */
 }
 
 #banner-container {
-  position: fixed;
-  top: 2rem;
-  left: 0;
-  width: 100%;
-  height: 2rem; /* Adjust the height as needed */
-  background-color: #7b075ea0;
-  backdrop-filter: blur(1px);
-  overflow: hidden;
+  height: 2rem;
+  background-color: #fff200;
+  border: 0.1rem solid #000000;
   z-index: 3;
+  overflow: hidden;
 }
 
 #banner {
@@ -183,24 +116,34 @@ p {
   align-items: center;
   height: 100%;
   white-space: nowrap;
-  animation: marquee 30s linear infinite;
 }
 
-@keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+#filter-container {
+  position: fixed;
+  top: 25rem;
+  right: 2rem;
+  width: 200px;
+  bottom: 2rem;
+  background-color: #e2e0e241;
+  backdrop-filter: blur(20px);
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  z-index: 1;
 }
 
-.tag {
-  display: inline-block;
-  padding: 0 1rem;
-  font-size: 1rem;
-  line-height: 2rem;
-  white-space: nowrap;
+#relationship-filter, #additional-tags-container {
+  display: none;
 }
-.tag img {
-  width: 20px; /* Anpassung der Breite */
-  height: 20px; /* Anpassung der Höhe */
-  margin-right: 5px; /* Abstand zwischen Bild und Text */
-  vertical-align: middle; /* Vertikale Ausrichtung des Bildes */
+
+#relationship-select {
+  background-color: #FF69B4;
+  width: 200px;
+  font-size: small;
+  font-family: 'BasementGrotesque';
+  padding: 1rem;
+  border: 0.1rem solid #000000;
+  color: #000;
+  cursor: pointer;
+  border-radius: 0.3rem;
 }

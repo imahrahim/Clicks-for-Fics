@@ -1,5 +1,56 @@
 document.addEventListener('DOMContentLoaded', function () {
-    console.log("DOM fully loaded and parsed");
+    const homePage = document.getElementById('home-page');
+    const navbar = document.getElementById('navbar');
+    const bannerContainer = document.getElementById('banner-container');
+    const canvasContainer = document.getElementById('canvas-container');
+    const relationshipFilter = document.getElementById('relationship-filter');
+    const additionalTagsContainer = document.getElementById('additional-tags-container');
+    const homeLink = document.getElementById('home-link');
+
+    // Show homepage by default
+    homePage.style.display = 'block';
+    navbar.style.display = 'none';
+    canvasContainer.style.display = 'none';
+    bannerContainer.style.display = 'none';
+
+    document.getElementById('relationships-btn-home').addEventListener('click', function () {
+        homePage.style.display = 'none';
+        navbar.style.display = 'flex';
+        canvasContainer.style.display = 'block';
+        relationshipFilter.style.display = 'block';
+        additionalTagsContainer.style.display = 'none';
+        loadSketch('sketches/overall.js');
+        changeBackground('overall');
+        updateBanner('/data/Additional_Tags_Overall.csv', 'overall');
+        changeBannerColor('overall');
+    });
+
+    document.getElementById('additional-tags-btn-home').addEventListener('click', function () {
+        homePage.style.display = 'none';
+        navbar.style.display = 'flex';
+        canvasContainer.style.display = 'none';
+        relationshipFilter.style.display = 'none';
+        additionalTagsContainer.style.display = 'block';
+        updateBanner('/data/Additional_Tags_Overall.csv', 'overall');
+        changeBackground('overall');
+        bannerContainer.style.display = 'block';
+    });
+
+    homeLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        homePage.style.display = 'block';
+        navbar.style.display = 'none';
+        canvasContainer.style.display = 'none';
+        bannerContainer.style.display = 'none';
+    });
+
+    document.getElementById('toggle-relationship-type').addEventListener('click', function () {
+        const currentType = document.getElementById('toggle-relationship-type').textContent;
+        const newType = currentType === 'Romantic' ? 'Friendship' : 'Romantic';
+        document.getElementById('toggle-relationship-type').textContent = newType;
+        document.getElementById('relationship-select').value = newType.toLowerCase();
+        document.getElementById('relationship-select').dispatchEvent(new Event('change'));
+    });
 
     const links = {
         'overall-link': { script: 'sketches/overall.js', class: 'overall', data: '/data/Additional_Tags_Overall.csv' },
@@ -13,137 +64,95 @@ document.addEventListener('DOMContentLoaded', function () {
             e.preventDefault();
             loadSketch(links[id].script);
             changeBackground(links[id].class);
-            updateBanner(links[id].data);
+            updateBanner(links[id].data, links[id].class);
+            changeBannerColor(links[id].class);
         });
     });
 
-    document.getElementById('relationships-btn').addEventListener('click', function () {
-        showRelationships();
-    });
-
-    document.getElementById('additional-tags-btn').addEventListener('click', function () {
-        toggleAdditionalTags();
-    });
-
     function loadSketch(scriptUrl) {
-        console.log("Loading sketch:", scriptUrl);
-
-        // Remove existing canvas
         let canvas = document.querySelector('canvas');
         if (canvas) {
             canvas.remove();
         }
 
-        // Remove existing script
         let oldScript = document.getElementById('sketch-script');
         if (oldScript) {
             oldScript.remove();
         }
 
-        // Stop current p5.js instance
         if (window.p5 && window.p5.instance) {
             window.p5.instance.remove();
-            console.log("Current p5.js instance stopped");
         }
 
-        // Load new sketch script
         let script = document.createElement('script');
         script.src = scriptUrl;
         script.id = 'sketch-script';
-        script.onload = function() {
-            console.log("Sketch loaded:", scriptUrl);
-        };
-        script.onerror = function() {
-            console.error("Failed to load sketch:", scriptUrl);
-        };
         document.body.appendChild(script);
 
-        // Ensure canvas-container and relationship-filter are visible
-        document.getElementById('canvas-container').style.visibility = 'visible';
-        document.getElementById('relationship-filter').style.visibility = 'visible';
-        document.getElementById('additional-tags-container').style.visibility = 'hidden';
-    }
-
-    function showRelationships() {
-        document.getElementById('canvas-container').style.visibility = 'visible';
-        document.getElementById('relationship-filter').style.visibility = 'visible';
-        document.getElementById('additional-tags-container').style.visibility = 'hidden';
-    }
-
-    function toggleAdditionalTags() {
-        let canvasContainer = document.getElementById('canvas-container');
-        let additionalTagsContainer = document.getElementById('additional-tags-container');
-        let relationshipFilter = document.getElementById('relationship-filter');
-        
-        if (additionalTagsContainer.style.visibility === 'hidden') {
-            canvasContainer.style.visibility = 'hidden';
-            relationshipFilter.style.visibility = 'hidden';
-            additionalTagsContainer.style.visibility = 'visible';
-        } else {
-            canvasContainer.style.visibility = 'visible';
-            relationshipFilter.style.visibility = 'visible';
-            additionalTagsContainer.style.visibility = 'hidden';
-        }
+        canvasContainer.style.visibility = 'visible';
+        relationshipFilter.style.visibility = 'visible';
+        additionalTagsContainer.style.visibility = 'hidden';
     }
 
     function changeBackground(className) {
         document.body.className = className;
     }
 
-    function updateBanner(dataUrl) {
+    function changeBannerColor(className) {
+        const bannerContainer = document.getElementById('banner-container');
+        bannerContainer.className = '';
+        bannerContainer.classList.add('overall', className);
+    }
+
+    function updateBanner(dataUrl, className) {
         const banner = document.getElementById('banner');
         banner.innerHTML = '';
 
         d3.csv(dataUrl).then(data => {
-            console.log("CSV Data loaded:", data);
-
-            data.forEach(tag => {
-                console.log("Processing tag:", tag);
-
-                if (tag.tag && tag.frequency && tag.category) {
-                    const tagElement = document.createElement('span');
-                    tagElement.classList.add('tag');
-                    tagElement.style.fontVariationSettings = `'wght' ${mapFrequencyToWeight(tag.frequency)}`;
-
-                    const categoryImage = getCategoryImage(tag.category);
-                    tagElement.innerHTML = `<img src="${categoryImage}" alt="${tag.category}" class="category-image" /> ${tag.tag}`;
-
-                    banner.appendChild(tagElement);
-                } else {
-                    console.error("Tag data is incomplete:", tag);
-                }
-            });
-
-            // Duplicate the tags for continuous scrolling
             data.forEach(tag => {
                 if (tag.tag && tag.frequency && tag.category) {
                     const tagElement = document.createElement('span');
                     tagElement.classList.add('tag');
                     tagElement.style.fontVariationSettings = `'wght' ${mapFrequencyToWeight(tag.frequency)}`;
-
-                    const categoryImage = getCategoryImage(tag.category);
-                    tagElement.innerHTML = `<img src="${categoryImage}" alt="${tag.category}" class="category-image" /> ${tag.tag}`;
-
+                    const categorySymbol = getCategorySymbol(tag.category);
+                    tagElement.innerHTML = `<img src="${categorySymbol}" alt="${tag.category}" style="width: 2rem; height: 2rem;"> ${tag.tag}`;
                     banner.appendChild(tagElement);
                 }
             });
+
+            const bannerContent = banner.innerHTML;
+            banner.innerHTML += bannerContent;
+
+            const bannerWidth = banner.scrollWidth / 2;
+            const containerWidth = document.getElementById('banner-container').offsetWidth;
+            const totalDuration = Math.max((bannerWidth / containerWidth) * 10, 20);
+
+            const styleElement = document.createElement('style');
+            styleElement.innerHTML = `
+                @keyframes marquee-${className} {
+                    0% { transform: translateX(0); }
+                    100% { transform: translateX(-${bannerWidth / 2}px); }
+                }
+                #banner {
+                    animation: marquee-${className} ${totalDuration}s linear infinite;
+                }
+            `;
+            document.head.appendChild(styleElement);
         }).catch(error => {
             console.error("Error loading CSV data:", error);
         });
     }
 
     function mapFrequencyToWeight(frequency) {
-        // Map frequency to font weight between 100 and 900
         const minWeight = 100;
         const maxWeight = 900;
-        const minFrequency = 1; // Adjust based on your data
-        const maxFrequency = 183; // Adjust based on your data
+        const minFrequency = 2;
+        const maxFrequency = 183;
 
         return Math.round(((frequency - minFrequency) / (maxFrequency - minFrequency)) * (maxWeight - minWeight) + minWeight);
     }
 
-    function getCategoryImage(category) {
-        // Define image paths for each category
+    function getCategorySymbol(category) {
         const categorySymbols = {
             "Romance": "/content/tags/love.png",
             "Angst": "/content/tags/angsst.png",
@@ -162,13 +171,12 @@ document.addEventListener('DOMContentLoaded', function () {
             "Fandom": "/content/tags/fandom.png"
         };
 
-        return categorySymbols[category] || "/content/tags/fandom.png"; // Default image
+        return categorySymbols[category] || "/content/tags/fandom.png";
     }
 
-    // Load the default link
     const defaultLink = 'overall-link';
-    console.log(`Loading default link: ${defaultLink}, Script: ${links[defaultLink].script}, Background: ${links[defaultLink].class}, Data: ${links[defaultLink].data}`);
     loadSketch(links[defaultLink].script);
     changeBackground(links[defaultLink].class);
-    updateBanner(links[defaultLink].data);
+    updateBanner(links[defaultLink].data, links[defaultLink].class);
+    changeBannerColor(links[defaultLink].class);
 });

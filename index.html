@@ -8,35 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
-        <a href="#" id="overall-link" style="background-color:#ffff00; color: #000000;">Overall</a>
-        <a href="#" id="harry-potter-link" style="background-color:#0044ff;color: #ffffff;">Harry Potter</a>
-        <a href="#" id="marvel-link" style="background-color:#ff0037c0;color: #ffffff;">Marvel</a>
-        <a href="#" id="boku-no-hero-link" style="background-color:#00ff48;color: #000000;">Boku No Hero</a>
+    <div class="header">
+        <a href="#" id="home-link" class="home-link">Clicks for Fics</a>
     </div>
-    <div class="filters" >
-
-        <button id="relationships-btn" style="background-color:#ff00c0; color: #000000;" >Relationships</button>
-        <button id="additional-tags-btn" style="background-color:#ff7f00; color: #000000;">Additional Tags</button>
-        <div id="filter-container">
-            <div id="relationship-filter" class="relationship-filter">
-                <!-- <label>Relationship</label> -->
-                <select id="relationship-select">
-                    <option value="romantic">Romantic</option>
-                    <option value="friendship">Friendship</option>
-                </select>
-                <p>Here are some relationship information...</p>
-            </div>
-            <div id="additional-tags-container">
-                <!-- Additional tags content goes here -->
-                <p>Here are some additional tags information...</p>
-            </div>
-        </div>
+    <div id="home-page">
+        <h1>Clicks for Fics</h1>
+        <p>Your ultimate source for fan fiction data visualization.</p>
+        <button id="relationships-btn-home">Relationships</button>
+        <button id="additional-tags-btn-home">Additional Tags</button>
     </div>
-    <div id="banner-container">
+    <div class="navbar" id="navbar" style="display:none;">
+        <a href="#" id="overall-link">Overall</a>
+        <a href="#" id="harry-potter-link">Harry Potter</a>
+        <a href="#" id="marvel-link">Marvel</a>
+        <a href="#" id="boku-no-hero-link">Boku No Hero</a>
+        <button id="toggle-relationship-type">Romantic</button>
+    </div>
+    <div id="banner-container" style="display:none;">
         <div id="banner"></div>
     </div>
-    <div id="canvas-container"></div>
+    <div id="canvas-container" style="display:none;"></div>
+    <!-- <div id="filter-container">
+        <div id="relationship-filter" class="relationship-filter">
+            <select id="relationship-select">
+                <option value="romantic">Romantic</option>
+                <option value="friendship">Friendship</option>
+            </select>
+            <p>Here are some relationship information...</p>
+        </div>
+        <div id="additional-tags-container">
+            <p>Here are some additional tags information...</p>
+        </div>
+    </div> -->
     <script src="main.js"></script>
 </body>
 </html>
