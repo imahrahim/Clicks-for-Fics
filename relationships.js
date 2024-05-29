@@ -1,11 +1,11 @@
 export function relationshipsSketch(p) {
   p.setup = function() {
-      p.createCanvas(p.windowWidth, p.windowHeight);
+      p.createCanvas(p.windowWidth-50, 2000);
       // Weitere Initialisierung
   };
 
   p.draw = function() {
-      p.background(200);
+      p.background(255,1);
       // Zeichnen der Beziehungen
   };
 

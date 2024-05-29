@@ -1,29 +1,105 @@
-body, html {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+body {
   font-family: Arial, sans-serif;
-}
-
-header {
-  background: #f0f0f0;
-  padding: 10px;
-  text-align: left;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
-#main-content {
-  padding-top: 50px;
   text-align: center;
+  background-color: #ed346c;
 }
 
-#home-link {
-  float: left;
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 button {
-  margin: 5px;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+
+#toggle-relationship-container {
+  position: fixed;
+  top: 10rem;
+  right: 2rem;
+  z-index: 2;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 10rem;
+  height: 2rem;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: .6s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.8rem;
+  width: 1.8rem;
+  left: 0.1rem;
+  bottom: 0.1rem;
+  top: 0.1rem;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  transition: .6s;
+}
+
+.slider-text {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  color: black;
+  text-align: center;
+  line-height: 34px;
+  font-size: 14px;
+}
+
+.romantic {
+  left: 50%;
+}
+
+.friendship {
+  right: 50%;
+  color: transparent;
+}
+
+input:checked + .slider {
+  background-color: #000000;
+}
+
+input:checked + .slider:before {
+  transform: translateX(8rem);
+  background-color: #ffffff;
+}
+
+input:checked + .slider .romantic {
+  color: transparent;
+}
+
+input:checked + .slider .friendship {
+  color: white;
 }

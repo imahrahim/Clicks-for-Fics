@@ -29,14 +29,14 @@
                 <button onclick="loadData('/data/Boku_No_Hero.json')">Boku No Hero</button>
             </div>
             <div id="toggle-relationship-container">
-                <label class="switch">
-                    <input type="checkbox" id="toggle-relationship-checkbox" onchange="updateRelationshipType(this.checked ? 'friendship' : 'romantic')">
-                    <span class="slider round"></span>
-                    <div class="labels">
-                        <span class="label left">Romantic</span>
-                        <span class="label right">Friendship</span>
-                    </div>
-                </label>
+              <label class="switch">
+                  <input type="checkbox" id="toggle-relationship-checkbox" onchange="updateRelationshipType(this.checked ? 'friendship' : 'romantic')">
+                  <span class="slider round">
+                      <span class="slider-text romantic">Romantic</span>
+                      <span class="slider-text friendship">Friendship</span>
+                  </span>
+              </label>
+          </div>
             </div>
         </div>
         <div id="tags-visualization" style="display: none;">
