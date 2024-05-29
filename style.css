@@ -1,20 +1,20 @@
 @font-face {
   font-family: 'BasementGrotesque';
-  src: url('/content/fonts/BasementGrotesque-Black_v1.202.otf') format('opentype');
+  src: url('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/fonts/BasementGrotesque-Black_v1.202.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Plank';
-  src: url('/content/fonts/PLANK___.TTF') format('truetype');
+  src: url('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/fonts/PLANK___.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Handjet';
-  src: url('/content/fonts/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf') format('truetype');
+  src: url('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/fonts/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-variation-settings: 100 'ELSH';
@@ -31,19 +31,19 @@ body {
 }
 
 body.overall {
-  background-image: url('/content/over.png');
+  background-image: url('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/over.png');
 }
 
 body.harry-potter {
-  background-image: url('/content/harry.png');
+  background-image: url('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/harry.png');
 }
 
 body.marvel {
-  background-image: url('/content/marvell.png');
+  background-image: url('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/marvell.png');
 }
 
 body.boku-no-hero {
-  background-image: url('/content/boku.png');
+  background-image: url('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/boku.png');
 }
 
 p {
