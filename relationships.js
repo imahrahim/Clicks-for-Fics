@@ -7,15 +7,23 @@ let h = 2000;
 let currentRelationshipType = "romantic";
 
 const fandomColors = {
-  "Harry Potter - J. K. Rowling": "#609199",
-  "Marvel": "#ff1493",
-  "Boku no Hero Academia": "#ffaa00",
-  "Boku No Hero Academia": "#ffaa00",
-  other: "#ffffff",
+  "Harry Potter - J. K. Rowling": "#0000ff",
+  "Marvel": "#dd1b76",
+  "Boku no Hero Academia": "#157b14",
+  "Boku No Hero Academia": "#157b14",
+  other: "#0000008d",
+}
+
+const fandomColorsFemale = {
+  "Harry Potter - J. K. Rowling": "#ffffff",
+  "Marvel": "#ffffff",
+  "Boku no Hero Academia": "#ffffff",
+  "Boku No Hero Academia": "#ffffff",
+  other: "#ffffff8d",
 }
 
 let linksColors = {
-  "fandom": "#ffffff63",
+  "fandom": "#ffffff3c",
   "romantic": "#cd4c79",
   "friendship": "#0ea65d",
 
@@ -47,11 +55,22 @@ export function relationshipsSketch(p) {
     let mouseX = p.mouseX;
     let mouseY = p.mouseY;
     let foundNode = null;
+    let buffer = 5; 
+  
     nodes.forEach((node) => {
-      if (p.dist(mouseX, mouseY, node.x, node.y) < 20) {
+      let textWidth = p.textWidth(node.id);
+      let textHeight = 10;  
+  
+      let textX1 = node.x - textWidth / 2 - buffer;
+      let textX2 = node.x + textWidth / 2 + buffer;
+      let textY1 = node.y - textHeight / 2 - buffer;
+      let textY2 = node.y + textHeight / 2 + buffer;
+  
+      if (mouseX >= textX1 && mouseX <= textX2 && mouseY >= textY1 && mouseY <= textY2) {
         foundNode = node;
       }
     });
+  
     if (foundNode) {
       if (selectedNode === foundNode) {
         selectedNode = null;
@@ -59,11 +78,12 @@ export function relationshipsSketch(p) {
         selectedNode = foundNode;
         console.log("Node clicked:", selectedNode.id);
       }
-
+  
       p.updateVisibility();
       p.drawVisualization();
     }
   };
+  
 
   p.updateVisibility = function () {
     if (!selectedNode) {
@@ -196,6 +216,7 @@ export function relationshipsSketch(p) {
           links.push({
             source: character,
             target: relationship.target,
+            frequency: relationship.frequency,
             type: type,
             visible: false,
           });
@@ -239,7 +260,11 @@ export function relationshipsSketch(p) {
         const targetNode = nodes.find((n) => n.id === link.target);
         if (sourceNode && targetNode && sourceNode.visible && targetNode.visible) {
           p.stroke(linksColors[link.type]);
-          p.strokeWeight(link.frequency * 0.2);
+          if (link.type === 'fandom') {
+            p.strokeWeight(1)
+          } else {
+            p.strokeWeight(link.frequency * 0.2);
+          }
           p.line(sourceNode.x, sourceNode.y, targetNode.x, targetNode.y);
         }
       }
@@ -251,16 +276,54 @@ export function relationshipsSketch(p) {
     for (const node of nodes) {
       if (node.visible) {
         p.noStroke();
-        p.fill(fandomColors[node.fandom] || fandomColors["other"]);
-        p.rect(node.x, node.y, 160, 12);
+        if (node.gender === 'male'){
+          p.stroke(255)
+          p.strokeWeight(1)
+          p.fill(fandomColors[node.fandom] || fandomColors["other"]);
+          p.rect(node.x, node.y, 200, 12);
+          p.noStroke();
+          p.textFont(font);
+          p.fill(255);
+          p.textSize(8);
+          p.text(node.id, node.x, node.y);
+        } else if (node.gender === 'female') {
+          p.stroke(fandomColors[node.fandom] || fandomColors["other"])
+          p.strokeWeight(1)
+          p.fill(fandomColorsFemale[node.fandom] || fandomColorsFemale["other"]);
+          p.rect(node.x, node.y, 200, 12,10);
+          p.noStroke();
+          p.textFont(font);
+          p.fill(fandomColors[node.fandom] || fandomColors["other"]);
+          p.textSize(8);
+          p.text(node.id, node.x, node.y);
+        } 
+        else {
+          p.noStroke();
+          p.textFont(font);
+          p.fill(0);
+          p.textSize(8);
+          p.text(node.id, node.x, node.y);
+        }
 
-        p.textFont(font);
-        p.fill(10);
-        p.textSize(8);
-        p.text(node.id, node.x, node.y);
+        if (node.group === "fandom") {
+          p.fill(fandomColors[node.id] || fandomColors["other"]);
+          p.stroke('#000000'); 
+          p.strokeWeight(1); 
+          p.rect(node.x, node.y, 200, 10); 
+
+          p.textAlign(p.CENTER, p.CENTER);
+          p.noStroke();
+          p.fill(255);  // Weiße Schriftfarbe für besseren Kontrast
+          p.textFont(font);
+          p.textSize(8);  // Größere Schriftgröße
+          p.text(node.id, node.x, node.y);
+      }
+      
       }
     }
   };
+
+  
 
   p.updateRelationshipType = function (type) {
     currentRelationshipType = type;
@@ -271,23 +334,39 @@ export function relationshipsSketch(p) {
 
   p.checkHover = function () {
     let hoverNode = null;
+    let buffer = 5;  // Puffer um den Text herum
+  
     nodes.forEach((node) => {
-      if (p.dist(p.mouseX, p.mouseY, node.x, node.y) < 20) {
-        hoverNode = node;
+      if (node.visible) {
+        let textWidth = p.textWidth(node.id);
+        let textHeight = 10; 
+  
+        let textX1 = node.x - textWidth / 2 - buffer;
+        let textX2 = node.x + textWidth / 2 + buffer;
+        let textY1 = node.y - textHeight / 2 - buffer;
+        let textY2 = node.y + textHeight / 2 + buffer;
+
+        if (p.mouseX >= textX1 && p.mouseX <= textX2 && p.mouseY >= textY1 && p.mouseY <= textY2) {
+          hoverNode = node;
+        }
       }
     });
+  
+    let tooltip = document.getElementById('stickyTooltip');
     if (!hoverNode) {
-      document.getElementById('stickyTooltip').style.display = 'none';
+      tooltip.style.display = 'none';
     } else {
-      document.getElementById('stickyTooltip').style.display = 'block';
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = `${hoverNode.id}`; 
     }
     return hoverNode;
   };
   
+  
 
   p.drawTooltip = function (node) {
     let tooltip = document.getElementById('stickyTooltip');
-    tooltip.innerHTML = `ID: ${node.id}<br>Frequency: ${node.frequency}`;
+    tooltip.innerHTML = `${node.id}`;
   };
   
 }
