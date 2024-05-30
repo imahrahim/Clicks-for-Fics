@@ -9,10 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3" defer></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <a href="#" id="home-link" onclick="showHomePage()">Clicks for Fics</a>
-        <button onclick="showPage('relationships')">Relationships</button>
-        <button onclick="showPage('tags')">Additional Tags</button>
+        <div>
+        <a href="#" id="relationship-btn" onclick="showPage('relationships')">Relationships</a>
+        <a href="#" id="tag-btn" onclick="showPage('tags')">Additional Tags</a>
+      </div>
     </header>
     <div id="main-content">
         <div id="home-page">
@@ -24,10 +26,10 @@
         <div id="relationships-visualization" style="display: none;">
           <div id="change-data">
             <div id="fandom-buttons">
-              <button onclick="loadData('/data/Overall.json')">Overall</button>
-              <button onclick="loadData('/data/Marvel.json')">Marvel</button>
-              <button onclick="loadData('/data/Harry_Potter_Relationships.json')">Harry Potter</button>
-              <button onclick="loadData('/data/Boku_No_Hero.json')">Boku No Hero</button>
+              <button onclick="loadData('/data/Overall.json', 'Overall')">Overall</button>
+              <button onclick="loadData('/data/Marvel.json', 'Marvel')">Marvel</button>
+              <button onclick="loadData('/data/Harry_Potter_Relationships.json', 'Harry Potter')">Harry Potter</button>
+              <button onclick="loadData('/data/Boku_No_Hero.json', 'Boku No Hero')">Boku No Hero</button>
             </div>
             <div id="stickyTooltip" style="position: sticky;">
               Tooltip Information
@@ -44,22 +46,23 @@
           </div>
         </div>
         <div id="tags-visualization" style="display: none;">
-            <div>
-              <button onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall')">Overall</button>
-              <button onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel')">Marvel</button>
-              <button onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter')">Harry Potter</button>
-              <button onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero')">Boku No Hero</button>
+          <div id="banner-container-1" style="position: relative; width: 100%;"></div>
+            <div id="tag-buttons">
+                <button onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall')">Overall</button>
+                <button onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel')">Marvel</button>
+                <button onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter')">Harry Potter</button>
+                <button onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero')">Boku No Hero</button>
             </div>
+            <div id="banner-container-2" style="position: relative; width: 100%; "></div>
         </div>
     </div>
     <script src="main.js" type="module"></script>
     <script type="module">
-        import { relationshipsSketch } from './relationships.js';
+         import { relationshipsSketch } from './relationships.js';
         import { tagsSketch } from './tags.js';
         window.relationshipsSketch = relationshipsSketch;
         window.tagsSketch = tagsSketch;
         console.log(relationshipsSketch, tagsSketch);
-
     </script>
 </body>
 </html>

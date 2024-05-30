@@ -13,7 +13,6 @@ const fandomColors = {
   "Boku No Hero Academia": "#157b14",
   other: "#0000008d",
 }
-
 const fandomColorsFemale = {
   "Harry Potter - J. K. Rowling": "#ffffff",
   "Marvel": "#ffffff",
@@ -22,11 +21,10 @@ const fandomColorsFemale = {
   other: "#ffffff8d",
 }
 
-let linksColors = {
+const linksColors = {
   "fandom": "#ffffff3c",
   "romantic": "#cd4c79",
   "friendship": "#0ea65d",
-
 }
 
 const nodesColor = "#ffffff";
@@ -152,15 +150,15 @@ export function relationshipsSketch(p) {
     let characterIndex = 0;
     let fandomIndex = 0;
     nodes.forEach((node) => {
-        if (node.group === "character") {
-          node.x = xScale(node.frequency + 1);
-          node.y = yCharacterScale(characterIndex);
-          characterIndex++;
-        } else if (node.visible && node.group === "fandom") {
-          node.x = 90;
-          node.y = yFandomScale(fandomIndex); 
-          fandomIndex++;
-        }
+      if (node.group === "character") {
+        node.x = xScale(node.frequency + 1);
+        node.y = yCharacterScale(characterIndex);
+        characterIndex++;
+      } else if (node.visible && node.group === "fandom") {
+        node.x = 90;
+        node.y = yFandomScale(fandomIndex);
+        fandomIndex++;
+      }
     });
   };
 
@@ -174,7 +172,6 @@ export function relationshipsSketch(p) {
       p.drawTooltip(hoverNode); // Update des Sticky Tooltips bei Hover
     }
   };
-  
 
   p.loadData = function (dataUrl) {
     p.loadJSON(dataUrl, function (data) {
@@ -224,11 +221,11 @@ export function relationshipsSketch(p) {
       });
     });
 
-    p.updateXScale(); 
-    p.initializeCharacterScale(); 
+    p.updateXScale();
+    p.initializeCharacterScale();
 
     let index = 0;
-    p.updateFandomScale(); 
+    p.updateFandomScale();
     fandomNodes.forEach((fandom) => {
       nodes.push({
         id: fandom,
@@ -276,7 +273,7 @@ export function relationshipsSketch(p) {
     for (const node of nodes) {
       if (node.visible) {
         p.noStroke();
-        if (node.gender === 'male'){
+        if (node.gender === 'male') {
           p.stroke(255)
           p.strokeWeight(1)
           p.fill(fandomColors[node.fandom] || fandomColors["other"]);
@@ -290,13 +287,13 @@ export function relationshipsSketch(p) {
           p.stroke(fandomColors[node.fandom] || fandomColors["other"])
           p.strokeWeight(1)
           p.fill(fandomColorsFemale[node.fandom] || fandomColorsFemale["other"]);
-          p.rect(node.x, node.y, 200, 12,10);
+          p.rect(node.x, node.y, 200, 12, 10);
           p.noStroke();
           p.textFont(font);
           p.fill(fandomColors[node.fandom] || fandomColors["other"]);
           p.textSize(8);
           p.text(node.id, node.x, node.y);
-        } 
+        }
         else {
           p.noStroke();
           p.textFont(font);
@@ -307,9 +304,9 @@ export function relationshipsSketch(p) {
 
         if (node.group === "fandom") {
           p.fill(fandomColors[node.id] || fandomColors["other"]);
-          p.stroke('#000000'); 
-          p.strokeWeight(1); 
-          p.rect(node.x, node.y, 200, 10); 
+          p.stroke('#000000');
+          p.strokeWeight(1);
+          p.rect(node.x, node.y, 200, 10);
 
           p.textAlign(p.CENTER, p.CENTER);
           p.noStroke();
@@ -317,13 +314,10 @@ export function relationshipsSketch(p) {
           p.textFont(font);
           p.textSize(8);  // Größere Schriftgröße
           p.text(node.id, node.x, node.y);
-      }
-      
+        }
       }
     }
   };
-
-  
 
   p.updateRelationshipType = function (type) {
     currentRelationshipType = type;
@@ -335,12 +329,12 @@ export function relationshipsSketch(p) {
   p.checkHover = function () {
     let hoverNode = null;
     let buffer = 5;  // Puffer um den Text herum
-  
+
     nodes.forEach((node) => {
       if (node.visible) {
         let textWidth = p.textWidth(node.id);
-        let textHeight = 10; 
-  
+        let textHeight = 10;
+
         let textX1 = node.x - textWidth / 2 - buffer;
         let textX2 = node.x + textWidth / 2 + buffer;
         let textY1 = node.y - textHeight / 2 - buffer;
@@ -351,22 +345,19 @@ export function relationshipsSketch(p) {
         }
       }
     });
-  
+
     let tooltip = document.getElementById('stickyTooltip');
     if (!hoverNode) {
       tooltip.style.display = 'none';
     } else {
       tooltip.style.display = 'block';
-      tooltip.innerHTML = `${hoverNode.id}`; 
+      tooltip.innerHTML = `${hoverNode.id}`;
     }
     return hoverNode;
   };
-  
-  
 
   p.drawTooltip = function (node) {
     let tooltip = document.getElementById('stickyTooltip');
     tooltip.innerHTML = `${node.id}`;
   };
-  
 }

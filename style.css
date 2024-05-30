@@ -7,16 +7,14 @@
 
 body {
   font-family: 'BasementGrotesque';
-  text-align: center;
   background-color: #ed346c;
   padding: 0;
 }
 
-.home-link {
-  background-color: #000000;
-  color: #ff0000;
-  padding: 10px;
-  justify-content: left;
+#header{
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
 }
 
 .header a {
@@ -25,8 +23,27 @@ body {
   font-size: 24px;
 }
 
+#home-link {
+  margin-left: 2rem;
+  font-family: 'BasementGrotesque';
+  text-align: left;
+  line-height: 34px;
+  font-size: 14px;
+}
+
+#relationship-btn, #tag-btn {
+  margin-top: 1rem;
+  padding: 0.1rem 2rem;
+  background-color: #00000000;
+  font-family: 'BasementGrotesque';
+  text-align: center;
+  line-height: 34px;
+  font-size: 14px;
+  border-radius: 5rem;
+}
+
 button {
-  margin: 0rem;
+  margin: 0;
   padding: 0.1rem 1rem;
   font-family: 'BasementGrotesque';
   text-align: center;
@@ -46,12 +63,26 @@ button {
 }
 
 #tags-visualization {
-  margin-top: 50rem;
+  margin-top: 20rem;
   margin-left: 0;
   margin-right: 0;
-  background-color: #ff0000;
+  align-items: center;
+  display: flex;
+
 }
 
+#banner-container-1, #banner-container-2 {
+  border: 0.1rem solid #000000;
+  backdrop-filter: blur(2px);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 40px;
+}
+#tag-buttons{
+  margin: 5rem;
+  display: flex;
+  gap: 0.5rem;
+}
 #fandom-buttons {
   display: flex;
   gap: 0.5rem;

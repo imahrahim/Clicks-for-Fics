@@ -1,4 +1,12 @@
 let myp5;
+let myp5_2;
+
+const fandomColors = {
+    "Overall": { image: "/content/background/over.png", color: "rgba(225, 255, 0, 0.475)" },
+    "Marvel": { image: "/content/background/marvel.png", color: "rgba(255, 0, 0, 0.473)" },
+    "Harry Potter": { image: "/content/background/harry.png", color: "rgba(0, 255, 0, 0.509)" },
+    "Boku No Hero": { image: "/content/background/boku.png", color: "rgba(0, 0, 255, 0.465)" },
+};
 
 function showHomePage() {
     document.getElementById('home-page').style.display = 'block';
@@ -15,38 +23,57 @@ function showPage(page) {
     } else if (page === 'tags') {
         document.getElementById('relationships-visualization').style.display = 'none';
         document.getElementById('tags-visualization').style.display = 'block';
-        loadSketch(tagsSketch, 'tags-visualization');
+        loadSketch(tagsSketch(false), 'banner-container-1', false);
+        loadSketch(tagsSketch(true), 'banner-container-2', true);
     }
 }
 
-function loadSketch(sketch, containerId) {
-    if (myp5) {
+function loadSketch(sketch, containerId, isReverse = false) {
+    if (containerId === 'banner-container-1' && myp5) {
         myp5.remove();
     }
-    myp5 = new p5(sketch, document.getElementById(containerId));
+    if (containerId === 'banner-container-2' && myp5_2) {
+        myp5_2.remove();
+    }
+    if (isReverse) {
+        myp5_2 = new p5(sketch, document.getElementById(containerId));
+    } else {
+        myp5 = new p5(sketch, document.getElementById(containerId));
+    }
 }
 
-function loadData(dataUrl) {
+function loadData(dataUrl, fandom) {
     if (myp5 && myp5.loadData) {
-        myp5.loadData(dataUrl);
-    } else {
-        console.error('p5 instance or loadData function not available');
+        myp5.loadData(dataUrl, fandom);
     }
+    if (myp5_2 && myp5_2.loadData) {
+        myp5_2.loadData(dataUrl, fandom);
+    }
+    document.body.style.backgroundImage = `url(${fandomColors[fandom].image})`;
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundAttachment = 'fixed';
 }
 
 function loadTagData(dataUrl, fandom) {
     if (myp5 && myp5.loadTagData) {
-        myp5.loadTagData(dataUrl, fandom);
-    } else {
-        console.error('p5 instance or loadTagData function not available');
+        myp5.loadTagData(dataUrl, fandom, false);
     }
+    if (myp5_2 && myp5_2.loadTagData) {
+        myp5_2.loadTagData(dataUrl, fandom, true);
+    }
+    document.body.style.backgroundImage = `url(${fandomColors[fandom].image})`;
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundAttachment = 'fixed';
 }
 
 function updateRelationshipType(type) {
     if (myp5 && myp5.updateRelationshipType) {
         myp5.updateRelationshipType(type);
-    } else {
-        console.error('p5 instance or updateRelationshipType function not available');
+    }
+    if (myp5_2 && myp5_2.updateRelationshipType) {
+        myp5_2.updateRelationshipType(type);
     }
 }
 
