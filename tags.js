@@ -1,18 +1,104 @@
 export function tagsSketch(p) {
-    p.setup = function() {
-        p.createCanvas(p.windowWidth, p.windowHeight);
-        // Weitere Initialisierung
+    let tags = [];
+    let scrollX = 0;
+
+    let categoryImages = {};
+    let currentFandom = "Overall";
+
+    const fandomColors = {
+        "Overall": "#cccccc",
+        "Marvel": "#ffcccc",
+        "Harry Potter": "#ccffcc",
+        "Boku No Hero": "#ccccff",
+        // Weitere Fandoms und ihre Farben
     };
 
-    p.draw = function() {
-        p.background(100);
-        // Zeichnen der Tags
+    p.preload = function () {
+        categoryImages["Romance"] = p.loadImage("/content/tags/love.png");
+        categoryImages["Angst"] = p.loadImage("/content/tags/angsst.png");
+        categoryImages["Action"] = p.loadImage("/content/tags/blitz.png");
+        categoryImages["Fluff"] = p.loadImage("/content/tags/chick.png");
+        categoryImages["Alternate Universe"] = p.loadImage("/content/tags/universe.png");
+        categoryImages["Canon"] = p.loadImage("/content/tags/canon.png");
+        categoryImages["Abuse"] = p.loadImage("/content/tags/abuse.png");
+        categoryImages["Sex"] = p.loadImage("/content/tags/lemonn.png");
+        categoryImages["Substance"] = p.loadImage("/content/tags/substance2.png");
+        categoryImages["Meta"] = p.loadImage("/content/tags/meta.png");
+        categoryImages["Family"] = p.loadImage("/content/tags/familyy.png");
+        categoryImages["Dark"] = p.loadImage("/content/tags/tot.png");
+        categoryImages["Magic"] = p.loadImage("/content/tags/magic.png");
+        categoryImages["Mental Health"] = p.loadImage("/content/tags/butterfly.png");
+        categoryImages["Other"] = p.loadImage("/content/tags/otherr.png");
+        categoryImages["Fandom"] = p.loadImage("/content/tags/fandom.png");
+    }
+
+    p.setup = function () {
+        let canvasContainer = document.getElementById("tags-visualization");
+        if (!canvasContainer) {
+            console.log("Canvas-Container nicht gefunden.");
+            return;
+        }
+        let canvas = p.createCanvas(canvasContainer.offsetWidth, 100).parent("tags-visualization");
+        console.log("Canvas erstellt mit Breite:", canvasContainer.offsetWidth, " Höhe: 100");
+
+        // Laden eines Standard-Datensatzes
+        p.loadTagData("/data/Additional_Tags_Overall.csv", "Overall");
     };
 
-    p.loadTagData = function(dataUrl) {
-        p.loadTable(dataUrl, 'csv', function(data) {
-            console.log('Tag data loaded:', data);
-            // Datenverarbeitungslogik hier
+    p.draw = function () {
+        p.background(fandomColors[currentFandom]);
+        if (tags.length > 0) {
+            drawTags();
+        } else {
+            console.log("Warten auf das Laden der Tags...");
+        }
+    };
+
+    function mapFrequencyToWeight(frequency) {
+        return p.map(frequency, 1, 20, 100, 900);
+    }
+
+    function drawTags() {
+        if (tags.length === 0) {
+            console.log("Keine Tags zum Zeichnen verfügbar.");
+            return;
+        }
+        let x = scrollX;
+        p.textSize(24);
+        tags.forEach(tag => {
+            let img = categoryImages[tag.category];
+            if (!img) {
+                console.log("Kein Bild für Kategorie:", tag.category);
+                return;
+            }
+            let scaledWidth = 50;
+            let scaledHeight = img.height * (scaledWidth / img.width);
+            p.image(img, x, p.height / 2 - scaledHeight / 2, scaledWidth, scaledHeight);
+
+            p.textFont("Helvetica");
+            p.textStyle(p.NORMAL);
+            p.textSize(24);
+            p.textAlign(p.LEFT, p.CENTER);
+            p.fill(255);
+            p.text(tag.tag, x + scaledWidth + 5, p.height / 2);
+
+            x += scaledWidth + p.textWidth(tag.tag) + 50;
+        });
+        scrollX -= 2;
+        if (scrollX < -x + p.width) scrollX = 0;
+    }
+
+    p.loadTagData = function (dataUrl, fandom) {
+        p.loadTable(dataUrl, "csv", "header", (table) => {
+            tags = table.getRows().map((row) => ({
+                tag: row.get("tag"),
+                frequency: row.get("frequency"),
+                category: row.get("category"),
+            }));
+            console.log("Tag data loaded:", tags);
+            currentFandom = fandom;
+            document.body.style.backgroundColor = fandomColors[fandom];
+            p.redraw(); // Erzwingt einen Neuzeichnung, wenn die Daten geladen sind
         });
     };
 }

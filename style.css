@@ -9,6 +9,7 @@ body {
   font-family: 'BasementGrotesque';
   text-align: center;
   background-color: #ed346c;
+  padding: 0;
 }
 
 .home-link {
@@ -42,6 +43,13 @@ button {
   justify-content:space-between;
   padding: 1rem;
   z-index: 1;
+}
+
+#tags-visualization {
+  margin-top: 50rem;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #ff0000;
 }
 
 #fandom-buttons {

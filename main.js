@@ -34,9 +34,9 @@ function loadData(dataUrl) {
     }
 }
 
-function loadTagData(dataUrl) {
+function loadTagData(dataUrl, fandom) {
     if (myp5 && myp5.loadTagData) {
-        myp5.loadTagData(dataUrl);
+        myp5.loadTagData(dataUrl, fandom);
     } else {
         console.error('p5 instance or loadTagData function not available');
     }
