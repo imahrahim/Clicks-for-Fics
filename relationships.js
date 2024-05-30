@@ -4,6 +4,9 @@ let links = [];
 let xScale, yScale;
 let h = 2000;
 
+let currentRelationshipType = "romantic";
+
+
 const connectionsColors = {
   "male-male": "#609199",
   "female-male": "#ff1493",
@@ -28,21 +31,66 @@ export function relationshipsSketch(p) {
     p.loadData("/data/Overall.json");
   };
 
-  p.handleClick = function () {
+  let selectedNode = null;
+
+p.handleClick = function () {
     let mouseX = p.mouseX;
     let mouseY = p.mouseY;
+    let foundNode = null;
     nodes.forEach((node) => {
-      if (p.dist(mouseX, mouseY, node.x, node.y) < 5) {
-        console.log("Node clicked:", node.id);
-        p.updateVisibility(node);
+        if (p.dist(mouseX, mouseY, node.x, node.y) < 20) {
+            foundNode = node;
+        }
+    });
+    if (foundNode) {
+      if (selectedNode === foundNode){
+        selectedNode = null;
+      } else {
+        selectedNode = foundNode;
+        console.log("Node clicked:", selectedNode.id);
+      }
+
+        p.updateVisibility();
+        p.drawVisualization();
+    }
+};
+
+
+p.updateVisibility = function () {
+  if (!selectedNode) {
+    // Setze Sichtbarkeiten basierend auf dem aktuellen Beziehungstyp
+    nodes.forEach(node => {
+      node.visible = links.some(link => link.type === currentRelationshipType && (link.source === node.id || link.target === node.id));
+    });
+
+    links.forEach(link => {
+      link.visible = link.type === currentRelationshipType;
+    });
+  } else {
+    // Aktualisiere Sichtbarkeiten basierend auf dem ausgewählten Knoten
+    nodes.forEach(node => node.visible = false);
+    links.forEach(link => link.visible = false);
+
+    links.forEach(link => {
+      if ((link.source === selectedNode.id || link.target === selectedNode.id) && link.type === currentRelationshipType) {
+        link.visible = true;
+        nodes.find(node => node.id === link.source).visible = true;
+        nodes.find(node => node.id === link.target).visible = true;
       }
     });
-  };
+  }
+  p.drawVisualization();
+};
 
-  p.draw = function () {
-    p.background(255, 1); // Setze Hintergrundfarbe und Transparenz
-    p.drawVisualization();
-  };
+
+p.draw = function () {
+  p.background(255, 1);
+  let hoverNode = p.checkHover();
+  p.drawVisualization();
+  if (hoverNode) {
+      p.drawTooltip(hoverNode);
+  }
+};
 
   p.loadData = function (dataUrl) {
     p.loadJSON(dataUrl, function (data) {
@@ -55,7 +103,7 @@ export function relationshipsSketch(p) {
   p.processData = function (data) {
     nodes = [];
     links = [];
-
+  
     Object.keys(data).forEach((character, index) => {
       const characterData = data[character];
       const characterNode = {
@@ -64,39 +112,41 @@ export function relationshipsSketch(p) {
         gender: characterData.gender,
         frequency: characterData.frequency,
         fandom: characterData.fandom,
-        visible: true,
+        visible: false,  
       };
       nodes.push(characterNode);
-
+  
       ["romantic", "friendship"].forEach((type) => {
         characterData.relationships[type].forEach((relationship) => {
           links.push({
             source: character,
             target: relationship.target,
             type: type,
-            visible: true,
-            frequency: relationship.frequency,
+            visible: false,  
           });
         });
       });
     });
-
+  
     p.updateScales();
-
     nodes.forEach((node, i) => {
       node.x = xScale(node.frequency + 1);
       node.y = yScale(i);
     });
-
-    // console.log("Nodes:", nodes);
-    // console.log("Initial links:", links);
+  
+    p.updateVisibility();  
+    p.drawVisualization();
   };
+  
 
   p.drawVisualization = function () {
+    
     if (!dataShips) {
       console.error("Data not loaded");
       return;
     }
+
+    p.clear();
 
     for (const link of links) {
       if (link.visible) {
@@ -134,29 +184,6 @@ export function relationshipsSketch(p) {
     }
   };
 
-  p.updateVisibility = function (selectedNode) {
-    nodes.forEach((node) => (node.visible = false)); // Erst alle ausblenden
-    links.forEach((link) => {
-      link.visible = false; // Erst alle Verbindungen ausblenden
-      if (link.source === selectedNode.id || link.target === selectedNode.id) {
-        link.visible = true;
-        nodes.find(
-          (n) => n.id === link.source || n.id === link.target
-        ).visible = true;
-      }
-    });
-    p.drawVisualization();
-  };
-
-  p.drawNode = function (node) {
-    if (node.visible) {
-      p.fill(node.color || nodesColor);
-      p.ellipse(node.x, node.y, 20, 20);
-      p.fill(0);
-      p.text(node.id, node.x, node.y + 4);
-    }
-  };
-
   p.updateScales = function () {
     let relationshipContainer = document.getElementById("relationships-visualization");
     let w = relationshipContainer.offsetWidth;
@@ -173,10 +200,28 @@ export function relationshipsSketch(p) {
   };
 
   p.updateRelationshipType = function (type) {
+    currentRelationshipType = type;
     console.log("Relationship type updated:", type);
-    links.forEach((link) => {
-      link.visible = link.type === type;
-    });
-    p.drawVisualization();
+  
+    p.updateVisibility(); 
   };
+
+  p.checkHover = function () {
+    let hoverNode = null;
+    nodes.forEach((node) => {
+        if (p.dist(p.mouseX, p.mouseY, node.x, node.y) < 20) {
+            hoverNode = node;
+        }
+    });
+    return hoverNode;
+  };
+  
+  p.drawTooltip = function (node) {
+    p.fill(255);
+    p.noStroke();
+    p.textSize(12);
+    p.text(`ID: ${node.id}\nFrequency: ${node.frequency}`, 800, 200);
+  };
+
+  
 }
