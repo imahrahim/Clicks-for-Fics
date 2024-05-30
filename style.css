@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'BasementGrotesque';
+  src: url('/fonts/BasementGrotesque-Black_v1.202.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: Arial, sans-serif;
   text-align: center;
