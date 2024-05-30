@@ -11,10 +11,11 @@ body {
   background-color: #ed346c;
 }
 
-.header {
-  background-color: #333;
-  color: #fff;
+.home-link {
+  background-color: #000000;
+  color: #ff0000;
   padding: 10px;
+  justify-content: left;
 }
 
 .header a {
@@ -24,12 +25,34 @@ body {
 }
 
 button {
-  margin: 0.5rem;
-  padding: 10px 20px;
+  margin: 0rem;
+  padding: 0.1rem 1rem;
   font-family: 'BasementGrotesque';
   text-align: center;
   line-height: 34px;
   font-size: 14px;
+  border-radius: 5rem;
+}
+
+#change-data {
+  position: sticky;
+  top: 0;
+  background-color: #ed346b00;
+  display: flex;
+  justify-content:space-between;
+  padding: 1rem;
+  z-index: 1;
+}
+
+#fandom-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#toggle-relationship-container {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 #relationships-visualization {
@@ -41,19 +64,11 @@ button {
   background-color: #e2e0e241;
   backdrop-filter: blur(20px);
   overflow-y: scroll;
-  overflow-x: scroll; 
+  overflow-x: scroll;
   visibility: visible;
   border: 0.1rem solid #000000;
   border-radius: 0.5rem;
   font-family: 'BasementGrotesque', sans-serif;
-}
-
-
-#toggle-relationship-container {
-  position: sticky;
-  top: 1rem;
-  right: 1rem;
-  z-index: 2;
 }
 
 .switch {

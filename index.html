@@ -22,22 +22,23 @@
             <button onclick="showPage('tags')">Additional Tags</button>
         </div>
         <div id="relationships-visualization" style="display: none;">
-            <div>
-                <button onclick="loadData('/data/Overall.json')">Overall</button>
-                <button onclick="loadData('/data/Marvel.json')">Marvel</button>
-                <button onclick="loadData('/data/Harry_Potter_Relationships.json')">Harry Potter</button>
-                <button onclick="loadData('/data/Boku_No_Hero.json')">Boku No Hero</button>
+          <div id="change-data">
+            <div id="fandom-buttons">
+              <button onclick="loadData('/data/Overall.json')">Overall</button>
+              <button onclick="loadData('/data/Marvel.json')">Marvel</button>
+              <button onclick="loadData('/data/Harry_Potter_Relationships.json')">Harry Potter</button>
+              <button onclick="loadData('/data/Boku_No_Hero.json')">Boku No Hero</button>
             </div>
             <div id="toggle-relationship-container">
               <label class="switch">
-                  <input type="checkbox" id="toggle-relationship-checkbox" onchange="updateRelationshipType(this.checked ? 'friendship' : 'romantic')">
-                  <span class="slider round">
-                      <span class="slider-text romantic">Romantic</span>
-                      <span class="slider-text friendship">Friendship</span>
-                  </span>
+                <input type="checkbox" id="toggle-relationship-checkbox" onchange="updateRelationshipType(this.checked ? 'friendship' : 'romantic')">
+                <span class="slider round">
+                  <span class="slider-text romantic">Romantic</span>
+                  <span class="slider-text friendship">Friendship</span>
+                </span>
               </label>
-          </div>
             </div>
+          </div>
         </div>
         <div id="tags-visualization" style="display: none;">
             <div>
