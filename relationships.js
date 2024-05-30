@@ -6,13 +6,20 @@ let h = 2000;
 
 let currentRelationshipType = "romantic";
 
-const connectionsColors = {
-  "male-male": "#609199",
-  "female-male": "#ff1493",
-  "male-female": "#ff1493",
-  "female-female": "#ffaa00",
-  other: "#bdb6ba",
-};
+const fandomColors = {
+  "Harry Potter - J. K. Rowling": "#609199",
+  "Marvel": "#ff1493",
+  "Boku no Hero Academia": "#ffaa00",
+  "Boku No Hero Academia": "#ffaa00",
+  other: "#ffffff",
+}
+
+let linksColors = {
+  "fandom": "#ffffff63",
+  "romantic": "#cd4c79",
+  "friendship": "#0ea65d",
+
+}
 
 const nodesColor = "#ffffff";
 const font = "BasementGrotesque";
@@ -95,11 +102,11 @@ export function relationshipsSketch(p) {
   p.updateXScale = function () {
     let relationshipContainer = document.getElementById("relationships-visualization");
     let w = relationshipContainer.offsetWidth;
+    console.log('Canvas width:', relationshipContainer.offsetWidth);
 
-    xScale = d3
-      .scaleLog()
-      .domain([1, d3.max(nodes, (d) => d.frequency) || 1])
-      .range([150, w - 200]);
+    xScale = d3.scaleLog()
+    .domain([1, d3.max(nodes, (d) => d.frequency) || 1])
+    .range([200, w - 200]);
   };
 
   p.updateFandomScale = function () {
@@ -138,13 +145,16 @@ export function relationshipsSketch(p) {
   };
 
   p.draw = function () {
+    let relationshipContainer = document.getElementById("relationships-visualization");
+    let w = relationshipContainer.offsetWidth;
     p.background(255, 1);
     let hoverNode = p.checkHover();
     p.drawVisualization();
     if (hoverNode) {
-      p.drawTooltip(hoverNode);
+      p.drawTooltip(hoverNode); // Update des Sticky Tooltips bei Hover
     }
   };
+  
 
   p.loadData = function (dataUrl) {
     p.loadJSON(dataUrl, function (data) {
@@ -228,7 +238,7 @@ export function relationshipsSketch(p) {
         const sourceNode = nodes.find((n) => n.id === link.source);
         const targetNode = nodes.find((n) => n.id === link.target);
         if (sourceNode && targetNode && sourceNode.visible && targetNode.visible) {
-          p.stroke(connectionsColors[link.type] || connectionsColors["other"]);
+          p.stroke(linksColors[link.type]);
           p.strokeWeight(link.frequency * 0.2);
           p.line(sourceNode.x, sourceNode.y, targetNode.x, targetNode.y);
         }
@@ -241,7 +251,7 @@ export function relationshipsSketch(p) {
     for (const node of nodes) {
       if (node.visible) {
         p.noStroke();
-        p.fill(nodesColor);
+        p.fill(fandomColors[node.fandom] || fandomColors["other"]);
         p.rect(node.x, node.y, 160, 12);
 
         p.textFont(font);
@@ -266,13 +276,18 @@ export function relationshipsSketch(p) {
         hoverNode = node;
       }
     });
+    if (!hoverNode) {
+      document.getElementById('stickyTooltip').style.display = 'none';
+    } else {
+      document.getElementById('stickyTooltip').style.display = 'block';
+    }
     return hoverNode;
   };
+  
 
   p.drawTooltip = function (node) {
-    p.fill(255);
-    p.noStroke();
-    p.textSize(12);
-    p.text(`ID: ${node.id}\nFrequency: ${node.frequency}`, 800, 200);
+    let tooltip = document.getElementById('stickyTooltip');
+    tooltip.innerHTML = `ID: ${node.id}<br>Frequency: ${node.frequency}`;
   };
+  
 }
