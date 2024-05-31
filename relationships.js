@@ -5,6 +5,7 @@ let xScale, yCharacterScale, yFandomScale;
 let h = 2000;
 let currentRelationshipType = 'romantic';
 let visibleFandomNodes = [];
+let fandomText = 200;
 
 const fandomColors = {
   "Harry Potter - J. K. Rowling": "#589BCF",
@@ -23,12 +24,11 @@ const otherColors = {
 }
 
 const linksColors = {
-  "fandom": "#ffffff3c",
+  "fandom": "#ffffff53",
   "romantic": "#0e0917",
-  "friendship": "#0ea65d",
+  "friendship": "#ffffff",
 };
 
-const nodesColor = "#ffffff";
 const font = "Brr";
 
 export function relationshipsSketch(p) {
@@ -111,7 +111,7 @@ export function relationshipsSketch(p) {
         id: fandom,
         group: "fandom",
         visible: true,
-        x: 200, 
+        x: fandomText, 
         y: yFandomScale(index), 
       });
       index++;
@@ -123,7 +123,7 @@ export function relationshipsSketch(p) {
 
   p.draw = function () {
     p.clear();
-    p.drawVisualization();  // Zeichne die Visualisierung im draw-Aufruf
+    p.drawVisualization();  
     let hoverNode = p.checkHover();
     if (hoverNode) {
       p.drawTooltip(hoverNode); 
@@ -143,7 +143,11 @@ export function relationshipsSketch(p) {
         const sourceNode = nodes.find((n) => n.id === link.source);
         const targetNode = nodes.find((n) => n.id === link.target);
         if (sourceNode && targetNode && sourceNode.visible && targetNode.visible) {
-          p.stroke(linksColors[link.type]);
+          if (link.type === "fandom") {
+            p.stroke(currentRelationshipType === 'romantic' ? '#ffffff2a' : '#00000015');
+          } else {
+            p.stroke(linksColors[link.type]);
+          }
           p.strokeWeight(link.type === 'fandom' ? 1 : link.frequency * 0.2);
           p.line(sourceNode.x, sourceNode.y, targetNode.x, targetNode.y);
         }
@@ -181,12 +185,13 @@ export function relationshipsSketch(p) {
           p.text(node.id, node.x, node.y);fandomColors[node.id] 
 
         } else if (node.group === "fandom") {
-          p.textAlign(p.LEFT, p.CENTER)
           p.fill(fandomColors[node.id] || 'black');
+          p.ellipse(node.x, node.y, 3)
+          p.textAlign(p.RIGHT, p.CENTER)
           p.noStroke();
           p.textFont(font);
           p.textSize(8);
-          p.text(node.id, node.x - 50, node.y);
+          p.text(node.id, node.x - 10, node.y);
         }
       }
     }
@@ -283,7 +288,6 @@ export function relationshipsSketch(p) {
 };
 
 
-
   p.updateRelationshipType = function (type) {
     currentRelationshipType = type;
     console.log("Relationship type updated:", type);
@@ -319,7 +323,7 @@ export function relationshipsSketch(p) {
       .domain([0, visibleFandomNodes.length])
       .range([20, h - 20]);
 
-    console.log("Visible fandom nodes:", visibleFandomNodes.length);
+    // console.log("Visible fandom nodes:", visibleFandomNodes.length);
   };
 
   p.updateNodePositions = function () {
@@ -332,7 +336,7 @@ export function relationshipsSketch(p) {
         node.y = yCharacterScale(characterIndex);
         characterIndex++;
       } else if (node.visible && node.group === "fandom") {
-        node.x = 90;
+        node.x = fandomText;
         node.y = yFandomScale(fandomIndex);
         fandomIndex++;
       }
@@ -342,7 +346,7 @@ export function relationshipsSketch(p) {
 
   p.checkHover = function () {
     let hoverNode = null;
-    let buffer = 5;  // Puffer um den Text herum
+    let buffer = 5;  
 
     nodes.forEach((node) => {
       if (node.visible) {

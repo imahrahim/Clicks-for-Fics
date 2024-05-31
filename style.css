@@ -25,7 +25,7 @@ body {
 }
 
 a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   font-size: 20px;
 }
@@ -118,17 +118,16 @@ a {
   background-color: #00000000;
   font-family: 'BasementGrotesque';
   text-align: center;
-  line-height: 34px;
   font-size: 14px;
   border-radius: 5rem;
 }
 
 button {
+  height: 2rem;
   margin: 0;
   padding: 0.1rem 1rem;
   font-family: 'BasementGrotesque';
   text-align: center;
-  line-height: 34px;
   font-size: 14px;
   border-radius: 5rem;
 }
@@ -210,8 +209,10 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ffffff;
+  background-color: #000000a8;
+  backdrop-filter: blur(10px);
   border-radius: 2rem;
+  border: 0.1rem solid black;
   cursor: pointer;
   transition: .6s;
 }
@@ -221,40 +222,45 @@ button {
   content: "";
   height: 1.8rem;
   width: 1.8rem;
-  left: 0.1rem;
-  bottom: 0.1rem;
-  top: 0.1rem;
-  background-color: rgb(0, 0, 0);
+  margin: 0.1rem auto;
+  margin-top: -0.1rem;
+  margin-left: -0.1rem;
+  background-color: rgb(255, 255, 255);
+  border: 0.1rem solid black;
   border-radius: 50%;
   transition: .6s;
 }
 
 .slider-text {
   position: absolute;
-  width: 50%;
-  height: 100%;
-  color: black;
-  text-align: center;
-  line-height: 34px;
+  margin: 0.3rem ;
+  left: 0.5rem;
+  color: rgb(255, 255, 255);
+  text-align: left;
   font-size: 14px;
 }
 
 .romantic {
-  left: 50%;
+  text-align: right;
+  margin: 0.3rem ;
+  right: 0.5rem;
 }
 
 .friendship {
-  right: 50%;
   color: transparent;
 }
 
 input:checked + .slider {
-  background-color: #000000;
+  background-color: #ffffff6f;
+  backdrop-filter: blur(10px);
+  border-radius: 2rem;
+  border: 0.1rem solid rgb(0, 0, 0);
 }
 
 input:checked + .slider:before {
   transform: translateX(8rem);
-  background-color: #ffffff;
+  background-color: #000000;
+  margin-right: -0.1rem;
 }
 
 input:checked + .slider .romantic {
@@ -262,5 +268,5 @@ input:checked + .slider .romantic {
 }
 
 input:checked + .slider .friendship {
-  color: white;
+  color: rgb(0, 0, 0);
 }
