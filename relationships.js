@@ -11,24 +11,25 @@ const fandomColors = {
   "Marvel": "#F0519E",
   "Boku no Hero Academia": "#87D4A5",
   "Boku No Hero Academia": "#87D4A5",
-  other: "#e4decc3c",
+  other: "#ffffff81",
 };
-const fandomColorsFemale = {
-  "Harry Potter - J. K. Rowling": "#ffffff",
-  "Marvel": "#ffffff",
-  "Boku no Hero Academia": "#ffffff",
-  "Boku No Hero Academia": "#ffffff",
+
+const otherColors = {
+  "Harry Potter - J. K. Rowling": "#589bcf74",
+  "Marvel": "#f0519e7e",
+  "Boku no Hero Academia": "#87d4a480",
+  "Boku No Hero Academia": "#87d4a480",
   other: "#ffffff8d",
-};
+}
 
 const linksColors = {
   "fandom": "#ffffff3c",
-  "romantic": "#cd4c79",
+  "romantic": "#0e0917",
   "friendship": "#0ea65d",
 };
 
 const nodesColor = "#ffffff";
-const font = "BasementGrotesque";
+const font = "Brr";
 
 export function relationshipsSketch(p) {
   p.setup = function () {
@@ -69,7 +70,7 @@ export function relationshipsSketch(p) {
         gender: characterData.gender,
         frequency: characterData.frequency,
         fandom: characterData.fandom,
-        visible: true,  // Setze die Nodes standardmäßig auf sichtbar
+        visible: true, 
       };
       nodes.push(characterNode);
 
@@ -79,7 +80,7 @@ export function relationshipsSketch(p) {
           source: character,
           target: characterData.fandom,
           type: "fandom",
-          visible: true,  // Setze die Links standardmäßig auf sichtbar
+          visible: true, 
         });
       }
 
@@ -90,36 +91,31 @@ export function relationshipsSketch(p) {
             target: relationship.target,
             frequency: relationship.frequency,
             type: type,
-            visible: true,  // Setze die Links standardmäßig auf sichtbar
+            visible: true, 
           });
         });
       });
     });
 
-    console.log("Nodes after processing:", nodes);
-    console.log("Links after processing:", links);
 
     p.updateXScale();
     p.initializeCharacterScale();
 
     let index = 0;
     visibleFandomNodes = Array.from(fandomNodes);
-    p.updateFandomScale(); // Hier die Fandom-Skalierung aufrufen
+    p.updateFandomScale(); 
 
-    console.log("Adding fandom nodes...");
+
     visibleFandomNodes.forEach((fandom) => {
       nodes.push({
         id: fandom,
         group: "fandom",
         visible: true,
-        x: 90, // Setze die x-Position hier
-        y: yFandomScale(index), // Nutze yFandomScale für die y-Position
+        x: 200, 
+        y: yFandomScale(index), 
       });
       index++;
     });
-
-    console.log("Fandom nodes added:", Array.from(fandomNodes));
-    console.log("Fandom index:", index);
 
     p.updateNodePositions();
     p.updateVisibility();
@@ -142,7 +138,6 @@ export function relationshipsSketch(p) {
 
     p.clear();
 
-    // Zeichne Links
     for (const link of links) {
       if (link.visible) {
         const sourceNode = nodes.find((n) => n.id === link.source);
@@ -155,7 +150,6 @@ export function relationshipsSketch(p) {
       }
     }
 
-    // Zeichne Nodes
     p.rectMode(p.CENTER);
     p.textAlign(p.CENTER, p.CENTER);
 
@@ -163,25 +157,36 @@ export function relationshipsSketch(p) {
       if (node.visible) {
         p.noStroke();
         if (node.group === "character") {
-          p.fill(node.gender === 'male' ? fandomColors[node.fandom] || fandomColors["other"] : fandomColorsFemale[node.fandom] || fandomColorsFemale["other"]);
-          p.stroke(255);
-          p.strokeWeight(1);
-          p.rect(node.x, node.y, 200, 12);
+          if (node.gender === 'female'){
+            p.fill(fandomColors[node.fandom] || fandomColors["other"]);
+            p.stroke(0);
+            p.strokeWeight(1);
+            p.rect(node.x, node.y, 200, 12, 20);
+          } else if (node.gender === 'male') {
+            p.fill(fandomColors[node.fandom] || fandomColors["other"]);
+            p.stroke(0);
+            p.strokeWeight(1);
+            p.rect(node.x, node.y, 200, 12);
+          } else {
+            p.fill(otherColors[node.fandom] || otherColors['other']);
+            p.stroke(255);
+            p.strokeWeight(0);
+            p.rect(node.x, node.y, 200, 12);
+          }
+    
           p.noStroke();
-          p.fill(255);
+          p.fill(0);
           p.textFont(font);
           p.textSize(8);
-          p.text(node.id, node.x, node.y);
+          p.text(node.id, node.x, node.y);fandomColors[node.id] 
+
         } else if (node.group === "fandom") {
-          p.fill(fandomColors[node.id] || fandomColors["other"]);
-          p.stroke('#000000');
-          p.strokeWeight(1);
-          p.rect(node.x, node.y, 200, 10);
+          p.textAlign(p.LEFT, p.CENTER)
+          p.fill(fandomColors[node.id] || 'black');
           p.noStroke();
-          p.fill(255);
           p.textFont(font);
           p.textSize(8);
-          p.text(node.id, node.x, node.y);
+          p.text(node.id, node.x - 50, node.y);
         }
       }
     }
@@ -204,7 +209,7 @@ export function relationshipsSketch(p) {
       let textY1 = node.y - textHeight / 2 - buffer;
       let textY2 = node.y + textHeight / 2 + buffer;
 
-      if (mouseX >= textX1 && mouseX <= textX2 && mouseY >= textY1 && mouseY <= textY2) {
+      if (mouseX >= textX1 && mouseX <= textX2 && mouseY >= textY1 && mouseY <= textY2 && node.visible === true) {
         foundNode = node;
       }
     });
@@ -219,57 +224,65 @@ export function relationshipsSketch(p) {
 
   p.updateVisibility = function () {
     if (!selectedNode) {
-      // console.log("Updating visibility for all nodes...");
-      nodes.forEach(node => {
-        if (node.group === "character") {
-          node.visible = links.some(link => 
-            (link.type === currentRelationshipType || link.type === "fandom") && 
-            (link.source === node.id || link.target === node.id)
-          );
-        } else if (node.group === "fandom") {
-          node.visible = nodes.some(character => 
-            character.visible && character.fandom === node.id
-          );
-        }
-      });
+        nodes.forEach(node => {
+            if (node.group === "character") {
+                node.visible = links.some(link => 
+                    (link.type === currentRelationshipType) && 
+                    (link.source === node.id || link.target === node.id)
+                );
+            } else if (node.group === "fandom") {
+                node.visible = nodes.some(character => 
+                    character.visible && character.fandom === node.id
+                );
+            }
+        });
 
-      links.forEach(link => {
-        link.visible = (link.type === currentRelationshipType || link.type === "fandom") && 
-          (nodes.find(n => n.id === link.source).visible || nodes.find(n => n.id === link.target).visible);
-      });
+        links.forEach(link => {
+            link.visible = (link.type === currentRelationshipType || link.type === "fandom") && 
+                (nodes.find(n => n.id === link.source).visible || nodes.find(n => n.id === link.target).visible);
+        });
     } else {
-      // console.log("Updating visibility for selected node...");
-      nodes.forEach(node => node.visible = false);
-      links.forEach(link => link.visible = false);
+        nodes.forEach(node => node.visible = false);
+        links.forEach(link => link.visible = false);
 
-      links.forEach(link => {
-        if ((link.source === selectedNode.id || link.target === selectedNode.id) && 
-            (link.type === currentRelationshipType || link.type === "fandom")) {
-          link.visible = true;
-          let sourceNode = nodes.find(node => node.id === link.source);
-          let targetNode = nodes.find(node => node.id === link.target);
-          if (sourceNode) sourceNode.visible = true;
-          if (targetNode) targetNode.visible = true;
-        }
-      });
+        links.forEach(link => {
+            if ((link.source === selectedNode.id || link.target === selectedNode.id) && 
+                (link.type === currentRelationshipType || link.type === "fandom")) {
+                link.visible = true;
+                let sourceNode = nodes.find(node => node.id === link.source);
+                let targetNode = nodes.find(node => node.id === link.target);
+                if (sourceNode) sourceNode.visible = true;
+                if (targetNode) targetNode.visible = true;
+            }
+        });
+
+        links.forEach(link => {
+            if (link.type === "fandom") {
+                let sourceNode = nodes.find(node => node.id === link.source);
+                let targetNode = nodes.find(node => node.id === link.target);
+                if (sourceNode && targetNode) {
+                    if (sourceNode.visible || targetNode.visible) {
+                        link.visible = true;
+                    }
+                }
+            }
+        });
     }
 
     nodes.forEach(node => {
-      if (node.group === "fandom") {
-        node.visible = nodes.some(character => 
-          character.visible && character.fandom === node.id
-        );
-      }
+        if (node.group === "fandom") {
+            node.visible = nodes.some(character => 
+                character.visible && character.fandom === node.id
+            );
+        }
     });
 
     p.updateFandomScale(); 
-
-    // console.log("Nodes after visibility update:", nodes);
-    // console.log("Links after visibility update:", links);
-
     p.updateNodePositions();
     p.drawVisualization();
-  };
+};
+
+
 
   p.updateRelationshipType = function (type) {
     currentRelationshipType = type;
