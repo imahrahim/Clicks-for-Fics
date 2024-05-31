@@ -34,7 +34,7 @@
                     <button id="Harry-Potter" onclick="loadData('/data/Harry_Potter_Relationships.json', 'Harry Potter'); setActiveButton(this);">HARRY POTTER</button>
                     <button id="Boku-No-Hero" onclick="loadData('/data/Boku_No_Hero.json', 'Boku No Hero'); setActiveButton(this);">BOKU NO HERO</button>
                 </div>
-                <div id="stickyTooltip" style="position: sticky;">
+                <div id="stickyTooltip" style="position: sticky; font-size: small; font-family: 'array-mono';">
                     Tooltip Information
                 </div>
                 <div id="btns-right">
@@ -61,9 +61,9 @@
                 <button id="Harry-Potter" onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter'); setActiveButton(this);">HARRY POTTER</button>
                 <button id="Boku-No-Hero" onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero'); setActiveButton(this);">BOKU NO HERO</button>
               </div>
-              <button id="show-info" onclick="togglePopup('popup-tags')">i</button>
+              <button id="show-info-tag" onclick="togglePopup('popup-tags')">i</button>
             </div>
-            <div id="banner-container-2" ></div>
+            <div id="banner-container-2"></div>
         </div>
     </div>
     <div id="popup-relationships" class="popup" style="display: none;">

@@ -16,22 +16,20 @@ const fandomColors = {
 };
 
 const otherColors = {
-  "Harry Potter - J. K. Rowling": "#589bcfff",
-  "Marvel": "#f0519eff",
-  "Boku no Hero Academia": "#87d4a4ff",
-  "Boku No Hero Academia": "#87d4a4ff",
+  "Harry Potter - J. K. Rowling": "#589bcf74",
+  "Marvel": "#f0519e7e",
+  "Boku no Hero Academia": "#87d4a480",
+  "Boku No Hero Academia": "#87d4a480",
   other: "#ffffff8d",
 }
 
 const linksColors = {
   "fandom": "#8056c43f",
   "romantic": "#0e0917",
-  "friendship": "#ffffff",
+  "friendship": "#000000",
 };
 
 const font = ('array-mono')
-
-
 
 export function relationshipsSketch(p) {
   p.setup = function () {
@@ -146,8 +144,6 @@ export function relationshipsSketch(p) {
         
         if (draw) {
             p.noStroke();
-            // p.fill(currentRelationshipType === 'romantic' ? '#ffffff70':'#00000070')
-            // p.fill('#8056c49e'); 
             p.fill('#ffffff61')
             if (x >= 200 && x <= p.width - 200) {
                 p.rect(x, 0, rectWidth, p.height); 
@@ -158,14 +154,12 @@ export function relationshipsSketch(p) {
 };
 
   p.drawVisualization = function () {
-
     if (!dataShips) {
       console.error("Data not loaded");
       return;
     }
 
     p.clear();
-
     p.drawBackgroundScale();
 
     for (const link of links) {
@@ -174,23 +168,6 @@ export function relationshipsSketch(p) {
         const targetNode = nodes.find((n) => n.id === link.target);
         if (sourceNode && targetNode && sourceNode.visible && targetNode.visible) {
           p.stroke(linksColors[link.type]);
-          p.strokeWeight(link.type === 'fandom' ? 1 : link.frequency * 0.2);
-          p.line(sourceNode.x, sourceNode.y, targetNode.x, targetNode.y);
-        }
-      }
-    }
-
-    for (const link of links) {
-      if (link.visible) {
-        const sourceNode = nodes.find((n) => n.id === link.source);
-        const targetNode = nodes.find((n) => n.id === link.target);
-        if (sourceNode && targetNode && sourceNode.visible && targetNode.visible) {
-          if (link.type === "fandom") {
-            const fandom = sourceNode.group === "fandom" ? sourceNode.id : targetNode.id;
-            p.stroke(fandomColors[fandom] || fandomColors['other']);
-          } else {
-            p.stroke(linksColors[link.type]);
-          }
           p.strokeWeight(link.type === 'fandom' ? 1 : link.frequency * 0.2);
           p.line(sourceNode.x, sourceNode.y, targetNode.x, targetNode.y);
         }
@@ -343,7 +320,6 @@ export function relationshipsSketch(p) {
     p.drawVisualization();
 };
 
-
   p.updateRelationshipType = function (type) {
     currentRelationshipType = type;
     console.log("Relationship type updated:", type);
@@ -378,8 +354,6 @@ export function relationshipsSketch(p) {
       .scaleLinear()
       .domain([0, visibleFandomNodes.length])
       .range([20, h - 20]);
-
-    // console.log("Visible fandom nodes:", visibleFandomNodes.length);
   };
 
   p.updateNodePositions = function () {
@@ -434,6 +408,6 @@ export function relationshipsSketch(p) {
 
   p.drawTooltip = function (node) {
     let tooltip = document.getElementById('stickyTooltip');
-    tooltip.innerHTML = `${node.id} ${node.frequency}`;
+    tooltip.innerHTML = `${node.id}  ${node.frequency}`;
   };
 }
