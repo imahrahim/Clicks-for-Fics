@@ -16,15 +16,15 @@ const fandomColors = {
 };
 
 const otherColors = {
-  "Harry Potter - J. K. Rowling": "#589bcf74",
-  "Marvel": "#f0519e7e",
-  "Boku no Hero Academia": "#87d4a480",
-  "Boku No Hero Academia": "#87d4a480",
+  "Harry Potter - J. K. Rowling": "#589bcfff",
+  "Marvel": "#f0519eff",
+  "Boku no Hero Academia": "#87d4a4ff",
+  "Boku No Hero Academia": "#87d4a4ff",
   other: "#ffffff8d",
 }
 
 const linksColors = {
-  "fandom": "#ffffff53",
+  "fandom": "#8056c43f",
   "romantic": "#0e0917",
   "friendship": "#ffffff",
 };
@@ -137,21 +137,23 @@ export function relationshipsSketch(p) {
     let startX = xScale.domain()[0];
     let endX = xScale.domain()[1];
     let step = 10; 
-    let draw = true; // Boolean für die Bedingung
+    let draw = true; 
 
     for (let i = startX; i < endX; i += step) {
         let x = xScale(i);
         let xNext = xScale(i + step);
-        let rectWidth = xNext - x; // Korrekte Berechnung der Breite
+        let rectWidth = xNext - x; 
         
         if (draw) {
             p.noStroke();
-            p.fill(255, 150); 
+            // p.fill(currentRelationshipType === 'romantic' ? '#ffffff70':'#00000070')
+            // p.fill('#8056c49e'); 
+            p.fill('#ffffff61')
             if (x >= 200 && x <= p.width - 200) {
                 p.rect(x, 0, rectWidth, p.height); 
             }
         }
-        draw = !draw; // Umschalten der Bedingung für jedes zweite Rechteck
+        draw = !draw;
     }
 };
 
@@ -184,7 +186,8 @@ export function relationshipsSketch(p) {
         const targetNode = nodes.find((n) => n.id === link.target);
         if (sourceNode && targetNode && sourceNode.visible && targetNode.visible) {
           if (link.type === "fandom") {
-            p.stroke(currentRelationshipType === 'romantic' ? '#ffffff2a' : '#00000015');
+            const fandom = sourceNode.group === "fandom" ? sourceNode.id : targetNode.id;
+            p.stroke(fandomColors[fandom] || fandomColors['other']);
           } else {
             p.stroke(linksColors[link.type]);
           }
@@ -226,17 +229,20 @@ export function relationshipsSketch(p) {
           } else if (node.gender === 'female') {
             p.textStyle(p.BOLDITALIC)
           } else {
-            p.textStyle(p.NORMAL);
+            p.textStyle(p.ITALIC);
           }
           p.textSize(8);
           p.text(node.id, node.x, node.y);fandomColors[node.id] 
 
         } else if (node.group === "fandom") {
+          p.fill(255,10);
+          p.rect(node.x-100,node.y, 200,30)
           p.fill(fandomColors[node.id] || 'black');
-          p.ellipse(node.x, node.y, 3)
+          p.ellipse(node.x, node.y, 4)
           p.textAlign(p.RIGHT, p.CENTER)
           p.noStroke();
-          p.textFont('BasementGrotesque');
+          p.fill(fandomColors[node.id] || 'black');
+          p.textFont(font);
           p.textStyle(p.BOLD)
           p.textSize(8);
           p.text(node.id, node.x - 10, node.y);
@@ -291,7 +297,7 @@ export function relationshipsSketch(p) {
         });
 
         links.forEach(link => {
-            link.visible = (link.type === currentRelationshipType || link.type === "fandom") && 
+            link.visible = (link.type === currentRelationshipType) && 
                 (nodes.find(n => n.id === link.source).visible || nodes.find(n => n.id === link.target).visible);
         });
     } else {
@@ -309,6 +315,7 @@ export function relationshipsSketch(p) {
             }
         });
 
+        // Zusätzliche Logik, um die Fandom-Links sichtbar zu machen, wenn ein Knoten ausgewählt ist
         links.forEach(link => {
             if (link.type === "fandom") {
                 let sourceNode = nodes.find(node => node.id === link.source);
@@ -322,6 +329,7 @@ export function relationshipsSketch(p) {
         });
     }
 
+    // Update visibility of fandom nodes based on selected character nodes
     nodes.forEach(node => {
         if (node.group === "fandom") {
             node.visible = nodes.some(character => 
@@ -415,15 +423,17 @@ export function relationshipsSketch(p) {
     let tooltip = document.getElementById('stickyTooltip');
     if (!hoverNode) {
       tooltip.style.display = 'none';
+      p.cursor();
     } else {
       tooltip.style.display = 'block';
       tooltip.innerHTML = `${hoverNode.id}`;
+      p.cursor(p.HAND)
     }
     return hoverNode;
   };
 
   p.drawTooltip = function (node) {
     let tooltip = document.getElementById('stickyTooltip');
-    tooltip.innerHTML = `${node.id}`;
+    tooltip.innerHTML = `${node.id} ${node.frequency}`;
   };
 }

@@ -72,53 +72,60 @@ a {
   font-size: 20px;
 }
 
+#Overall{
+  background-color: #ffffffc8;
+  backdrop-filter: blur(10px);
+  color: #8056C4;
+  border: 0.1rem solid #8056C4;
+}
+
 #Marvel {
-  background-color: #ffffff83;
+  background-color: #ffffffc8;
   backdrop-filter: blur(10px);
   color: #F0519E;
   border: 0.1rem solid #F0519E;
 }
 
 #Harry-Potter {
-  background-color: #ffffff83;
+  background-color: #ffffffc8;
   backdrop-filter: blur(10px);
   color: #589BCF;
   border: 0.1rem solid #589BCF;
 }
 
 #Boku-No-Hero {
-  background-color: #ffffff83;
+  background-color: #ffffffc8;
   backdrop-filter: blur(10px);
   color: #87D4A5;
   border: 0.1rem solid #87D4A5;
 }
 
 #Overall.active-button {
-  background-color: #000000;
+  background-color: #8056C4;
   backdrop-filter: blur(10px);
-  color: #ffffffe5;
-  border: 0.1rem solid #ffffffe5;
+  color: #ffffffc8;
+  border: 0.1rem solid #ffffffc8;
 }
 
 #Marvel.active-button {
   background-color: #F0519E;
   backdrop-filter: blur(10px);
-  color: #ffffffbe;
-  border: 0.1rem solid #ffffffbe;
+  color: #ffffffc8;
+  border: 0.1rem solid #ffffffc8;
 }
 
 #Harry-Potter.active-button {
   background-color: #589BCF;
   backdrop-filter: blur(10px);
-  color: #ffffffbe;
-  border: 0.1rem solid #ffffffbe;
+  color: #ffffffc8;
+  border: 0.1rem solid #ffffffc8;
 }
 
 #Boku-No-Hero.active-button {
   background-color: #87D4A5;
   backdrop-filter: blur(10px);
-  color: #ffffffbe;
-  border: 0.1rem solid #ffffffbe;
+  color: #ffffffc8;
+  border: 0.1rem solid #ffffffc8;
 }
 
 #home-link {
@@ -141,12 +148,10 @@ a {
 
 #relationship-btn,
 #tag-btn {
-  padding: 0.1rem 2rem;
   background-color: #00000000;
   text-align: center;
+  margin:1rem;
   font-size: 0.8rem;
-  border-radius: 5rem;
-  border: 0.1rem solid #000000;
 }
 
 button {
@@ -157,7 +162,7 @@ button {
   text-align: center;
   font-size: 14px;
   border-radius: 5rem;
-  background-color: #ffffff83;
+  background-color: #ffffffc8;
   backdrop-filter: blur(10px);
   color: #000000;
   border: 0.1rem solid #000000;
@@ -166,7 +171,8 @@ button {
 #change-data {
   position: sticky;
   top: 0;
-  background-color: #ed346b00;
+  background-color: #ffffffc8;
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   padding: 1rem;
@@ -232,8 +238,9 @@ button {
   left: 2rem;
   right: 2rem;
   bottom: 2rem;
-  background-color: #e2e0e241;
-  backdrop-filter: blur(10px);
+  /* background-color: #e2e0e241; */
+  background-color: #ffffff31;
+  backdrop-filter: blur(5px);
   overflow-y: scroll;
   visibility: visible;
   border: 0.1rem solid #000000;
@@ -244,7 +251,7 @@ button {
 .switch {
   position: relative;
   display: inline-block;
-  width: 10rem;
+  width: 12rem;
   height: 2rem;
 }
 
@@ -302,14 +309,14 @@ button {
 }
 
 input:checked + .slider {
-  background-color: #ffffff6f;
+  background-color: #ffffffc8;
   backdrop-filter: blur(10px);
   border-radius: 2rem;
   border: 0.1rem solid rgb(0, 0, 0);
 }
 
 input:checked + .slider:before {
-  transform: translateX(8rem);
+  transform: translateX(10rem);
   background-color: #000000;
   margin-right: -0.1rem;
 }

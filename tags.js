@@ -8,10 +8,10 @@ export function tagsSketch(isReverse) {
         let currentFandom = "Overall";
 
         const fandomColors = {
-            "Overall": { image: "/content/background/over.png", color: "rgba(225, 255, 0, 0.475)" },
-            "Marvel": { image: "/content/background/marvel.png", color: "rgba(255, 0, 0, 0.473)" },
-            "Harry Potter": { image: "/content/background/harry.png", color: "rgba(0, 255, 0, 0.509)" },
-            "Boku No Hero": { image: "/content/background/boku.png", color: "rgba(0, 0, 255, 0.465)" },
+            "Overall": { image: "/content/background/over.png", color: "#8056C4" },
+            "Marvel": { image: "/content/background/marvel.png", color: "#F0519E" },
+            "Harry Potter": { image: "/content/background/harry.png", color: "#589BCF" },
+            "Boku No Hero": { image: "/content/background/boku.png", color: "#87D4A5" },
         };
 
         p.preload = function () {
