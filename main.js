@@ -62,7 +62,7 @@ function showPage(page) {
         document.getElementById('tag-btn').classList.add('active');
         
         // Setze den Overall-Button als aktiv
-        setActiveButton(document.getElementById('Overall_tag'));
+        setActiveButton(document.getElementById('Overall'));
         loadTagData('/data/Additional_Tags_Overall.csv', 'Overall');
     }
 }
@@ -128,6 +128,9 @@ function updateRelationshipType(type) {
 function initializePage() {
     // Zeige die Home Page beim Laden der Seite
     showHomePage();
+    // Popups ausblenden
+    document.getElementById('popup-relationships').style.display = 'none';
+    document.getElementById('popup-tags').style.display = 'none';
     // Setze den Overall-Button als aktiv und lade die Daten
     setActiveButton(document.getElementById('Overall'));
     loadData('/data/Overall.json', 'Overall');

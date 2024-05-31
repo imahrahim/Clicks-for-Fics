@@ -29,7 +29,9 @@ const linksColors = {
   "friendship": "#ffffff",
 };
 
-const font = "Brr";
+const font = ('array-mono')
+
+
 
 export function relationshipsSketch(p) {
   p.setup = function () {
@@ -123,20 +125,58 @@ export function relationshipsSketch(p) {
 
   p.draw = function () {
     p.clear();
-    p.drawVisualization();  
+    p.drawVisualization();
     let hoverNode = p.checkHover();
     if (hoverNode) {
-      p.drawTooltip(hoverNode); 
+      p.drawTooltip(hoverNode);
     }
   };
 
+  p.drawBackgroundScale = function () {
+    p.rectMode(p.CORNER);
+    let startX = xScale.domain()[0];
+    let endX = xScale.domain()[1];
+    let step = 10; 
+    let draw = true; // Boolean für die Bedingung
+
+    for (let i = startX; i < endX; i += step) {
+        let x = xScale(i);
+        let xNext = xScale(i + step);
+        let rectWidth = xNext - x; // Korrekte Berechnung der Breite
+        
+        if (draw) {
+            p.noStroke();
+            p.fill(255, 150); 
+            if (x >= 200 && x <= p.width - 200) {
+                p.rect(x, 0, rectWidth, p.height); 
+            }
+        }
+        draw = !draw; // Umschalten der Bedingung für jedes zweite Rechteck
+    }
+};
+
   p.drawVisualization = function () {
+
     if (!dataShips) {
       console.error("Data not loaded");
       return;
     }
 
     p.clear();
+
+    p.drawBackgroundScale();
+
+    for (const link of links) {
+      if (link.visible) {
+        const sourceNode = nodes.find((n) => n.id === link.source);
+        const targetNode = nodes.find((n) => n.id === link.target);
+        if (sourceNode && targetNode && sourceNode.visible && targetNode.visible) {
+          p.stroke(linksColors[link.type]);
+          p.strokeWeight(link.type === 'fandom' ? 1 : link.frequency * 0.2);
+          p.line(sourceNode.x, sourceNode.y, targetNode.x, targetNode.y);
+        }
+      }
+    }
 
     for (const link of links) {
       if (link.visible) {
@@ -181,6 +221,13 @@ export function relationshipsSketch(p) {
           p.noStroke();
           p.fill(0);
           p.textFont(font);
+          if (node.gender === 'male') {
+            p.textStyle(p.BOLD)
+          } else if (node.gender === 'female') {
+            p.textStyle(p.BOLDITALIC)
+          } else {
+            p.textStyle(p.NORMAL);
+          }
           p.textSize(8);
           p.text(node.id, node.x, node.y);fandomColors[node.id] 
 
@@ -189,7 +236,8 @@ export function relationshipsSketch(p) {
           p.ellipse(node.x, node.y, 3)
           p.textAlign(p.RIGHT, p.CENTER)
           p.noStroke();
-          p.textFont(font);
+          p.textFont('BasementGrotesque');
+          p.textStyle(p.BOLD)
           p.textSize(8);
           p.text(node.id, node.x - 10, node.y);
         }
