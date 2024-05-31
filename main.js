@@ -8,6 +8,15 @@ const fandomColors = {
     "Boku No Hero": { image: "/content/background/boku.png", color: "rgba(0, 0, 255, 0.465)" },
 };
 
+function togglePopup(id) {
+    const popup = document.getElementById(id);
+    if (popup.style.display === "none" || popup.style.display === "") {
+      popup.style.display = "flex";
+    } else {
+      popup.style.display = "none";
+    }
+  }
+
 function showHomePage() {
     document.getElementById('home-page').style.display = 'block';
     document.getElementById('relationships-visualization').style.display = 'none';
@@ -21,7 +30,14 @@ function showHomePage() {
 function showPage(page) {
     document.getElementById('home-page').style.display = 'none';
     
-    // Entferne die aktive Klasse von allen Links
+    if (page === 'relationships') {
+        document.getElementById('relationships-visualization').style.display = 'block';
+        togglePopup('popup-relationships'); // Popup anzeigen
+      } else if (page === 'tags') {
+        document.getElementById('tags-visualization').style.display = 'block';
+        togglePopup('popup-tags'); // Popup anzeigen
+      }
+      
     document.getElementById('relationship-btn').classList.remove('active');
     document.getElementById('tag-btn').classList.remove('active');
     
