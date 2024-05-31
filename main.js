@@ -12,20 +12,52 @@ function showHomePage() {
     document.getElementById('home-page').style.display = 'block';
     document.getElementById('relationships-visualization').style.display = 'none';
     document.getElementById('tags-visualization').style.display = 'none';
+
+    // Entferne die aktive Klasse von allen Links
+    document.getElementById('relationship-btn').classList.remove('active');
+    document.getElementById('tag-btn').classList.remove('active');
 }
 
 function showPage(page) {
     document.getElementById('home-page').style.display = 'none';
+    
+    // Entferne die aktive Klasse von allen Links
+    document.getElementById('relationship-btn').classList.remove('active');
+    document.getElementById('tag-btn').classList.remove('active');
+    
     if (page === 'relationships') {
         document.getElementById('relationships-visualization').style.display = 'block';
         document.getElementById('tags-visualization').style.display = 'none';
         loadSketch(relationshipsSketch, 'relationships-visualization');
+        
+        // Füge die aktive Klasse zum relationship-btn hinzu
+        document.getElementById('relationship-btn').classList.add('active');
+        
+        // Setze den Overall-Button als aktiv
+        setActiveButton(document.getElementById('Overall'));
+        loadData('/data/Overall.json', 'Overall');
     } else if (page === 'tags') {
         document.getElementById('relationships-visualization').style.display = 'none';
         document.getElementById('tags-visualization').style.display = 'block';
         loadSketch(tagsSketch(false), 'banner-container-1', false);
         loadSketch(tagsSketch(true), 'banner-container-2', true);
+        
+        // Füge die aktive Klasse zum tag-btn hinzu
+        document.getElementById('tag-btn').classList.add('active');
+        
+        // Setze den Overall-Button als aktiv
+        setActiveButton(document.getElementById('Overall_tag'));
+        loadTagData('/data/Additional_Tags_Overall.csv', 'Overall');
     }
+}
+
+function setActiveButton(button) {
+    // Entferne die aktive Klasse von allen Buttons
+    const buttons = document.querySelectorAll('#fandom-buttons button, #tag-buttons button');
+    buttons.forEach(btn => btn.classList.remove('active-button'));
+    
+    // Füge die aktive Klasse zum geklickten Button hinzu
+    button.classList.add('active-button');
 }
 
 function loadSketch(sketch, containerId, isReverse = false) {
@@ -77,8 +109,18 @@ function updateRelationshipType(type) {
     }
 }
 
+function initializePage() {
+    // Zeige die Home Page beim Laden der Seite
+    showHomePage();
+    // Setze den Overall-Button als aktiv und lade die Daten
+    setActiveButton(document.getElementById('Overall'));
+    loadData('/data/Overall.json', 'Overall');
+}
+
 window.showHomePage = showHomePage;
 window.showPage = showPage;
 window.loadData = loadData;
 window.loadTagData = loadTagData;
 window.updateRelationshipType = updateRelationshipType;
+window.setActiveButton = setActiveButton;
+window.onload = initializePage;

@@ -5,8 +5,15 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Brr';
+  src: url('/fonts/BRRR-Skrrt.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: 'BasementGrotesque';
+  font-family: 'Brr';
   background-color: #ed346c;
   padding: 0;
 }
@@ -17,22 +24,96 @@ body {
   width: 100%;
 }
 
-.header a {
-  color: #fff;
+a {
+  color: #ffffff;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
+}
+
+.active {
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+#Overall {
+  background-color: #ffffff83;
+  backdrop-filter: blur(10px);
+  color: #FCCE47;
+  border: 0.1rem solid#FCCE47;
+}
+#Marvel {
+  background-color: #ffffff83;
+  backdrop-filter: blur(10px);
+  color: #F0519E;
+  border: 0.1rem solid#F0519E;
+}
+#Harry-Potter {
+  background-color: #ffffff83;
+  backdrop-filter: blur(10px);
+  color: 	#589BCF;
+  border: 0.1rem solid	#589BCF;
+}
+#Boku-No-Hero {
+  background-color: #ffffff83;
+  backdrop-filter: blur(10px);
+  color: #87D4A5;
+  border: 0.1rem solid#87D4A5
+}
+
+
+.y2k-1-hex { color: #8056C4; }
+.y2k-2-hex { color: #F0519E; }
+.y2k-3-hex { color: #FCCE47; }
+.y2k-4-hex { color: #87D4A5; }
+.y2k-5-hex { color: #589BCF; }
+
+
+#Overall.active-button {
+  background-color: #FCCE47;
+  backdrop-filter: blur(10px);
+  color: #00000083;
+  border: 0.1rem solid#00000083;
+}
+#Marvel.active-button {
+  background-color: #F0519E;
+  backdrop-filter: blur(10px);
+  color: #ffffff83;
+  border: 0.1rem solid#ffffff83;
+}
+#Harry-Potter.active-button {
+  background-color: 	#589BCF;
+  backdrop-filter: blur(10px);
+  color: #ffffff83;
+  border: 0.1rem solid#ffffff83;
+}
+#Boku-No-Hero.active-button {
+  background-color: #87D4A5;
+  backdrop-filter: blur(10px);
+  color: #ffffff83;
+  border: 0.1rem solid#ffffff83;
 }
 
 #home-link {
   margin-left: 2rem;
-  font-family: 'BasementGrotesque';
+  font-family: 'Brr';
   text-align: left;
   line-height: 34px;
   font-size: 14px;
 }
 
+#main-content {
+  display: flex;
+  justify-content: center;
+}
+
+
+#home-page-btn{
+  margin: 1rem auto;
+}
+
 #relationship-btn, #tag-btn {
-  margin-top: 1rem;
   padding: 0.1rem 2rem;
   background-color: #00000000;
   font-family: 'BasementGrotesque';

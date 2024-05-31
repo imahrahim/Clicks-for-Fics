@@ -10,7 +10,7 @@
 </head>
 <body>
     <header id="header">
-        <a href="#" id="home-link" onclick="showHomePage()">Clicks for Fics</a>
+        <a href="#" id="home-link" onclick="showHomePage()">CLICKS FOR FICS</a>
         <div>
         <a href="#" id="relationship-btn" onclick="showPage('relationships')">Relationships</a>
         <a href="#" id="tag-btn" onclick="showPage('tags')">Additional Tags</a>
@@ -20,16 +20,18 @@
         <div id="home-page">
             <h1>Welcome to Clicks for Fics</h1>
             <p>Your ultimate source for fan fiction data visualization.</p>
+            <div id="home-page-btns">
             <button onclick="showPage('relationships')">Relationships</button>
             <button onclick="showPage('tags')">Additional Tags</button>
+          </div>
         </div>
         <div id="relationships-visualization" style="display: none;">
           <div id="change-data">
             <div id="fandom-buttons">
-              <button onclick="loadData('/data/Overall.json', 'Overall')">Overall</button>
-              <button onclick="loadData('/data/Marvel.json', 'Marvel')">Marvel</button>
-              <button onclick="loadData('/data/Harry_Potter_Relationships.json', 'Harry Potter')">Harry Potter</button>
-              <button onclick="loadData('/data/Boku_No_Hero.json', 'Boku No Hero')">Boku No Hero</button>
+              <button id="Overall" onclick="loadData('/data/Overall.json', 'Overall'); setActiveButton(this);">Overall</button>
+              <button id="Marvel" onclick="loadData('/data/Marvel.json', 'Marvel'); setActiveButton(this);">Marvel</button>
+              <button id="Harry-Potter" onclick="loadData('/data/Harry_Potter_Relationships.json', 'Harry Potter'); setActiveButton(this);">Harry Potter</button>
+              <button id="Boku-No-Hero" data-fandom="Boku No Hero" onclick="loadData('/data/Boku_No_Hero.json', 'Boku No Hero'); setActiveButton(this);">Boku No Hero</button>
             </div>
             <div id="stickyTooltip" style="position: sticky;">
               Tooltip Information
@@ -48,10 +50,10 @@
         <div id="tags-visualization" style="display: none;">
           <div id="banner-container-1" style="position: relative; width: 100%;"></div>
             <div id="tag-buttons">
-                <button onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall')">Overall</button>
-                <button onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel')">Marvel</button>
-                <button onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter')">Harry Potter</button>
-                <button onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero')">Boku No Hero</button>
+                <button id="Overall" onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall'); setActiveButton(this);">Overall</button>
+                <button id="Marvel" data-fandom="Marvel" onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel'); setActiveButton(this);">Marvel</button>
+                <button id="Harry-Potter" onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter'); setActiveButton(this);">Harry Potter</button>
+                <button id="Boku-No-Hero" onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero'); setActiveButton(this);">Boku No Hero</button>
             </div>
             <div id="banner-container-2" style="position: relative; width: 100%; "></div>
         </div>
