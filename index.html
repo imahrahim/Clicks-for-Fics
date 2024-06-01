@@ -50,34 +50,22 @@
                     <button id="show-info" onclick="togglePopup('popup-relationships')">i</button>
                 </div>
             </div>
+            <div id="relationships-legend"></div> <!-- Container für die Relationship-Legende -->
         </div>
         <div id="tags-visualization" style="display: none;">
             <div id="banner-container-1"></div>
             <div id="tag-buttons">
-              <div></div>
               <div>
                 <button id="Overall-tags" onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall'); setActiveButton(this);">OVERALL</button>
                 <button id="Marvel-tags" data-fandom="Marvel" onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel'); setActiveButton(this);">MARVEL</button>
                 <button id="Harry-Potter-tags" onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter'); setActiveButton(this);">HARRY POTTER</button>
                 <button id="Boku-No-Hero-tags" onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero'); setActiveButton(this);">BOKU NO HERO</button>
-              </div>
-              <button id="show-info-tag" onclick="togglePopup('popup-tags')">i</button>
             </div>
+            <div id="legend-container">
+                <button id="show-info-tag" onclick="togglePopup('popup-tags')">i</button>   
+            </div>
+                        </div>
             <div id="banner-container-2"></div>
-        </div>
-    </div>
-    <div id="popup-relationships" class="popup" style="display: none;">
-        <div class="popup-content">
-            <span class="close" onclick="togglePopup('popup-relationships')">&times;</span>
-            <h2>Relationships Information</h2>
-            <p>Hier die Informationen zu Relationships...</p>
-        </div>
-    </div>
-    <div id="popup-tags" class="popup" style="display: none;">
-        <div class="popup-content">
-            <span class="close" onclick="togglePopup('popup-tags')">&times;</span>
-            <h2>Tags Information</h2>
-            <p>Hier die Informationen zu Tags...</p>
         </div>
     </div>
     <script type="text/javascript">

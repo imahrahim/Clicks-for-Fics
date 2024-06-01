@@ -1,8 +1,13 @@
+import { relationshipsSketch } from './relationships.js';
+import { tagsSketch } from './tags.js';
+import { legendSketch } from './legend.js';
+
 let myp5;
 let myp5_2;
+let legendP5;
 
 const fandomColors = {
-    "Overall": { image: "/content/background/a.png", color: "rgba(225, 255, 0, 0.475)" },
+    "Overall": { image: "/content/background/over.png", color: "rgba(225, 255, 0, 0.475)" },
     "Marvel": { image: "/content/background/marvel.png", color: "rgba(255, 0, 0, 0.473)" },
     "Harry Potter": { image: "/content/background/harry.png", color: "rgba(0, 255, 0, 0.509)" },
     "Boku No Hero": { image: "/content/background/boku.png", color: "rgba(0, 0, 255, 0.465)" },
@@ -11,9 +16,9 @@ const fandomColors = {
 function togglePopup(id) {
     const popup = document.getElementById(id);
     if (popup.style.display === "none" || popup.style.display === "") {
-      popup.style.display = "flex";
+        popup.style.display = "flex";
     } else {
-      popup.style.display = "none";
+        popup.style.display = "none";
     }
 }
 
@@ -33,14 +38,14 @@ function showPage(page) {
 
     if (page === 'relationships') {
         document.getElementById('relationships-visualization').style.display = 'block';
-        togglePopup('popup-relationships'); 
         loadSketch(relationshipsSketch, 'relationships-visualization');
+        loadLegend('relationships-legend');
         setActiveButton(document.getElementById('Overall-relationships'));
     } else if (page === 'tags') {
         document.getElementById('tags-visualization').style.display = 'block';
-        togglePopup('popup-tags'); 
         loadSketch(tagsSketch(false), 'banner-container-1', false);
         loadSketch(tagsSketch(true), 'banner-container-2', true);
+        loadLegend('tags-legend');
         setActiveButton(document.getElementById('Overall-tags'));
     }
 }
@@ -63,6 +68,13 @@ function loadSketch(sketch, containerId, isReverse = false) {
     } else {
         myp5 = new p5(sketch, document.getElementById(containerId));
     }
+}
+
+function loadLegend(containerId) {
+    if (legendP5) {
+        legendP5.remove();
+    }
+    legendP5 = new p5(legendSketch, document.getElementById(containerId));
 }
 
 function loadData(dataUrl, fandom) {
@@ -102,8 +114,6 @@ function updateRelationshipType(type) {
 
 function initializePage() {
     showHomePage();
-    setActiveButton(document.getElementById('Overall-relationships'));
-    setActiveButton(document.getElementById('Overall-tags'));
     loadData('/data/Overall.json', 'Overall');
 }
 
