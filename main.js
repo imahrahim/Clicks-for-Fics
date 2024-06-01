@@ -1,10 +1,12 @@
 import { relationshipsSketch } from './relationships.js';
 import { tagsSketch } from './tags.js';
 import { relationshipLegendSketch } from './relationshipLegend.js';
+import { legendSketch } from './legend.js';
 
 let myp5;
 let myp5_2;
 window.popupLegendP5Relationships = null;
+window.popupLegendP5Tags = null;
 
 const fandomColors = {
     "Overall": { image: "/content/background/over.png", color: "rgba(225, 255, 0, 0.475)" },
@@ -19,11 +21,15 @@ function togglePopup(id) {
         popup.style.display = "flex";
         if (id === 'popup-relationships' && !window.popupLegendP5Relationships) {
             window.popupLegendP5Relationships = new p5(relationshipLegendSketch, 'popup-relationships-legend');
+        }  }
+        if (id === 'popup-tags' && !window.popupLegendP5Tags) {
+            window.popupLegendP5Tags = new p5(legendSketch, 'popup-tags-legend');
         }
-    } else {
+     else {
         popup.style.display = "none";
     }
 }
+
 
 function showHomePage() {
     document.getElementById('home-page').style.display = 'block';
