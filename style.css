@@ -1,84 +1,93 @@
-@import url('https://use.typekit.net/xxl4ngd.css');
+@import url("https://use.typekit.net/xxl4ngd.css");
 
 .font-normal {
-    font-family: 'array-mono', serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "array-mono", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .font-italic {
-    font-family: 'array-mono', serif;
-    font-weight: 400;
-    font-style: italic;
+  font-family: "array-mono", serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .font-bold {
-    font-family: 'array-mono', serif;
-    font-weight: 900;
-    font-style: normal;
+  font-family: "array-mono", serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .font-bold-italic {
-    font-family: 'array-mono', serif;
-    font-weight: 900;
-    font-style: italic;
+  font-family: "array-mono", serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
-
 @font-face {
-  font-family: 'BasementGrotesque';
-  src: url('/fonts/BasementGrotesque-Black_v1.202.otf') format('opentype');
+  font-family: "BasementGrotesque";
+  src: url("/fonts/BasementGrotesque-Black_v1.202.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Brr';
-  src: url('/fonts/BRRR-Skrrt.otf') format('opentype');
+  font-family: "Brr";
+  src: url("/fonts/BRRR-Skrrt.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
-
 
 body {
-  font-family: 'Brr';
+  font-family: Calibri, sans-serif;
   background-color: #ed346c;
-  padding: 0;
 }
 
-h2, p {
+h2,
+p {
   text-align: center;
-  font-family: 'array-mono', serif;
+  font-family: Calibri, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 #header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 a {
+  font-family: Calibri, sans-serif;
   color: #000000;
+  position: static;
+  padding: 0.5rem;
+  background: transparent;
+  backdrop-filter: unset;
+  text-transform: uppercase;
+  font-size: 0.75rem;
   text-decoration: none;
-  font-size: 14px;
-  margin: 1rem;
+  letter-spacing: 0.1rem;
 }
 
-a .active {
-  color: #8056C4;
-  font-family: 'Brr';
-  text-transform: capitalize;
-  font-size: 14px;
+a.active {
+  color: #ff0000;
+  /* color: #8056c4; */
+}
+.active-button {
+  background-color: #8056C4;
+  color: white;
 }
 
 #home-link {
-  font-family: 'Brr';
-  text-decoration: underline;
-  text-align: left;
+  font-family: Calibri, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
   line-height: 35px;
-  font-size: 14px;
+  font-size: 1rem;
+  margin: 0;
 }
 
 #home-page {
@@ -97,86 +106,99 @@ a .active {
   display: flex;
   justify-content: center;
   margin: 1rem auto;
-  gap: 1rem; 
+  gap: 1rem;
 }
 
-#Overall{
+#Overall-relationships, #Overall-tags {
   background-color: #ffffffc8;
   backdrop-filter: blur(10px);
-  color: #8056C4;
-  border: 0.1rem solid #8056C4;
+  color: #8056c4;
+  border: 0.1rem solid #8056c4;
 }
 
-#Marvel {
+#Marvel-relationships, #Marvel-tags {
   background-color: #ffffffc8;
   backdrop-filter: blur(10px);
-  color: #F0519E;
-  border: 0.1rem solid #F0519E;
+  color: #f0519e;
+  border: 0.1rem solid #f0519e;
 }
 
-#Harry-Potter {
+#Harry-Potter-relationships, #Harry-Potter-tags {
   background-color: #ffffffc8;
   backdrop-filter: blur(10px);
-  color: #589BCF;
-  border: 0.1rem solid #589BCF;
+  color: #589bcf;
+  border: 0.1rem solid #589bcf;
 }
 
-#Boku-No-Hero {
+#Boku-No-Hero-relationships, #Boku-No-Hero-tags {
   background-color: #ffffffc8;
   backdrop-filter: blur(10px);
-  color: #87D4A5;
-  border: 0.1rem solid #87D4A5;
+  color: #87d4a5;
+  border: 0.1rem solid #87d4a5;
 }
 
-#Overall.active-button {
+.active-button {
+  background-color: #8056C4;
+  color: white;
+}
+
+#Overall-relationships.active-button, #Overall-tags.active-button {
   background-color: #8056C4;
   backdrop-filter: blur(10px);
   color: #ffffffc8;
   border: 0.1rem solid #ffffffc8;
 }
 
-#Marvel.active-button {
-  background-color: #F0519E;
+#Marvel-relationships.active-button, #Marvel-tags.active-button {
+  background-color: #f0519e;
   backdrop-filter: blur(10px);
   color: #ffffffc8;
   border: 0.1rem solid #ffffffc8;
 }
 
-#Harry-Potter.active-button {
-  background-color: #589BCF;
+#Harry-Potter-relationships.active-button, #Harry-Potter-tags.active-button {
+  background-color: #589bcf;
   backdrop-filter: blur(10px);
   color: #ffffffc8;
   border: 0.1rem solid #ffffffc8;
 }
 
-#Boku-No-Hero.active-button {
-  background-color: #87D4A5;
+#Boku-No-Hero-relationships.active-button, #Boku-No-Hero-tags.active-button {
+  background-color: #87d4a5;
   backdrop-filter: blur(10px);
   color: #ffffffc8;
   border: 0.1rem solid #ffffffc8;
 }
+
 
 button {
   height: 2rem;
   margin: 0;
   padding: 0.1rem 1rem;
-  font-family: 'Brr';
+  font-family: "Brr";
   text-align: center;
   font-size: 14px;
   border-radius: 5rem;
   background-color: #ffffffc8;
   backdrop-filter: blur(10px);
-  color: #8056C4;
-  border: 0.1rem solid #8056C4;
+  color: #8056c4;
+  border: 0.1rem solid #8056c4;
   cursor: pointer;
+}
+
+button:hover {
+  background-color: #8056c4;
+  backdrop-filter: blur(10px);
+  color: #ffffffc8;
+  border: 0.1rem solid #ffffffc8;
 }
 
 #show-info {
   padding: 0.8rem;
- border-radius: 5rem;
- margin-left: 2rem;
- display: flex;
- align-items: center;
+  border-radius: 5rem;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 #change-data {
@@ -197,7 +219,6 @@ button {
   align-items: center;
   display: flex;
 }
-
 
 #banner-container-1 {
   border: 0.1rem solid #000000;
@@ -245,12 +266,12 @@ button {
   right: 2rem;
   bottom: 2rem;
   background-color: #ffffff31;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   overflow-y: scroll;
   visibility: visible;
   border: 0.1rem solid #000000;
   border-radius: 0.5rem;
-  font-family: 'Brr', sans-serif;
+  font-family: "Brr", sans-serif;
 }
 
 .switch {
@@ -272,10 +293,10 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #8056C4;
+  background-color: #8056c4;
   backdrop-filter: blur(10px);
   border-radius: 2rem;
-  border: 0.1rem solid #8056C4;
+  border: 0.1rem solid #8056c4;
   cursor: pointer;
   transition: 0.6s;
 }
@@ -289,7 +310,7 @@ button {
   margin-top: -0.1rem;
   margin-left: -0.1rem;
   background-color: rgb(255, 255, 255);
-  border: 0.1rem solid #8056C4;
+  border: 0.1rem solid #8056c4;
   border-radius: 50%;
   transition: 0.6s;
 }
@@ -317,12 +338,12 @@ input:checked + .slider {
   background-color: #ffffffc8;
   backdrop-filter: blur(10px);
   border-radius: 2rem;
-  border: 0.1rem solid #8056C4;
+  border: 0.1rem solid #8056c4;
 }
 
 input:checked + .slider:before {
   transform: translateX(10rem);
-  background-color: #8056C4;
+  background-color: #8056c4;
   margin-right: -0.1rem;
 }
 
@@ -331,10 +352,10 @@ input:checked + .slider .romantic {
 }
 
 input:checked + .slider .friendship {
-  color: #8056C4;
+  color: #8056c4;
 }
 
-#popup-relationships{
+#popup-relationships {
   display: flex;
   flex-direction: row;
 }

@@ -6,6 +6,7 @@ export function tagsSketch(isReverse) {
 
         let categoryImages = {};
         let currentFandom = "Overall";
+        const font = ('Calibri, sans-serif')
 
         const fandomColors = {
             "Overall": { image: "/content/background/over.png", color: "#8056C4" },
@@ -39,7 +40,7 @@ export function tagsSketch(isReverse) {
                 console.log("Canvas-Container nicht gefunden.");
                 return;
             }
-            let canvas = p.createCanvas(canvasContainer.offsetWidth, 40).parent(canvasContainer);
+            let canvas = p.createCanvas(canvasContainer.offsetWidth,40).parent(canvasContainer);
             console.log("Canvas erstellt mit Breite:", canvasContainer.offsetWidth, " Höhe: 100");
 
             // Laden eines Standard-Datensatzes
@@ -77,18 +78,18 @@ export function tagsSketch(isReverse) {
                 let scaledWidth = 50;
                 let scaledHeight = img.height * (scaledWidth / img.width);
                 p.image(img, x, p.height / 2 - scaledHeight / 2, scaledWidth, scaledHeight);
-
-                p.textFont("Helvetica");
+        
+                p.textFont(font);
                 p.textStyle(p.NORMAL);
                 p.textSize(24);
                 p.textAlign(p.LEFT, p.CENTER);
                 p.fill(0);
                 p.text(tag.tag, x + scaledWidth + 5, p.height / 2);
-
-                x += scaledWidth + p.textWidth(tag.tag) + 50;
+        
+                x += scaledWidth + p.textWidth(tag.tag) + 100;
             });
-
-            let speed = p.map(p.mouseX, 0, p.width, 1, 1); 
+        
+            let speed = p.map(p.mouseX, 0, p.width, 0.5, 5); 
             if (isReverse) {
                 reverseScrollX += speed;
                 if (reverseScrollX > p.width) reverseScrollX = -x;
@@ -97,6 +98,7 @@ export function tagsSketch(isReverse) {
                 if (scrollX < -x + p.width) scrollX = 0;
             }
         }
+        
 
         p.loadTagData = function (dataUrl, fandom, reverse) {
             p.loadTable(dataUrl, "csv", "header", (table) => {

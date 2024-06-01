@@ -15,7 +15,7 @@ function togglePopup(id) {
     } else {
       popup.style.display = "none";
     }
-  }
+}
 
 function showHomePage() {
     document.getElementById('home-page').style.display = 'block';
@@ -100,7 +100,8 @@ function updateRelationshipType(type) {
 
 function initializePage() {
     showHomePage();
-    setActiveButton(document.getElementById('Overall'));
+    setActiveButton(document.getElementById('Overall-relationships'));
+    setActiveButton(document.getElementById('Overall-tags'));
     loadData('/data/Overall.json', 'Overall');
 }
 

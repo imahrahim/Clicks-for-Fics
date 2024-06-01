@@ -29,7 +29,7 @@ const linksColors = {
   "friendship": "#000000",
 };
 
-const font = ('array-mono')
+const font = ('Calibri, sans-serif')
 
 export function relationshipsSketch(p) {
   p.setup = function () {
@@ -55,14 +55,14 @@ export function relationshipsSketch(p) {
   };
 
   p.processData = function (data) {
-    console.log("Processing data...");
+    // console.log("Processing data...");
     nodes = [];
     links = [];
     let fandomNodes = new Set();
 
     Object.keys(data).forEach((character) => {
       const characterData = data[character];
-      console.log("Processing character:", character, characterData);
+      // console.log("Processing character:", character, characterData);
 
       const characterNode = {
         id: character,
@@ -144,89 +144,100 @@ export function relationshipsSketch(p) {
         
         if (draw) {
             p.noStroke();
-            p.fill('#ffffff61')
-            if (x >= 200 && x <= p.width - 200) {
+            p.fill('#ffffff38')
+            if (x >= 200 && x <= p.width - 150) {
                 p.rect(x, 0, rectWidth, p.height); 
+                p.push()
+                p.angleMode(p.DEGREES)
+                p.translate(x+1, 10); 
+                p.rotate(270); 
+                p.fill(0);
+                p.textAlign(p.CENTER, p.CENTER); 
+                p.fill(0)
+                p.textSize(8)
+                p.text(i-1,0,0)
+                p.pop()
             }
         }
         draw = !draw;
     }
 };
 
-  p.drawVisualization = function () {
-    if (!dataShips) {
+p.drawVisualization = function () {
+  if (!dataShips) {
       console.error("Data not loaded");
       return;
-    }
+  }
 
-    p.clear();
-    p.drawBackgroundScale();
+  p.clear();
+  p.drawBackgroundScale();
 
-    for (const link of links) {
+  for (const link of links) {
       if (link.visible) {
-        const sourceNode = nodes.find((n) => n.id === link.source);
-        const targetNode = nodes.find((n) => n.id === link.target);
-        if (sourceNode && targetNode && sourceNode.visible && targetNode.visible) {
-          p.stroke(linksColors[link.type]);
-          p.strokeWeight(link.type === 'fandom' ? 1 : link.frequency * 0.2);
-          p.line(sourceNode.x, sourceNode.y, targetNode.x, targetNode.y);
-        }
+          const sourceNode = nodes.find((n) => n.id === link.source);
+          const targetNode = nodes.find((n) => n.id === link.target);
+          if (sourceNode && targetNode && sourceNode.visible && targetNode.visible) {
+              p.stroke(link.type === 'fandom' ? (fandomColors[sourceNode.fandom] || linksColors[link.type]) : linksColors[link.type]);
+              p.strokeWeight(link.type === 'fandom' ? 1 : link.frequency * 0.2);
+              p.line(sourceNode.x, sourceNode.y, targetNode.x, targetNode.y);
+          }
       }
-    }
+  }
 
-    p.rectMode(p.CENTER);
-    p.textAlign(p.CENTER, p.CENTER);
+  p.rectMode(p.CENTER);
+  p.textAlign(p.CENTER, p.CENTER);
 
-    for (const node of nodes) {
+  for (const node of nodes) {
       if (node.visible) {
-        p.noStroke();
-        if (node.group === "character") {
-          if (node.gender === 'female'){
-            p.fill(fandomColors[node.fandom] || fandomColors["other"]);
-            p.stroke(0);
-            p.strokeWeight(1);
-            p.rect(node.x, node.y, 200, 12, 20);
-          } else if (node.gender === 'male') {
-            p.fill(fandomColors[node.fandom] || fandomColors["other"]);
-            p.stroke(0);
-            p.strokeWeight(1);
-            p.rect(node.x, node.y, 200, 12);
-          } else {
-            p.fill(otherColors[node.fandom] || otherColors['other']);
-            p.stroke(255);
-            p.strokeWeight(0);
-            p.rect(node.x, node.y, 200, 12);
-          }
-    
           p.noStroke();
-          p.fill(0);
-          p.textFont(font);
-          if (node.gender === 'male') {
-            p.textStyle(p.BOLD)
-          } else if (node.gender === 'female') {
-            p.textStyle(p.BOLDITALIC)
-          } else {
-            p.textStyle(p.ITALIC);
-          }
-          p.textSize(8);
-          p.text(node.id, node.x, node.y);fandomColors[node.id] 
+          if (node.group === "character") {
+              if (node.gender === 'female'){
+                  p.fill(fandomColors[node.fandom] || fandomColors["other"]);
+                  p.stroke(0);
+                  p.strokeWeight(1);
+                  p.rect(node.x, node.y, 200, 12, 20);
+              } else if (node.gender === 'male') {
+                  p.fill(fandomColors[node.fandom] || fandomColors["other"]);
+                  p.stroke(0);
+                  p.strokeWeight(1);
+                  p.rect(node.x, node.y, 200, 12);
+              } else {
+                  p.fill(otherColors[node.fandom] || otherColors['other']);
+                  p.stroke(255);
+                  p.strokeWeight(0);
+                  p.rect(node.x, node.y, 200, 12);
+              }
 
-        } else if (node.group === "fandom") {
-          p.fill(255,10);
-          p.rect(node.x-100,node.y, 200,30)
-          p.fill(fandomColors[node.id] || 'black');
-          p.ellipse(node.x, node.y, 4)
-          p.textAlign(p.RIGHT, p.CENTER)
-          p.noStroke();
-          p.fill(fandomColors[node.id] || 'black');
-          p.textFont(font);
-          p.textStyle(p.BOLD)
-          p.textSize(8);
-          p.text(node.id, node.x - 10, node.y);
-        }
+              p.noStroke();
+              p.fill(0);
+              p.textFont(font);
+              if (node.gender === 'male') {
+                  p.textStyle(p.BOLD)
+              } else if (node.gender === 'female') {
+                  p.textStyle(p.BOLDITALIC)
+              } else {
+                  p.textStyle(p.ITALIC);
+              }
+              p.textSize(11);
+              p.text(node.id, node.x, node.y);
+
+          } else if (node.group === "fandom") {
+              p.fill(255,10);
+              p.rect(node.x-100,node.y, 200,30)
+              p.fill(fandomColors[node.id] || 'black');
+              p.ellipse(node.x, node.y, 4)
+              p.textAlign(p.RIGHT, p.CENTER)
+              p.noStroke();
+              p.fill(fandomColors[node.id] || 'black');
+              p.textFont(font);
+              p.textStyle(p.BOLD)
+              p.textSize(11);
+              p.text(node.id, node.x - 10, node.y);
+          }
       }
-    }
-  };
+  }
+};
+
 
   let selectedNode = null;
 
@@ -252,7 +263,7 @@ export function relationshipsSketch(p) {
 
     if (foundNode) {
       selectedNode = selectedNode === foundNode ? null : foundNode;
-      console.log("Node clicked:", selectedNode ? selectedNode.id : "none");
+      // console.log("Node clicked:", selectedNode ? selectedNode.id : "none");
 
       p.updateVisibility();
     }
@@ -322,7 +333,7 @@ export function relationshipsSketch(p) {
 
   p.updateRelationshipType = function (type) {
     currentRelationshipType = type;
-    console.log("Relationship type updated:", type);
+    // console.log("Relationship type updated:", type);
 
     p.updateVisibility();
     p.updateFandomScale(); 
@@ -332,7 +343,7 @@ export function relationshipsSketch(p) {
 
   p.initializeCharacterScale = function () {
     let characterNodes = nodes.filter(node => node.group === "character");
-    console.log('Character nodes length:', characterNodes.length);
+    // console.log('Character nodes length:', characterNodes.length);
     yCharacterScale = d3
       .scaleLinear()
       .domain([0, characterNodes.length])
@@ -342,11 +353,11 @@ export function relationshipsSketch(p) {
   p.updateXScale = function () {
     let relationshipContainer = document.getElementById("relationships-visualization");
     let w = relationshipContainer.offsetWidth;
-    console.log('Canvas width:', relationshipContainer.offsetWidth);
+    // console.log('Canvas width:', relationshipContainer.offsetWidth);
 
     xScale = d3.scaleLog()
     .domain([1, d3.max(nodes, (d) => d.frequency) || 1])
-    .range([200, w - 200]);
+    .range([200, w - 150]);
   };
 
   p.updateFandomScale = function () {
@@ -371,7 +382,7 @@ export function relationshipsSketch(p) {
         fandomIndex++;
       }
     });
-    console.log("Node positions updated");
+    // console.log("Node positions updated");
   };
 
   p.checkHover = function () {
@@ -408,6 +419,6 @@ export function relationshipsSketch(p) {
 
   p.drawTooltip = function (node) {
     let tooltip = document.getElementById('stickyTooltip');
-    tooltip.innerHTML = `${node.id}  ${node.frequency}`;
+    tooltip.innerHTML = `${node.id}  (${node.frequency})`;
   };
 }

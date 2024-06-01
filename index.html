@@ -29,10 +29,10 @@
         <div id="relationships-visualization" style="display: none;">
             <div id="change-data">
                 <div id="fandom-buttons">
-                    <button id="Overall" onclick="loadData('/data/Overall.json', 'Overall'); setActiveButton(this);">OVERALL</button>
-                    <button id="Marvel" onclick="loadData('/data/Marvel.json', 'Marvel'); setActiveButton(this);">MARVEL</button>
-                    <button id="Harry-Potter" onclick="loadData('/data/Harry_Potter_Relationships.json', 'Harry Potter'); setActiveButton(this);">HARRY POTTER</button>
-                    <button id="Boku-No-Hero" onclick="loadData('/data/Boku_No_Hero.json', 'Boku No Hero'); setActiveButton(this);">BOKU NO HERO</button>
+                    <button id="Overall-relationships" onclick="loadData('/data/Overall.json', 'Overall'); setActiveButton(this);">OVERALL</button>
+                    <button id="Marvel-relationships" onclick="loadData('/data/Marvel.json', 'Marvel'); setActiveButton(this);">MARVEL</button>
+                    <button id="Harry-Potter-relationships" onclick="loadData('/data/Harry_Potter_Relationships.json', 'Harry Potter'); setActiveButton(this);">HARRY POTTER</button>
+                    <button id="Boku-No-Hero-relationships" onclick="loadData('/data/Boku_No_Hero.json', 'Boku No Hero'); setActiveButton(this);">BOKU NO HERO</button>
                 </div>
                 <div id="stickyTooltip" style="position: sticky; font-size: small; font-family: 'array-mono';">
                     Tooltip Information
@@ -56,10 +56,10 @@
             <div id="tag-buttons">
               <div></div>
               <div>
-                <button id="Overall" onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall'); setActiveButton(this);">OVERALL</button>
-                <button id="Marvel" data-fandom="Marvel" onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel'); setActiveButton(this);">MARVEL</button>
-                <button id="Harry-Potter" onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter'); setActiveButton(this);">HARRY POTTER</button>
-                <button id="Boku-No-Hero" onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero'); setActiveButton(this);">BOKU NO HERO</button>
+                <button id="Overall-tags" onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall'); setActiveButton(this);">OVERALL</button>
+                <button id="Marvel-tags" data-fandom="Marvel" onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel'); setActiveButton(this);">MARVEL</button>
+                <button id="Harry-Potter-tags" onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter'); setActiveButton(this);">HARRY POTTER</button>
+                <button id="Boku-No-Hero-tags" onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero'); setActiveButton(this);">BOKU NO HERO</button>
               </div>
               <button id="show-info-tag" onclick="togglePopup('popup-tags')">i</button>
             </div>
