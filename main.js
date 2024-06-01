@@ -2,7 +2,7 @@ let myp5;
 let myp5_2;
 
 const fandomColors = {
-    "Overall": { image: "/content/background/over.png", color: "rgba(225, 255, 0, 0.475)" },
+    "Overall": { image: "/content/background/a.png", color: "rgba(225, 255, 0, 0.475)" },
     "Marvel": { image: "/content/background/marvel.png", color: "rgba(255, 0, 0, 0.473)" },
     "Harry Potter": { image: "/content/background/harry.png", color: "rgba(0, 255, 0, 0.509)" },
     "Boku No Hero": { image: "/content/background/boku.png", color: "rgba(0, 0, 255, 0.465)" },
@@ -35,11 +35,13 @@ function showPage(page) {
         document.getElementById('relationships-visualization').style.display = 'block';
         togglePopup('popup-relationships'); 
         loadSketch(relationshipsSketch, 'relationships-visualization');
+        setActiveButton(document.getElementById('Overall-relationships'));
     } else if (page === 'tags') {
         document.getElementById('tags-visualization').style.display = 'block';
         togglePopup('popup-tags'); 
         loadSketch(tagsSketch(false), 'banner-container-1', false);
         loadSketch(tagsSketch(true), 'banner-container-2', true);
+        setActiveButton(document.getElementById('Overall-tags'));
     }
 }
 

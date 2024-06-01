@@ -26,7 +26,7 @@ const otherColors = {
 const linksColors = {
   "fandom": "#8056c43f",
   "romantic": "#0e0917",
-  "friendship": "#000000",
+  "friendship": "#ffffff",
 };
 
 const font = ('Calibri, sans-serif')

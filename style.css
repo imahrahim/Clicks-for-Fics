@@ -72,10 +72,6 @@ a {
   letter-spacing: 0.1rem;
 }
 
-a.active {
-  color: #ff0000;
-  /* color: #8056c4; */
-}
 .active-button {
   background-color: #8056C4;
   color: white;
@@ -142,28 +138,28 @@ a.active {
   color: white;
 }
 
-#Overall-relationships.active-button, #Overall-tags.active-button {
+#Overall-relationships.active-button, #Overall-tags.active-button,#Overall-relationships:hover, #Overall-tags:hover{
   background-color: #8056C4;
   backdrop-filter: blur(10px);
   color: #ffffffc8;
   border: 0.1rem solid #ffffffc8;
 }
 
-#Marvel-relationships.active-button, #Marvel-tags.active-button {
+#Marvel-relationships.active-button, #Marvel-tags.active-button,#Marvel-relationships:hover, #Marvel-tags:hover{
   background-color: #f0519e;
   backdrop-filter: blur(10px);
   color: #ffffffc8;
   border: 0.1rem solid #ffffffc8;
 }
 
-#Harry-Potter-relationships.active-button, #Harry-Potter-tags.active-button {
+#Harry-Potter-relationships.active-button, #Harry-Potter-tags.active-button,#Harry-Potter-relationships:hover, #Harry-Potter-tags:hover {
   background-color: #589bcf;
   backdrop-filter: blur(10px);
   color: #ffffffc8;
   border: 0.1rem solid #ffffffc8;
 }
 
-#Boku-No-Hero-relationships.active-button, #Boku-No-Hero-tags.active-button {
+#Boku-No-Hero-relationships.active-button, #Boku-No-Hero-tags.active-button,#Boku-No-Hero-relationships:hover, #Boku-No-Hero-tags:hover{
   background-color: #87d4a5;
   backdrop-filter: blur(10px);
   color: #ffffffc8;
@@ -293,10 +289,10 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #8056c4;
+  background-color: #000000;
   backdrop-filter: blur(10px);
   border-radius: 2rem;
-  border: 0.1rem solid #8056c4;
+  border: 0.1rem solid #000000;
   cursor: pointer;
   transition: 0.6s;
 }
@@ -310,7 +306,7 @@ button:hover {
   margin-top: -0.1rem;
   margin-left: -0.1rem;
   background-color: rgb(255, 255, 255);
-  border: 0.1rem solid #8056c4;
+  border: 0.1rem solid #000000;
   border-radius: 50%;
   transition: 0.6s;
 }
@@ -338,12 +334,12 @@ input:checked + .slider {
   background-color: #ffffffc8;
   backdrop-filter: blur(10px);
   border-radius: 2rem;
-  border: 0.1rem solid #8056c4;
+  border: 0.1rem solid #000000;
 }
 
 input:checked + .slider:before {
   transform: translateX(10rem);
-  background-color: #8056c4;
+  background-color: #000000;
   margin-right: -0.1rem;
 }
 
@@ -352,7 +348,7 @@ input:checked + .slider .romantic {
 }
 
 input:checked + .slider .friendship {
-  color: #8056c4;
+  color: #000000;
 }
 
 #popup-relationships {
