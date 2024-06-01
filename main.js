@@ -1,10 +1,10 @@
 import { relationshipsSketch } from './relationships.js';
 import { tagsSketch } from './tags.js';
-import { legendSketch } from './legend.js';
+import { relationshipLegendSketch } from './relationshipLegend.js';
 
 let myp5;
 let myp5_2;
-let legendP5;
+window.popupLegendP5Relationships = null;
 
 const fandomColors = {
     "Overall": { image: "/content/background/over.png", color: "rgba(225, 255, 0, 0.475)" },
@@ -17,6 +17,9 @@ function togglePopup(id) {
     const popup = document.getElementById(id);
     if (popup.style.display === "none" || popup.style.display === "") {
         popup.style.display = "flex";
+        if (id === 'popup-relationships' && !window.popupLegendP5Relationships) {
+            window.popupLegendP5Relationships = new p5(relationshipLegendSketch, 'popup-relationships-legend');
+        }
     } else {
         popup.style.display = "none";
     }
@@ -39,13 +42,11 @@ function showPage(page) {
     if (page === 'relationships') {
         document.getElementById('relationships-visualization').style.display = 'block';
         loadSketch(relationshipsSketch, 'relationships-visualization');
-        loadLegend('relationships-legend');
         setActiveButton(document.getElementById('Overall-relationships'));
     } else if (page === 'tags') {
         document.getElementById('tags-visualization').style.display = 'block';
         loadSketch(tagsSketch(false), 'banner-container-1', false);
         loadSketch(tagsSketch(true), 'banner-container-2', true);
-        loadLegend('tags-legend');
         setActiveButton(document.getElementById('Overall-tags'));
     }
 }
@@ -68,13 +69,6 @@ function loadSketch(sketch, containerId, isReverse = false) {
     } else {
         myp5 = new p5(sketch, document.getElementById(containerId));
     }
-}
-
-function loadLegend(containerId) {
-    if (legendP5) {
-        legendP5.remove();
-    }
-    legendP5 = new p5(legendSketch, document.getElementById(containerId));
 }
 
 function loadData(dataUrl, fandom) {

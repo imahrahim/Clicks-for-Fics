@@ -50,7 +50,7 @@
                     <button id="show-info" onclick="togglePopup('popup-relationships')">i</button>
                 </div>
             </div>
-            <div id="relationships-legend"></div> <!-- Container für die Relationship-Legende -->
+            <!-- <div id="relationships-legend"></div>  -->
         </div>
         <div id="tags-visualization" style="display: none;">
             <div id="banner-container-1"></div>
@@ -68,11 +68,36 @@
             <div id="banner-container-2"></div>
         </div>
     </div>
+    <div id="popup-relationships" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span class="close" onclick="togglePopup('popup-relationships')">&times;</span>
+            <h2>Relationships Information</h2>
+            <p>Hier die Informationen zu Relationships...</p>
+            <div id="popup-relationships-legend"></div> <!-- Container für die Relationships-Legende im Popup -->
+        </div>
+    </div>
+
+    <div id="popup-tags" class="popup" style="display: none;">
+        <div class="popup-content">
+            <span class="close" onclick="togglePopup('popup-tags')">&times;</span>
+            <h2>Tags Information</h2>
+            <p>Hier die Informationen zu Tags...</p>
+            <div class="legend-item"><img src="/content/tags/love.png" alt="Romance">Romance</div>
+            <div class="legend-item"><img src="/content/tags/angsst.png" alt="Angst">Angst</div>
+            <div class="legend-item"><img src="/content/tags/blitz.png" alt="Action">Action</div>
+            <div class="legend-item"><img src="/content/tags/chick.png" alt="Fluff">Fluff</div>
+            <!-- Weitere Elemente hinzufügen -->
+        </div>
+    </div>
+
     <script type="text/javascript">
         function togglePopup(id) {
             const popup = document.getElementById(id);
             if (popup.style.display === "none" || popup.style.display === "") {
                 popup.style.display = "flex";
+                if (id === 'popup-relationships' && !popupLegendP5Relationships) {
+                    popupLegendP5Relationships = new p5(relationshipLegendSketch, 'popup-relationships-legend');
+                }
             } else {
                 popup.style.display = "none";
             }
@@ -85,20 +110,25 @@
 
             if (page === 'relationships') {
                 document.getElementById('relationships-visualization').style.display = 'block';
-                togglePopup('popup-relationships'); 
+                loadSketch(relationshipsSketch, 'relationships-visualization');
+                setActiveButton(document.getElementById('Overall-relationships'));
             } else if (page === 'tags') {
                 document.getElementById('tags-visualization').style.display = 'block';
-                togglePopup('popup-tags'); 
+                loadSketch(tagsSketch(false), 'banner-container-1', false);
+                loadSketch(tagsSketch(true), 'banner-container-2', true);
+                setActiveButton(document.getElementById('Overall-tags'));
             }
         }
     </script>
+
     <script src="main.js" type="module"></script>
     <script type="module">
         import { relationshipsSketch } from './relationships.js';
         import { tagsSketch } from './tags.js';
+        import { relationshipLegendSketch } from './relationshipLegend.js';
         window.relationshipsSketch = relationshipsSketch;
         window.tagsSketch = tagsSketch;
-        console.log(relationshipsSketch, tagsSketch);
+        window.relationshipLegendSketch = relationshipLegendSketch;
     </script>
 </body>
 </html>
