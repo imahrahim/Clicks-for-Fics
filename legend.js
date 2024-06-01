@@ -29,20 +29,25 @@ export function legendSketch(p) {
     };
 
     p.setup = function () {
-        let canvas = p.createCanvas(200, legends.length * 25 + 20);
-        canvas.parent(document.getElementById('legend-container'));
+        let container = document.getElementById('popup-tags-legend');
+        if (container) {
+            let canvas = p.createCanvas(300, legends.length * 25 + 20);
+            canvas.parent(container);
+        } else {
+            console.error('Parent container not found');
+        }
     };
 
     p.draw = function () {
-        p.background(255,0);
+        p.background(255);
 
         legends.forEach((legend, index) => {
             if (categoryImages[legend.imageKey]) {
-                p.image(categoryImages[legend.imageKey], 10, 10 + index * 35, 30, 30);
+                p.image(categoryImages[legend.imageKey], 10, 10 + index * 25, 20, 20);
             }
             p.fill(0);
             p.textSize(12);
-            p.text(legend.name, 50, 30 + index * 35);
+            p.text(legend.name, 40, 25 + index * 25);
         });
     };
 }
