@@ -45,7 +45,6 @@ body {
 
 h2,
 p {
-  text-align: center;
   font-family: Calibri, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -96,6 +95,7 @@ a {
   flex-direction: column;
   justify-content: center;
   margin: 2rem auto;
+  padding: 2rem;
 }
 
 #home-page-btns {
@@ -204,14 +204,6 @@ button:hover {
   border: 0.1rem solid #ffffff;
 }
 
-#show-info, #show-info-tag {
-  padding: 0.8rem;
-  border-radius: 5rem;
-  margin-left: 1rem;
-  display: flex;
-  align-items: center;
-}
-
 #change-data {
   position: sticky;
   top: 0;
@@ -231,8 +223,8 @@ button:hover {
   display: flex;
 }
 
-#legend-container {
-  width: 240px;
+/* #legend-container {
+  width: 50%;
   background-color: #ffffff4a;
   backdrop-filter: blur(1px);
   border: 0.1rem solid #000000;
@@ -240,7 +232,7 @@ button:hover {
   padding: 1rem;
   display: flex;
   flex-direction: row-reverse;
-}
+} */
 
 #banner-container-1 {
   border: 0.1rem solid #000000;
@@ -381,6 +373,20 @@ input:checked + .slider .friendship {
   flex-direction: row;
 }
 
+#show-info, #show-info-tag {
+  padding: 0.8rem;
+  border-radius: 5rem;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#tags-information, #relationships-information {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
 .popup {
   display: none;
   position: fixed;
@@ -394,17 +400,19 @@ input:checked + .slider .friendship {
 }
 
 .popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: white;
-  padding: 2rem;
-  padding-top: 0;
+  padding: 3rem;
   border-radius: 0.5rem;
-  width: 30rem;
+  width: 40rem;
 }
 
 .close {
   text-align: right;
-  margin-top: -2rem;
-  left: 0;
   font-size: 30px;
   cursor: pointer;
+  margin-top: -2.5rem;
+  margin-right: -2rem;
 }

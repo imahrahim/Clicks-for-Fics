@@ -41,6 +41,24 @@ export function legendSketch(p) {
     p.draw = function () {
         p.background(255);
 
+            let ratings = [
+      { name: "Explicit", color: "#F0519E" },
+      { name: "Mature", color: "#589BCF" },
+      { name: "Teen And Up", color: "#87D4A5" },
+      { name: "General Audiance", color: "#87D4A5" },
+      { name: "not Rated", color: "#87D4A5" },
+    ];
+   
+    ratings.forEach((legend, index) => {
+        p.textAlign(p.LEFT, p.CENTER);
+      p.fill(legend.color);
+     p.noStroke();
+    //   p.ellipse(10, 10 + index * 30, 5);
+      p.textSize(16);
+      p.textStyle(p.BOLD);
+      p.text(legend.name, 10, 15 + index * 30);
+    });
+
         legends.forEach((legend, index) => {
             if (categoryImages[legend.imageKey]) {
                 p.image(categoryImages[legend.imageKey], 10, 10 + index * 25, 20, 20);

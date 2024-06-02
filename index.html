@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Clicks for Fics</title>
@@ -9,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3" defer></script>
     <link rel="stylesheet" href="https://use.typekit.net/xxl4ngd.css">
 </head>
+
 <body>
     <header id="header">
         <a href="#" id="home-link" onclick="showHomePage()">CLICKS FOR FICS</a>
@@ -21,6 +23,17 @@
         <div id="home-page">
             <h1>WELCOME TO CLICKS FOR FICS</h1>
             <p>Your ultimate source for fan fiction data visualization.</p>
+            <p>Welcome to Clicks for Fics</p>
+            <p>A project that delves into Archive of Our Own. We analyzed and visualized the top 1000 public works rated
+                with kudos, focusing on the three most prominent fandoms within these works:</p>
+            <p><span style="color: #F0519E; font-weight: bold;">Marvel</span>, <span
+                    style="color: #589BCF; font-weight: bold;">Harry Potter</span>, and <span
+                    style="color: #87D4A5; font-weight: bold;">Boku No Hero Academia</span>.</p>
+            <p>Find out which characters and relationships are the fan favorites and which crossovers between different
+                fandoms are most desired.</p>
+            <p>Discover the themes that these fandoms engage with the most and the differences in interests among the
+                three top fandoms.</p>
+            <p>Have fun exploring!</p>
             <div id="home-page-btns">
                 <button onclick="showPage('relationships')">RELATIONSHIPS</button>
                 <button onclick="showPage('tags')">ADDITIONAL TAGS</button>
@@ -29,10 +42,16 @@
         <div id="relationships-visualization" style="display: none;">
             <div id="change-data">
                 <div id="fandom-buttons">
-                    <button id="Overall-relationships" onclick="loadData('/data/Overall.json', 'Overall'); setActiveButton(this);">OVERALL</button>
-                    <button id="Marvel-relationships" onclick="loadData('/data/Marvel.json', 'Marvel'); setActiveButton(this);">MARVEL</button>
-                    <button id="Harry-Potter-relationships" onclick="loadData('/data/Harry_Potter_Relationships.json', 'Harry Potter'); setActiveButton(this);">HARRY POTTER</button>
-                    <button id="Boku-No-Hero-relationships" onclick="loadData('/data/Boku_No_Hero.json', 'Boku No Hero'); setActiveButton(this);">BOKU NO HERO</button>
+                    <button id="Overall-relationships"
+                        onclick="loadData('/data/Overall.json', 'Overall'); setActiveButton(this);">OVERALL</button>
+                    <button id="Marvel-relationships"
+                        onclick="loadData('/data/Marvel.json', 'Marvel'); setActiveButton(this);">MARVEL</button>
+                    <button id="Harry-Potter-relationships"
+                        onclick="loadData('/data/Harry_Potter_Relationships.json', 'Harry Potter'); setActiveButton(this);">HARRY
+                        POTTER</button>
+                    <button id="Boku-No-Hero-relationships"
+                        onclick="loadData('/data/Boku_No_Hero.json', 'Boku No Hero'); setActiveButton(this);">BOKU NO
+                        HERO</button>
                 </div>
                 <div id="stickyTooltip" style="position: sticky; font-size: small; font-family: 'array-mono';">
                     Tooltip Information
@@ -40,7 +59,8 @@
                 <div id="btns-right">
                     <div id="toggle-relationship-container">
                         <label class="switch">
-                            <input type="checkbox" id="toggle-relationship-checkbox" onchange="updateRelationshipType(this.checked ? 'friendship' : 'romantic')">
+                            <input type="checkbox" id="toggle-relationship-checkbox"
+                                onchange="updateRelationshipType(this.checked ? 'friendship' : 'romantic')">
                             <span class="slider round">
                                 <span class="slider-text romantic">ROMANTIC</span>
                                 <span class="slider-text friendship">FRIENDSHIP</span>
@@ -50,39 +70,74 @@
                     <button id="show-info" onclick="togglePopup('popup-relationships')">i</button>
                 </div>
             </div>
-            <!-- <div id="relationships-legend"></div>  -->
+
         </div>
         <div id="tags-visualization" style="display: none;">
             <div id="banner-container-1"></div>
             <div id="tag-buttons">
-              <div>
-                <button id="Overall-tags" onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall'); setActiveButton(this);">OVERALL</button>
-                <button id="Marvel-tags" data-fandom="Marvel" onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel'); setActiveButton(this);">MARVEL</button>
-                <button id="Harry-Potter-tags" onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter'); setActiveButton(this);">HARRY POTTER</button>
-                <button id="Boku-No-Hero-tags" onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero'); setActiveButton(this);">BOKU NO HERO</button>
+                <div>
+                    <button id="Overall-tags"
+                        onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall'); setActiveButton(this);">OVERALL</button>
+                    <button id="Marvel-tags" data-fandom="Marvel"
+                        onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel'); setActiveButton(this);">MARVEL</button>
+                    <button id="Harry-Potter-tags"
+                        onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter'); setActiveButton(this);">HARRY
+                        POTTER</button>
+                    <button id="Boku-No-Hero-tags"
+                        onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero'); setActiveButton(this);">BOKU
+                        NO HERO</button>
+                </div>
+                <button id="show-info-tag" onclick="togglePopup('popup-tags')">i</button>
             </div>
-                <button id="show-info-tag" onclick="togglePopup('popup-tags')">i</button>   
-                        </div>
             <div id="banner-container-2"></div>
         </div>
     </div>
 
-    
+
     <div id="popup-relationships" class="popup" style="display: none;">
         <div class="popup-content">
             <span class="close" onclick="togglePopup('popup-relationships')">&times;</span>
-            <h2>Relationships Information</h2>
-            <p>Hier die Informationen zu Relationships...</p>
-            <div id="popup-relationships-legend"></div> <!-- Container für die Relationships-Legende im Popup -->
+            <h2>Discover Your Favorite Ships and Characters</h2>
+            <div id="relationships-information">
+                <p>Dive into the intricate web of character interactions within the <span
+                        style="color: #8056c4; font-weight: bold;">top-rated works</span>. See which
+                    characters are mentioned the most and explore the context of their relationships. Whether you love
+                    slash ships, gen relationships, or crossovers, you’ll find it all here.
+                    <br>The visualizations show characters as nodes, with different shapes representing genders, the
+                    thickness of links indicating the frequency of interactions, and colors denoting relationship
+                    categories, <span style="color: #000000; font-weight: bold;">romantic</span>,<span
+                        style="color: #ffffff; font-weight: bold;">friendship</span>, and the belonging to which <span
+                        style="color: #8056c4; font-weight: bold;">fandom</span>.
+                    <br> <br>Explore the networks for <span style="color: #F0519E; font-weight: bold;">Marvel</span>,
+                    <span style="color: #589BCF; font-weight: bold;">Harry Potter</span>, and <span
+                        style="color: #87D4A5; font-weight: bold;">Boku No Hero Academia</span> to see your favorite
+                    characters and ships in action.
+                </p>
+                <div id="popup-relationships-legend"></div>
+            </div>
         </div>
     </div>
 
     <div id="popup-tags" class="popup" style="display: none;">
         <div class="popup-content">
             <span class="close" onclick="togglePopup('popup-tags')">&times;</span>
-            <h2>Tags Information</h2>
-            <p>Hier die Informationen zu Tags...</p>
-            <div id="popup-tags-legend"></div> <!-- Container für die Tags-Legende im Popup -->
+            <h2>Explore the Themes and Ratings of Fan Works</h2>
+            <div id="tags-information">
+                <p>With the help of AI-driven analysis I categorized all the tags used in the  <span
+                    style="color: #8056c4; font-weight: bold;">top-rated works</span> into 16 themes. The
+                    ratings, ranging from Explicit to Not Rated, are represented in the background colors to give you a
+                    sense of the overall mood and content of the fandoms.
+                    <br>Alongside the thematic overview, you can also explore the actual tags to get a better
+                    understanding of what content fans are reading. See how the interests and themes vary across the
+                    different fandoms and discover new trends and popular topics.
+                    <br> <br>Explore the thematic overviews for <span
+                        style="color: #F0519E; font-weight: bold;">Marvel</span>, <span
+                        style="color: #589BCF; font-weight: bold;">Harry Potter</span>, and <span
+                        style="color: #87D4A5; font-weight: bold;">Boku No Hero Academia</span> to get a deeper
+                    understanding of the fan content.
+                </p>
+                <div id="popup-tags-legend"></div>
+            </div>
         </div>
     </div>
 
@@ -132,4 +187,5 @@
         window.legendSketch = legendSketch;
     </script>
 </body>
+
 </html>
