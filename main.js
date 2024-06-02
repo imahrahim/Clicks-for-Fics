@@ -9,7 +9,7 @@ window.popupLegendP5Relationships = null;
 window.popupLegendP5Tags = null;
 
 const fandomColors = {
-    "Overall": { image: "/content/background/over.png", color: "rgba(225, 255, 0, 0.475)" },
+    "Overall": { image: "/content/background/pastell1.png", color: "rgba(225, 255, 0, 0.475)" },
     "Marvel": { image: "/content/background/marvel.png", color: "rgba(255, 0, 0, 0.473)" },
     "Harry Potter": { image: "/content/background/harry.png", color: "rgba(0, 255, 0, 0.509)" },
     "Boku No Hero": { image: "/content/background/boku.png", color: "rgba(0, 0, 255, 0.465)" },
