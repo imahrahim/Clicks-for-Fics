@@ -381,7 +381,13 @@ input:checked + .slider .friendship {
   align-items: center;
 }
 
-#tags-information, #relationships-information {
+#tags-information{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#relationships-information {
   display: flex;
   flex-direction: row;
   text-align: left;
@@ -403,10 +409,13 @@ input:checked + .slider .friendship {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: white;
+  background: #2d1c48c1;
+  backdrop-filter: blur(20px);
   padding: 3rem;
   border-radius: 0.5rem;
   width: 40rem;
+  max-height: 50rem;
+  color: #ffffff;
 }
 
 .close {
@@ -415,4 +424,65 @@ input:checked + .slider .friendship {
   cursor: pointer;
   margin-top: -2.5rem;
   margin-right: -2rem;
+}
+
+#legend-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 10px;
+}
+#popup-tags-legend {
+  display: flex;
+  flex-direction: row;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 15rem;
+  margin: 1rem;
+  margin-left:0;
+  margin-right: 4rem;
+}
+
+.legend-item img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.rating-color.explicit {
+  color: #b09eec;
+}
+
+.rating-color.mature {
+  color: #ff93ec;
+}
+
+.rating-color.teen {
+  color: #b9f1ff;
+}
+
+.rating-color.general {
+  color: #bdff9f;
+}
+
+.rating-color.not-rated {
+  color: #fef9b5;
+}
+
+.fandom-color.marvel {
+  color: #F0519E;
+  font-weight: bold;
+}
+
+.fandom-color.harry-potter {
+  color: #589BCF;
+  font-weight: bold;
+}
+
+.fandom-color.boku-no-hero {
+  color: #87D4A5;
+  font-weight: bold;
 }

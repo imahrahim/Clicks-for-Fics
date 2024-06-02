@@ -39,33 +39,38 @@ export function legendSketch(p) {
     };
 
     p.draw = function () {
-        p.background(255);
+        // p.background(255);
 
-            let ratings = [
-      { name: "Explicit", color: "#F0519E" },
-      { name: "Mature", color: "#589BCF" },
-      { name: "Teen And Up", color: "#87D4A5" },
-      { name: "General Audiance", color: "#87D4A5" },
-      { name: "not Rated", color: "#87D4A5" },
-    ];
+    //         let ratings = [
+    //             { name: "Explicit", frequency: 206, color: '#b09eec' },
+    //             { name: "Mature", frequency: 165, color: '#ff93ec' },
+    //             { name: "Teen And Up Audiences", frequency: 455, color: '#b9f1ff' }, 
+    //             { name: "General Audiences", frequency: 83, color: '#bdff9f'}, 
+    //             { name: "Not Rated", frequency: 64, color: '#fef9b5'} 
+    //             <span style="color: #b09eec; font-weight: bold;">Explicit</span>,
+    //             <span style="color: #ff93ec; font-weight: bold;">Mature</span>
+    //             <span style="color: #b9f1ff; font-weight: bold;">Teen And Up Audiences</span>
+    //             <span style="color: #bdff9; font-weight: bold;">General Audiences</span>
+    //             <span style="color: #fef9b5; font-weight: bold;">Not Rated</span>
+    // ];
    
-    ratings.forEach((legend, index) => {
-        p.textAlign(p.LEFT, p.CENTER);
-      p.fill(legend.color);
-     p.noStroke();
-    //   p.ellipse(10, 10 + index * 30, 5);
-      p.textSize(16);
-      p.textStyle(p.BOLD);
-      p.text(legend.name, 10, 15 + index * 30);
-    });
+    // ratings.forEach((legend, index) => {
+    //     p.textAlign(p.LEFT, p.CENTER);
+    //   p.fill(legend.color);
+    //  p.noStroke();
+    // //   p.ellipse(10, 10 + index * 30, 5);
+    //   p.textSize(16);
+    //   p.textStyle(p.BOLD);
+    //   p.text(legend.name, 10, 15 + index * 30);
+    // });
 
         legends.forEach((legend, index) => {
             if (categoryImages[legend.imageKey]) {
                 p.image(categoryImages[legend.imageKey], 10, 10 + index * 25, 20, 20);
             }
-            p.fill(0);
+            p.fill(255);
             p.textSize(12);
-            p.text(legend.name, 40, 25 + index * 25);
+            p.text(legend.name, 100, 25 + index * 25);
         });
     };
 }
