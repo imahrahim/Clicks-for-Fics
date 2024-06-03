@@ -22,15 +22,16 @@
     <div id="main-content">
         <div id="home-page">
             <h1>WELCOME TO CLICKS FOR FICS</h1>
-            <p>Your ultimate source for fan fiction data visualization.</p>
-            <p>Welcome to Clicks for Fics</p>
-            <p>A project that delves into Archive of Our Own. We analyzed and visualized the top 1000 public works rated
-                with kudos, focusing on the three most prominent fandoms within these works:</p>
-            <p><span style="color: #F0519E; font-weight: bold;">Marvel</span>, <span
-                    style="color: #589BCF; font-weight: bold;">Harry Potter</span>, and <span
-                    style="color: #87D4A5; font-weight: bold;">Boku No Hero Academia</span>.</p>
-            <p>Find out which characters and relationships are the fan favorites and which crossovers between different
-                fandoms are most desired.</p>
+            <p> The Archive of Our Own platform, 6.9 million users share their enthusiasm for fan fiction, culminating
+                in a collection of 12.9 million works. These works expand fictional realms including the 
+                <span style="color: #F0519E; font-weight: bold;">Marvel</span>, 
+                    <span style="color: #589BCF; font-weight: bold;">Harry Potter</span> and 
+                    <span style="color: #87D4A5; font-weight: bold;">Boku No Hero Academia</span>. universes by introducing
+                new stories, characters and relationships.</p>
+            <p>This project analyses the  <span style="color: #8056c4; font-weight: bold;">most popular works</span> and fandoms, providing an understanding of the themes and
+            characters that resonate most with the fans on the platform. The results are presented on this website using
+            interactive data visualisations designed to showcase the diversity and creativity of fan fiction.</p>
+            </p>
             <p>Discover the themes that these fandoms engage with the most and the differences in interests among the
                 three top fandoms.</p>
             <p>Have fun exploring!</p>
@@ -236,9 +237,9 @@
                 if (id === 'popup-relationships' && !window.popupLegendP5Relationships) {
                     window.popupLegendP5Relationships = new p5(relationshipLegendSketch, 'popup-relationships-legend');
                 }
-                if (id === 'popup-tags' && !window.popupLegendP5Tags) {
-                    window.popupLegendP5Tags = new p5(legendSketch, 'popup-tags-legend');
-                }
+                // if (id === 'popup-tags' && !window.popupLegendP5Tags) {
+                //     window.popupLegendP5Tags = new p5(legendSketch, 'popup-tags-legend');
+                // }
             } else {
                 popup.style.display = "none";
             }

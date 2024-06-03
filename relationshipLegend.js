@@ -12,7 +12,7 @@ p.clear();
     p.textAlign(p.CENTER, p.CENTER);
 
     p.strokeWeight(2);
-    p.fill("#ffffffc8");
+    p.fill("#ffffffff");
     p.stroke(0);
     p.rect(150, 50, 290, 20);
     p.rect(150, 80, 290, 20, 20);

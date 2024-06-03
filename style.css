@@ -87,16 +87,17 @@ a {
 }
 
 #home-page {
-  background-color: #ffffff31;
-  backdrop-filter: blur(5px);
+  background-color: #2d1c48c1;
+  backdrop-filter: blur(10px);
   border: 0.1rem solid #000000;
   border-radius: 0.5rem;
-  width: 60%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 2rem auto;
   padding: 2rem;
+  color: #ffffff;
 }
 
 #home-page-btns {
@@ -191,7 +192,7 @@ button {
   text-align: center;
   font-size: 14px;
   border-radius: 5rem;
-  background-color: #ffffffc8;
+  background-color: #ffffff;
   backdrop-filter: blur(10px);
   color: #000000;
   border: 0.1rem solid #000000;
@@ -223,17 +224,6 @@ button:hover {
   align-items: center;
   display: flex;
 }
-
-/* #legend-container {
-  width: 50%;
-  background-color: #ffffff4a;
-  backdrop-filter: blur(1px);
-  border: 0.1rem solid #000000;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  display: flex;
-  flex-direction: row-reverse;
-} */
 
 #banner-container-1 {
   border: 0.1rem solid #000000;
@@ -405,7 +395,7 @@ input:checked + .slider .friendship {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #8056c463;
+  background: #04030694;
   justify-content: center;
   align-items: center;
 }

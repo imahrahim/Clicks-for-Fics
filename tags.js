@@ -9,7 +9,7 @@ export function tagsSketch(isReverse) {
         const font = ('Calibri, sans-serif')
 
         const fandomColors = {
-            "Overall": { image: "/content/background/over.png", color: "#8056c47e" },
+            "Overall": { image: "/content/background/pastell1.png", color: "#8056c47e" },
             "Marvel": { image: "/content/background/marvel.png", color: "#f0519e74" },
             "Harry Potter": { image: "/content/background/harry.png", color: "#589bcf6e" },
             "Boku No Hero": { image: "/content/background/boku.png", color: "#87d4a473" },
