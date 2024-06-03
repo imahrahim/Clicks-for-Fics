@@ -29,7 +29,7 @@ const linksColors = {
   "friendship": "#ffffff",
 };
 
-const font = ('Calibri, sans-serif')
+const font = ('Whyte')
 
 export function relationshipsSketch(p) {
   p.setup = function () {
@@ -178,7 +178,7 @@ p.drawVisualization = function () {
           const targetNode = nodes.find((n) => n.id === link.target);
           if (sourceNode && targetNode && sourceNode.visible && targetNode.visible) {
               p.stroke(link.type === 'fandom' ? (fandomColors[sourceNode.fandom] || linksColors[link.type]) : linksColors[link.type]);
-              p.strokeWeight(link.type === 'fandom' ? 1 : link.frequency * 0.2);
+              p.strokeWeight(link.type === 'fandom' ? 1 : link.frequency * 0.5);
               p.line(sourceNode.x, sourceNode.y, targetNode.x, targetNode.y);
           }
       }
@@ -195,17 +195,17 @@ p.drawVisualization = function () {
                   p.fill(fandomColors[node.fandom] || fandomColors["other"]);
                   p.stroke(0);
                   p.strokeWeight(1);
-                  p.rect(node.x, node.y, 200, 12, 20);
+                  p.rect(node.x, node.y, 230, 15, 20);
               } else if (node.gender === 'male') {
                   p.fill(fandomColors[node.fandom] || fandomColors["other"]);
                   p.stroke(0);
                   p.strokeWeight(1);
-                  p.rect(node.x, node.y, 200, 12);
+                  p.rect(node.x, node.y, 230, 15);
               } else {
                   p.fill(otherColors[node.fandom] || otherColors['other']);
                   p.stroke(255);
                   p.strokeWeight(0);
-                  p.rect(node.x, node.y, 200, 12);
+                  p.rect(node.x, node.y, 230, 15);
               }
 
               p.noStroke();
@@ -218,11 +218,11 @@ p.drawVisualization = function () {
               } else {
                   p.textStyle(p.ITALIC);
               }
-              p.textSize(11);
+              p.textSize(10);
               p.text(node.id, node.x, node.y);
 
           } else if (node.group === "fandom") {
-              p.fill(255,10);
+              p.fill(255,250);
               p.rect(node.x-100,node.y, 200,30)
               p.fill(fandomColors[node.id] || 'black');
               p.ellipse(node.x, node.y, 4)
@@ -231,7 +231,7 @@ p.drawVisualization = function () {
               p.fill(fandomColors[node.id] || 'black');
               p.textFont(font);
               p.textStyle(p.BOLD)
-              p.textSize(11);
+              p.textSize(10);
               p.text(node.id, node.x - 10, node.y);
           }
       }
@@ -419,6 +419,12 @@ p.drawVisualization = function () {
 
   p.drawTooltip = function (node) {
     let tooltip = document.getElementById('stickyTooltip');
-    tooltip.innerHTML = `${node.id}  (${node.frequency})`;
+
+    if (node.group === 'fandom'){
+      tooltip.innerHTML = `${node.id}`;
+    } else {
+      tooltip.innerHTML = `${node.id}  (${node.frequency})`;
+    }
+    
   };
 }

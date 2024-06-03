@@ -21,7 +21,7 @@ p.clear();
     p.noStroke();
     p.rect(150, 110, 290, 20);
 
-    p.textFont("Calibri, sans-serif");
+    p.textFont("Whyte");
     p.textSize(11);
     p.fill(0);
     p.textStyle(p.BOLD)

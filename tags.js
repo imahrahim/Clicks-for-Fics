@@ -6,7 +6,10 @@ export function tagsSketch(isReverse) {
 
         let categoryImages = {};
         let currentFandom = "Overall";
-        const font = ('Calibri, sans-serif')
+        const font = ('Whyte Inktrap')
+        // font-family: 'Whyte Inktrap';
+        // font-weight: 700;
+        // font-size: 1.5rem;
 
         const fandomColors = {
             "Overall": { image: "/content/background/pastell1.png", color: "#8056c47e" },
@@ -81,7 +84,8 @@ export function tagsSketch(isReverse) {
         
                 p.textFont(font);
                 p.textStyle(p.NORMAL);
-                p.textSize(24);
+                p.textSize('1.5rem');
+                p.textStyle(p.BOLD)
                 p.textAlign(p.LEFT, p.CENTER);
                 p.fill(0);
                 p.text(tag.tag, x + scaledWidth + 5, p.height / 2);
