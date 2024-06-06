@@ -20,7 +20,7 @@ export function tagsSketch(isReverse) {
                 color: "#f0519e74" 
             },
             "Harry Potter": { 
-                ordered: "/content/background/HarryPotter_Tags.png", 
+                ordered: "/content/background/Harry_Tags.png", 
                 unordered: "/content/background/HarryPotter.png", 
                 color: "#589bcf6e" 
             },
@@ -65,6 +65,7 @@ export function tagsSketch(isReverse) {
 
         p.draw = function () {
             p.clear();
+            p.background(fandomColors[currentFandom].color);
             if (tags.length > 0) {
                 drawTags();
             } else {
@@ -86,7 +87,7 @@ export function tagsSketch(isReverse) {
             tags.forEach(tag => {
                 let img = categoryImages[tag.category];
                 if (!img) {
-                    console.log("Kein Bild für Kategorie:", tag.category);
+                    // console.log("Kein Bild für Kategorie:", tag.category);
                     return;
                 }
                 let scaledWidth = 40;

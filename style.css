@@ -220,7 +220,7 @@ button:hover {
   border: 0.1rem solid #ffffff;
 }
 
-#change-data {
+#change-data , #change-data-tags{
   position: sticky;
   top: 0;
   background-color: #ffffffc8;
@@ -231,12 +231,24 @@ button:hover {
   z-index: 1;
 }
 
+#change-data-tags{
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
+  font-family: 'Whyte Inktrap';
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
 #tags-visualization {
-  width: 90%;
+  width: 95%;
   height: 100%;
   margin: 1rem auto;
   align-items: center;
   display: flex;
+  top: 4rem;
+  left: 2rem;
+  right: 2rem;
+  bottom: 3.5rem;
 }
 
 #banner-container-1 {
@@ -271,7 +283,7 @@ button:hover {
   flex-direction: row;
 }
 
-#toggle-relationship-container {
+#toggle-relationship-container, #toggle-order-container {
   margin-left: 2rem;
   display: flex;
   align-items: center;
@@ -292,12 +304,6 @@ button:hover {
   font-family: 'Whyte Inktrap';
   font-weight: 700;
   font-size: 1.5rem;
-}
-
-#toggle-order-container {
-  margin-left: 2rem;
-  display: flex;
-  align-items: center;
 }
 
 .switch {
@@ -350,13 +356,13 @@ button:hover {
   font-size: 14px;
 }
 
-.romantic {
+.romantic, .ordered {
   text-align: right;
   margin: 0.3rem;
   right: 0.5rem;
 }
 
-.friendship {
+.friendship, .unordered {
   color: transparent;
 }
 
@@ -377,7 +383,15 @@ input:checked + .slider .romantic {
   color: transparent;
 }
 
-input:checked + .slider .friendship {
+input:checked + .slider .friendship{
+  color: #000000;
+}
+
+input:checked + .slider .ordered {
+  color: transparent;
+}
+
+input:checked + .slider .unordered{
   color: #000000;
 }
 
