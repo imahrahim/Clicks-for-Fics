@@ -195,54 +195,63 @@ p.drawVisualization = function () {
   for (const node of nodes) {
       if (node.visible) {
           p.noStroke();
+          let rectWidth = node.isHovered ? 300 : 230;
+          let rectHeight = node.isHovered ? 25 : 15;
+          let textSize = node.isHovered ? 14 : 10;
+
           if (node.group === "character") {
               if (node.gender === 'female'){
                   p.fill(fandomColors[node.fandom] || fandomColors["other"]);
                   p.stroke(0);
                   p.strokeWeight(1);
-                  p.rect(node.x, node.y, 230, 15, 20);
+                  p.rect(node.x, node.y, rectWidth, rectHeight, 20);
               } else if (node.gender === 'male') {
                   p.fill(fandomColors[node.fandom] || fandomColors["other"]);
                   p.stroke(0);
                   p.strokeWeight(1);
-                  p.rect(node.x, node.y, 230, 15);
+                  p.rect(node.x, node.y, rectWidth, rectHeight);
               } else {
                   p.fill(otherColors[node.fandom] || otherColors['other']);
                   p.stroke(255);
                   p.strokeWeight(0);
-                  p.rect(node.x, node.y, 230, 15);
+                  p.rect(node.x, node.y, rectWidth, rectHeight);
               }
 
               p.noStroke();
               p.fill(0);
               p.textFont(font);
               if (node.gender === 'male') {
-                  p.textStyle(p.BOLD)
+                  p.textStyle(p.BOLD);
               } else if (node.gender === 'female') {
-                  p.textStyle(p.BOLDITALIC)
+                  p.textStyle(p.BOLDITALIC);
               } else {
                   p.textStyle(p.ITALIC);
               }
-              p.textSize(10);
-              p.text(node.id, node.x, node.y);
+              p.textSize(textSize);
+              let displayText = node.id;
+              if (node.isHovered) {
+                  displayText += ` (${node.frequency})`;
+              }
+              p.text(displayText, node.x, node.y);
 
           } else if (node.group === "fandom") {
               p.fill(255,0);
-              p.rect(node.x-100,node.y, 200,30)
+              p.rect(node.x - 100, node.y, 200, 30);
               p.fill(fandomColors[node.id] || 'black');
-              p.ellipse(node.x, node.y, 4)
-              p.textAlign(p.RIGHT, p.CENTER)
-              p.strokeWeight(1)
+              p.ellipse(node.x, node.y, 4);
+              p.textAlign(p.RIGHT, p.CENTER);
+              p.strokeWeight(1);
               p.stroke(0);
               p.fill(fandomColors[node.id] || 'white');
               p.textFont(font);
-              p.textStyle(p.BOLD)
+              p.textStyle(p.BOLD);
               p.textSize(10);
               p.text(node.id.toUpperCase(), node.x - 10, node.y);
           }
       }
   }
 };
+
 
 
   let selectedNode = null;
@@ -394,32 +403,28 @@ p.drawVisualization = function () {
     let buffer = 5;  
 
     nodes.forEach((node) => {
-      if (node.visible) {
-        let textWidth = p.textWidth(node.id);
-        let textHeight = 10;
+        if (node.visible) {
+            let textWidth = p.textWidth(node.id);
+            let textHeight = 10;
 
-        let textX1 = node.x - textWidth / 2 - buffer;
-        let textX2 = node.x + textWidth / 2 + buffer;
-        let textY1 = node.y - textHeight / 2 - buffer;
-        let textY2 = node.y + textHeight / 2 + buffer;
+            let textX1 = node.x - textWidth / 2 - buffer;
+            let textX2 = node.x + textWidth / 2 + buffer;
+            let textY1 = node.y - textHeight / 2 - buffer;
+            let textY2 = node.y + textHeight / 2 + buffer;
 
-        if (p.mouseX >= textX1 && p.mouseX <= textX2 && p.mouseY >= textY1 && p.mouseY <= textY2) {
-          hoverNode = node;
+            if (p.mouseX >= textX1 && p.mouseX <= textX2 && p.mouseY >= textY1 && p.mouseY <= textY2) {
+                hoverNode = node;
+            }
         }
-      }
     });
 
-    let tooltip = document.getElementById('stickyTooltip');
-    if (!hoverNode) {
-      tooltip.style.display = 'none';
-      p.cursor();
-    } else {
-      tooltip.style.display = 'block';
-      tooltip.innerHTML = `${hoverNode.id}`;
-      p.cursor(p.HAND)
-    }
+    nodes.forEach((node) => {
+        node.isHovered = node === hoverNode;
+    });
+
     return hoverNode;
-  };
+};
+
 
   p.drawTooltip = function (node) {
     let tooltip = document.getElementById('stickyTooltip');
