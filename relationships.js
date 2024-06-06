@@ -177,6 +177,7 @@ p.drawVisualization = function () {
   p.clear();
   p.drawBackgroundScale();
 
+  // Zeichne zuerst alle regulären Links und Knoten (nicht hervorgehoben)
   for (const link of links) {
       if (link.visible) {
           const sourceNode = nodes.find((n) => n.id === link.source);
@@ -192,12 +193,13 @@ p.drawVisualization = function () {
   p.rectMode(p.CENTER);
   p.textAlign(p.CENTER, p.CENTER);
 
+  // Zeichne alle regulären Knoten (nicht hervorgehoben)
   for (const node of nodes) {
-      if (node.visible) {
+      if (node.visible && !node.isHovered) {
           p.noStroke();
-          let rectWidth = node.isHovered ? 300 : 230;
-          let rectHeight = node.isHovered ? 25 : 15;
-          let textSize = node.isHovered ? 14 : 10;
+          let rectWidth = 230;
+          let rectHeight = 15;
+          let textSize = 10;
 
           if (node.group === "character") {
               if (node.gender === 'female'){
@@ -228,14 +230,10 @@ p.drawVisualization = function () {
                   p.textStyle(p.ITALIC);
               }
               p.textSize(textSize);
-              let displayText = node.id;
-              if (node.isHovered) {
-                  displayText += ` (${node.frequency})`;
-              }
-              p.text(displayText, node.x, node.y);
+              p.text(node.id, node.x, node.y);
 
           } else if (node.group === "fandom") {
-              p.fill(255,0);
+              p.fill(255, 0);
               p.rect(node.x - 100, node.y, 200, 30);
               p.fill(fandomColors[node.id] || 'black');
               p.ellipse(node.x, node.y, 4);
@@ -248,6 +246,66 @@ p.drawVisualization = function () {
               p.textSize(10);
               p.text(node.id.toUpperCase(), node.x - 10, node.y);
           }
+      }
+  }
+
+  // Zeichne die hervorgehobenen Knoten zuletzt, damit sie oben liegen
+  for (const node of nodes) {
+      if (node.visible && node.isHovered) {
+          p.noStroke();
+          let rectWidth = 300;
+          let rectHeight = 25;
+          let textSize = 14;
+
+          if (node.group === "character") {
+              if (node.gender === 'female'){
+                  p.fill(fandomColors[node.fandom] || fandomColors["other"]);
+                  p.stroke(0);
+                  p.strokeWeight(1);
+                  p.rect(node.x, node.y, rectWidth, rectHeight, 20);
+              } else if (node.gender === 'male') {
+                  p.fill(fandomColors[node.fandom] || fandomColors["other"]);
+                  p.stroke(0);
+                  p.strokeWeight(1);
+                  p.rect(node.x, node.y, rectWidth, rectHeight);
+              } else {
+                  p.fill(otherColors[node.fandom] || otherColors['other']);
+                  p.stroke(255);
+                  p.strokeWeight(0);
+                  p.rect(node.x, node.y, rectWidth, rectHeight);
+              }
+
+              p.noStroke();
+              p.fill(0);
+              p.textFont(font);
+              p.textAlign(p.CENTER, p.CENTER);
+              if (node.gender === 'male') {
+                  p.textStyle(p.BOLD);
+              } else if (node.gender === 'female') {
+                  p.textStyle(p.BOLDITALIC);
+              } else {
+                  p.textStyle(p.ITALIC);
+              }
+              p.textSize(textSize);
+              let displayText = node.id;
+              if (node.isHovered) {
+                  displayText += ` (${node.frequency})`;
+              }
+              p.text(displayText, node.x, node.y);
+          }  else if (node.group === "fandom") {
+            p.fill(255, 0);
+            p.rect(node.x - 100, node.y, 200, 30);
+            p.fill(fandomColors[node.id] || 'black');
+            p.ellipse(node.x, node.y, 8);  
+            p.textAlign(p.RIGHT, p.CENTER);
+            p.strokeWeight(1);
+            p.stroke(0);
+            p.fill(fandomColors[node.id] || 'white');
+            p.textFont(font);
+            p.textStyle(p.BOLD);
+            p.textSize(12);  
+            p.text(node.id.toUpperCase(), node.x - 10, node.y);
+        }
       }
   }
 };
