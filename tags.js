@@ -12,10 +12,10 @@ export function tagsSketch(isReverse) {
         // font-size: 1.5rem;
 
         const fandomColors = {
-            "Overall": { image: "/content/background/pastell1.png", color: "#8056c47e" },
-            "Marvel": { image: "/content/background/marvel.png", color: "#f0519e74" },
-            "Harry Potter": { image: "/content/background/harry.png", color: "#589bcf6e" },
-            "Boku No Hero": { image: "/content/background/boku.png", color: "#87d4a473" },
+            "Overall": { image: "/content/background/Overall_Tags.png", color: "#8056c47e" },
+            "Marvel": { image: "/content/background/Marvel_Tags.png", color: "#f0519e74" },
+            "Harry Potter": { image: "/content/background/Harry_Tags.png", color: "#589bcf6e" },
+            "Boku No Hero": { image: "/content/background/Boku_Tags.png", color: "#87d4a473" },
         };
 
         p.preload = function () {
@@ -93,7 +93,7 @@ export function tagsSketch(isReverse) {
                 x += scaledWidth + p.textWidth(tag.tag) + 100;
             });
         
-            let speed = p.map(p.mouseX, 0, p.width, 0.5, 5); 
+            let speed = p.map(p.mouseX, 0, p.width, 0.5, 10); 
             if (isReverse) {
                 reverseScrollX += speed;
                 if (reverseScrollX > p.width) reverseScrollX = -x;

@@ -283,7 +283,7 @@ button:hover {
   left: 2rem;
   right: 2rem;
   bottom: 3.5rem;
-  background-color: #ffffff31;
+  background-color: #7837e055;
   backdrop-filter: blur(10px);
   overflow-y: scroll;
   visibility: visible;
@@ -507,6 +507,8 @@ input:checked + .slider .friendship {
   position: absolute;
   bottom: 0;
   width: 97%; 
+  align-items: flex-end;
+  bottom: 1rem;
 }
 
 .footer-links a {
@@ -515,7 +517,7 @@ input:checked + .slider .friendship {
   font-size: 0.7rem;
   margin-left: 1rem;
   font-weight: 200;
-  margin-bottom: 0.5rem;
+  bottom: 0;
 }
 
 .footer-links a:hover {
@@ -526,5 +528,8 @@ input:checked + .slider .friendship {
   color: #000000;
   font-size: 0.8rem;
   font-weight: 200;
-  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-bottom: -0rem;
+  line-height: 1.2rem;
+  text-align: left;
 }

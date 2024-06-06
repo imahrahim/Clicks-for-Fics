@@ -7,6 +7,8 @@ let currentRelationshipType = 'romantic';
 let visibleFandomNodes = [];
 let fandomText = 200;
 
+let selectedNode = null;
+
 const fandomColors = {
   "Harry Potter - J. K. Rowling": "#589BCF",
   "Marvel": "#F0519E",
@@ -32,6 +34,7 @@ const linksColors = {
 const font = ('Whyte')
 
 export function relationshipsSketch(p) {
+ 
   p.setup = function () {
     let canvasContainer = document.getElementById("relationships-visualization");
     let canvas = p.createCanvas(canvasContainer.offsetWidth, 2000).parent("relationships-visualization");
@@ -46,6 +49,11 @@ export function relationshipsSketch(p) {
     });
   };
 
+  p.resetSelectedNode = function () {
+    selectedNode = null;
+    p.updateVisibility();
+  };
+
   p.loadData = function (dataUrl) {
     p.loadJSON(dataUrl, function (data) {
       dataShips = data;
@@ -55,14 +63,12 @@ export function relationshipsSketch(p) {
   };
 
   p.processData = function (data) {
-    // console.log("Processing data...");
     nodes = [];
     links = [];
     let fandomNodes = new Set();
 
     Object.keys(data).forEach((character) => {
       const characterData = data[character];
-      // console.log("Processing character:", character, characterData);
 
       const characterNode = {
         id: character,
@@ -97,14 +103,12 @@ export function relationshipsSketch(p) {
       });
     });
 
-
     p.updateXScale();
     p.initializeCharacterScale();
 
     let index = 0;
     visibleFandomNodes = Array.from(fandomNodes);
     p.updateFandomScale(); 
-
 
     visibleFandomNodes.forEach((fandom) => {
       nodes.push({
@@ -120,6 +124,7 @@ export function relationshipsSketch(p) {
     p.updateNodePositions();
     p.updateVisibility();
   };
+
 
   p.draw = function () {
     p.clear();
@@ -144,7 +149,7 @@ export function relationshipsSketch(p) {
         
         if (draw) {
             p.noStroke();
-            p.fill('#ffffff38')
+            p.fill('#ffffff7e')
             if (x >= 200 && x <= p.width - 150) {
                 p.rect(x, 0, rectWidth, p.height); 
                 p.push()
@@ -222,17 +227,18 @@ p.drawVisualization = function () {
               p.text(node.id, node.x, node.y);
 
           } else if (node.group === "fandom") {
-              p.fill(255,250);
+              p.fill(255,0);
               p.rect(node.x-100,node.y, 200,30)
               p.fill(fandomColors[node.id] || 'black');
               p.ellipse(node.x, node.y, 4)
               p.textAlign(p.RIGHT, p.CENTER)
-              p.noStroke();
-              p.fill(fandomColors[node.id] || 'black');
+              p.strokeWeight(1)
+              p.stroke(0);
+              p.fill(fandomColors[node.id] || 'white');
               p.textFont(font);
               p.textStyle(p.BOLD)
               p.textSize(10);
-              p.text(node.id, node.x - 10, node.y);
+              p.text(node.id.toUpperCase(), node.x - 10, node.y);
           }
       }
   }
@@ -303,7 +309,6 @@ p.drawVisualization = function () {
             }
         });
 
-        // Zusätzliche Logik, um die Fandom-Links sichtbar zu machen, wenn ein Knoten ausgewählt ist
         links.forEach(link => {
             if (link.type === "fandom") {
                 let sourceNode = nodes.find(node => node.id === link.source);
@@ -317,7 +322,6 @@ p.drawVisualization = function () {
         });
     }
 
-    // Update visibility of fandom nodes based on selected character nodes
     nodes.forEach(node => {
         if (node.group === "fandom") {
             node.visible = nodes.some(character => 
@@ -329,7 +333,7 @@ p.drawVisualization = function () {
     p.updateFandomScale(); 
     p.updateNodePositions();
     p.drawVisualization();
-};
+  };
 
   p.updateRelationshipType = function (type) {
     currentRelationshipType = type;
