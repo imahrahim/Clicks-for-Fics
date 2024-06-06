@@ -10,23 +10,23 @@ export function tagsSketch(isReverse) {
         
         const fandomColors = {
             "Overall": { 
-                ordered: "/content/background/Overall_Tags.png", 
-                unordered: "/content/background/Overall.png", 
+                ordered: "/content/background/Overall_O.png", 
+                unordered: "/content/background/Overall_Tags.png", 
                 color: "#8056c47e" 
             },
             "Marvel": { 
-                ordered: "/content/background/Marvel_Tags.png", 
-                unordered: "/content/background/Marvel.png", 
+                ordered: "/content/background/Marvel_O.png", 
+                unordered: "/content/background/Marvel_Tags.png", 
                 color: "#f0519e74" 
             },
             "Harry Potter": { 
-                ordered: "/content/background/Harry_Tags.png", 
-                unordered: "/content/background/HarryPotter.png", 
+                ordered: "/content/background/Harry_O.png", 
+                unordered: "/content/background/Harry_Tags.png", 
                 color: "#589bcf6e" 
             },
             "Boku No Hero": { 
-                ordered: "/content/background/Boku_Tags.png", 
-                unordered: "/content/background/BokuNoHero.png", 
+                ordered: "/content/background/Boku_O.png", 
+                unordered: "/content/background/Boku_Tags.png", 
                 color: "#87d4a473" 
             }
         };

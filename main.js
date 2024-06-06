@@ -17,8 +17,8 @@ const fandomColors = {
     },
     "Marvel": { 
         relationship: "/content/background/Marvel.png", 
-        ordered: "/content/background/Marvel_Tags.png", 
-        unordered: "/content/background/Marvel.png", 
+        ordered: "/content/background/Marvel_Ordered.png", 
+        unordered: "/content/background/Marvel_Tags.png", 
         color: "rgba(255, 0, 0, 0.473)" 
     },
     "Harry Potter": { 
@@ -43,7 +43,7 @@ function togglePopup(id) {
             window.popupLegendP5Relationships = new p5(relationshipLegendSketch, 'popup-relationships-legend');
         }
         if (id === 'popup-tags' && !window.popupLegendP5Tags) {
-            window.popupLegendP5Tags = new p5(legendSketch, 'popup-tags-legend');
+            // window.popupLegendP5Tags = new p5(legendSketch, 'popup-tags-legend');
         }
     } else {
         popup.style.display = "none";

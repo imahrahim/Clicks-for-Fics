@@ -248,7 +248,7 @@ button:hover {
 }
 
 #tags-visualization {
-  height: calc(100vh - 8rem); 
+  height: calc(100vh); 
   display: flex;
   flex-direction: column;
   position: absolute;
