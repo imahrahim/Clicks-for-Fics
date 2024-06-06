@@ -9,12 +9,31 @@ window.popupLegendP5Relationships = null;
 window.popupLegendP5Tags = null;
 
 const fandomColors = {
-    "Overall": { image: "/content/background/Overall.png", color: "rgba(225, 255, 0, 0.475)" },
-    "Marvel": { image: "/content/background/Marvel.png", color: "rgba(255, 0, 0, 0.473)" },
-    "Harry Potter": { image: "/content/background/HarryPotter.png", color: "rgba(0, 255, 0, 0.509)" },
-    "Boku No Hero": { image: "/content/background/BokuNoHero.png", color: "rgba(0, 0, 255, 0.465)" },
+    "Overall": { 
+        relationship: "/content/background/Overall.png", 
+        ordered: "/content/background/Overall_Tags.png", 
+        unordered: "/content/background/Overall.png", 
+        color: "rgba(225, 255, 0, 0.475)" 
+    },
+    "Marvel": { 
+        relationship: "/content/background/Marvel.png", 
+        ordered: "/content/background/Marvel_Tags.png", 
+        unordered: "/content/background/Marvel.png", 
+        color: "rgba(255, 0, 0, 0.473)" 
+    },
+    "Harry Potter": { 
+        relationship: "/content/background/HarryPotter.png", 
+        ordered: "/content/background/Harry_Tags.png", 
+        unordered: "/content/background/HarryPotter.png", 
+        color: "rgba(0, 255, 0, 0.509)" 
+    },
+    "Boku No Hero": { 
+        relationship: "/content/background/BokuNoHero.png", 
+        ordered: "/content/background/Boku_Tags.png", 
+        unordered: "/content/background/BokuNoHero.png", 
+        color: "rgba(0, 0, 255, 0.465)" 
+    }
 };
-
 
 function togglePopup(id) {
     const popup = document.getElementById(id);
@@ -23,9 +42,9 @@ function togglePopup(id) {
         if (id === 'popup-relationships' && !window.popupLegendP5Relationships) {
             window.popupLegendP5Relationships = new p5(relationshipLegendSketch, 'popup-relationships-legend');
         }
-        // if (id === 'popup-tags' && !window.popupLegendP5Tags) {
-        //     window.popupLegendP5Tags = new p5(legendSketch, 'popup-tags-legend');
-        // }
+        if (id === 'popup-tags' && !window.popupLegendP5Tags) {
+            window.popupLegendP5Tags = new p5(legendSketch, 'popup-tags-legend');
+        }
     } else {
         popup.style.display = "none";
     }
@@ -69,7 +88,6 @@ function showPage(page) {
         loadData('/data/Overall.json', 'Overall');
         togglePopup('popup-relationships'); 
 
-        // Aktualisiere den Footer-Inhalt für die Beziehungsvisualisierungsseite
         footerAuthor.innerHTML = `
             Imah Leaf Rahim || BA Data Design + Art, Hochschule Luzern – Design Film Kunst © HSLU, 2024
         `;
@@ -84,12 +102,10 @@ function showPage(page) {
         setActiveButton(document.getElementById('Overall-tags'));
         togglePopup('popup-tags'); 
 
-        // Aktualisiere den Footer-Inhalt für die Tags-Visualisierungsseite
         footerAuthor.innerHTML = `
         Imah Leaf Rahim || BA Data Design + Art, Hochschule Luzern – Design Film Kunst © HSLU, 2024
         `;
     } else {
-        // Standardinhalt für den Footer
         footerAuthor.innerHTML = `
             Author: Imah Leaf Rahim
             <br> 
@@ -149,20 +165,24 @@ function loadData(dataUrl, fandom) {
     if (myp5_2 && myp5_2.loadData) {
         myp5_2.loadData(dataUrl, fandom);
     }
-    document.body.style.backgroundImage = `url(${fandomColors[fandom].image})`;
+    document.body.style.backgroundImage = `url(${fandomColors[fandom].relationship})`;
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundAttachment = 'fixed';
 }
 
 function loadTagData(dataUrl, fandom) {
+    const order = document.getElementById('toggle-order-checkbox').checked ? 'unordered' : 'ordered';
+    const backgroundImage = fandomColors[fandom][order];
+
     if (myp5 && myp5.loadTagData) {
         myp5.loadTagData(dataUrl, fandom, false);
     }
     if (myp5_2 && myp5_2.loadTagData) {
         myp5_2.loadTagData(dataUrl, fandom, true);
     }
-    document.body.style.backgroundImage = `url(${fandomColors[fandom].image})`;
+
+    document.body.style.backgroundImage = `url(${backgroundImage})`;
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundRepeat = 'no-repeat';
     document.body.style.backgroundAttachment = 'fixed';
@@ -177,6 +197,36 @@ function updateRelationshipType(type) {
     }
 }
 
+function updateTagOrder(order) {
+    const title = document.getElementById('tags-visualization-title');
+    title.textContent = order.toUpperCase();
+
+    const currentFandomButton = document.querySelector('.active-button');
+    if (!currentFandomButton) {
+        console.error("No active fandom button found.");
+        return;
+    }
+    const currentFandom = currentFandomButton.textContent.trim();
+    const backgroundImage = fandomColors[currentFandom][order];
+
+    if (!backgroundImage) {
+        console.error(`Background image for order "${order}" not found in fandomColors for "${currentFandom}".`);
+        return;
+    }
+
+    document.body.style.backgroundImage = `url(${backgroundImage})`;
+    document.body.style.backgroundSize = 'cover';
+    document.body.style.backgroundRepeat = 'no-repeat';
+    document.body.style.backgroundAttachment = 'fixed';
+
+    if (myp5 && myp5.updateTagOrder) {
+        myp5.updateTagOrder(order);
+    }
+    if (myp5_2 && myp5_2.updateTagOrder) {
+        myp5_2.updateTagOrder(order);
+    }
+}
+
 function initializePage() {
     showHomePage();
     loadData('/data/Overall.json', 'Overall');
@@ -187,5 +237,6 @@ window.showPage = showPage;
 window.loadData = loadData;
 window.loadTagData = loadTagData;
 window.updateRelationshipType = updateRelationshipType;
+window.updateTagOrder = updateTagOrder;
 window.setActiveButton = setActiveButton;
 window.onload = initializePage;

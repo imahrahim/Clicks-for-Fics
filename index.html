@@ -74,25 +74,33 @@
 
         </div>
         <div id="tags-visualization" style="display: none;">
-            <div id="banner-container-1"></div>
-            <div id="tag-buttons">
-                <div>
-                    <button id="Overall-tags"
-                        onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall'); setActiveButton(this);">OVERALL</button>
-                    <button id="Marvel-tags" data-fandom="Marvel"
-                        onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel'); setActiveButton(this);">MARVEL</button>
-                    <button id="Harry-Potter-tags"
-                        onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter'); setActiveButton(this);">HARRY
-                        POTTER</button>
-                    <button id="Boku-No-Hero-tags"
-                        onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero'); setActiveButton(this);">BOKU
-                        NO HERO</button>
+            <h2 id="tags-visualization-title">ORDERED</h2>
+            <div id="change-data">
+                <div id="tag-buttons">
+                    <div>
+                        <button id="Overall-tags" onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall'); setActiveButton(this);">OVERALL</button>
+                        <button id="Marvel-tags" onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel'); setActiveButton(this);">MARVEL</button>
+                        <button id="Harry-Potter-tags" onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter'); setActiveButton(this);">HARRY POTTER</button>
+                        <button id="Boku-No-Hero-tags" onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero'); setActiveButton(this);">BOKU NO HERO</button>
+                    </div>
+                    <button id="show-info-tag" onclick="togglePopup('popup-tags')">i</button>
                 </div>
-                <button id="show-info-tag" onclick="togglePopup('popup-tags')">i</button>
+                <div id="toggle-order-container">
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-order-checkbox" onchange="updateTagOrder(this.checked ? 'unordered' : 'ordered')">
+                        <span class="slider round">
+                            <span class="slider-text ordered">ORDERED</span>
+                            <span class="slider-text unordered">UNORDERED</span>
+                        </span>
+                    </label>
+                </div>
             </div>
+            <div id="banner-container-1"></div>
             <div id="banner-container-2"></div>
         </div>
-    </div>
+    
+        
+        
 
 
     <div id="popup-relationships" class="popup" style="display: none;">

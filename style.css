@@ -294,6 +294,12 @@ button:hover {
   font-size: 1.5rem;
 }
 
+#toggle-order-container {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -414,6 +420,7 @@ input:checked + .slider .friendship {
   background: #04030694;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .popup-content {
@@ -446,6 +453,7 @@ input:checked + .slider .friendship {
 #popup-tags-legend {
   display: flex;
   flex-direction: row;
+
 }
 
 .legend-item {
