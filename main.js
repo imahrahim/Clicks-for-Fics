@@ -82,6 +82,11 @@ function showPage(page) {
         document.getElementById('tags-visualization').style.display = 'block';
         loadSketch(tagsSketch(false), 'banner-container-1', false);
         setActiveButton(document.getElementById('Overall-tags'));
+        document.getElementById('tags-overlay').style.backgroundImage = `url( "/content/background/Overall_T.png")`;
+        document.getElementById('tags-overlay').style.backgroundSize = 'contain';
+        document.getElementById('tags-overlay').style.backgroundRepeat = 'no-repeat';
+        document.getElementById('tags-overlay').style.backgroundAttachment = 'fixed';
+    
     }
 }
 
@@ -146,7 +151,7 @@ function loadTagData(dataUrl, fandom) {
     const overlayImage = fandomColors[fandom].overlay;
     if (overlayImage) {
         document.getElementById('tags-overlay').style.backgroundImage = `url(${overlayImage})`;
-        document.getElementById('tags-overlay').style.backgroundSize = 'cover';
+        document.getElementById('tags-overlay').style.backgroundSize = 'contain';
         document.getElementById('tags-overlay').style.backgroundRepeat = 'no-repeat';
         document.getElementById('tags-overlay').style.backgroundAttachment = 'fixed';
     } else {
