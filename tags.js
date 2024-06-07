@@ -12,24 +12,24 @@ export function tagsSketch(isReverse) {
         
         const fandomColors = {
             "Overall": { 
-                ordered: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Overall.png", 
+                ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall.png", 
                 color: "#8056c4af",
-                overlay: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Overall_T.png",
+                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall_T.png",
             },
             "Marvel": { 
-                ordered: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Marvel.png",
+                ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Marvel.png",
                 color: "#f0519ebf",
-                overlay: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Marvel_T.png",
+                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Marvel_T.png",
             },
             "Harry Potter": { 
-                ordered: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/HarryPotter.png",
+                ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/HarryPotter.png",
                 color: "#589bcfae",
-                overlay: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Harry_T.png",
+                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Harry_T.png",
             },
             "Boku No Hero": { 
-                ordered: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/BokuNoHero.png",
+                ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/BokuNoHero.png",
                 color: "#87d4a4bf",
-                overlay: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Boku_T.png",
+                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Boku_T.png",
             }
         };
 

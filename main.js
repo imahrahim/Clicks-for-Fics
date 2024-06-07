@@ -9,23 +9,23 @@ window.popupLegendP5Tags = null;
 
 const fandomColors = {
     "Overall": { 
-        relationship: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Overall.png", 
-        overlay: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Overall_T.png",
+        relationship: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall.png", 
+        overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall_T.png",
         color: "rgba(225, 255, 0, 0.475)" 
     },
     "Marvel": { 
-        relationship: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Marvel.png", 
-        overlay: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Marvel_T.png",
+        relationship: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Marvel.png", 
+        overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Marvel_T.png",
         color: "rgba(255, 0, 0, 0.473)" 
     },
     "Harry Potter": { 
-        relationship: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/HarryPotter.png", 
-        overlay: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Harry_T.png",
+        relationship: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/HarryPotter.png", 
+        overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Harry_T.png",
         color: "rgba(0, 255, 0, 0.509)" 
     },
     "Boku No Hero": { 
-        relationship: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/BokuNoHero.png", 
-        overlay: "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Boku_T.png",
+        relationship: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/BokuNoHero.png", 
+        overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Boku_T.png",
         color: "rgba(0, 0, 255, 0.465)" 
     }
 };
@@ -52,7 +52,7 @@ function showHomePage() {
     document.getElementById('overlay').style.display = 'flex';
     document.getElementById('title').style.display = 'block';
 
-    document.body.style.backgroundImage = `url("https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Overall.png")`;
+    document.body.style.backgroundImage = `url("https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall.png")`;
     
     const footerAuthor = document.querySelector('.footer-author');
 
@@ -82,14 +82,16 @@ function showPage(page) {
         document.getElementById('relationships-visualization').style.display = 'block';
         loadSketch(relationshipsSketch, 'relationships-visualization');
         setActiveButton(document.getElementById('Overall-relationships'));
+        togglePopup('popup-relationships');
     } else if (page === 'tags') {
         document.getElementById('tags-visualization').style.display = 'block';
         loadSketch(tagsSketch(false), 'banner-container-1', false);
         setActiveButton(document.getElementById('Overall-tags'));
-        document.getElementById('tags-overlay').style.backgroundImage = `url( "https://github.com/imahrahim/Clicks-for-Fics/blob/links/content/background/Overall_T.png")`;
+        document.getElementById('tags-overlay').style.backgroundImage = `url( "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall_T.png")`;
         document.getElementById('tags-overlay').style.backgroundSize = 'contain';
         document.getElementById('tags-overlay').style.backgroundRepeat = 'no-repeat';
         document.getElementById('tags-overlay').style.backgroundAttachment = 'fixed';
+        togglePopup('popup-tags');
     
     }
 }
@@ -174,7 +176,7 @@ function updateRelationshipType(type) {
 
 function initializePage() {
     showHomePage();
-    loadData('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/Overall.json', 'Overall');
+    loadData('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/data/Overall.json', 'Overall');
 }
 
 window.showHomePage = showHomePage;
