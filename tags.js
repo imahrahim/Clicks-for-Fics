@@ -8,8 +8,8 @@ export function tagsSketch(isReverse) {
         let currentFandom = "Overall";
         let overlayImg;
 
-        const font = 'Whyte Inktrap';
-
+        const font = ('Whyte Inktrap');
+        
         const fandomColors = {
             "Overall": { 
                 ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall.png", 
@@ -17,7 +17,7 @@ export function tagsSketch(isReverse) {
                 overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall_T.png",
             },
             "Marvel": { 
-                ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Marvel.png",
+                ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/marvel.png",
                 color: "#f0519ebf",
                 overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Marvel_T.png",
             },
@@ -39,7 +39,7 @@ export function tagsSketch(isReverse) {
                     console.error(`Fehler beim Laden des Overlays für ${category}`);
                 });
             }
-
+         
             const categories = ["love", "angsst", "blitz", "chick", "universe", "canon", "abuse", "lemonn", "substance2", "meta", "familyy", "tot", "magic", "butterfly", "otherr", "fandom"];
             categories.forEach(category => {
                 categoryImages[category] = p.loadImage(`https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/tags/${category}.png`, () => {}, () => {
@@ -76,6 +76,7 @@ export function tagsSketch(isReverse) {
 
         function drawTags() {
             if (tags.length === 0) {
+                // console.log("Keine Tags zum Zeichnen verfügbar.");
                 return;
             }
             let x = isReverse ? reverseScrollX : scrollX;
@@ -83,12 +84,13 @@ export function tagsSketch(isReverse) {
             tags.forEach(tag => {
                 let img = categoryImages[tag.category.toLowerCase()];
                 if (!img) {
+                    // console.log("Kein Bild für Kategorie:", tag.category);
                     return;
                 }
                 let scaledWidth = 40;
                 let scaledHeight = img.height * (scaledWidth / img.width);
                 p.image(img, x, p.height / 2 - scaledHeight / 2, scaledWidth, scaledHeight);
-
+        
                 p.textFont(font);
                 p.textStyle(p.NORMAL);
                 p.textSize(20);
@@ -96,10 +98,10 @@ export function tagsSketch(isReverse) {
                 p.textAlign(p.LEFT, p.CENTER);
                 p.fill(0);
                 p.text(tag.tag, x + scaledWidth + 5, p.height / 2);
-
+        
                 x += scaledWidth + p.textWidth(tag.tag) + 100;
             });
-
+        
             let speed = p.map(p.mouseX, 0, p.width, 0.5, 10); 
             if (isReverse) {
                 reverseScrollX += speed;
@@ -109,7 +111,7 @@ export function tagsSketch(isReverse) {
                 if (scrollX < -x + p.width) scrollX = 0;
             }
         }
-
+        
         p.loadTagData = function (dataUrl, fandom, reverse) {
             p.loadTable(dataUrl, "csv", "header", (table) => {
                 tags = table.getRows().map((row) => ({
@@ -124,5 +126,6 @@ export function tagsSketch(isReverse) {
                 p.redraw(); 
             });
         };
+
     };
 }
