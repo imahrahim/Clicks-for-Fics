@@ -73,6 +73,10 @@ function showPage(page) {
     document.getElementById('tags-visualization').style.display = 'none';
     document.getElementById('overlay').style.display = 'none';
     document.getElementById('title').style.display = 'none';
+    const footerAuthor = document.querySelector('.footer-author');
+    footerAuthor.innerHTML = `
+    Imah Leaf Rahim || BA Data Design + Art, Hochschule Luzern – Design Film Kunst © HSLU, 2024
+`;
 
     if (page === 'relationships') {
         document.getElementById('relationships-visualization').style.display = 'block';
