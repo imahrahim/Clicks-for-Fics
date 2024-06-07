@@ -10,23 +10,19 @@ export function tagsSketch(isReverse) {
         
         const fandomColors = {
             "Overall": { 
-                ordered: "/content/background/Overall_Tag.png", //unorderd
-                unordered: "/content/background/Overall_O.png", //ordered
+                ordered: "/content/background/Overall_O.png", //unorderd
                 color: "#8056c47e" 
             },
             "Marvel": { 
-                ordered: "/content/background/Marvel_Tag.png", //unorderd
-                unordered: "/content/background/Marvel_O.png", //ordered
+                ordered: "/content/background/Marvel_O.png", //unorderd
                 color: "#f0519e74" 
             },
             "Harry Potter": { 
-                ordered: "/content/background/Harry_Tag.png", //unorderd
-                unordered: "/content/background/Harry_O.png", //ordered
+                ordered: "/content/background/Harry_O.png", //unorderd
                 color: "#589bcf6e" 
             },
             "Boku No Hero": { 
-                ordered: "/content/background/Boku_Tag.png", //unorderd
-                unordered: "/content/background/Boku_Order.png", //ordered
+                ordered: "/content/background/Boku_Order.png", //unorderd
                 color: "#87d4a473" 
             }
         };
@@ -131,7 +127,7 @@ export function tagsSketch(isReverse) {
         };
 
         function updateBackground() {
-            const order = document.getElementById('toggle-order-checkbox').checked ? 'unordered' : 'ordered';
+            const order ='ordered'
             const backgroundImage = fandomColors[currentFandom][order];
             console.log("FandomColors:", currentFandom, order);
             if (backgroundImage) {
@@ -144,6 +140,6 @@ export function tagsSketch(isReverse) {
             }
         }
 
-        document.getElementById('toggle-order-checkbox').addEventListener('change', updateBackground);
+        document.addEventListener('change', updateBackground);
     };
 }

@@ -13,7 +13,7 @@
 
 <body>
     <div id="overlay">
-        <img src="content/Worm.png" alt="Worm Overlay">
+        <img src="content/Worm10.png" alt="Worm Overlay">
     </div>
     <header id="header">
         <a href="#" id="home-link" onclick="showHomePage()">CLICKS FOR FICS</a>
@@ -23,8 +23,8 @@
         </div>
     </header>
     <div id="main-content">
+        <h1 id="title">CLICKS FOR FICS</h1>
         <div id="home-page">
-            <h1>WELCOME TO CLICKS FOR FICS</h1>
             <p> The Archive of Our Own platform, 6.9 million users share their enthusiasm for fan fiction, culminating
                 in a collection of 12.9 million works. These works expand fictional realms including the 
                 <span style="color: #F0519E; font-weight: bold;">Marvel</span>, 
@@ -85,16 +85,7 @@
                         <button id="Harry-Potter-tags" onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter'); setActiveButton(this);">HARRY POTTER</button>
                         <button id="Boku-No-Hero-tags" onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero'); setActiveButton(this);">BOKU NO HERO</button>
                     </div>
-                    <div id="btns-right">
-                    <div id="toggle-order-container">
-                        <label class="switch">
-                            <input type="checkbox" id="toggle-order-checkbox" onchange="updateTagOrder(this.checked ? 'unordered' : 'ordered')">
-                            <span class="slider round">
-                                <span class="slider-text unordered">UNORDERED</span>
-                                <span class="slider-text ordered">ORDERED</span>
-                            </span>
-                        </label>
-                    </div>
+                    <div id="btns-right"> 
                     <button id="show-info-tag" onclick="togglePopup('popup-tags')">i</button>
                 </div>
             </div>
@@ -231,17 +222,7 @@
     </div>
 
     <footer id="footer">
-        <p class="footer-author">
-            Author: Imah Leaf Rahim
-            <br> 
-            imah.rahim@me.com
-            <br> 
-            2024-06-10
-            <br> 
-            Mentor: Max Frischknecht
-            <br> 
-            BA Data Design + Art, Hochschule Luzern – Design Film Kunst © HSLU, 2024</p>
-        
+        <p class="footer-author"></p>
             <div class="footer-links">
             <a href="https://clicksforficsprocess.netlify.app/" target="_blank">Documentation</a>
             <a href="https://github.com/imahrahim/Clicks-for-Fics" target="_blank">GitHub</a>
@@ -259,9 +240,6 @@
                 if (id === 'popup-relationships' && !window.popupLegendP5Relationships) {
                     window.popupLegendP5Relationships = new p5(relationshipLegendSketch, 'popup-relationships-legend');
                 }
-                // if (id === 'popup-tags' && !window.popupLegendP5Tags) {
-                //     window.popupLegendP5Tags = new p5(legendSketch, 'popup-tags-legend');
-                // }
             } else {
                 popup.style.display = "none";
             }

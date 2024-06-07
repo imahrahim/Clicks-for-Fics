@@ -42,9 +42,6 @@ function togglePopup(id) {
         if (id === 'popup-relationships' && !window.popupLegendP5Relationships) {
             window.popupLegendP5Relationships = new p5(relationshipLegendSketch, 'popup-relationships-legend');
         }
-        if (id === 'popup-tags' && !window.popupLegendP5Tags) {
-            // window.popupLegendP5Tags = new p5(legendSketch, 'popup-tags-legend');
-        }
     } else {
         popup.style.display = "none";
     }
@@ -58,15 +55,14 @@ function showHomePage() {
     document.getElementById('relationship-btn').classList.remove('active');
     document.getElementById('tag-btn').classList.remove('active');
     document.getElementById('overlay').style.display = 'flex';
+    document.getElementById('title').style.display = 'block';
 
     document.body.style.backgroundImage = `url("/content/background/Overall.png")`;
     
     const footerAuthor = document.querySelector('.footer-author');
 
     footerAuthor.innerHTML = `
-    Author: Imah Leaf Rahim
-    <br> 
-    imah.rahim@me.com
+    Imah Leaf Rahim
     <br> 
     2024-06-10
     <br> 
@@ -82,6 +78,7 @@ function showPage(page) {
     document.getElementById('relationships-visualization').style.display = 'none';
     document.getElementById('tags-visualization').style.display = 'none';
     document.getElementById('overlay').style.display = 'none';
+    document.getElementById('title').style.display = 'none';
     const footerAuthor = document.querySelector('.footer-author');
     
     if (page === 'relationships') {
@@ -107,18 +104,6 @@ function showPage(page) {
 
         footerAuthor.innerHTML = `
         Imah Leaf Rahim || BA Data Design + Art, Hochschule Luzern – Design Film Kunst © HSLU, 2024
-        `;
-    } else {
-        footerAuthor.innerHTML = `
-            Author: Imah Leaf Rahim
-            <br> 
-            imah.rahim@me.com
-            <br> 
-            2024-06-10
-            <br> 
-            Mentor: Max Frischknecht
-            <br> 
-            BA Data Design + Art, Hochschule Luzern – Design Film Kunst © HSLU, 2024
         `;
     }
 }
@@ -175,7 +160,7 @@ function loadData(dataUrl, fandom) {
 }
 
 function loadTagData(dataUrl, fandom) {
-    const order = document.getElementById('toggle-order-checkbox').checked ? 'unordered' : 'ordered';
+    const order = 'ordered'
     const backgroundImage = fandomColors[fandom][order];
 
     if (myp5 && myp5.loadTagData) {
