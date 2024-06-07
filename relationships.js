@@ -25,6 +25,22 @@ const otherColors = {
   other: "#ffffff8d",
 }
 
+const fandomColorsHover = {
+  "Harry Potter - J. K. Rowling": "#589BCF",
+  "Marvel": "#F0519E",
+  "Boku no Hero Academia": "#87D4A5",
+  "Boku No Hero Academia": "#87D4A5",
+  other: "#ffffffff",
+};
+
+const otherColorsHover = {
+  "Harry Potter - J. K. Rowling": "#589bcfff",
+  "Marvel": "#f0519eff",
+  "Boku no Hero Academia": "#87d4a4ff",
+  "Boku No Hero Academia": "#87d4a4ff",
+  other: "#ffffffff",
+}
+
 const linksColors = {
   "fandom": "#8056c43f",
   "romantic": "#0e0917",
@@ -129,10 +145,7 @@ export function relationshipsSketch(p) {
   p.draw = function () {
     p.clear();
     p.drawVisualization();
-    let hoverNode = p.checkHover();
-    if (hoverNode) {
-      p.drawTooltip(hoverNode);
-    }
+    p.checkHover();
   };
 
   p.drawBackgroundScale = function () {
@@ -257,19 +270,20 @@ p.drawVisualization = function () {
           let rectHeight = 25;
           let textSize = 14;
 
+
           if (node.group === "character") {
               if (node.gender === 'female'){
-                  p.fill(fandomColors[node.fandom] || fandomColors["other"]);
+                  p.fill(fandomColorsHover[node.fandom] || fandomColorsHover["other"]);
                   p.stroke(0);
                   p.strokeWeight(1);
                   p.rect(node.x, node.y, rectWidth, rectHeight, 20);
               } else if (node.gender === 'male') {
-                  p.fill(fandomColors[node.fandom] || fandomColors["other"]);
+                  p.fill(fandomColorsHover[node.fandom] || fandomColorsHover["other"]);
                   p.stroke(0);
                   p.strokeWeight(1);
                   p.rect(node.x, node.y, rectWidth, rectHeight);
               } else {
-                  p.fill(otherColors[node.fandom] || otherColors['other']);
+                  p.fill(otherColorsHover[node.fandom] || otherColorsHover['other']);
                   p.stroke(255);
                   p.strokeWeight(0);
                   p.rect(node.x, node.y, rectWidth, rectHeight);
@@ -476,6 +490,12 @@ p.drawVisualization = function () {
         }
     });
 
+    if (hoverNode) {
+      p.cursor(p.HAND);
+  } else {
+      p.cursor(p.ARROW);
+  }
+
     nodes.forEach((node) => {
         node.isHovered = node === hoverNode;
     });
@@ -483,15 +503,4 @@ p.drawVisualization = function () {
     return hoverNode;
 };
 
-
-  p.drawTooltip = function (node) {
-    let tooltip = document.getElementById('stickyTooltip');
-
-    if (node.group === 'fandom'){
-      tooltip.innerHTML = `${node.id}`;
-    } else {
-      tooltip.innerHTML = `${node.id}  (${node.frequency})`;
-    }
-    
-  };
 }

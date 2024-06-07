@@ -365,13 +365,13 @@ button:hover {
   font-size: 14px;
 }
 
-.romantic, .ordered {
+.romantic, .unordered {
   text-align: right;
   margin: 0.3rem;
   right: 0.5rem;
 }
 
-.friendship, .unordered {
+.friendship, .ordered {
   color: transparent;
 }
 
@@ -396,11 +396,11 @@ input:checked + .slider .friendship{
   color: #000000;
 }
 
-input:checked + .slider .ordered {
+input:checked + .slider .unordered {
   color: transparent;
 }
 
-input:checked + .slider .unordered{
+input:checked + .slider .ordered{
   color: #000000;
 }
 
