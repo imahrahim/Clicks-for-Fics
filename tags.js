@@ -6,44 +6,46 @@ export function tagsSketch(isReverse) {
 
         let categoryImages = {};
         let currentFandom = "Overall";
+        let overlayImg;
+
         const font = ('Whyte Inktrap');
         
         const fandomColors = {
             "Overall": { 
-                ordered: "/content/background/Overall_O.png", //unorderd
-                color: "#8056c47e" 
+                ordered: "/content/background/Overall.png", 
+                color: "#8056c47e",
+                overlay: "/content/background/Overall_T.png",
             },
             "Marvel": { 
-                ordered: "/content/background/Marvel_O.png", //unorderd
-                color: "#f0519e74" 
+                ordered: "/content/background/Marvel.png",
+                color: "#f0519e74",
+                overlay: "/content/background/Marvel_T.png",
             },
             "Harry Potter": { 
-                ordered: "/content/background/Harry_O.png", //unorderd
-                color: "#589bcf6e" 
+                ordered: "/content/background/HarryPotter.png",
+                color: "#589bcf6e",
+                overlay: "/content/background/Harry_T.png",
             },
             "Boku No Hero": { 
-                ordered: "/content/background/Boku_Order.png", //unorderd
-                color: "#87d4a473" 
+                ordered: "/content/background/BokuNoHero.png",
+                color: "#87d4a473",
+                overlay: "/content/background/Boku_T.png",
             }
         };
 
         p.preload = function () {
-            categoryImages["Romance"] = p.loadImage("/content/tags/love.png");
-            categoryImages["Angst"] = p.loadImage("/content/tags/angsst.png");
-            categoryImages["Action"] = p.loadImage("/content/tags/blitz.png");
-            categoryImages["Fluff"] = p.loadImage("/content/tags/chick.png");
-            categoryImages["Alternate Universe"] = p.loadImage("/content/tags/universe.png");
-            categoryImages["Canon"] = p.loadImage("/content/tags/canon.png");
-            categoryImages["Abuse"] = p.loadImage("/content/tags/abuse.png");
-            categoryImages["Sex"] = p.loadImage("/content/tags/lemonn.png");
-            categoryImages["Substance"] = p.loadImage("/content/tags/substance2.png");
-            categoryImages["Meta"] = p.loadImage("/content/tags/meta.png");
-            categoryImages["Family"] = p.loadImage("/content/tags/familyy.png");
-            categoryImages["Dark"] = p.loadImage("/content/tags/tot.png");
-            categoryImages["Magic"] = p.loadImage("/content/tags/magic.png");
-            categoryImages["Mental Health"] = p.loadImage("/content/tags/butterfly.png");
-            categoryImages["Other"] = p.loadImage("/content/tags/otherr.png");
-            categoryImages["Fandom"] = p.loadImage("/content/tags/fandom.png");
+            for (const [category, details] of Object.entries(fandomColors)) {
+                details.overlayImg = p.loadImage(details.overlay, () => {}, () => {
+                    console.error(`Fehler beim Laden des Overlays für ${category}`);
+                });
+            }
+         
+            const categories = ["love", "angsst", "blitz", "chick", "universe", "canon", "abuse", "lemonn", "substance2", "meta", "familyy", "tot", "magic", "butterfly", "otherr", "fandom"];
+            categories.forEach(category => {
+                categoryImages[category] = p.loadImage(`/content/tags/${category}.png`, () => {}, () => {
+                    console.error(`Fehler beim Laden des Bildes für Kategorie ${category}`);
+                });
+            });
         };
 
         p.setup = function () {
@@ -56,12 +58,10 @@ export function tagsSketch(isReverse) {
             console.log("Canvas erstellt mit Breite:", canvasContainer.offsetWidth, " Höhe: 40");
 
             p.loadTagData("/data/Additional_Tags_Overall.csv", "Overall", isReverse);
-            updateBackground();
         };
 
         p.draw = function () {
             p.clear();
-            p.background(fandomColors[currentFandom].color);
             if (tags.length > 0) {
                 drawTags();
             } else {
@@ -75,13 +75,13 @@ export function tagsSketch(isReverse) {
 
         function drawTags() {
             if (tags.length === 0) {
-                console.log("Keine Tags zum Zeichnen verfügbar.");
+                // console.log("Keine Tags zum Zeichnen verfügbar.");
                 return;
             }
             let x = isReverse ? reverseScrollX : scrollX;
             p.textSize(24);
             tags.forEach(tag => {
-                let img = categoryImages[tag.category];
+                let img = categoryImages[tag.category.toLowerCase()];
                 if (!img) {
                     // console.log("Kein Bild für Kategorie:", tag.category);
                     return;
@@ -92,7 +92,7 @@ export function tagsSketch(isReverse) {
         
                 p.textFont(font);
                 p.textStyle(p.NORMAL);
-                p.textSize('1.5rem');
+                p.textSize(20);
                 p.textStyle(p.BOLD);
                 p.textAlign(p.LEFT, p.CENTER);
                 p.fill(0);
@@ -120,26 +120,27 @@ export function tagsSketch(isReverse) {
                 }));
 
                 currentFandom = fandom;
+                overlayImg = fandomColors[fandom].overlayImg;
                 isReverse = reverse;
-                updateBackground();
+                // updateBackground();
                 p.redraw(); 
             });
         };
 
-        function updateBackground() {
-            const order ='ordered'
-            const backgroundImage = fandomColors[currentFandom][order];
-            console.log("FandomColors:", currentFandom, order);
-            if (backgroundImage) {
-                document.body.style.backgroundImage = `url(${backgroundImage})`;
-                document.body.style.backgroundSize = 'cover';
-                document.body.style.backgroundRepeat = 'no-repeat';
-                document.body.style.backgroundAttachment = 'fixed';
-            } else {
-                console.error(`Background image for ${currentFandom} with order ${order} not found.`);
-            }
-        }
+        // function updateBackground() {
+        //     const order = 'ordered';
+        //     const backgroundImage = fandomColors[currentFandom][order];
+        //     console.log("FandomColors:", currentFandom, order);
+        //     if (backgroundImage) {
+        //         document.getElementById('tags-visualization').style.backgroundImage = `url(${backgroundImage})`;
+        //         document.getElementById('tags-visualization').style.backgroundSize = 'cover';
+        //         document.getElementById('tags-visualization').style.backgroundRepeat = 'no-repeat';
+        //         document.getElementById('tags-visualization').style.backgroundAttachment = 'fixed';
+        //     } else {
+        //         console.error(`Background image for ${currentFandom} with order ${order} not found.`);
+        //     }
+        // }
 
-        document.addEventListener('change', updateBackground);
+        // document.addEventListener('change', updateBackground);
     };
 }

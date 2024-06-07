@@ -63,8 +63,8 @@ body {
 
 #overlay {
   position: fixed;
-  top: 0rem;
-  left: 0;
+  top: -3rem;
+  left: -1.5rem;
   width: 100%;
   height: 100%;
   pointer-events: none; 
@@ -75,8 +75,8 @@ body {
 }
 
 #overlay img {
-  max-width: 120%;
-  max-height: 110%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
@@ -277,7 +277,7 @@ button:hover {
 }
 
 #tags-visualization {
-  height: calc(100vh); 
+  height: calc(100vh - 5rem);
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -287,22 +287,33 @@ button:hover {
   bottom: 3.5rem;
 }
 
+#tags-overlay {
+  position: fixed;
+  top: -3rem;
+  left: -1.5rem;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; 
+  display: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+
+#tags-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+
 #banner-container-1 {
   border: 0.1rem solid #000000;
   backdrop-filter: blur(2px);
   margin-top: 0rem;
   margin-bottom: 2rem;
   height: 40px;
-}
-
-#banner-container-2 {
-  border: 0.1rem solid #000000;
-  backdrop-filter: blur(2px);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 40px;
+  z-index: 0;
 }
 
 #tag-buttons {
