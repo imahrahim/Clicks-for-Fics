@@ -10,17 +10,17 @@ export function tagsSketch(isReverse) {
         
         const fandomColors = {
             "Overall": { 
-                ordered: "/content/background/Overall_Tags.png", //unorderd
+                ordered: "/content/background/Overall_Tag.png", //unorderd
                 unordered: "/content/background/Overall_O.png", //ordered
                 color: "#8056c47e" 
             },
             "Marvel": { 
-                ordered: "/content/background/Marvel_Tags.png", //unorderd
+                ordered: "/content/background/Marvel_Tag.png", //unorderd
                 unordered: "/content/background/Marvel_O.png", //ordered
                 color: "#f0519e74" 
             },
             "Harry Potter": { 
-                ordered: "/content/background/Harry_Tags.png", //unorderd
+                ordered: "/content/background/Harry_Tag.png", //unorderd
                 unordered: "/content/background/Harry_O.png", //ordered
                 color: "#589bcf6e" 
             },

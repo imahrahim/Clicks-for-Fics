@@ -275,12 +275,12 @@ p.drawVisualization = function () {
               if (node.gender === 'female'){
                   p.fill(fandomColorsHover[node.fandom] || fandomColorsHover["other"]);
                   p.stroke(0);
-                  p.strokeWeight(1);
+                  p.strokeWeight(3);
                   p.rect(node.x, node.y, rectWidth, rectHeight, 20);
               } else if (node.gender === 'male') {
                   p.fill(fandomColorsHover[node.fandom] || fandomColorsHover["other"]);
                   p.stroke(0);
-                  p.strokeWeight(1);
+                  p.strokeWeight(3);
                   p.rect(node.x, node.y, rectWidth, rectHeight);
               } else {
                   p.fill(otherColorsHover[node.fandom] || otherColorsHover['other']);

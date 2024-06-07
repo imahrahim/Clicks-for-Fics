@@ -57,6 +57,9 @@ function showHomePage() {
 
     document.getElementById('relationship-btn').classList.remove('active');
     document.getElementById('tag-btn').classList.remove('active');
+    document.getElementById('overlay').style.display = 'flex';
+
+    document.body.style.backgroundImage = `url("/content/background/Overall.png")`;
     
     const footerAuthor = document.querySelector('.footer-author');
 
@@ -78,7 +81,7 @@ function showPage(page) {
     document.getElementById('home-page').style.display = 'none';
     document.getElementById('relationships-visualization').style.display = 'none';
     document.getElementById('tags-visualization').style.display = 'none';
-
+    document.getElementById('overlay').style.display = 'none';
     const footerAuthor = document.querySelector('.footer-author');
     
     if (page === 'relationships') {
