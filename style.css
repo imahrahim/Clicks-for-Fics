@@ -24,8 +24,8 @@
 
 @font-face {
   font-family: "Whyte";
-  src: url("https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/ABCWhytePlusVariableEdu-Regular.woff2") format("woff2"),
-       url("https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/ABCWhytePlusVariableEdu-Regular.woff") format("woff");
+  src: url("https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/fonts/ABCWhyteInktrapVariableEdu-Regular.woff") format("woff2"),
+       url("https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/fonts/ABCWhyteInktrapVariableEdu-Regular.woff") format("woff");
   font-weight: 100 900;
   font-style: normal;
 }

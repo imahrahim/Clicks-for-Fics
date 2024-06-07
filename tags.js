@@ -17,7 +17,7 @@ export function tagsSketch(isReverse) {
                 overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall_T.png",
             },
             "Marvel": { 
-                ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Marvel.png",
+                ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/marvel.png",
                 color: "#f0519ebf",
                 overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Marvel_T.png",
             },

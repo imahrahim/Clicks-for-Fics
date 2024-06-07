@@ -14,7 +14,7 @@ const fandomColors = {
         color: "rgba(225, 255, 0, 0.475)" 
     },
     "Marvel": { 
-        relationship: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Marvel.png", 
+        relationship: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/marvel.png", 
         overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Marvel_T.png",
         color: "rgba(255, 0, 0, 0.473)" 
     },
