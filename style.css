@@ -16,31 +16,31 @@
 
 @font-face {
   font-family: "Whyte Inktrap";
-  src: url("/fonts/ABCWhyteInktrapVariableEdu-Italic.woff2") format("woff2"),
-       url("/fonts/ABCWhyteInktrapVariableEdu-Italic.woff") format("woff");
+  src: url("https://github.com/imahrahim/Clicks-for-Fics/blob/links/fonts/ABCWhyteInktrapVariableEdu-Italic.woff2") format("woff2"),
+       url("https://github.com/imahrahim/Clicks-for-Fics/blob/links/fonts/ABCWhyteInktrapVariableEdu-Italic.woff") format("woff");
   font-weight: 100 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Whyte";
-  src: url("/fonts/ABCWhytePlusVariableEdu-Regular.woff2") format("woff2"),
-       url("/fonts/ABCWhytePlusVariableEdu-Regular.woff") format("woff");
+  src: url("https://github.com/imahrahim/Clicks-for-Fics/blob/links/fonts/ABCWhytePlusVariableEdu-Regular.woff2") format("woff2"),
+       url("https://github.com/imahrahim/Clicks-for-Fics/blob/links/fonts/ABCWhytePlusVariableEdu-Regular.woff") format("woff");
   font-weight: 100 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Whyte";
-  src: url("/fonts/ABCWhytePlusVariableEdu-Regular.woff2") format("woff2"),
-       url("/fonts/ABCWhytePlusVariableEdu-Regular.woff") format("woff");
+  src: url("https://github.com/imahrahim/Clicks-for-Fics/blob/links/fonts/ABCWhytePlusVariableEdu-Regular.woff2") format("woff2"),
+       url("https://github.com/imahrahim/Clicks-for-Fics/blob/links/fonts/ABCWhytePlusVariableEdu-Regular.woff") format("woff");
   font-weight: 100 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Brr";
-  src: url("/fonts/BRRR-Skrrt.otf") format("opentype");
+  src: url("https://github.com/imahrahim/Clicks-for-Fics/blob/links/fonts/BRRR-Skrrt.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
