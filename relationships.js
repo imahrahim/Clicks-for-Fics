@@ -56,7 +56,7 @@ export function relationshipsSketch(p) {
     let canvas = p.createCanvas(canvasContainer.offsetWidth, 2000).parent("relationships-visualization");
     canvas.mouseClicked(p.handleClick);
 
-    p.loadData("/data/Overall.json");
+    p.loadData("https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/Overall.json");
 
     window.addEventListener('resize', () => {
       p.updateXScale();

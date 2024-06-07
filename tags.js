@@ -12,24 +12,24 @@ export function tagsSketch(isReverse) {
         
         const fandomColors = {
             "Overall": { 
-                ordered: "/content/background/Overall.png", 
+                ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/background/Overall.png", 
                 color: "#8056c4af",
-                overlay: "/content/background/Overall_T.png",
+                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/background/Overall_T.png",
             },
             "Marvel": { 
-                ordered: "/content/background/Marvel.png",
+                ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/background/Marvel.png",
                 color: "#f0519ebf",
-                overlay: "/content/background/Marvel_T.png",
+                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/background/Marvel_T.png",
             },
             "Harry Potter": { 
-                ordered: "/content/background/HarryPotter.png",
+                ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/background/HarryPotter.png",
                 color: "#589bcfae",
-                overlay: "/content/background/Harry_T.png",
+                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/background/Harry_T.png",
             },
             "Boku No Hero": { 
-                ordered: "/content/background/BokuNoHero.png",
+                ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/background/BokuNoHero.png",
                 color: "#87d4a4bf",
-                overlay: "/content/background/Boku_T.png",
+                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/content/background/Boku_T.png",
             }
         };
 
@@ -57,7 +57,7 @@ export function tagsSketch(isReverse) {
             let canvas = p.createCanvas(canvasContainer.offsetWidth, 40).parent(canvasContainer);
             console.log("Canvas erstellt mit Breite:", canvasContainer.offsetWidth, " Höhe: 40");
 
-            p.loadTagData("/data/Additional_Tags_Overall.csv", "Overall", isReverse);
+            p.loadTagData("https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/main/data/Additional_Tags_Overall.csv", "Overall", isReverse);
         };
 
         p.draw = function () {
@@ -128,20 +128,5 @@ export function tagsSketch(isReverse) {
             });
         };
 
-        // function updateBackground() {
-        //     const order = 'ordered';
-        //     const backgroundImage = fandomColors[currentFandom][order];
-        //     console.log("FandomColors:", currentFandom, order);
-        //     if (backgroundImage) {
-        //         document.getElementById('tags-visualization').style.backgroundImage = `url(${backgroundImage})`;
-        //         document.getElementById('tags-visualization').style.backgroundSize = 'cover';
-        //         document.getElementById('tags-visualization').style.backgroundRepeat = 'no-repeat';
-        //         document.getElementById('tags-visualization').style.backgroundAttachment = 'fixed';
-        //     } else {
-        //         console.error(`Background image for ${currentFandom} with order ${order} not found.`);
-        //     }
-        // }
-
-        // document.addEventListener('change', updateBackground);
     };
 }
