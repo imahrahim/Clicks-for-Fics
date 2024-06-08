@@ -1,4 +1,19 @@
 {
+  "Aaron Hotchner": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "NCIS",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Abraxas Malfoy": {
     "gender": "male",
     "frequency": 3,
@@ -20,15 +35,50 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Adrian Pucey": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Daphne Greengrass",
+          "frequency": 1,
+          "category": "female-male"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Aemond \"One-Eye\" Targaryen": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Game of Thrones",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Aizawa Shouta | Eraserhead": {
     "gender": "male",
     "frequency": 3,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -39,14 +89,14 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
     }
@@ -82,7 +132,7 @@
         {
           "target": "Harry Potter",
           "frequency": 10,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
@@ -95,6 +145,41 @@
           "category": "male-male"
         }
       ]
+    }
+  },
+  "Albus Severus Potter": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Scorpius Malfoy",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Original Character(s)",
+          "frequency": 1,
+          "category": "male-other"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Alex Karev": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Grey's Anatomy",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Alphard Black": {
@@ -123,6 +208,21 @@
       ]
     }
   },
+  "Anakin Skywalker": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Star Wars",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Andromeda Black Tonks": {
     "gender": "female",
     "frequency": 6,
@@ -137,7 +237,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Ted Tonks",
@@ -149,14 +249,59 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ]
+    }
+  },
+  "Angel": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Buffy the Vampire Slayer",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Angelina Johnson": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Anthony DiNozzo": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "NCIS",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Anthony Goldstein": {
@@ -169,9 +314,24 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Anya": {
+    "gender": "female",
+    "frequency": 2,
+    "fandom": "Buffy the Vampire Slayer",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Raven Reyes",
+          "frequency": 1,
+          "category": "female-female"
+        }
+      ],
+      "friendship": []
     }
   },
   "Apollo": {
@@ -184,7 +344,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
     }
@@ -199,7 +359,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         }
       ]
     }
@@ -240,9 +400,39 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Arthur ": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Arthurian Legend",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Arthur Curry": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "DCU",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Arthur Pendragon": {
@@ -259,7 +449,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ],
       "friendship": [
@@ -269,6 +459,21 @@
           "category": "male-male"
         }
       ]
+    }
+  },
+  "Arthur Weasley": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Molly Weasley",
+          "frequency": 4,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
     }
   },
   "Astoria Greengrass": {
@@ -285,7 +490,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Draco Malfoy",
@@ -317,34 +522,24 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         }
       ]
     }
   },
-  "Avengers Team": {
-    "gender": "multi",
-    "frequency": 3,
-    "fandom": "Marvel",
+  "Avery Sr.": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
     "relationships": {
-      "romantic": [],
-      "friendship": [
-        {
-          "target": "Harry Potter",
-          "frequency": 3,
-          "category": "female-multi"
-        },
+      "romantic": [
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "multi-female"
-        },
-        {
-          "target": "Tony Stark | Iron Man",
-          "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
-      ]
+      ],
+      "friendship": []
     }
   },
   "Aziraphale": {
@@ -371,6 +566,21 @@
           "category": "male-male"
         }
       ]
+    }
+  },
+  "Balon Swann": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Game of Thrones",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Barebone Children": {
@@ -417,7 +627,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
@@ -427,7 +637,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Charlie Weasley",
@@ -442,6 +652,81 @@
           "category": "male-female"
         }
       ]
+    }
+  },
+  "Bella Swan": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Twilight",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Edward Cullen",
+          "frequency": 2,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Bellatrix Black Lestrange": {
+    "gender": "female",
+    "frequency": 7,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Rodolphus Lestrange",
+          "frequency": 3,
+          "category": "female-male"
+        },
+        {
+          "target": "Lily Evans Potter",
+          "frequency": 1,
+          "category": "female-female"
+        },
+        {
+          "target": "Rodolphus Lestrange",
+          "frequency": 1,
+          "category": "male-female"
+        },
+        {
+          "target": "Rodolphus Lestrange",
+          "frequency": 1,
+          "category": "female-male"
+        },
+        {
+          "target": "Remus Lupin",
+          "frequency": 1,
+          "category": "male-female"
+        },
+        {
+          "target": "Rodolphus Lestrange",
+          "frequency": 1,
+          "category": "male-female"
+        },
+        {
+          "target": "Tom Riddle | Voldemort",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Ben Solo | Kylo Ren": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Star Wars",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Bill Weasley": {
@@ -480,7 +765,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Charlie Weasley",
@@ -500,7 +785,7 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Regulus Black",
@@ -519,7 +804,7 @@
         {
           "target": "Harry Potter",
           "frequency": 7,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Pansy Parkinson",
@@ -569,7 +854,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Justin Finch-Fletchley",
@@ -596,7 +881,7 @@
         {
           "target": "Harry Potter",
           "frequency": 6,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Ron Weasley",
@@ -621,6 +906,66 @@
       ]
     }
   },
+  "Blake Slytherin": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Severus Snape",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Brandon Stark": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Game of Thrones",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Brian O'Conner": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Fast & Furious",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Bruce Banner | Hulk": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Remus Lupin",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Bruce Wayne | Batman": {
     "gender": "male",
     "frequency": 3,
@@ -630,7 +975,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ],
       "friendship": [
@@ -642,9 +987,29 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Carlisle Cullen": {
+    "gender": "male",
+    "frequency": 3,
+    "fandom": "Twilight",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Esme Cullen",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
     }
   },
   "Cedric Diggory": {
@@ -656,17 +1021,17 @@
         {
           "target": "Harry Potter",
           "frequency": 6,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
@@ -683,7 +1048,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
     }
@@ -697,7 +1062,7 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Hermione Granger",
@@ -717,12 +1082,12 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
@@ -739,7 +1104,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Bill Weasley",
@@ -747,6 +1112,51 @@
           "category": "male-male"
         }
       ]
+    }
+  },
+  "Charlus Potter": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Dorea Black Potter",
+          "frequency": 2,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Cho Chang": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Clark Kent": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "DCU",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Clarke Griffin": {
@@ -775,6 +1185,65 @@
       ]
     }
   },
+  "Clay Spenser": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "SEAL Team",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Clint Barton | Hawkeye": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 3,
+          "category": "male-male"
+        },
+        {
+          "target": "Phil Coulson",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Colin Creevey": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
+    }
+  },
+  "Colonnello": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Katekyo Hitman Reborn!",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Lal Mirch",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Consequences": {
     "gender": "other",
     "frequency": 1,
@@ -799,14 +1268,14 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
     }
@@ -837,6 +1306,21 @@
       ]
     }
   },
+  "Daenerys Targaryen": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Game of Thrones",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Damian Wayne": {
     "gender": "male",
     "frequency": 1,
@@ -847,9 +1331,24 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Danny \"Danno\" Williams": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Daphne Greengrass": {
@@ -866,7 +1365,7 @@
         {
           "target": "Harry Potter",
           "frequency": 3,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Adrian Pucey",
@@ -893,7 +1392,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Tracey Davis",
@@ -913,6 +1412,61 @@
       ]
     }
   },
+  "Daryl Dixon": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "The Walking Dead",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Dean Thomas": {
+    "gender": "male",
+    "frequency": 3,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Seamus Finnigan",
+          "frequency": 4,
+          "category": "male-male"
+        },
+        {
+          "target": "Ginny Weasley",
+          "frequency": 2,
+          "category": "male-female"
+        },
+        {
+          "target": "Ginny Weasley",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Dean Winchester": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Supernatural",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Death": {
     "gender": "other",
     "frequency": 4,
@@ -922,10 +1476,10 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "other-female"
+          "category": "other-male"
         },
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 1,
           "category": "other-male"
         }
@@ -934,12 +1488,12 @@
         {
           "target": "Harry Potter",
           "frequency": 5,
-          "category": "other-female"
+          "category": "other-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         }
       ]
     }
@@ -959,9 +1513,53 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "male-multi"
         }
       ]
+    }
+  },
+  "Demelza Robins": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Dennis Creevey": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
+    }
+  },
+  "Derek Hale": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Teen Wolf",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Stiles Stilinski",
+          "frequency": 2,
+          "category": "male-male"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Dick Grayson": {
@@ -974,7 +1572,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
     }
@@ -982,7 +1580,7 @@
   "Dimitriv": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Other",
+    "fandom": "Unknown",
     "relationships": {
       "romantic": [
         {
@@ -995,7 +1593,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
     }
@@ -1010,9 +1608,54 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Dominic Toretto": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Fast & Furious",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Dorcas Meadowes": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Marlene McKinnon",
+          "frequency": 6,
+          "category": "female-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Dorea Black Potter": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Charlus Potter",
+          "frequency": 2,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
     }
   },
   "Draco Malfoy": {
@@ -1024,7 +1667,7 @@
         {
           "target": "Harry Potter",
           "frequency": 317,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Hermione Granger",
@@ -1034,7 +1677,7 @@
         {
           "target": "Harry Potter",
           "frequency": 6,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
@@ -1054,7 +1697,7 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Astoria Greengrass",
@@ -1069,7 +1712,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
@@ -1109,7 +1752,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Ginny Weasley",
@@ -1124,12 +1767,12 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Astoria Greengrass",
@@ -1139,7 +1782,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Percy Weasley",
@@ -1151,7 +1794,7 @@
         {
           "target": "Harry Potter",
           "frequency": 20,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Severus Snape",
@@ -1211,6 +1854,36 @@
       ]
     }
   },
+  "Draco Malfoy's Owl": {
+    "gender": "other",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Hedwig",
+          "frequency": 1,
+          "category": "female-other"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Druella Rosier Black": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Walburga Black",
+          "frequency": 1,
+          "category": "female-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Dudley Dursley": {
     "gender": "male",
     "frequency": 7,
@@ -1221,12 +1894,12 @@
         {
           "target": "Harry Potter",
           "frequency": 5,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Piers Polkiss",
@@ -1266,7 +1939,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "multi-male"
         }
       ]
     }
@@ -1281,9 +1954,128 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "multi-male"
         }
       ]
+    }
+  },
+  "Eddie Diaz": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "911",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
+    }
+  },
+  "Edward Cullen": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Twilight",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Bella Swan",
+          "frequency": 2,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Edward Rosier": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Winnie Haywood",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Eileen Prince": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Alphard Black",
+          "frequency": 1,
+          "category": "female-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Emmeline Vance": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Mary Macdonald",
+          "frequency": 1,
+          "category": "female-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Emmett Cullen": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Twilight",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Rosalie Hale",
+          "frequency": 2,
+          "category": "male-female"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Ernie Macmillan": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Hannah Abbott",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Esme Cullen": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Twilight",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Carlisle Cullen",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
     }
   },
   "Euphemia Potter": {
@@ -1305,6 +2097,21 @@
           "category": "male-female"
         }
       ]
+    }
+  },
+  "Evan \"Buck\" Buckley": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Evan Rosier": {
@@ -1333,7 +2140,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Severus Snape",
@@ -1341,6 +2148,36 @@
           "category": "male-male"
         }
       ]
+    }
+  },
+  "Everyone": {
+    "gender": "multi",
+    "frequency": 1,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Theodore Nott",
+          "frequency": 1,
+          "category": "male-multi"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Fabian Prewett": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "James Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Fawkes": {
@@ -1353,9 +2190,24 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Felix": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Unknown",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Fenrir Greyback": {
@@ -1372,7 +2224,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Hermione Granger",
@@ -1384,7 +2236,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
     }
@@ -1399,7 +2251,7 @@
         {
           "target": "Harry Potter",
           "frequency": 4,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Severus Snape",
@@ -1407,6 +2259,15 @@
           "category": "male-male"
         }
       ]
+    }
+  },
+  "Finn O'Hara": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Original",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
     }
   },
   "Fleamont Potter": {
@@ -1439,7 +2300,7 @@
         {
           "target": "Harry Potter",
           "frequency": 3,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Bill Weasley",
@@ -1485,12 +2346,12 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
@@ -1522,6 +2383,36 @@
       ]
     }
   },
+  "Gabrielle Delacour": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Gaspard Dufresne ": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Unknown",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Hermione Granger",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Gellert Grindelwald": {
     "gender": "male",
     "frequency": 3,
@@ -1538,7 +2429,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
@@ -1546,6 +2437,21 @@
           "category": "male-male"
         }
       ]
+    }
+  },
+  "George O'Malley": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Grey's Anatomy",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "George Weasley": {
@@ -1557,7 +2463,7 @@
         {
           "target": "Harry Potter",
           "frequency": 3,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Blaise Zabini",
@@ -1579,6 +2485,41 @@
       ]
     }
   },
+  "Gideon Prewett": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Remus Lupin",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Gilderoy Lockhart": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Severus Snape",
+          "frequency": 2,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Ginny Weasley": {
     "gender": "female",
     "frequency": 25,
@@ -1588,7 +2529,7 @@
         {
           "target": "Harry Potter",
           "frequency": 29,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Neville Longbottom",
@@ -1628,7 +2569,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Susan Bones",
@@ -1638,17 +2579,17 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Pansy Parkinson",
@@ -1680,7 +2621,7 @@
         {
           "target": "Harry Potter",
           "frequency": 3,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Hermione Granger",
@@ -1700,6 +2641,21 @@
       ]
     }
   },
+  "Glenn Rhee": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "The Walking Dead",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Maggie Greene",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Goblins": {
     "gender": "multi",
     "frequency": 1,
@@ -1710,9 +2666,44 @@
         {
           "target": "Harry Potter",
           "frequency": 4,
-          "category": "multi-female"
+          "category": "multi-male"
         }
       ]
+    }
+  },
+  "Godric Gryffindor": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Gregory Goyle": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Luna Lovegood",
+          "frequency": 1,
+          "category": "male-female"
+        },
+        {
+          "target": "Neville Longbottom",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Guardians of Childhood": {
@@ -1730,6 +2721,61 @@
       ]
     }
   },
+  "Hannah Abbott": {
+    "gender": "female",
+    "frequency": 3,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "female-male"
+        },
+        {
+          "target": "Ernie Macmillan",
+          "frequency": 1,
+          "category": "female-male"
+        },
+        {
+          "target": "Original Character(s)",
+          "frequency": 1,
+          "category": "female-other"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Happy Hogan": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Pepper Potts",
+          "frequency": 3,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Harem": {
+    "gender": "multi",
+    "frequency": 1,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-multi"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Harley Keener": {
     "gender": "male",
     "frequency": 3,
@@ -1745,7 +2791,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
     }
@@ -1759,1406 +2805,1421 @@
         {
           "target": "Draco Malfoy",
           "frequency": 317,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
           "frequency": 121,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
           "frequency": 61,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
           "frequency": 53,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Ginny Weasley",
           "frequency": 29,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Severus Snape",
           "frequency": 28,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 11,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Theodore Nott",
           "frequency": 10,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Blaise Zabini",
           "frequency": 7,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Sirius Black",
           "frequency": 7,
-          "category": "multi-female"
+          "category": "male-male"
         },
         {
           "target": "Orion Black",
           "frequency": 7,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
           "frequency": 7,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Cedric Diggory",
           "frequency": 6,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Lucius Malfoy",
           "frequency": 6,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
           "frequency": 6,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Hermione Granger",
           "frequency": 6,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 5,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Regulus Black",
           "frequency": 5,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
-          "target": "James \"Bucky\" Barnes",
+          "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 5,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
-          "target": "Loki",
+          "target": "Loki Laufeyson",
           "frequency": 4,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 3,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Susan Bones",
           "frequency": 3,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Daphne Greengrass",
           "frequency": 3,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Jasper Hale",
           "frequency": 3,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
-          "target": "Clint Barton",
+          "target": "Clint Barton | Hawkeye",
           "frequency": 3,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Luna Lovegood",
           "frequency": 3,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Fleur Delacour",
           "frequency": 3,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "George Weasley",
           "frequency": 3,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Charlie Weasley",
           "frequency": 2,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Katie Bell",
           "frequency": 2,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Multi",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Viktor Krum",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Rabastan Lestrange",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Legolas Greenleaf",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
-          "target": "Thor",
+          "target": "Thor Odinson",
           "frequency": 2,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Rhaegar Targaryen",
           "frequency": 2,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Severus Snape",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Pansy Parkinson",
           "frequency": 2,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Marcus Flint",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
           "frequency": 2,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
           "frequency": 2,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
-          "target": "Loki",
+          "target": "Loki Laufeyson",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Death",
           "frequency": 2,
-          "category": "other-female"
+          "category": "other-male"
         },
         {
           "target": "Mycroft Holmes",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Rabastan Lestrange",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Cho Chang",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Harem",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Bartemius Crouch Jr.",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Demelza Robins",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Regulus Black",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Fred Weasley",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Aemond \"One-Eye\" Targaryen",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Lucius Malfoy",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Godric Gryffindor",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Salazar Slytherin",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Newt Scamander",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Neville Longbottom",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Credence Barebone",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Percival Graves",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Oliver Wood",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Carlisle Cullen",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "George O'Malley",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Adrian Pucey",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Daenerys Targaryen",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Ginny Weasley",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Balon Swann",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Jasper Hale",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Fenrir Greyback",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Astoria Greengrass",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Lavender Brown",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Lily Evans Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Nymphadora Tonks",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Andromeda Black Tonks",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Narcissa Black Malfoy",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Padma Patil",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Angelina Johnson",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Parvati Patil",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Hannah Abbott",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Gabrielle Delacour",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
-          "target": "Natasha Romanov",
+          "target": "Natasha Romanov | Black Widow",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Thorin Oakenshield",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
-          "target": "Loki",
+          "target": "Loki Laufeyson",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Oliver Queen",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Anakin Skywalker",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Viserys Targaryen",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Lex Luthor",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Neville Longbottom",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Blaise Zabini",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Theodore Nott",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Charlie Weasley",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Cedric Diggory",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Orion Black",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Derek Hale",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Jack Harkness",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Harvey Specter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Jace Wayland",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Shane Walsh",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Ben Solo | Kylo Ren",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "The Homelander | John",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Evan \"Buck\" Buckley",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Angel",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Clay Spenser",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Owen Grady",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Dominic Toretto",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Brian O'Conner",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Arthur Pendragon",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Jax Teller",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Raleigh Becket",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Arthur ",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Juice Ortiz",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Raymond Smith",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Neal Caffrey",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Anthony DiNozzo",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Luke Castellan",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Thranduil",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
-          "target": "Stephen Strange",
+          "target": "Stephen Strange | Dr. Strange",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Bruce Wayne | Batman",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Zuko",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Stiles Stilinski",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Sam Winchester",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Clark Kent",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Oberyn Martell",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Felix",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Alex Karev",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Brandon Stark",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Danny \"Danno\" Williams",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Steve McGarrett",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Dean Winchester",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Spencer Reid",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Aaron Hotchner",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Arthur Curry",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Other(s)",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Emmett Cullen",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Other(s)",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Orion Black",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Gideon Prewett",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Midoriya Izuku",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Horcrux",
           "frequency": 1,
-          "category": "other-female"
+          "category": "other-male"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Ginny Weasley",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Avery Sr.",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Ginny Weasley",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Phil Coulson",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Ginny Weasley",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Peter Hale",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Viktor Krum",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Fred Weasley",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Cedric Diggory",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Daryl Dixon",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
-          "target": "Jarvis",
+          "target": "JARVIS",
           "frequency": 1,
-          "category": "female-male"
-        },
-        {
-          "target": "Draco Malfoy",
-          "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
+        },
+        {
+          "target": "Draco Malfoy",
+          "frequency": 1,
+          "category": "male-male"
         },
         {
           "target": "Aizawa Shouta | Eraserhead",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Hermione Granger",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Draco Malfoy",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Justin Finch-Fletchley",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Severus Snape",
           "frequency": 48,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Sirius Black",
           "frequency": 28,
-          "category": "multi-female"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
           "frequency": 20,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
           "frequency": 19,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Luna Lovegood",
           "frequency": 17,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Hermione Granger",
           "frequency": 16,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
           "frequency": 13,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Albus Dumbledore",
           "frequency": 10,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 9,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Regulus Black",
           "frequency": 9,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
           "frequency": 9,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Slytherin Students",
           "frequency": 8,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Remus Lupin",
           "frequency": 7,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Ron Weasley",
           "frequency": 7,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
           "frequency": 6,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Theodore Nott",
           "frequency": 6,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Blaise Zabini",
           "frequency": 6,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Lily Evans Potter",
           "frequency": 5,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Dudley Dursley",
           "frequency": 5,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Death",
           "frequency": 5,
-          "category": "other-female"
+          "category": "other-male"
         },
         {
           "target": "Neville Longbottom",
           "frequency": 5,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Hogwarts Students",
           "frequency": 4,
-          "category": "multi-female"
+          "category": "multi-male"
         },
         {
           "target": "Lucius Malfoy",
           "frequency": 4,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Filius Flitwick",
           "frequency": 4,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Goblins",
           "frequency": 4,
-          "category": "multi-female"
+          "category": "multi-male"
         },
         {
           "target": "Nagini",
           "frequency": 4,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Petunia Evans Dursley",
           "frequency": 4,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 3,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Ginny Weasley",
           "frequency": 3,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Minerva McGonagall",
           "frequency": 3,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Susan Bones",
           "frequency": 3,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Orion Black",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Hogward Staff",
           "frequency": 2,
-          "category": "multi-female"
+          "category": "multi-male"
         },
         {
           "target": "Black Family",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Original Character(s)",
           "frequency": 2,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Dobby",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Pansy Parkinson",
           "frequency": 2,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Rubeus Hagrid",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
-          "target": "Loki",
+          "target": "Loki Laufeyson",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Daphne Greengrass",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Apollo",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Thanos",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Harley Keener",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Narcissa Black Malfoy",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Fenrir Greyback",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Fawkes",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "House Targaryen",
           "frequency": 1,
-          "category": "female-mulit"
+          "category": "male-mulit"
         },
         {
           "target": "Lucifer",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Argus Filch",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Marius Black",
           "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "James \"Rhodey\" Rhodes | War Machine",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Hope Van Dyne | Wasp",
+          "frequency": 1,
           "category": "male-female"
-        },
-        {
-          "target": "James \"Rhodey\" Rhodes",
-          "frequency": 1,
-          "category": "female-male"
-        },
-        {
-          "target": "Hope Van Dyne",
-          "frequency": 1,
-          "category": "female-female"
         },
         {
           "target": "Tom the Barman",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Skull",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Magic",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "multi-male"
         },
         {
           "target": "Dimitriv",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Viktor Krum",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Nico di Angelo",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Marauders",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "multi-male"
         },
         {
-          "target": "Wanda Maximoff",
+          "target": "Wanda Maximoff | Scarlet Witch",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "multi-male"
         },
         {
           "target": "Aizawa Shouta | Eraserhead",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Slytherin Students",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Death Eaters",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Dumbledore's Army",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "multi-male"
         },
         {
           "target": "Evan Rosier",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "James Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Hermione Granger",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Jacob Black",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Anthony Goldstein",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Arabella Figg",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Charlie Weasley",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Bill Weasley",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Hestia Carrow",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Cedric Diggory",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Nymphadora Tonks",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Peeves",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "The Basilisk",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Many People",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "multi-male"
         },
         {
           "target": "Warrington",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Andromeda Black Tonks",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Neville Longbottom",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Professor Sprout",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Abraxas Malfoy",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Millicent Bulstrode",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Astoria Greengrass",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Viktor Krum",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Teddy Lupin",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Scorpius Malfoy",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Dick Grayson",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Jason Todd",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Tim Drake",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Damian Wayne",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Padma Patil",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Merlin",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Bruce Wayne | Batman",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Sherlock Holmes",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Malfoy Family",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Salazar Slytherin",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Hogward Staff",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Death",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Gellert Grindelwald",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Credence Barebone",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Kreacher",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-male"
         },
         {
           "target": "Poppy Pomfrey",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Dursley Family",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "multi-male"
         },
         {
           "target": "Pitch Black",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Logan | Wolverine",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "The Bots",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Severus Snape",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
-          "target": "James \"Bucky\" Barnes",
+          "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
-          "target": "Thor",
+          "target": "Thor Odinson",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Harvey Specter": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Suits",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Hatake Kakashi": {
@@ -3171,7 +4232,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Kakashi's Ninken",
@@ -3184,6 +4245,21 @@
           "category": "male-mulit"
         }
       ]
+    }
+  },
+  "Hedwig": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Draco Malfoy's Owl",
+          "frequency": 1,
+          "category": "female-other"
+        }
+      ],
+      "friendship": []
     }
   },
   "Hermione Granger": {
@@ -3205,7 +4281,7 @@
         {
           "target": "Harry Potter",
           "frequency": 6,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
@@ -3310,7 +4386,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Ronald Weasley",
@@ -3340,7 +4416,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Multi",
@@ -3357,7 +4433,7 @@
         {
           "target": "Harry Potter",
           "frequency": 16,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Draco Malfoy",
@@ -3422,7 +4498,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Regulus Black",
@@ -3452,6 +4528,21 @@
       ]
     }
   },
+  "Hesper Gamp Black": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Sirius Black",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Hestia Carrow": {
     "gender": "female",
     "frequency": 1,
@@ -3462,7 +4553,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         }
       ]
     }
@@ -3477,17 +4568,17 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "multi-female"
+          "category": "multi-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         }
       ]
     }
@@ -3502,12 +4593,27 @@
         {
           "target": "Harry Potter",
           "frequency": 4,
-          "category": "multi-female"
+          "category": "multi-male"
         }
       ]
     }
   },
-  "Hope Van Dyne": {
+  "Hope Mikaelson": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "The Originals",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Josie Saltzman",
+          "frequency": 1,
+          "category": "female-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Hope Van Dyne | Wasp": {
     "gender": "female",
     "frequency": 1,
     "fandom": "Marvel",
@@ -3517,7 +4623,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         }
       ]
     }
@@ -3537,6 +4643,21 @@
       ]
     }
   },
+  "Horcrux": {
+    "gender": "other",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "other-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "House Targaryen": {
     "gender": "mulit",
     "frequency": 1,
@@ -3547,9 +4668,39 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-mulit"
+          "category": "male-mulit"
         }
       ]
+    }
+  },
+  "Ignatius Prewett": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Lucretia Black Prewett",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Jace Wayland": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Shadowhunters",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Jack Frost": {
@@ -3577,6 +4728,21 @@
       ]
     }
   },
+  "Jack Harkness": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Doctor Who",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Jacob Black": {
     "gender": "male",
     "frequency": 1,
@@ -3587,12 +4753,42 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
     }
   },
-  "James \"Bucky\" Barnes": {
+  "Jacob Kowalski": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Fantastic Beasts",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Queenie Goldstein",
+          "frequency": 2,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Jaeger": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Lily Evans Potter",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "James \"Bucky\" Barnes | The Winter Soldier": {
     "gender": "male",
     "frequency": 8,
     "fandom": "Marvel",
@@ -3601,7 +4797,7 @@
         {
           "target": "Harry Potter",
           "frequency": 5,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Steve Rogers | Captain America",
@@ -3628,12 +4824,12 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
     }
   },
-  "James \"Rhodey\" Rhodes": {
+  "James \"Rhodey\" Rhodes | War Machine": {
     "gender": "male",
     "frequency": 2,
     "fandom": "Marvel",
@@ -3648,7 +4844,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
     }
@@ -3697,7 +4893,7 @@
         {
           "target": "Sirius Black",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Lily Evans Potter",
@@ -3759,7 +4955,7 @@
         {
           "target": "Sirius Black",
           "frequency": 4,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Lily Evans Potter",
@@ -3784,7 +4980,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Lily Evans Potter",
@@ -3814,6 +5010,36 @@
       ]
     }
   },
+  "Jane Foster": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Thor Odinson",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "JARVIS": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Jason Todd": {
     "gender": "male",
     "frequency": 2,
@@ -3829,9 +5055,109 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Jasper Hale": {
+    "gender": "male",
+    "frequency": 3,
+    "fandom": "Twilight",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 3,
+          "category": "male-male"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Jax Teller": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Sons of Anarchy",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "John Watson": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Sherlock Holmes",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Sherlock Holmes",
+          "frequency": 3,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Josie Saltzman": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Legacies",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Hope Mikaelson",
+          "frequency": 1,
+          "category": "female-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Juice Ortiz": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Sons of Anarchy",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Justin Finch-Fletchley": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Blaise Zabini",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Kakashi's Ninken": {
@@ -3849,6 +5175,36 @@
       ]
     }
   },
+  "Kaminari Denki": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Boku No Hero Academia",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Shinsou Hitoshi",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Katie Bell": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 2,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Kreacher": {
     "gender": "male",
     "frequency": 1,
@@ -3859,9 +5215,88 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Lal Mirch": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Katekyo Hitman Reborn!",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Colonnello",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Lavender Brown": {
+    "gender": "female",
+    "frequency": 4,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Ron Weasley",
+          "frequency": 2,
+          "category": "female-male"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "female-male"
+        },
+        {
+          "target": "Ron Weasley",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Legolas Greenleaf": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "The Lord of the Rings",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 2,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Leo Knut": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Real Person Fiction",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
+    }
+  },
+  "Lex Luthor": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "DCU",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Lexa": {
@@ -3934,7 +5369,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Pandora Lovegood",
@@ -3974,7 +5409,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Lucius Malfoy",
@@ -4001,7 +5436,7 @@
         {
           "target": "Harry Potter",
           "frequency": 5,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Petunia Evans Dursley",
@@ -4036,6 +5471,21 @@
       ]
     }
   },
+  "Lincoln": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "The 100",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Octavia Blake",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Logan | Wolverine": {
     "gender": "male",
     "frequency": 2,
@@ -4044,19 +5494,28 @@
       "romantic": [],
       "friendship": [
         {
-          "target": "James \"Bucky\" Barnes",
+          "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
           "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
     }
   },
-  "Loki": {
+  "Logan Tremblay": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Original",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
+    }
+  },
+  "Loki Laufeyson": {
     "gender": "male",
     "frequency": 8,
     "fandom": "Marvel",
@@ -4065,25 +5524,25 @@
         {
           "target": "Harry Potter",
           "frequency": 4,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
-          "target": "Stephen Strange",
+          "target": "Stephen Strange | Dr. Strange",
           "frequency": 1,
           "category": "male-male"
         },
         {
-          "target": "Thor",
+          "target": "Thor Odinson",
           "frequency": 1,
           "category": "male-male"
         },
@@ -4097,7 +5556,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
     }
@@ -4117,6 +5576,41 @@
       ]
     }
   },
+  "Loras Tyrell": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Game of Thrones",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Renly Baratheon",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Lori Grimes": {
+    "gender": "female",
+    "frequency": 2,
+    "fandom": "The Walking Dead",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Shane Walsh",
+          "frequency": 1,
+          "category": "female-male"
+        },
+        {
+          "target": "Rick Grimes",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Lucifer": {
     "gender": "male",
     "frequency": 1,
@@ -4127,7 +5621,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
     }
@@ -4146,7 +5640,7 @@
         {
           "target": "Harry Potter",
           "frequency": 6,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Severus Snape",
@@ -4166,7 +5660,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
@@ -4196,7 +5690,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Severus Snape",
@@ -4213,7 +5707,7 @@
         {
           "target": "Harry Potter",
           "frequency": 4,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
@@ -4226,6 +5720,36 @@
           "category": "male-male"
         }
       ]
+    }
+  },
+  "Lucretia Black Prewett": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Ignatius Prewett",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Luke Castellan": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Percy Jackson",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Luna Lovegood": {
@@ -4242,7 +5766,7 @@
         {
           "target": "Harry Potter",
           "frequency": 3,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Blaise Zabini",
@@ -4314,7 +5838,7 @@
         {
           "target": "Harry Potter",
           "frequency": 17,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Regulus Black",
@@ -4344,17 +5868,32 @@
       ]
     }
   },
+  "Maggie Greene": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "The Walking Dead",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Glenn Rhee",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Magic": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": [
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "multi-male"
         }
       ]
     }
@@ -4369,7 +5908,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "male-multi"
         }
       ]
     }
@@ -4384,7 +5923,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "multi-male"
         }
       ]
     }
@@ -4405,7 +5944,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "multi-male"
         },
         {
           "target": "Severus Snape",
@@ -4413,6 +5952,41 @@
           "category": "multi-male"
         }
       ]
+    }
+  },
+  "Marcus Flint": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 2,
+          "category": "male-male"
+        },
+        {
+          "target": "Oliver Wood",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Maria Hill": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Sirius Black",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
     }
   },
   "Marius Black": {
@@ -4425,7 +5999,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
     }
@@ -4444,7 +6018,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ],
       "friendship": [
@@ -4482,6 +6056,75 @@
       ]
     }
   },
+  "Matthew Venn": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "The Long Call",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Astoria Greengrass",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "May Parker": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
+    }
+  },
+  "Melania Macmillan Black": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Arcturus Black III",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Melania MacMillian Black": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Original",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Arcturus Black III",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Merle Dixon": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "The Walking Dead",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Luna Lovegood",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Merlin": {
     "gender": "male",
     "frequency": 5,
@@ -4503,7 +6146,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Rowena Ravenclaw",
@@ -4511,6 +6154,30 @@
           "category": "male-female"
         }
       ]
+    }
+  },
+  "Michael Corner": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
+    }
+  },
+  "Midoriya Izuku": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Boku No Hero Academia",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Millicent Bulstrode": {
@@ -4544,7 +6211,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         }
       ]
     }
@@ -4565,7 +6232,7 @@
         {
           "target": "Harry Potter",
           "frequency": 3,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Severus Snape",
@@ -4573,6 +6240,39 @@
           "category": "female-male"
         }
       ]
+    }
+  },
+  "Molly Weasley": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Arthur Weasley",
+          "frequency": 4,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Mr Granger": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
+    }
+  },
+  "Mrs Granger": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
     }
   },
   "Mrs Zabini": {
@@ -4584,7 +6284,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ],
       "friendship": [
@@ -4594,6 +6294,41 @@
           "category": "male-female"
         }
       ]
+    }
+  },
+  "Multi": {
+    "gender": "multi",
+    "frequency": 2,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 2,
+          "category": "male-multi"
+        },
+        {
+          "target": "Hermione Granger",
+          "frequency": 1,
+          "category": "female-multi"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Mycroft Holmes": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Sherlock Holmes",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 2,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Nagini": {
@@ -4606,7 +6341,7 @@
         {
           "target": "Harry Potter",
           "frequency": 4,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
@@ -4635,7 +6370,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Lucius Malfoy",
@@ -4652,14 +6387,44 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ]
+    }
+  },
+  "Natasha Romanov | Black Widow": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Neal Caffrey": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "White Collar",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Neville Longbottom": {
@@ -4691,12 +6456,12 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Luna Lovegood",
@@ -4713,7 +6478,7 @@
         {
           "target": "Harry Potter",
           "frequency": 5,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Hermione Granger",
@@ -4733,7 +6498,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
@@ -4757,7 +6522,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Tina Goldstein",
@@ -4787,7 +6552,7 @@
   "Nico di Angelo": {
     "gender": "male",
     "frequency": 4,
-    "fandom": "Percy Jackson and the Olympians",
+    "fandom": "Percy Jackson",
     "relationships": {
       "romantic": [
         {
@@ -4810,7 +6575,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
     }
@@ -4834,7 +6599,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         },
         {
           "target": "Original Character(s)",
@@ -4856,9 +6621,74 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         }
       ]
+    }
+  },
+  "Oberyn Martell": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Game of Thrones",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Octavia Blake": {
+    "gender": "female",
+    "frequency": 2,
+    "fandom": "The 100",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Lincoln",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Oliver Queen": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "DCU",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Oliver Wood": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Marcus Flint",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Original Character(s)": {
@@ -4870,7 +6700,7 @@
         {
           "target": "Harry Potter",
           "frequency": 7,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Draco Malfoy",
@@ -4880,7 +6710,7 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Ginny Weasley",
@@ -4890,7 +6720,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Charlie Weasley",
@@ -4925,12 +6755,12 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Regulus Black",
@@ -4970,12 +6800,12 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Petunia Evans Dursley",
@@ -5032,17 +6862,17 @@
         {
           "target": "Harry Potter",
           "frequency": 6,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
         },
         {
           "target": "Tom Riddle | Voldemort",
@@ -5061,7 +6891,7 @@
         {
           "target": "Harry Potter",
           "frequency": 7,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Walburga Black",
@@ -5071,7 +6901,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Walburga Black",
@@ -5081,7 +6911,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
@@ -5093,7 +6923,7 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Alphard Black",
@@ -5108,6 +6938,46 @@
       ]
     }
   },
+  "Other(s)": {
+    "gender": "other",
+    "frequency": 3,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Original Character(s)",
+          "frequency": 1,
+          "category": "other-other"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-other"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-other"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Owen Grady": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Jurassic World",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Padma Patil": {
     "gender": "female",
     "frequency": 5,
@@ -5117,7 +6987,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Blaise Zabini",
@@ -5139,7 +7009,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         }
       ]
     }
@@ -5189,7 +7059,7 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Neville Longbottom",
@@ -5231,7 +7101,7 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Daphne Greengrass",
@@ -5239,6 +7109,21 @@
           "category": "female-female"
         }
       ]
+    }
+  },
+  "Parvati Patil": {
+    "gender": "female",
+    "frequency": 2,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Peeves": {
@@ -5251,9 +7136,39 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Pepper Potts": {
+    "gender": "female",
+    "frequency": 4,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Tony Stark | Iron Man",
+          "frequency": 6,
+          "category": "female-male"
+        },
+        {
+          "target": "Happy Hogan",
+          "frequency": 3,
+          "category": "male-female"
+        },
+        {
+          "target": "Tony Stark | Iron Man",
+          "frequency": 1,
+          "category": "male-female"
+        },
+        {
+          "target": "Tony Stark | Iron Man",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
     }
   },
   "Percival Graves": {
@@ -5270,7 +7185,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Newt Scamander",
@@ -5313,6 +7228,21 @@
       ]
     }
   },
+  "Peter Hale": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Teen Wolf",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Peter Parker | Spider-Man": {
     "gender": "male",
     "frequency": 7,
@@ -5322,12 +7252,12 @@
         {
           "target": "Harry Potter",
           "frequency": 5,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
@@ -5339,7 +7269,7 @@
         {
           "target": "Harry Potter",
           "frequency": 3,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
@@ -5359,7 +7289,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }
@@ -5373,7 +7303,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Severus Snape",
@@ -5400,7 +7330,7 @@
         {
           "target": "Harry Potter",
           "frequency": 4,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Lily Evans Potter",
@@ -5418,6 +7348,26 @@
           "category": "female-male"
         }
       ]
+    }
+  },
+  "Phil Coulson": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Clint Barton | Hawkeye",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Piers Polkiss": {
@@ -5445,7 +7395,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Jack Frost",
@@ -5475,9 +7425,18 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         }
       ]
+    }
+  },
+  "possible": {
+    "gender": "multi",
+    "frequency": 1,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
     }
   },
   "Professor Sprout": {
@@ -5490,9 +7449,153 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "male-female"
         }
       ]
+    }
+  },
+  "Q": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "James Bond",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Severus Snape",
+          "frequency": 2,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Queenie Goldstein": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Fantastic Beasts",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Jacob Kowalski",
+          "frequency": 2,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Rabastan Lestrange": {
+    "gender": "male",
+    "frequency": 5,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 2,
+          "category": "male-male"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Hermione Granger",
+          "frequency": 1,
+          "category": "female-male"
+        },
+        {
+          "target": "Severus Snape",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Raleigh Becket": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Pacific Rim",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Raven": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Teen Titans",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
+    }
+  },
+  "Raven Reyes": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "The 100",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Anya",
+          "frequency": 1,
+          "category": "female-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Raymond Smith": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Unknown",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Reader": {
+    "gender": "multi",
+    "frequency": 1,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Regulus Black",
+          "frequency": 1,
+          "category": "male-multi"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Reborn": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Katekyo Hitman Reborn!",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Skull",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Regulus Black": {
@@ -5509,7 +7612,7 @@
         {
           "target": "Harry Potter",
           "frequency": 5,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Bartemius Crouch Jr.",
@@ -5524,7 +7627,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "James Potter",
@@ -5576,12 +7679,12 @@
         {
           "target": "Sirius Black",
           "frequency": 11,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 9,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "James Potter",
@@ -5655,7 +7758,7 @@
         {
           "target": "Sirius Black",
           "frequency": 120,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Severus Snape",
@@ -5670,7 +7773,7 @@
         {
           "target": "Sirius Black",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Hermione Granger",
@@ -5700,7 +7803,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Bellatrix Black Lestrange",
@@ -5710,7 +7813,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Bruce Banner | Hulk",
@@ -5727,12 +7830,12 @@
         {
           "target": "Harry Potter",
           "frequency": 7,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Sirius Black",
           "frequency": 4,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "James Potter",
@@ -5760,6 +7863,96 @@
           "category": "male-male"
         }
       ]
+    }
+  },
+  "Renly Baratheon": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Game of Thrones",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Loras Tyrell",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Rhaegar Targaryen": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Game of Thrones",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 2,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Rick Grimes": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "The Walking Dead",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Lori Grimes",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Rodolphus Lestrange": {
+    "gender": "male",
+    "frequency": 7,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Bellatrix Black Lestrange",
+          "frequency": 3,
+          "category": "female-male"
+        },
+        {
+          "target": "Bellatrix Black Lestrange",
+          "frequency": 1,
+          "category": "male-female"
+        },
+        {
+          "target": "Bellatrix Black Lestrange",
+          "frequency": 1,
+          "category": "female-male"
+        },
+        {
+          "target": "Luna Lovegood",
+          "frequency": 1,
+          "category": "male-female"
+        },
+        {
+          "target": "Sirius Black",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Bellatrix Black Lestrange",
+          "frequency": 1,
+          "category": "male-female"
+        },
+        {
+          "target": "Severus Snape",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Ron Weasley": {
@@ -5858,7 +8051,7 @@
         {
           "target": "Harry Potter",
           "frequency": 7,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Hermione Granger",
@@ -5881,6 +8074,51 @@
           "category": "female-male"
         }
       ]
+    }
+  },
+  "Ronald Weasley": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Hermione Granger",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Rosalie Hale": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Twilight",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Emmett Cullen",
+          "frequency": 2,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Rose Weasley": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Scorpius Malfoy",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
     }
   },
   "Rowena Ravenclaw": {
@@ -5908,7 +8146,7 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Dudley Dursley",
@@ -5927,16 +8165,31 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Sam Winchester": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Supernatural",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Sansa Stark": {
@@ -5990,9 +8243,24 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Seamus Finnigan": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Dean Thomas",
+          "frequency": 4,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Severus Snape": {
@@ -6004,7 +8272,7 @@
         {
           "target": "Harry Potter",
           "frequency": 28,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Remus Lupin",
@@ -6014,7 +8282,7 @@
         {
           "target": "Sirius Black",
           "frequency": 6,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tom Riddle | Voldemort",
@@ -6054,7 +8322,7 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Lily Evans Potter",
@@ -6126,7 +8394,7 @@
         {
           "target": "Harry Potter",
           "frequency": 48,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
@@ -6176,7 +8444,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Minerva McGonagall",
@@ -6221,7 +8489,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Evan Rosier",
@@ -6234,6 +8502,26 @@
           "category": "male-male"
         }
       ]
+    }
+  },
+  "Shane Walsh": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "The Walking Dead",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Lori Grimes",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Sherlock Holmes": {
@@ -6252,9 +8540,24 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Shinsou Hitoshi": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Boku No Hero Academia",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Kaminari Denki",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Sirius Black": {
@@ -6271,7 +8574,7 @@
         {
           "target": "Harry Potter",
           "frequency": 7,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Severus Snape",
@@ -6339,7 +8642,7 @@
           "category": "male-female"
         },
         {
-          "target": "Stephen Strange",
+          "target": "Stephen Strange | Dr. Strange",
           "frequency": 1,
           "category": "male-male"
         },
@@ -6383,7 +8686,7 @@
         {
           "target": "Harry Potter",
           "frequency": 28,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Regulus Black",
@@ -6454,7 +8757,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
     }
@@ -6469,14 +8772,74 @@
         {
           "target": "Harry Potter",
           "frequency": 8,
-          "category": "female-multi"
+          "category": "male-multi"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "male-multi"
         }
       ]
+    }
+  },
+  "Spencer Reid": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Criminal Minds",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Stephen Strange | Dr. Strange": {
+    "gender": "male",
+    "frequency": 4,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Loki Laufeyson",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Sirius Black",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Tony Stark | Iron Man",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Steve McGarrett": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Steve Rogers | Captain America": {
@@ -6488,10 +8851,10 @@
         {
           "target": "Harry Potter",
           "frequency": 3,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
-          "target": "James \"Bucky\" Barnes",
+          "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
           "category": "male-male"
         },
@@ -6503,11 +8866,46 @@
       ],
       "friendship": [
         {
-          "target": "James \"Bucky\" Barnes",
+          "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
           "category": "male-male"
         }
       ]
+    }
+  },
+  "Stiles Stilinski": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Teen Wolf",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Derek Hale",
+          "frequency": 2,
+          "category": "male-male"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Surprise": {
+    "gender": "multi",
+    "frequency": 1,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Petunia Evans Dursley",
+          "frequency": 1,
+          "category": "female-multi"
+        }
+      ],
+      "friendship": []
     }
   },
   "Susan Bones": {
@@ -6519,7 +8917,7 @@
         {
           "target": "Harry Potter",
           "frequency": 3,
-          "category": "female-female"
+          "category": "female-male"
         },
         {
           "target": "Ron Weasley",
@@ -6536,7 +8934,7 @@
         {
           "target": "Harry Potter",
           "frequency": 3,
-          "category": "female-female"
+          "category": "female-male"
         }
       ]
     }
@@ -6556,6 +8954,26 @@
       ]
     }
   },
+  "Ted Tonks": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Andromeda Black Tonks",
+          "frequency": 2,
+          "category": "female-male"
+        },
+        {
+          "target": "Andromeda Black Tonks",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Teddy Lupin": {
     "gender": "male",
     "frequency": 4,
@@ -6571,7 +8989,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
@@ -6606,7 +9024,32 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-other"
+          "category": "male-other"
+        }
+      ]
+    }
+  },
+  "The Avengers": {
+    "gender": "multi",
+    "frequency": 1,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [],
+      "friendship": [
+        {
+          "target": "Harry Potter",
+          "frequency": 3,
+          "category": "male-multi"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "multi-male"
+        },
+        {
+          "target": "Tony Stark | Iron Man",
+          "frequency": 1,
+          "category": "male-multi"
         }
       ]
     }
@@ -6621,7 +9064,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
     }
@@ -6641,9 +9084,24 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "male-multi"
         }
       ]
+    }
+  },
+  "The Homelander | John": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "The Boys",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "The X-Men": {
@@ -6670,7 +9128,7 @@
         {
           "target": "Harry Potter",
           "frequency": 10,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Pansy Parkinson",
@@ -6700,7 +9158,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Luna Lovegood",
@@ -6727,7 +9185,7 @@
         {
           "target": "Harry Potter",
           "frequency": 6,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Blaise Zabini",
@@ -6762,7 +9220,7 @@
       ]
     }
   },
-  "Thor": {
+  "Thor Odinson": {
     "gender": "male",
     "frequency": 4,
     "fandom": "Marvel",
@@ -6771,7 +9229,7 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Jane Foster",
@@ -6779,7 +9237,7 @@
           "category": "male-female"
         },
         {
-          "target": "Loki",
+          "target": "Loki Laufeyson",
           "frequency": 1,
           "category": "male-male"
         }
@@ -6788,9 +9246,39 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
+    }
+  },
+  "Thorin Oakenshield": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "The Hobbit",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Thranduil": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "The Hobbit",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   },
   "Tim Drake": {
@@ -6828,7 +9316,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ]
     }
@@ -6883,17 +9371,17 @@
         {
           "target": "Harry Potter",
           "frequency": 121,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 61,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 53,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Hermione Granger",
@@ -6918,7 +9406,7 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Lucius Malfoy",
@@ -6928,7 +9416,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Minerva McGonagall",
@@ -6953,7 +9441,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Lucius Malfoy",
@@ -6973,7 +9461,7 @@
         {
           "target": "Sirius Black",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Severus Snape",
@@ -6983,7 +9471,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
@@ -7005,17 +9493,17 @@
         {
           "target": "Harry Potter",
           "frequency": 19,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 13,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 9,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Albus Dumbledore",
@@ -7095,7 +9583,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
     }
@@ -7109,7 +9597,7 @@
         {
           "target": "Harry Potter",
           "frequency": 11,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
@@ -7122,7 +9610,7 @@
           "category": "female-male"
         },
         {
-          "target": "Loki",
+          "target": "Loki Laufeyson",
           "frequency": 1,
           "category": "male-male"
         },
@@ -7132,7 +9620,7 @@
           "category": "male-female"
         },
         {
-          "target": "Stephen Strange",
+          "target": "Stephen Strange | Dr. Strange",
           "frequency": 1,
           "category": "male-male"
         },
@@ -7151,7 +9639,7 @@
         {
           "target": "Harry Potter",
           "frequency": 9,
-          "category": "female-male"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
@@ -7164,17 +9652,17 @@
           "category": "male-male"
         },
         {
-          "target": "James \"Rhodey\" Rhodes",
+          "target": "James \"Rhodey\" Rhodes | War Machine",
           "frequency": 1,
           "category": "male-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 1,
           "category": "male-multi"
         },
         {
-          "target": "James \"Bucky\" Barnes",
+          "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
           "category": "male-male"
         },
@@ -7201,6 +9689,36 @@
       ]
     }
   },
+  "Vanessa Carlysle": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Wade Wilson | Deadpool",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Vernon Dursley": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Petunia Evans Dursley",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Viktor Krum": {
     "gender": "male",
     "frequency": 8,
@@ -7215,7 +9733,7 @@
         {
           "target": "Harry Potter",
           "frequency": 2,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
@@ -7235,24 +9753,84 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-female"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
     }
   },
-  "Wanda Maximoff": {
+  "Viserys Targaryen": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Game of Thrones",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Wade Wilson | Deadpool": {
+    "gender": "male",
+    "frequency": 2,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Death",
+          "frequency": 1,
+          "category": "other-male"
+        },
+        {
+          "target": "Vanessa Carlysle",
+          "frequency": 1,
+          "category": "female-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Walburga Black": {
+    "gender": "female",
+    "frequency": 3,
+    "fandom": "Harry Potter - J. K. Rowling",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Orion Black",
+          "frequency": 2,
+          "category": "male-female"
+        },
+        {
+          "target": "Orion Black",
+          "frequency": 1,
+          "category": "male-female"
+        },
+        {
+          "target": "Druella Rosier Black",
+          "frequency": 1,
+          "category": "female-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Wanda Maximoff | Scarlet Witch": {
     "gender": "female",
     "frequency": 1,
     "fandom": "Marvel",
@@ -7262,7 +9840,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-female"
+          "category": "female-male"
         }
       ]
     }
@@ -7277,7 +9855,7 @@
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "female-male"
+          "category": "male-male"
         }
       ]
     }
@@ -7295,6 +9873,66 @@
           "category": "female-male"
         }
       ]
+    }
+  },
+  "Will Solace": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Percy Jackson",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Nico di Angelo",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Winnie Haywood": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "Unknown",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Edward Rosier",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Yamada Hizashi | Present Mic": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Boku No Hero Academia",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Aizawa Shouta | Eraserhead",
+          "frequency": 2,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "Zuko": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Avatar: The Last Airbender",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": []
     }
   }
 }

@@ -1,40 +1,4 @@
 {
-  "FRIDAY": {
-    "gender": "male",
-    "frequency": 5,
-    "fandom": "Marvel",
-    "relationships": {
-      "romantic": [
-        {
-          "target": "Peter Parker | Spider-Man",
-          "frequency": 1,
-          "category": "multi-male"
-        }
-      ],
-      "friendship": [
-        {
-          "target": "Tony Stark | Iron Man",
-          "frequency": 2,
-          "category": "male-multi"
-        },
-        {
-          "target": "James \"Bucky\" Barnes | The Winter Soldier",
-          "frequency": 1,
-          "category": "male-male"
-        },
-        {
-          "target": "Peter Parker | Spider-Man",
-          "frequency": 1,
-          "category": "male-multi"
-        },
-        {
-          "target": "Peter Parker | Spider-Man",
-          "frequency": 1,
-          "category": "multi-male"
-        }
-      ]
-    }
-  },
   "Aaron Hotchner": {
     "gender": "male",
     "frequency": 1,
@@ -60,15 +24,15 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "multi-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 1,
           "category": "multi-multi"
         }
@@ -85,7 +49,7 @@
         {
           "target": "Ancient One",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-other"
         }
       ]
     }
@@ -93,7 +57,7 @@
   "Aizawa Shouta | Eraserhead": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -108,7 +72,7 @@
   "Akaguro Chizome | Stain": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -160,7 +124,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }
@@ -168,7 +132,7 @@
   "Ambiguous": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": []
@@ -190,7 +154,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -211,7 +175,7 @@
     }
   },
   "Ancient One": {
-    "gender": "multi",
+    "gender": "other",
     "frequency": 1,
     "fandom": "Marvel",
     "relationships": {
@@ -220,7 +184,7 @@
         {
           "target": "Agatha Harkness",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-other"
         }
       ]
     }
@@ -345,13 +309,13 @@
   "Anyone": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "multi-male"
         }
       ],
       "friendship": []
@@ -426,6 +390,21 @@
       ]
     }
   },
+  "Aunty Sirens": {
+    "gender": "female",
+    "frequency": 1,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [],
+      "friendship": [
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 1,
+          "category": "male-female"
+        }
+      ]
+    }
+  },
   "Ava Starr": {
     "gender": "female",
     "frequency": 1,
@@ -437,112 +416,6 @@
           "target": "Clint Barton | Hawkeye",
           "frequency": 1,
           "category": "male-female"
-        }
-      ]
-    }
-  },
-  "Avengers Team": {
-    "gender": "multi",
-    "frequency": 1,
-    "fandom": "Marvel",
-    "relationships": {
-      "romantic": [
-        {
-          "target": "Peter Parker | Spider-Man",
-          "frequency": 1,
-          "category": "multi-multi"
-        }
-      ],
-      "friendship": [
-        {
-          "target": "Peter Parker | Spider-Man",
-          "frequency": 58,
-          "category": "multi-multi"
-        },
-        {
-          "target": "Tony Stark | Iron Man",
-          "frequency": 30,
-          "category": "multi-multi"
-        },
-        {
-          "target": "Matt Murdock",
-          "frequency": 6,
-          "category": "male-multi"
-        },
-        {
-          "target": "Peter Parker | Spider-Man",
-          "frequency": 4,
-          "category": "multi-multi"
-        },
-        {
-          "target": "Steve Rogers | Captain America",
-          "frequency": 3,
-          "category": "multi-multi"
-        },
-        {
-          "target": "Harry Potter",
-          "frequency": 3,
-          "category": "male-multi"
-        },
-        {
-          "target": "Pepper Potts",
-          "frequency": 2,
-          "category": "female-multi"
-        },
-        {
-          "target": "Darcy Lewis",
-          "frequency": 1,
-          "category": "male-multi"
-        },
-        {
-          "target": "Connor ",
-          "frequency": 1,
-          "category": "multi-male"
-        },
-        {
-          "target": "Academic Decathlon Team",
-          "frequency": 1,
-          "category": "multi-multi"
-        },
-        {
-          "target": "Wanda Maximoff | Scarlet Witch",
-          "frequency": 1,
-          "category": "female-multi"
-        },
-        {
-          "target": "Tony Stark | Iron Man",
-          "frequency": 1,
-          "category": "multi-multi"
-        },
-        {
-          "target": "Tony Stark | Iron Man",
-          "frequency": 1,
-          "category": "multi-multi"
-        },
-        {
-          "target": "Guardians of the Galaxy Team",
-          "frequency": 1,
-          "category": "multi-multi"
-        },
-        {
-          "target": "Harry Potter",
-          "frequency": 1,
-          "category": "multi-male"
-        },
-        {
-          "target": "Thor Odinson",
-          "frequency": 1,
-          "category": "male-multi"
-        },
-        {
-          "target": "Loki Laufeyson",
-          "frequency": 1,
-          "category": "male-multi"
-        },
-        {
-          "target": "Marc Spector",
-          "frequency": 1,
-          "category": "multi-male"
         }
       ]
     }
@@ -597,7 +470,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }
@@ -612,7 +485,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 7,
-          "category": "multi-multi"
+          "category": "multi-male"
         },
         {
           "target": "Bruce Wayne | Batman",
@@ -632,7 +505,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -731,7 +604,7 @@
           "category": "male-male"
         },
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 1,
           "category": "male-male"
         }
@@ -787,7 +660,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Rhodey\" Rhodes | War Machine",
@@ -797,7 +670,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Remus Lupin",
@@ -814,17 +687,17 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 7,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 6,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Darcy Lewis",
@@ -834,7 +707,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tea",
@@ -885,12 +758,12 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 7,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Batfamily Members",
@@ -905,7 +778,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "His Kids",
@@ -951,7 +824,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -997,12 +870,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -1023,7 +896,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -1038,7 +911,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -1119,7 +992,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -1166,7 +1039,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -1174,7 +1047,7 @@
   "Class 1-A": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -1235,12 +1108,12 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Natasha Romanov | Black Widow",
@@ -1260,7 +1133,7 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Pietro Maximoff",
@@ -1275,7 +1148,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Bruce Banner | Hulk",
@@ -1297,7 +1170,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 9,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Natasha Romanov | Black Widow",
@@ -1307,7 +1180,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 5,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Matt Murdock",
@@ -1378,10 +1251,10 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 1,
           "category": "multi-male"
         }
@@ -1398,7 +1271,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -1449,7 +1322,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Marc Spector",
@@ -1528,7 +1401,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ],
       "friendship": []
@@ -1548,7 +1421,7 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 5,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Bruce Banner | Hulk",
@@ -1558,7 +1431,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Johnny Storm | Humantorch",
@@ -1593,7 +1466,7 @@
           "category": "female-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 1,
           "category": "male-multi"
         },
@@ -1615,7 +1488,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Bruce Banner | Hulk",
@@ -1659,31 +1532,6 @@
       "friendship": []
     }
   },
-  "Deadpool": {
-    "gender": "male",
-    "frequency": 4,
-    "fandom": "Marvel",
-    "relationships": {
-      "romantic": [
-        {
-          "target": "Peter Parker | Spider-Man",
-          "frequency": 8,
-          "category": "multi-male"
-        },
-        {
-          "target": "Peter Parker | Spider-Man",
-          "frequency": 6,
-          "category": "male-multi"
-        },
-        {
-          "target": "Peter Parker | Spider-Man",
-          "frequency": 2,
-          "category": "male-multi"
-        }
-      ],
-      "friendship": []
-    }
-  },
   "Dean Winchester": {
     "gender": "male",
     "frequency": 1,
@@ -1706,7 +1554,7 @@
     "relationships": {
       "romantic": [
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 1,
           "category": "other-male"
         }
@@ -1750,7 +1598,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -1769,14 +1617,14 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 7,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
@@ -1831,6 +1679,15 @@
       ]
     }
   },
+  "Dr. Otto Octavius | Doctor Octopus": {
+    "gender": "male",
+    "frequency": 1,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [],
+      "friendship": []
+    }
+  },
   "Draco Malfoy": {
     "gender": "male",
     "frequency": 5,
@@ -1850,7 +1707,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
@@ -1873,14 +1730,14 @@
   "Dumbassery": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         }
       ]
     }
@@ -1911,7 +1768,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Anne Weying",
@@ -1946,12 +1803,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -1964,7 +1821,7 @@
       "romantic": [],
       "friendship": [
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 1,
           "category": "female-male"
         }
@@ -2031,7 +1888,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Midoriya Izuku",
@@ -2043,12 +1900,12 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 5,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Franklin \"Foggy\" Nelson",
@@ -2083,7 +1940,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -2098,7 +1955,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -2112,7 +1969,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Harley Keener",
@@ -2124,7 +1981,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 6,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "SI Interns",
@@ -2144,7 +2001,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }
@@ -2159,7 +2016,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Matt Murdock",
@@ -2210,7 +2067,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "The Avengers",
@@ -2242,6 +2099,42 @@
     "relationships": {
       "romantic": [],
       "friendship": []
+    }
+  },
+  "FRIDAY": {
+    "gender": "male",
+    "frequency": 5,
+    "fandom": "Marvel",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ],
+      "friendship": [
+        {
+          "target": "Tony Stark | Iron Man",
+          "frequency": 2,
+          "category": "male-male"
+        },
+        {
+          "target": "James \"Bucky\" Barnes | The Winter Soldier",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 1,
+          "category": "male-male"
+        }
+      ]
     }
   },
   "Frigga | Freyja": {
@@ -2339,7 +2232,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "multi-male"
         }
       ]
     }
@@ -2354,15 +2247,15 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 1,
           "category": "multi-multi"
         }
@@ -2378,7 +2271,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ],
       "friendship": [
@@ -2390,7 +2283,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Jefferson Davis",
@@ -2448,7 +2341,7 @@
   "Happiness": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [
         {
@@ -2481,12 +2374,12 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 11,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 6,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Loki Laufeyson",
@@ -2496,7 +2389,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }
@@ -2525,7 +2418,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 12,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Flash Thompson",
@@ -2537,17 +2430,17 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 14,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 12,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 4,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
@@ -2557,7 +2450,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }
@@ -2572,7 +2465,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -2586,14 +2479,14 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -2607,7 +2500,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 11,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
@@ -2617,7 +2510,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 5,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Loki Laufeyson",
@@ -2632,7 +2525,7 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 3,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Loki Laufeyson",
@@ -2767,7 +2660,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Neal Caffrey",
@@ -2939,17 +2832,17 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 9,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 3,
           "category": "male-multi"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Loki Laufeyson",
@@ -2997,7 +2890,7 @@
           "category": "female-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 1,
           "category": "multi-male"
         },
@@ -3072,7 +2965,7 @@
   "Hatsume Mei": {
     "gender": "female",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -3135,7 +3028,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Vision",
@@ -3145,7 +3038,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ]
     }
@@ -3231,12 +3124,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 4,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Harry Potter",
@@ -3267,7 +3160,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 3,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peggy Carter",
@@ -3287,7 +3180,7 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "multi-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
@@ -3309,7 +3202,7 @@
   "Inflatable Dinosaurs": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -3346,7 +3239,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -3390,12 +3283,12 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 212,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 77,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Darcy Lewis",
@@ -3425,7 +3318,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
@@ -3435,17 +3328,17 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
@@ -3465,7 +3358,7 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Loki Laufeyson",
@@ -3490,17 +3383,17 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Natasha Romanov | Black Widow",
@@ -3515,34 +3408,34 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 23,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 17,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 11,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 4,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Natasha Romanov | Black Widow",
@@ -3557,12 +3450,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Sam Wilson | Falcon",
@@ -3577,7 +3470,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Darcy Lewis",
@@ -3612,7 +3505,7 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "FRIDAY",
@@ -3666,7 +3559,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Bruce Banner | Hulk",
@@ -3686,7 +3579,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
@@ -3698,17 +3591,17 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 45,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 10,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
@@ -3723,7 +3616,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }
@@ -3790,7 +3683,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 11,
-          "category": "other-multi"
+          "category": "other-male"
         },
         {
           "target": "Darcy Lewis",
@@ -3800,7 +3693,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
@@ -3818,7 +3711,7 @@
   "Jason Grace": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Percy Jackson and the Olympians",
+    "fandom": "Percy Jackson",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -3839,12 +3732,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
@@ -3861,7 +3754,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 6,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "The Defenders",
@@ -3881,7 +3774,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
@@ -3977,7 +3870,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Matt Murdock",
@@ -3996,7 +3889,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Darcy Lewis",
@@ -4018,7 +3911,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }
@@ -4077,7 +3970,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ],
       "friendship": []
@@ -4101,14 +3994,14 @@
   "Karen Page": {
     "gender": "female",
     "frequency": 5,
-    "fandom": "Daredevil",
+    "fandom": "Marvel",
     "relationships": {
       "romantic": [],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Matt Murdock",
@@ -4273,7 +4166,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -4287,7 +4180,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ],
       "friendship": []
@@ -4309,7 +4202,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
@@ -4338,7 +4231,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 23,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Thor Odinson",
@@ -4383,7 +4276,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Natasha Romanov | Black Widow",
@@ -4408,12 +4301,12 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
@@ -4450,7 +4343,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 12,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Thor Odinson",
@@ -4460,7 +4353,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 7,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Thor Odinson",
@@ -4485,7 +4378,7 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
@@ -4500,7 +4393,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Charles Xavier",
@@ -4528,7 +4421,7 @@
           "category": "male-male"
         },
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 1,
           "category": "male-male"
         },
@@ -4568,7 +4461,7 @@
           "category": "female-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 1,
           "category": "male-multi"
         },
@@ -4655,7 +4548,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -4670,7 +4563,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -4706,10 +4599,10 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 1,
           "category": "multi-male"
         },
@@ -4751,7 +4644,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ]
     }
@@ -4772,7 +4665,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -4802,7 +4695,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -4816,14 +4709,14 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ]
     }
@@ -4878,7 +4771,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 16,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Franklin \"Foggy\" Nelson",
@@ -4886,7 +4779,7 @@
           "category": "male-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 6,
           "category": "male-multi"
         },
@@ -4901,7 +4794,7 @@
           "category": "male-female"
         },
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 2,
           "category": "male-male"
         },
@@ -4938,7 +4831,7 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Frank Castle",
@@ -4973,7 +4866,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }
@@ -4992,7 +4885,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Original Character(s)",
@@ -5009,22 +4902,22 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 26,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 4,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Pepper Potts",
@@ -5034,12 +4927,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Pepper Potts",
@@ -5047,7 +4940,7 @@
           "category": "female-female"
         },
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 1,
           "category": "female-male"
         }
@@ -5078,19 +4971,19 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 17,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 13,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Clint Barton | Hawkeye",
@@ -5105,7 +4998,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Shuri",
@@ -5118,7 +5011,7 @@
   "Midoriya Izuku": {
     "gender": "male",
     "frequency": 8,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -5161,7 +5054,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }
@@ -5176,7 +5069,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         }
       ]
     }
@@ -5191,7 +5084,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         }
       ]
     }
@@ -5205,12 +5098,12 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Reader",
@@ -5247,12 +5140,12 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Rio Morales",
@@ -5292,7 +5185,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "other-multi"
+          "category": "other-male"
         }
       ]
     }
@@ -5322,12 +5215,12 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 6,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -5406,7 +5299,7 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Pepper Potts",
@@ -5433,7 +5326,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 22,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Clint Barton | Hawkeye",
@@ -5443,12 +5336,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 6,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 4,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
@@ -5458,7 +5351,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Loki Laufeyson",
@@ -5468,7 +5361,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Darcy Lewis",
@@ -5513,7 +5406,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 3,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Gamora",
@@ -5532,19 +5425,19 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 41,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 4,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Michelle Jones",
@@ -5563,7 +5456,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 5,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "May Parker",
@@ -5575,7 +5468,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         }
       ]
     }
@@ -5590,12 +5483,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -5603,7 +5496,7 @@
   "Nico di Angelo": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Percy Jackson and the Olympians",
+    "fandom": "Percy Jackson",
     "relationships": {
       "romantic": [
         {
@@ -5624,7 +5517,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ],
       "friendship": []
@@ -5655,7 +5548,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         }
       ]
     }
@@ -5669,14 +5562,14 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -5724,7 +5617,7 @@
   "Ojiro Mashirao": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -5748,12 +5641,12 @@
   "Old People": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": [
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 1,
           "category": "male-multi"
         }
@@ -5789,12 +5682,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
@@ -5809,12 +5702,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "May Parker",
@@ -5839,12 +5732,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Sam Wilson | Falcon",
@@ -5861,17 +5754,17 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
@@ -5893,7 +5786,7 @@
   "OT3": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": []
@@ -5915,7 +5808,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Flash Thompson",
@@ -5956,7 +5849,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -5970,17 +5863,17 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 9,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Angie Martinelli",
@@ -6000,17 +5893,17 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ],
       "friendship": [
@@ -6022,12 +5915,12 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -6041,7 +5934,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 98,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Happy Hogan",
@@ -6051,12 +5944,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 4,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Natasha Romanov | Black Widow",
@@ -6066,22 +5959,22 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Hela",
@@ -6101,17 +5994,17 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "James \"Rhodey\" Rhodes | War Machine",
@@ -6123,20 +6016,20 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 25,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 16,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 2,
           "category": "female-multi"
         },
@@ -6158,7 +6051,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ]
     }
@@ -6166,7 +6059,7 @@
   "Percy Jackson": {
     "gender": "male",
     "frequency": 13,
-    "fandom": "Percy Jackson and the Olympians",
+    "fandom": "Percy Jackson",
     "relationships": {
       "romantic": [
         {
@@ -6184,12 +6077,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 3,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Annabeth Chase",
@@ -6209,7 +6102,7 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Natasha Romanov | Black Widow",
@@ -6235,822 +6128,822 @@
     }
   },
   "Peter Parker | Spider-Man": {
-    "gender": "multi",
+    "gender": "male",
     "frequency": 183,
     "fandom": "Marvel",
     "relationships": {
       "romantic": [
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 63,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Michelle Jones",
           "frequency": 17,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Harley Keener",
           "frequency": 12,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
-          "target": "Deadpool",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 8,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 8,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
-          "target": "Deadpool",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 6,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 5,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "New York",
           "frequency": 5,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Johnny Storm | Humantorch",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Clint Barton | Hawkeye",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Stephen Strange | Dr. Strange",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Harry Osborn",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
-          "target": "Deadpool",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Gwen Stacy",
           "frequency": 2,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Ned Leeds",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 1,
-          "category": "male-multi"
-        },
-        {
-          "target": "Peter Parker | Spider-Man",
-          "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
+        },
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 1,
+          "category": "male-male"
         },
         {
           "target": "Tim Drake",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Jason Todd",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Miguel O'Hara",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Miguel O'Hara",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Michelle Jones",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Skip Westcott",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "FRIDAY",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Sam Wilson | Falcon",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Everyone",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Various",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Thor Odinson",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Loki Laufeyson",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Vision",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Scott Lang | Ant-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Rhodey\" Rhodes | War Machine",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Bruce Banner | Hulk",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "T'Challa | Black Panther",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Danny Fenton",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Draco Malfoy",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Mary Jane Watson",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Norman Osborn",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Q",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Flash Thompson",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Dick Grayson",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ],
       "friendship": [
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 274,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 58,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Ned Leeds",
           "frequency": 41,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "May Parker",
           "frequency": 26,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 25,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 25,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Natasha Romanov | Black Widow",
           "frequency": 22,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 17,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Matt Murdock",
           "frequency": 16,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Michelle Jones",
           "frequency": 13,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Loki Laufeyson",
           "frequency": 12,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Harley Keener",
           "frequency": 12,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Happy Hogan",
           "frequency": 11,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Shuri",
           "frequency": 10,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 10,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "James \"Rhodey\" Rhodes | War Machine",
           "frequency": 10,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 9,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Clint Barton | Hawkeye",
           "frequency": 9,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Stephen Strange | Dr. Strange",
           "frequency": 8,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Bruce Wayne | Batman",
           "frequency": 7,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Batfamily Members",
           "frequency": 7,
-          "category": "multi-multi"
+          "category": "multi-male"
         },
         {
           "target": "Dick Grayson",
           "frequency": 7,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Flash Thompson",
           "frequency": 6,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Wanda Maximoff | Scarlet Witch",
           "frequency": 6,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Jason Todd",
           "frequency": 6,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Morgan Stark",
           "frequency": 6,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Bruce Banner | Hulk",
           "frequency": 6,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Everyone",
           "frequency": 5,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Tim Drake",
           "frequency": 5,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Harley Keener",
           "frequency": 4,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Thor Odinson",
           "frequency": 4,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 4,
-          "category": "multi-multi"
+          "category": "multi-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 4,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Ned Leeds",
           "frequency": 4,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Scott Lang | Ant-Man",
           "frequency": 3,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Sam Wilson | Falcon",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Percy Jackson",
           "frequency": 3,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Academic Decathlon Team",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "multi-male"
         },
         {
           "target": "Gotham City",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "multi-male"
         },
         {
           "target": "Alfred Pennyworth",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "May Parker",
           "frequency": 3,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "T'Challa | Black Panther",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 3,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Academic Decathlon Team",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Jack Hammer",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Clark Kent",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "May Parker",
           "frequency": 2,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Other(s)",
           "frequency": 2,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Cassie Lang",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Ben Parker",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Damian Wayne",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Franklin \"Foggy\" Nelson",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Nick Fury",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Diana",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Miles Morales | Spider-Man",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Gwen Stacy",
           "frequency": 2,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Frank Castle",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Stark Industries ",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "SI Interns",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Stark Industries Interns",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Bruce Banner | Hulk",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Aunty Sirens",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Quentin Beck",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Natasha Romanov | Black Widow",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Hope Van Dyne | Wasp",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "New York",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Sam Wilson | Falcon",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Cindy Moon",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Jessica Jones",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "NYPD",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Matthew Ellis",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Dumbassery",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Faye \"Ma\" Gunn",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Wanda Maximoff | Scarlet Witch",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Johnny Storm | Humantorch",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Felicia Hardy",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Peter Quill | Star-Lord",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Vision",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Miles Morales | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Mantis",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Bruce Wayne | Batman",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Eddie Brock",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Teresa Parker",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Cassandra Cain",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Harry Osborn",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Karen Page",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Jason Todd",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Pamela Isley",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Midtown Institute of Science and Technology",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Harper Row",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Carol Danvers | Captain Marvel",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Mar'i Grayson",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Michelle Jones",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Midtown Students",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Mary Jane Watson",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Hela",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Marc Spector",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Mjolnir",
           "frequency": 1,
-          "category": "other-multi"
+          "category": "other-male"
         },
         {
           "target": "FRIDAY",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "FRIDAY",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "The Bots",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "The Avengers",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "The Avengers",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Brunnhilde | Valkyrie",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Stephen Strange | Dr. Strange",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Lila Barton",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Cooper Barton",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -7064,7 +6957,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 8,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Gamora",
@@ -7076,12 +6969,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }
@@ -7156,7 +7049,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ],
       "friendship": []
@@ -7178,7 +7071,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -7331,7 +7224,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -7404,7 +7297,7 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Natasha Romanov | Black Widow",
@@ -7424,7 +7317,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
@@ -7436,12 +7329,12 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
@@ -7451,12 +7344,12 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -7505,24 +7398,24 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -7575,7 +7468,7 @@
   "Sensei | All For One": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -7626,14 +7519,14 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ],
       "friendship": [
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         }
       ]
     }
@@ -7641,7 +7534,7 @@
   "Shinsou Hitoshi": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -7669,12 +7562,12 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 10,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Michelle Jones",
@@ -7694,7 +7587,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Flash Thompson",
@@ -7704,7 +7597,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         }
       ]
     }
@@ -7804,7 +7697,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ],
       "friendship": []
@@ -7871,7 +7764,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         }
       ]
     }
@@ -7886,7 +7779,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Flash Thompson",
@@ -7906,7 +7799,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 4,
-          "category": "multi-other"
+          "category": "male-other"
         }
       ]
     }
@@ -7935,12 +7828,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 25,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Loki Laufeyson",
@@ -7955,7 +7848,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Sirius Black",
@@ -7965,19 +7858,19 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 8,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 7,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Wong",
@@ -7997,7 +7890,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -8018,7 +7911,7 @@
     }
   },
   "Steve Rogers | Captain America": {
-    "gender": "multi",
+    "gender": "male",
     "frequency": 61,
     "fandom": "Marvel",
     "relationships": {
@@ -8026,244 +7919,244 @@
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 212,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 104,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Peggy Carter",
           "frequency": 9,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Darcy Lewis",
           "frequency": 5,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Sam Wilson | Falcon",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 3,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Peggy Carter",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Clint Barton | Hawkeye",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peggy Carter",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Loki Laufeyson",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Natasha Romanov | Black Widow",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peggy Carter",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Peggy Carter",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Peggy Carter",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Suffering",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Sharon Carter",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 25,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 23,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 22,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Natasha Romanov | Black Widow",
           "frequency": 4,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Sam Wilson | Falcon",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Loki Laufeyson",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peggy Carter",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Howling Commandos",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "multi-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Percy Jackson",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Matt Murdock",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "T'Challa | Black Panther",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         }
       ]
     }
@@ -8309,6 +8202,21 @@
       "friendship": []
     }
   },
+  "Suffering": {
+    "gender": "other",
+    "frequency": 1,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Steve Rogers | Captain America",
+          "frequency": 1,
+          "category": "male-other"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Susan Storm | Invisible Woman": {
     "gender": "female",
     "frequency": 2,
@@ -8343,12 +8251,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 6,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Nakia",
@@ -8358,7 +8266,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "M'Baku",
@@ -8380,12 +8288,12 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Team Cap",
@@ -8400,7 +8308,7 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ]
     }
@@ -8408,7 +8316,7 @@
   "Takami Keigo | Hawks": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -8416,6 +8324,21 @@
           "target": "Midoriya Izuku",
           "frequency": 1,
           "category": "male-male"
+        }
+      ]
+    }
+  },
+  "Tea": {
+    "gender": "other",
+    "frequency": 1,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [],
+      "friendship": [
+        {
+          "target": "Bruce Banner | Hulk",
+          "frequency": 1,
+          "category": "male-other"
         }
       ]
     }
@@ -8475,7 +8398,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ]
     }
@@ -8489,7 +8412,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         }
       ],
       "friendship": [
@@ -8506,8 +8429,49 @@
     "frequency": 26,
     "fandom": "Marvel",
     "relationships": {
-      "romantic": [],
+      "romantic": [
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 1,
+          "category": "male-multi"
+        }
+      ],
       "friendship": [
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 58,
+          "category": "male-multi"
+        },
+        {
+          "target": "Tony Stark | Iron Man",
+          "frequency": 30,
+          "category": "male-multi"
+        },
+        {
+          "target": "Matt Murdock",
+          "frequency": 6,
+          "category": "male-multi"
+        },
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 4,
+          "category": "multi-male"
+        },
+        {
+          "target": "Steve Rogers | Captain America",
+          "frequency": 3,
+          "category": "male-multi"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 3,
+          "category": "male-multi"
+        },
+        {
+          "target": "Pepper Potts",
+          "frequency": 2,
+          "category": "female-multi"
+        },
         {
           "target": "Franklin \"Foggy\" Nelson",
           "frequency": 1,
@@ -8524,24 +8488,79 @@
           "category": "male-multi"
         },
         {
-          "target": "Tony Stark | Iron Man",
+          "target": "Darcy Lewis",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
+        },
+        {
+          "target": "Connor ",
+          "frequency": 1,
+          "category": "multi-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
-          "target": "Peter Parker | Spider-Man",
+          "target": "Academic Decathlon Team",
           "frequency": 1,
           "category": "multi-multi"
         },
         {
-          "target": "Peter Parker | Spider-Man",
+          "target": "Wanda Maximoff | Scarlet Witch",
+          "frequency": 1,
+          "category": "female-multi"
+        },
+        {
+          "target": "Tony Stark | Iron Man",
+          "frequency": 1,
+          "category": "male-multi"
+        },
+        {
+          "target": "Tony Stark | Iron Man",
+          "frequency": 1,
+          "category": "male-multi"
+        },
+        {
+          "target": "Guardians of the Galaxy Team",
           "frequency": 1,
           "category": "multi-multi"
+        },
+        {
+          "target": "Harry Potter",
+          "frequency": 1,
+          "category": "multi-male"
+        },
+        {
+          "target": "Tony Stark | Iron Man",
+          "frequency": 1,
+          "category": "male-multi"
+        },
+        {
+          "target": "Thor Odinson",
+          "frequency": 1,
+          "category": "male-multi"
+        },
+        {
+          "target": "Loki Laufeyson",
+          "frequency": 1,
+          "category": "male-multi"
+        },
+        {
+          "target": "Marc Spector",
+          "frequency": 1,
+          "category": "multi-male"
+        },
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 1,
+          "category": "male-multi"
+        },
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 1,
+          "category": "male-multi"
         }
       ]
     }
@@ -8556,17 +8575,17 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Harry Potter",
@@ -8616,7 +8635,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         }
       ]
     }
@@ -8675,7 +8694,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Bruce Banner | Hulk",
@@ -8690,7 +8709,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Jane Foster",
@@ -8700,7 +8719,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Jane Foster",
@@ -8727,7 +8746,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 4,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Frigga | Freyja",
@@ -8737,7 +8756,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
@@ -8765,7 +8784,7 @@
           "category": "male-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 1,
           "category": "male-multi"
         },
@@ -8816,14 +8835,14 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 5,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
@@ -8858,7 +8877,7 @@
     }
   },
   "Tony Stark | Iron Man": {
-    "gender": "multi",
+    "gender": "male",
     "frequency": 164,
     "fandom": "Marvel",
     "relationships": {
@@ -8866,699 +8885,699 @@
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 104,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 98,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 77,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Stephen Strange | Dr. Strange",
           "frequency": 25,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Loki Laufeyson",
           "frequency": 23,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 11,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 8,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Quill | Star-Lord",
           "frequency": 8,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "T'Challa | Black Panther",
           "frequency": 6,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 4,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Jason Todd",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 2,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Thor Odinson",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Clint Barton | Hawkeye",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Rhodey\" Rhodes | War Machine",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 2,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Bruce Banner | Hulk",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "May Parker",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "T'Challa | Black Panther",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Anyone",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "multi-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Darcy Lewis",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Thanos",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Thor Odinson",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Lily Evans Potter",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Loki Laufeyson",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Pepper Potts",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Stephen Strange | Dr. Strange",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Justin Hammer",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Obadiah Stane",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Clint Barton | Hawkeye",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Scott Lang | Ant-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Stephen Strange | Dr. Strange",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 274,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Rhodey\" Rhodes | War Machine",
           "frequency": 45,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 30,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 22,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 16,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Harley Keener",
           "frequency": 14,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "JARVIS",
           "frequency": 11,
-          "category": "other-multi"
+          "category": "other-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 11,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 9,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "Harry Potter",
           "frequency": 9,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Vision",
           "frequency": 8,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Stephen Strange | Dr. Strange",
           "frequency": 7,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Loki Laufeyson",
           "frequency": 7,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Bruce Banner | Hulk",
           "frequency": 7,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Happy Hogan",
           "frequency": 6,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Natasha Romanov | Black Widow",
           "frequency": 6,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Clint Barton | Hawkeye",
           "frequency": 5,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "May Parker",
           "frequency": 4,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Hope Van Dyne | Wasp",
           "frequency": 4,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Stark Robots",
           "frequency": 4,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Steve Rogers | Captain America",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "male-male"
         },
         {
           "target": "T'Challa | Black Panther",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Percy Jackson",
           "frequency": 3,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Rhodey\" Rhodes | War Machine",
           "frequency": 3,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Guardians of the Galaxy Team",
           "frequency": 3,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Howard Stark",
           "frequency": 3,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Nebula",
           "frequency": 3,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Shuri",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Nick Fury",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Natasha Romanov | Black Widow",
           "frequency": 2,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Edwin Jarvis",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Morgan Stark",
           "frequency": 2,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Bruce Wayne | Batman",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "FRIDAY",
           "frequency": 2,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Thor Odinson",
           "frequency": 2,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "SI Interns",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "May Parker",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "May Parker",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Carol Danvers | Captain Marvel",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Darcy Lewis",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Flash Thompson",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Connor ",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Everyone",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Sharon Carter",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Loki Laufeyson",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "The Avengers",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "Peter Quill | Star-Lord",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Bruce Banner | Hulk",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Guardians of the Galaxy Team",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
           "target": "JARVIS",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "The Bots",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Hela",
           "frequency": 1,
-          "category": "female-multi"
-        },
-        {
-          "target": "Avengers Team",
-          "frequency": 1,
-          "category": "multi-multi"
-        },
-        {
-          "target": "Margaret 'Peggy' Carter",
-          "frequency": 1,
-          "category": "multi-female"
-        },
-        {
-          "target": "Avengers Team",
-          "frequency": 1,
-          "category": "multi-multi"
-        },
-        {
-          "target": "Vision",
-          "frequency": 1,
-          "category": "male-multi"
-        },
-        {
-          "target": "Edwin Jarvis",
-          "frequency": 1,
-          "category": "male-multi"
-        },
-        {
-          "target": "Maria Stark",
-          "frequency": 1,
-          "category": "female-multi"
-        },
-        {
-          "target": "Ana Jarvis",
-          "frequency": 1,
-          "category": "female-multi"
-        },
-        {
-          "target": "Tony Stark | Iron Man",
-          "frequency": 1,
-          "category": "multi-multi"
-        },
-        {
-          "target": "Tony Stark | Iron Man",
-          "frequency": 1,
-          "category": "multi-multi"
-        },
-        {
-          "target": "Peggy Carter",
-          "frequency": 1,
-          "category": "female-multi"
-        },
-        {
-          "target": "Obadiah Stane",
-          "frequency": 1,
-          "category": "male-multi"
-        },
-        {
-          "target": "Scott Lang | Ant-Man",
-          "frequency": 1,
-          "category": "male-multi"
-        },
-        {
-          "target": "Sam Wilson | Falcon",
-          "frequency": 1,
-          "category": "male-multi"
-        },
-        {
-          "target": "Wanda Maximoff | Scarlet Witch",
-          "frequency": 1,
-          "category": "female-multi"
-        },
-        {
-          "target": "Happy Hogan",
-          "frequency": 1,
-          "category": "multi-male"
-        },
-        {
-          "target": "James \"Rhodey\" Rhodes | War Machine",
-          "frequency": 1,
-          "category": "multi-male"
-        },
-        {
-          "target": "Logan | Wolverine",
-          "frequency": 1,
-          "category": "male-multi"
+          "category": "female-male"
         },
         {
           "target": "The Avengers",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         },
         {
-          "target": "Maria Hill",
+          "target": "Margaret 'Peggy' Carter",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "male-female"
         },
         {
-          "target": "Rocket Racoon",
+          "target": "The Avengers",
           "frequency": 1,
           "category": "male-multi"
         },
         {
+          "target": "Vision",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Edwin Jarvis",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Maria Stark",
+          "frequency": 1,
+          "category": "female-male"
+        },
+        {
+          "target": "Ana Jarvis",
+          "frequency": 1,
+          "category": "female-male"
+        },
+        {
+          "target": "Tony Stark | Iron Man",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Tony Stark | Iron Man",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Peggy Carter",
+          "frequency": 1,
+          "category": "female-male"
+        },
+        {
+          "target": "Obadiah Stane",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Scott Lang | Ant-Man",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Sam Wilson | Falcon",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
           "target": "Wanda Maximoff | Scarlet Witch",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "female-male"
+        },
+        {
+          "target": "Happy Hogan",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "James \"Rhodey\" Rhodes | War Machine",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Logan | Wolverine",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "The Avengers",
+          "frequency": 1,
+          "category": "male-multi"
+        },
+        {
+          "target": "Maria Hill",
+          "frequency": 1,
+          "category": "female-male"
+        },
+        {
+          "target": "Rocket Racoon",
+          "frequency": 1,
+          "category": "male-male"
+        },
+        {
+          "target": "Wanda Maximoff | Scarlet Witch",
+          "frequency": 1,
+          "category": "male-female"
         },
         {
           "target": "The Bots",
           "frequency": 1,
-          "category": "multi-other"
+          "category": "male-other"
         },
         {
           "target": "Original Character(s)",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Bakugo Katsuki",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Harley Keener",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Pepper Potts",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Midoriya Izuku",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "The Infintiy Stones",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         }
       ]
     }
@@ -9579,7 +9598,7 @@
     "relationships": {
       "romantic": [
         {
-          "target": "Wade Wilson",
+          "target": "Wade Wilson | Deadpool",
           "frequency": 1,
           "category": "female-male"
         }
@@ -9590,13 +9609,13 @@
   "Various": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-multi"
+          "category": "male-multi"
         }
       ],
       "friendship": []
@@ -9661,7 +9680,7 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Wanda Maximoff | Scarlet Witch",
@@ -9678,7 +9697,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 8,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Hela",
@@ -9688,12 +9707,12 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "James \"Bucky\" Barnes | The Winter Soldier",
@@ -9703,7 +9722,7 @@
       ]
     }
   },
-  "Wade Wilson": {
+  "Wade Wilson | Deadpool": {
     "gender": "male",
     "frequency": 13,
     "fandom": "Marvel",
@@ -9712,12 +9731,27 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 63,
-          "category": "multi-male"
+          "category": "male-male"
+        },
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 8,
+          "category": "male-male"
+        },
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 6,
+          "category": "male-male"
+        },
+        {
+          "target": "Peter Parker | Spider-Man",
+          "frequency": 2,
+          "category": "male-male"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         },
         {
           "target": "Death",
@@ -9732,14 +9766,14 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "male-multi"
+          "category": "male-male"
         }
       ],
       "friendship": [
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 10,
-          "category": "multi-male"
+          "category": "male-male"
         },
         {
           "target": "Matt Murdock",
@@ -9810,22 +9844,22 @@
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 6,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
-          "target": "Avengers Team",
+          "target": "The Avengers",
           "frequency": 1,
           "category": "female-multi"
         },
         {
           "target": "Peter Parker | Spider-Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         },
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "female-multi"
+          "category": "female-male"
         },
         {
           "target": "Harry Potter",
@@ -9835,7 +9869,7 @@
         {
           "target": "Tony Stark | Iron Man",
           "frequency": 1,
-          "category": "multi-female"
+          "category": "male-female"
         }
       ]
     }
@@ -9908,7 +9942,7 @@
   "Yagi Toshinori | All Might": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -9948,60 +9982,6 @@
         }
       ],
       "friendship": []
-    }
-  },
-  "Suffering": {
-    "gender": "other",
-    "frequency": 1,
-    "fandom": "General",
-    "relationships": {
-      "romantic": [
-        {
-          "target": "Steve Rogers | Captain America",
-          "frequency": 1,
-          "category": "multi-other"
-        }
-      ],
-      "friendship": []
-    }
-  },
-  "Dr. Otto Octavius | Doctor Octopus": {
-    "gender": "male",
-    "frequency": 1,
-    "fandom": "Marvel",
-    "relationships": {
-      "romantic": [],
-      "friendship": []
-    }
-  },
-  "Aunty Sirens": {
-    "gender": "female",
-    "frequency": 1,
-    "fandom": "Other",
-    "relationships": {
-      "romantic": [],
-      "friendship": [
-        {
-          "target": "Peter Parker | Spider-Man",
-          "frequency": 1,
-          "category": "multi-female"
-        }
-      ]
-    }
-  },
-  "Tea": {
-    "gender": "other",
-    "frequency": 1,
-    "fandom": "Other",
-    "relationships": {
-      "romantic": [],
-      "friendship": [
-        {
-          "target": "Bruce Banner | Hulk",
-          "frequency": 1,
-          "category": "male-other"
-        }
-      ]
     }
   }
 }
