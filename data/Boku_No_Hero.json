@@ -1,8 +1,38 @@
 {
+  "????": {
+    "gender": "other",
+    "frequency": 1,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Kayama Nemuri",
+          "frequency": 1,
+          "category": "female-other"
+        }
+      ],
+      "friendship": []
+    }
+  },
+  "A lot of People": {
+    "gender": "multi",
+    "frequency": 1,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Midoriya Izuku | Deku",
+          "frequency": 1,
+          "category": "male-multi"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Aizawa Shouta | Eraserhead": {
     "gender": "male",
     "frequency": 66,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -243,7 +273,7 @@
   "Aizawa's Capture Weapon": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -273,7 +303,7 @@
   "Akaguro Chizome | Stain": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -389,7 +419,7 @@
   "Amplifier": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -404,7 +434,7 @@
   "Aoyama Yuuga": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -1064,7 +1094,7 @@
   "Bakugo Masaru": {
     "gender": "male",
     "frequency": 6,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -1100,7 +1130,7 @@
   "Bakugou Mitsuki": {
     "gender": "female",
     "frequency": 6,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -1136,7 +1166,7 @@
   "Bubaigawara Jin | Twice": {
     "gender": "male",
     "frequency": 3,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -1162,7 +1192,7 @@
   "Chaos": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -1177,7 +1207,7 @@
   "Chisaki Kai | Overhaul": {
     "gender": "male",
     "frequency": 3,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -1203,7 +1233,7 @@
   "Class 1-A": {
     "gender": "multi",
     "frequency": 36,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -1384,7 +1414,7 @@
   "Class 1-A Girls": {
     "gender": "multi",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -1404,7 +1434,7 @@
   "Class 1-B": {
     "gender": "multi",
     "frequency": 6,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -1444,7 +1474,7 @@
   "Class 1-H": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -1459,7 +1489,7 @@
   "Class 2-A": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -1550,7 +1580,7 @@
   "Dabi | Todoroki Touya": {
     "gender": "male",
     "frequency": 34,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -1701,7 +1731,7 @@
   "David Shield": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -1755,7 +1785,7 @@
   "Dr. Tsubasa": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -1770,7 +1800,7 @@
   "Endeavor": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -1811,7 +1841,7 @@
   "Eri": {
     "gender": "female",
     "frequency": 20,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -1968,7 +1998,7 @@
   "Fukukado Emi | Ms. Joke": {
     "gender": "female",
     "frequency": 5,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -2013,7 +2043,7 @@
   "Fuwa Mawata": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -2028,7 +2058,7 @@
   "Gentle Criminal": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -2040,10 +2070,25 @@
       ]
     }
   },
+  "Getting His Ass Handed To Him": {
+    "gender": "other",
+    "frequency": 1,
+    "fandom": "General",
+    "relationships": {
+      "romantic": [
+        {
+          "target": "Bakugo Katsuki",
+          "frequency": 1,
+          "category": "male-other"
+        }
+      ],
+      "friendship": []
+    }
+  },
   "Gigantomachia": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -2110,7 +2155,7 @@
   "Gran Torino": {
     "gender": "male",
     "frequency": 5,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -2146,7 +2191,7 @@
   "Hadou Nejire": {
     "gender": "female",
     "frequency": 6,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -2177,7 +2222,7 @@
   "Hagakure Tooru": {
     "gender": "female",
     "frequency": 9,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -2228,7 +2273,7 @@
   "Haimawari Kouichi": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -2248,7 +2293,7 @@
   "Hakamata Tsunagu | Best Jeanist": {
     "gender": "male",
     "frequency": 3,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -2273,7 +2318,7 @@
   "Haneyama Kazuho | Pop Step": {
     "gender": "female",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -2340,7 +2385,7 @@
   "Hatsume Mei": {
     "gender": "female",
     "frequency": 11,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -2396,7 +2441,7 @@
   "Hero Public Safety Commission": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -2411,7 +2456,7 @@
   "Hikiishi Kenji | Magne": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -2432,7 +2477,7 @@
   "Himiko": {
     "gender": "female",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": []
@@ -2441,7 +2486,7 @@
   "Honenuki Juuzou": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -2456,7 +2501,7 @@
   "Iguchi Shuuichi | Spinner": {
     "gender": "male",
     "frequency": 4,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -2487,7 +2532,7 @@
   "Iida Tensei | Ingenium": {
     "gender": "male",
     "frequency": 36,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -2603,7 +2648,7 @@
   "Inui Ryou | Hound Dog": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -2667,7 +2712,7 @@
   "Izumi Kouta": {
     "gender": "male",
     "frequency": 4,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -2693,7 +2738,7 @@
   "Jirou Kyouka": {
     "gender": "female",
     "frequency": 23,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -2884,7 +2929,7 @@
   "Kaibara Sen": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -2905,7 +2950,7 @@
   "Kaminari Denki": {
     "gender": "male",
     "frequency": 43,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3036,7 +3081,7 @@
   "Kan Sekijirou | Vlad King": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -3051,7 +3096,7 @@
   "Kayama Nemuri": {
     "gender": "female",
     "frequency": 22,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3157,7 +3202,7 @@
   "Kendou Itsuka": {
     "gender": "female",
     "frequency": 4,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3204,7 +3249,7 @@
   "Kinoko Komori": {
     "gender": "female",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -3219,7 +3264,7 @@
   "Kirishima Eijirou": {
     "gender": "male",
     "frequency": 39,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3355,7 +3400,7 @@
   "Kodai Yui": {
     "gender": "female",
     "frequency": 3,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3381,7 +3426,7 @@
   "Koji Koda": {
     "gender": "male",
     "frequency": 8,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3432,7 +3477,7 @@
   "Komori Kinoko": {
     "gender": "female",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3462,7 +3507,7 @@
   "Kurogiri": {
     "gender": "male",
     "frequency": 8,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3513,7 +3558,7 @@
   "Kuroiro Shihai": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3534,7 +3579,7 @@
   "La Brava": {
     "gender": "female",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -3549,7 +3594,7 @@
   "Lack of Sleep": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -3579,7 +3624,7 @@
   "League of Villains": {
     "gender": "multi",
     "frequency": 10,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3640,7 +3685,7 @@
   "Maijima Higari | Power Loader": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -3664,7 +3709,7 @@
   "Melissa Shield": {
     "gender": "female",
     "frequency": 4,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3690,7 +3735,7 @@
   "Midoriya Hisashi": {
     "gender": "male",
     "frequency": 7,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3736,7 +3781,7 @@
   "Midoriya Inko": {
     "gender": "female",
     "frequency": 29,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -3887,7 +3932,7 @@
   "Midoriya Izuku | Deku": {
     "gender": "male",
     "frequency": 252,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -4868,7 +4913,7 @@
   "Migraines": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -4883,7 +4928,7 @@
   "Mineta Minoru": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -4898,7 +4943,7 @@
   "Minoru Mineta": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": []
@@ -4927,7 +4972,7 @@
   "Momo": {
     "gender": "female",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": []
@@ -4936,7 +4981,7 @@
   "Money": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [
         {
@@ -4951,7 +4996,7 @@
   "Mongoose Habuko": {
     "gender": "female",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -4966,7 +5011,7 @@
   "Monoma Neito": {
     "gender": "male",
     "frequency": 11,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -5062,7 +5107,7 @@
   "Naps": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -5102,7 +5147,7 @@
   "Nedzu": {
     "gender": "male",
     "frequency": 8,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -5152,7 +5197,7 @@
   "Nejire": {
     "gender": "female",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": []
@@ -5161,7 +5206,7 @@
   "Not The Floor": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [
         {
@@ -5176,7 +5221,7 @@
   "Ochako": {
     "gender": "female",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": []
@@ -5185,7 +5230,7 @@
   "Oguro Iwao | Knuckleduster": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -5200,7 +5245,7 @@
   "Ojiro Mashirao": {
     "gender": "male",
     "frequency": 8,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -5246,7 +5291,7 @@
   "Okuta Kagerou | Giran": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -5261,7 +5306,7 @@
   "One For All User": {
     "gender": "other",
     "frequency": 3,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -5287,7 +5332,7 @@
   "One For All Users": {
     "gender": "multi",
     "frequency": 3,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -5373,7 +5418,7 @@
   "OT4": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": []
@@ -5502,7 +5547,7 @@
   "Pony Tsunotori": {
     "gender": "female",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -5523,7 +5568,7 @@
   "Pro Heroes": {
     "gender": "multi",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -5544,7 +5589,7 @@
   "Pyromania": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [
         {
@@ -5885,7 +5930,7 @@
   "Rifle": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -5900,7 +5945,7 @@
   "Rooftops": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -5915,7 +5960,7 @@
   "Sako Atsuhiro | Mr. Compress": {
     "gender": "male",
     "frequency": 4,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -5961,7 +6006,7 @@
   "Sasaki Mirai | Sir Nighteye": {
     "gender": "male",
     "frequency": 5,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -5996,7 +6041,7 @@
   "School": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": []
@@ -6005,7 +6050,7 @@
   "Second One For All User": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6035,7 +6080,7 @@
   "Sensei | All For One": {
     "gender": "male",
     "frequency": 10,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6096,7 +6141,7 @@
   "Sero Hanta": {
     "gender": "male",
     "frequency": 13,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6152,7 +6197,7 @@
   "Shigaraki Tomura | Shimura Tenko": {
     "gender": "male",
     "frequency": 20,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6243,7 +6288,7 @@
   "Shigaraki Yoichi": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -6258,7 +6303,7 @@
   "Shiketsu High Students": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -6273,7 +6318,7 @@
   "Shimura Hana": {
     "gender": "female",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -6288,7 +6333,7 @@
   "Shimura Nana": {
     "gender": "female",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -6303,7 +6348,7 @@
   "Shindo Yo": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6318,7 +6363,7 @@
   "Shindou You": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6338,7 +6383,7 @@
   "Shinsou Hitoshi": {
     "gender": "male",
     "frequency": 62,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6529,7 +6574,7 @@
   "Shiozaki Ibara": {
     "gender": "female",
     "frequency": 3,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6555,7 +6600,7 @@
   "Shirakumo Oboro": {
     "gender": "male",
     "frequency": 8,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6596,7 +6641,7 @@
   "Shishikura Seiji": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -6611,7 +6656,7 @@
   "Shouji Mezou": {
     "gender": "male",
     "frequency": 7,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6652,7 +6697,7 @@
   "Shuuzenji Chiyo | Recovery Girl": {
     "gender": "female",
     "frequency": 4,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6683,7 +6728,7 @@
   "Sir Nighteye": {
     "gender": "male",
     "frequency": 3,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -6703,7 +6748,7 @@
   "Sludge Villain": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -6718,7 +6763,7 @@
   "Snipe": {
     "gender": "male",
     "frequency": 3,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6744,7 +6789,7 @@
   "Sousaki Shino | Mandalay": {
     "gender": "female",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -6764,7 +6809,7 @@
   "Takami Keigo | Hawks": {
     "gender": "male",
     "frequency": 46,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7000,7 +7045,7 @@
   "Takenaka Momozou": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -7015,7 +7060,7 @@
   "Takeyama Yuu | Mount Lady": {
     "gender": "female",
     "frequency": 5,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7051,7 +7096,7 @@
   "Tamakawa Sansa": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7071,7 +7116,7 @@
   "Tetsutetsu Tetsutetsu": {
     "gender": "male",
     "frequency": 6,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7107,7 +7152,7 @@
   "The Author": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [
         {
@@ -7122,7 +7167,7 @@
   "The Big Three": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": []
@@ -7131,7 +7176,7 @@
   "The Floor": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [
         {
@@ -7146,7 +7191,7 @@
   "The Hatsumes": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -7196,7 +7241,7 @@
   "Thirteen": {
     "gender": "male",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7217,7 +7262,7 @@
   "Todoroki Enji | Endeavor": {
     "gender": "male",
     "frequency": 9,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7273,7 +7318,7 @@
   "Todoroki Family": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -7288,7 +7333,7 @@
   "Todoroki Fuyumi": {
     "gender": "female",
     "frequency": 10,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7334,7 +7379,7 @@
   "Todoroki Natsuo": {
     "gender": "male",
     "frequency": 9,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7375,7 +7420,7 @@
   "Todoroki Rei": {
     "gender": "female",
     "frequency": 6,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7416,7 +7461,7 @@
   "Todoroki Shouto": {
     "gender": "male",
     "frequency": 76,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7662,7 +7707,7 @@
   "Todoroki Touya | Dabi": {
     "gender": "male",
     "frequency": 9,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7713,7 +7758,7 @@
   "Toga Himiko": {
     "gender": "female",
     "frequency": 15,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7784,7 +7829,7 @@
   "Tokage Setsuna": {
     "gender": "female",
     "frequency": 6,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7820,7 +7865,7 @@
   "Tokoyami Fumikage": {
     "gender": "male",
     "frequency": 11,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7912,7 +7957,7 @@
   "Toogata Mirio": {
     "gender": "male",
     "frequency": 9,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7967,7 +8012,7 @@
   "Toyomitsu Taishiro | Fat Gum": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -7982,7 +8027,7 @@
   "Trouble": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -7997,7 +8042,7 @@
   "Tsuchikawa Ryuuko": {
     "gender": "female",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -8012,7 +8057,7 @@
   "Tsukauchi Naomasa": {
     "gender": "male",
     "frequency": 12,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -8078,7 +8123,7 @@
   "U.A. Faculty": {
     "gender": "various",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -8093,7 +8138,7 @@
   "U.A.'s Big Three": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -8108,7 +8153,7 @@
   "UA Staff": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -8148,7 +8193,7 @@
   "Uraraka Ochako": {
     "gender": "female",
     "frequency": 36,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -8284,7 +8329,7 @@
   "Usagiyama Rumi | Miruko": {
     "gender": "female",
     "frequency": 6,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -8325,7 +8370,7 @@
   "Utsushimi Camie": {
     "gender": "female",
     "frequency": 2,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -8345,7 +8390,7 @@
   "Vents": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -8360,7 +8405,7 @@
   "Yagi Toshinori | All Might": {
     "gender": "male",
     "frequency": 28,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -8516,7 +8561,7 @@
   "Yamada Hizashi | Present Mic": {
     "gender": "male",
     "frequency": 33,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -8612,7 +8657,7 @@
   "Yanagi Reiko": {
     "gender": "female",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -8627,7 +8672,7 @@
   "Yaoyorozu Momo": {
     "gender": "female",
     "frequency": 25,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -8733,7 +8778,7 @@
   "Yarrow | Milo": {
     "gender": "male",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -8748,7 +8793,7 @@
   "Yoarashi Inasa": {
     "gender": "male",
     "frequency": 4,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [
         {
@@ -8779,7 +8824,7 @@
   "Yoga": {
     "gender": "other",
     "frequency": 1,
-    "fandom": "Other",
+    "fandom": "General",
     "relationships": {
       "romantic": [
         {
@@ -8803,7 +8848,7 @@
   "Yuuei": {
     "gender": "multi",
     "frequency": 1,
-    "fandom": "Boku no Hero Academia",
+    "fandom": "Boku No Hero Academia",
     "relationships": {
       "romantic": [],
       "friendship": [
@@ -8821,51 +8866,6 @@
     "fandom": "Avatar: The Last Airbender",
     "relationships": {
       "romantic": [],
-      "friendship": []
-    }
-  },
-  "Getting His Ass Handed To Him": {
-    "gender": "other",
-    "frequency": 1,
-    "fandom": "Other",
-    "relationships": {
-      "romantic": [
-        {
-          "target": "Bakugo Katsuki",
-          "frequency": 1,
-          "category": "male-other"
-        }
-      ],
-      "friendship": []
-    }
-  },
-  "????": {
-    "gender": "other",
-    "frequency": 1,
-    "fandom": "Other",
-    "relationships": {
-      "romantic": [
-        {
-          "target": "Kayama Nemuri",
-          "frequency": 1,
-          "category": "female-other"
-        }
-      ],
-      "friendship": []
-    }
-  },
-  "A lot of People": {
-    "gender": "multi",
-    "frequency": 1,
-    "fandom": "Other",
-    "relationships": {
-      "romantic": [
-        {
-          "target": "Midoriya Izuku | Deku",
-          "frequency": 1,
-          "category": "male-multi"
-        }
-      ],
       "friendship": []
     }
   }

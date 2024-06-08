@@ -82,6 +82,7 @@ function showPage(page) {
         document.getElementById('relationships-visualization').style.display = 'block';
         loadSketch(relationshipsSketch, 'relationships-visualization');
         setActiveButton(document.getElementById('Overall-relationships'));
+        togglePopup('popup-relationships');
     } else if (page === 'tags') {
         document.getElementById('tags-visualization').style.display = 'block';
         loadSketch(tagsSketch(false), 'banner-container-1', false);
@@ -90,6 +91,7 @@ function showPage(page) {
         document.getElementById('tags-overlay').style.backgroundSize = 'contain';
         document.getElementById('tags-overlay').style.backgroundRepeat = 'no-repeat';
         document.getElementById('tags-overlay').style.backgroundAttachment = 'fixed';
+        togglePopup('popup-tags');
     
     }
 }
