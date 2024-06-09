@@ -29,7 +29,7 @@ export function tagsSketch(isReverse) {
             "Boku No Hero": { 
                 ordered: "/content/background/BokuNoHero.png",
                 color: "#87d4a4bf",
-                overlay: "/content/background/Boku_T.png",
+                overlay: "/content/background/BokuT.png",
             }
         };
 

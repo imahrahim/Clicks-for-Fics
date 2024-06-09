@@ -1712,7 +1712,7 @@
     "relationships": {
       "romantic": [
         {
-          "target": "Glimmer (She-Ra)",
+          "target": "Glimmer",
           "frequency": 1,
           "category": "male-female"
         }
@@ -4537,7 +4537,7 @@
       ]
     }
   },
-  "Glamrock Chica (Five Nights at Freddy's)": {
+  "Glamrock Chica": {
     "gender": "female",
     "frequency": 1,
     "fandom": "Five Nights at Freddy's",
@@ -4552,7 +4552,7 @@
       ]
     }
   },
-  "Glamrock Freddy (Five Nights at Freddy's)": {
+  "Glamrock Freddy": {
     "gender": "male",
     "frequency": 1,
     "fandom": "Five Nights at Freddy's",
@@ -4567,7 +4567,7 @@
       ]
     }
   },
-  "Glimmer (She-Ra)": {
+  "Glimmer": {
     "gender": "female",
     "frequency": 1,
     "fandom": "She-Ra and the Princesses of Power",
@@ -6058,7 +6058,7 @@
       ]
     }
   },
-  "Hu Tao (Genshin Impact)": {
+  "Hu Tao": {
     "gender": "female",
     "frequency": 1,
     "fandom": "Genshin Impact",
@@ -12867,7 +12867,7 @@
           "category": "female-multi"
         },
         {
-          "target": "Hu Tao (Genshin Impact)",
+          "target": "Hu Tao",
           "frequency": 1,
           "category": "female-multi"
         },
@@ -12974,12 +12974,12 @@
           "category": "male-multi"
         },
         {
-          "target": "Glamrock Chica (Five Nights at Freddy's)",
+          "target": "Glamrock Chica",
           "frequency": 1,
           "category": "female-multi"
         },
         {
-          "target": "Glamrock Freddy (Five Nights at Freddy's)",
+          "target": "Glamrock Freddy",
           "frequency": 1,
           "category": "male-multi"
         }

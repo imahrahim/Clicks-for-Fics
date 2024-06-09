@@ -25,7 +25,7 @@ const fandomColors = {
     },
     "Boku No Hero": { 
         relationship: "/content/background/BokuNoHero.png", 
-        overlay: "/content/background/Boku_T.png",
+        overlay: "/content/background/BokuT.png",
         color: "rgba(0, 0, 255, 0.465)" 
     }
 };
