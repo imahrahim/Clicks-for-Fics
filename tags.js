@@ -28,7 +28,7 @@ export function tagsSketch(isReverse) {
             },
             "Boku No Hero": { 
                 ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/BokuNoHero.png",
-                color: "#87d4a4bf",
+                color: "#87d4a4df",
                 overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/BokuT.png",
             }
         };
