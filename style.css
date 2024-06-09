@@ -70,7 +70,7 @@ body {
   display: absolute;
   justify-content: center;
   align-items: center;
-  z-index: 1;
+  z-index: 0;
 }
 
 #overlay img {
@@ -138,6 +138,7 @@ a {
   margin: 2rem auto;
   padding: 2rem;
   color: #ffffff;
+  z-index: 1000;
 }
 
 #home-page-btns {
