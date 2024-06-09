@@ -291,6 +291,7 @@ button:hover {
 #tags-overlay {
   position:fixed;
   transform: translateY(1rem);
+  top: 4rem;
   width: 100%;
   height: calc(100vh - 5rem);
   pointer-events: none; 

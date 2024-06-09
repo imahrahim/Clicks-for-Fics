@@ -14,17 +14,17 @@ export function tagsSketch(isReverse) {
             "Overall": { 
                 ordered: "/content/background/Overall.png", 
                 color: "#8056c4af",
-                overlay: "/content/background/Overall_T.png",
+                overlay: "/content/background/OverallT.png",
             },
             "Marvel": { 
                 ordered: "/content/background/Marvel.png",
                 color: "#f0519ebf",
-                overlay: "/content/background/Marvel_T.png",
+                overlay: "/content/background/MarvelT.png",
             },
             "Harry Potter": { 
                 ordered: "/content/background/HarryPotter.png",
                 color: "#589bcfae",
-                overlay: "/content/background/Harry_T.png",
+                overlay: "/content/background/HarryT.png",
             },
             "Boku No Hero": { 
                 ordered: "/content/background/BokuNoHero.png",

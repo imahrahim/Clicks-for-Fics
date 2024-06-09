@@ -10,17 +10,17 @@ window.popupLegendP5Tags = null;
 const fandomColors = {
     "Overall": { 
         relationship: "/content/background/Overall.png", 
-        overlay: "/content/background/Overall_T.png",
+        overlay: "/content/background/OverallT.png",
         color: "rgba(225, 255, 0, 0.475)" 
     },
     "Marvel": { 
         relationship: "/content/background/Marvel.png", 
-        overlay: "/content/background/Marvel_T.png",
+        overlay: "/content/background/MarvelT.png",
         color: "rgba(255, 0, 0, 0.473)" 
     },
     "Harry Potter": { 
         relationship: "/content/background/HarryPotter.png", 
-        overlay: "/content/background/Harry_T.png",
+        overlay: "/content/background/HarryT.png",
         color: "rgba(0, 255, 0, 0.509)" 
     },
     "Boku No Hero": { 
@@ -87,8 +87,8 @@ function showPage(page) {
         document.getElementById('tags-visualization').style.display = 'block';
         loadSketch(tagsSketch(false), 'banner-container-1', false);
         setActiveButton(document.getElementById('Overall-tags'));
-        document.getElementById('tags-overlay').style.backgroundImage = `url( "/content/background/Overall_T.png")`;
-        document.getElementById('tags-overlay').style.backgroundSize = 'contain';
+        document.getElementById('tags-overlay').style.backgroundImage = `url( "/content/background/OverallT.png")`;
+        document.getElementById('tags-overlay').style.backgroundSize = 'cover';
         document.getElementById('tags-overlay').style.backgroundRepeat = 'no-repeat';
         document.getElementById('tags-overlay').style.backgroundAttachment = 'fixed';
         togglePopup('popup-tags');
@@ -157,7 +157,7 @@ function loadTagData(dataUrl, fandom) {
     const overlayImage = fandomColors[fandom].overlay;
     if (overlayImage) {
         document.getElementById('tags-overlay').style.backgroundImage = `url(${overlayImage})`;
-        document.getElementById('tags-overlay').style.backgroundSize = 'contain';
+        document.getElementById('tags-overlay').style.backgroundSize = 'scale-down';
         document.getElementById('tags-overlay').style.backgroundRepeat = 'no-repeat';
         document.getElementById('tags-overlay').style.backgroundAttachment = 'fixed';
     } else {
