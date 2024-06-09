@@ -127,7 +127,7 @@ a {
 }
 
 #home-page {
-  background-color: #2d1c48c1;
+  background-color: #2d1c4874;
   backdrop-filter: blur(10px);
   border: 0.1rem solid #000000;
   border-radius: 0.5rem;
@@ -447,7 +447,7 @@ input:checked + .slider .ordered{
 }
 
 #popup-relationships-legend {
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 #show-info, #show-info-tag {
@@ -487,8 +487,8 @@ input:checked + .slider .ordered{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #2d1c48c1;
-  backdrop-filter: blur(20px);
+  background-color: #2d1c4874;
+  backdrop-filter: blur(30px);
   padding: 3rem;
   border-radius: 0.5rem;
   width: 40rem;
