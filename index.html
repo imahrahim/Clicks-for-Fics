@@ -25,19 +25,23 @@
     <div id="main-content">
         <h1 id="title">CLICKS FOR FICS</h1>
         <div id="home-page">
-            <p> The Archive of Our Own platform, 6.9 million users share their enthusiasm for fan fiction, culminating
-                in a collection of 12.9 million works. These works expand fictional realms including the 
-                <span style="color: #F0519E; font-weight: bold;">Marvel</span>, 
-                    <span style="color: #589BCF; font-weight: bold;">Harry Potter</span> and 
-                    <span style="color: #87D4A5; font-weight: bold;">Boku No Hero Academia</span>. universes by introducing
-                new stories, characters and relationships.</p>
-            <p>This project analyses the  <span style="color: #8056c4; font-weight: bold;">most popular works</span> and fandoms, providing an understanding of the themes and
-            characters that resonate most with the fans on the platform. The results are presented on this website using
-            interactive data visualisations designed to showcase the diversity and creativity of fan fiction.</p>
+            <p>The <span style="font-style: italic;">Archive of Our Own</span> platform hosts 6.9 million users who
+                share their enthusiasm for fan fiction, resulting in nearly 13 million works. These works expand
+                fictional realms with stories, relationships, and even new characters.</p>
+            <p>This project analyzes the most popular works based on Kudos (similar to likes), including the top 1000
+                works <span
+                    style="color: #8056c4; font-weight: bold; text-shadow: 0.5px 0.5px 1px #3f2a61;">overall</span> and
+                the top 1000 works for each of
+                <span style="color: #F0519E; font-weight: bold; text-shadow: 0.5px 0.5px 1px #3f2a61;">Marvel</span>,
+                <span style="color: #589BCF; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61;">Harry
+                    Potter</span>, and <span
+                    style="color: #87D4A5; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61;">Boku No Hero
+                    Academia</span>
             </p>
-            <p>Discover the themes that these fandoms engage with the most and the differences in interests among the
-                three top fandoms.</p>
-            <p>Have fun exploring!</p>
+            <p>The analysis provides insights into the themes and characters that resonate most with fans. Interactive
+                data visualizations showcase the diversity and creativity of fan fiction.</p>
+            <p>Explore <strong>Relationships</strong> to see character interactions, and <strong>Additional
+                    Tags</strong> to discover common themes and tags. Have fun exploring!</p>
             <div id="home-page-btns">
                 <button onclick="showPage('relationships')">RELATIONSHIPS</button>
                 <button onclick="showPage('tags')">ADDITIONAL TAGS</button>
@@ -78,44 +82,50 @@
             <div id="change-data-tags">
                 <div id="tag-buttons">
                     <div>
-                        <button id="Overall-tags" onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall'); setActiveButton(this);">OVERALL</button>
-                        <button id="Marvel-tags" onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel'); setActiveButton(this);">MARVEL</button>
-                        <button id="Harry-Potter-tags" onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter'); setActiveButton(this);">HARRY POTTER</button>
-                        <button id="Boku-No-Hero-tags" onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero'); setActiveButton(this);">BOKU NO HERO</button>
+                        <button id="Overall-tags"
+                            onclick="loadTagData('/data/Additional_Tags_Overall.csv', 'Overall'); setActiveButton(this);">OVERALL</button>
+                        <button id="Marvel-tags"
+                            onclick="loadTagData('/data/Additional_Tags_Marvel.csv', 'Marvel'); setActiveButton(this);">MARVEL</button>
+                        <button id="Harry-Potter-tags"
+                            onclick="loadTagData('/data/Additional_Tags_Harry_Potter.csv', 'Harry Potter'); setActiveButton(this);">HARRY
+                            POTTER</button>
+                        <button id="Boku-No-Hero-tags"
+                            onclick="loadTagData('/data/Additional_Tags_Boku_No_Hero.csv', 'Boku No Hero'); setActiveButton(this);">BOKU
+                            NO HERO</button>
                     </div>
-                    <div id="btns-right"> 
-                    <button id="show-info-tag" onclick="togglePopup('popup-tags')">i</button>
+                    <div id="btns-right">
+                        <button id="show-info-tag" onclick="togglePopup('popup-tags')">i</button>
+                    </div>
                 </div>
-            </div>
             </div>
             <div id="banner-container-1"></div>
         </div>
-    
-        
-        
 
 
-    <div id="popup-relationships" class="popup" style="display: none;">
-        <div class="popup-content">
-            <span class="close" onclick="togglePopup('popup-relationships')">&times;</span>
-            <h2>Discover Your Favorite Ships and Characters</h2>
-            <div id="relationships-information">
-                <p>Dive into the intricate web of character interactions within the <span
-                        style="color: #8056c4; font-weight: bold;">top-rated works</span>. See which
-                    characters are mentioned the most and explore the context of their relationships. Whether you love
-                    slash ships, gen relationships, or crossovers, you’ll find it all here.
-                    <br>The visualizations show characters as nodes, with different shapes representing genders, and
-                    placed on a scale showing the frequency the characters where mentioned.
-                    <br>
-                    The thickness of links indicating the frequency of interactions, and colors denoting relationship
-                    categories, <span style="color: #000000; font-weight: bold;">romantic</span>, <span
-                        style="color: #ffffff; font-weight: bold;">friendship</span>, and the belonging to which <span
-                        style="color: #8056c4; font-weight: bold;">fandom</span>.
-                    <br> <br>Explore the networks for <span style="color: #F0519E; font-weight: bold;">Marvel</span>,
-                    <span style="color: #589BCF; font-weight: bold;">Harry Potter</span>, and <span
-                        style="color: #87D4A5; font-weight: bold;">Boku No Hero Academia</span> to see your favorite
-                    characters and ships in action.
-                </p>
+
+
+
+        <div id="popup-relationships" class="popup" style="display: none;">
+            <div class="popup-content">
+                <span class="close" onclick="togglePopup('popup-relationships')">&times;</span>
+                <h2>Discover Your Favorite Ships and Characters</h2>
+                <div id="relationships-information">
+                    <div>
+                    <p>Dive into the intricate web of relationships within the top-rated works. See which characters are
+                        mentioned the most and explore the context of their relationships. Whether you love slash ships,
+                        gen relationships, or crossovers, you’ll find it all here. </p>
+                        <p>The visualizations show characters as nodes, with different shapes representing genders, and
+                        placed on a scale showing how frequently the characters are mentioned.
+                        <br>The thickness of links indicates the frequency of their ships, with colors denoting
+                        relationship categories: <span style="color: #000000; font-weight: bold; text-shadow: 0.5px 0.5px 1px #3f2a61;">romantic</span> and
+                        <span style="color: #ffffff; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61;">friendship</span>. Links also indicate which
+                        <span style="color: #8056c4; font-weight: bold;text-shadow: 0.5px 0.5px 1px #231735;">fandom</span> they belong to.
+                        <br><br>Explore the networks for <span style="color: #8056c4; font-weight: bold;text-shadow: 0.5px 0.5px 1px #231735;">Overall</span>, <span style="color: #F0519E; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61;">Marvel</span>,
+                        <span style="color: #589BCF; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61;">Harry Potter</span>, and <span
+                            style="color: #87D4A5; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61;">Boku No Hero Academia</span> to see your favorite
+                        characters and ships in action.
+                    </p>
+                </div>
                 <div id="popup-relationships-legend"></div>
             </div>
         </div>
@@ -125,25 +135,10 @@
         <div class="popup-content">
             <span class="close" onclick="togglePopup('popup-tags')">&times;</span>
             <h2>Explore the Themes and Ratings of Fan Works</h2>
-            <div id="tags-information">
-                <p>With the help of AI-driven analysis I categorized all the tags used in the <span
-                        style="color: #8056c4; font-weight: bold;">top-rated works</span> into 16 themes. The
-                    ratings, ranging from <span style="color: #b09eec; font-weight: bold;">Explicit</span>,
-                    <span style="color: #ff93ec; font-weight: bold;">Mature</span>,
-                    <span style="color: #b9f1ff; font-weight: bold;">Teen And Up Audiences</span>,
-                    <span style="color: #bdff9f; font-weight: bold;">General Audiences</span> to
-                    <span style="color: #fef9b5; font-weight: bold;">Not Rated</span>, are represented in the background
-                    colors to give you a
-                    sense of the overall mood and content of the fandoms.
-                    <br>Alongside the thematic overview, you can also explore the actual tags to get a better
-                    understanding of what content fans are reading. See how the interests and themes vary across the
-                    different fandoms and discover new trends and popular topics.
-                    <br> <br>Explore the thematic overviews for <span
-                        style="color: #F0519E; font-weight: bold;">Marvel</span>, <span
-                        style="color: #589BCF; font-weight: bold;">Harry Potter</span>, and <span
-                        style="color: #87D4A5; font-weight: bold;">Boku No Hero Academia</span> to get a deeper
-                    understanding of the fan content.
-                </p>
+                <div id="tags-information">
+                    <p>AI-driven analysis categorizes all the tags used in the top-rated works into 16 themes. The ratings, ranging from <span style="color: #b09eec; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61">Explicit</span>, <span style="color: #ff93ec; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61">Mature</span>, <span style="color: #b9f1ff; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61">Teen And Up Audiences</span>, <span style="color: #bdff9f; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61">General Audiences</span>, to <span style="color: #fef9b5; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61">Not Rated</span>, are represented in the background colors to give a sense of the overall mood and content of the fandoms.</p>
+                    <p>Explore the thematic overviews for <span style="color: #8056c4; font-weight: bold;text-shadow: 0.5px 0.5px 1px #231735">Overall</span>, <span style="color: #F0519E; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61">Marvel</span>, <span style="color: #589BCF; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61">Harry Potter</span>, and <span style="color: #87D4A5; font-weight: bold;text-shadow: 0.5px 0.5px 1px #3f2a61">Boku No Hero Academia</span> to gain deeper insights into fan content. Alongside the thematic overview, the actual tags can be explored to gain a better understanding of what content fans are reading. See how the interests and themes vary across different fandoms and discover new trends and popular topics.</p>
+            
                 <div id="popup-tags-legend">
                     <div>
                         <div class="legend-item">
@@ -152,7 +147,7 @@
                         </div>
                         <div class="legend-item">
                             <img src="/content/tags/angsst.png" alt="Angst">
-                            <span>Angst</span>
+                            <span>Angst and Hurt</span>
                         </div>
                         <div class="legend-item">
                             <img src="/content/tags/blitz.png" alt="Action">
@@ -160,7 +155,7 @@
                         </div>
                         <div class="legend-item">
                             <img src="/content/tags/chick.png" alt="Fluff">
-                            <span>Fluff</span>
+                            <span>Fluff and Humor</span>
                         </div>
                         <div class="legend-item">
                             <img src="/content/tags/universe.png" alt="Alternate Universe">
@@ -172,17 +167,17 @@
                         </div>
                         <div class="legend-item">
                             <img src="/content/tags/abuse.png" alt="Abuse">
-                            <span>Abuse</span>
+                            <span>Abuse and Trauma</span>
                         </div>
                         <div class="legend-item">
                             <img src="/content/tags/lemonn.png" alt="Sex">
-                            <span>Sex</span>
+                            <span>Sexual Content</span>
                         </div>
                     </div>
                     <div>
                         <div class="legend-item">
                             <img src="/content/tags/substance2.png" alt="Substance">
-                            <span>Substance</span>
+                            <span>Substance Use</span>
                         </div>
                         <div class="legend-item">
                             <img src="/content/tags/meta.png" alt="Meta">
@@ -190,7 +185,7 @@
                         </div>
                         <div class="legend-item">
                             <img src="/content/tags/familyy.png" alt="Family">
-                            <span>Family</span>
+                            <span>Family and Friendship</span>
                         </div>
                         <div class="legend-item">
                             <img src="/content/tags/tot.png" alt="Dark">
@@ -210,7 +205,7 @@
                         </div>
                         <div class="legend-item">
                             <img src="/content/tags/fandom.png" alt="Fandom">
-                            <span>Fandomspecific (not included)</span>
+                            <span>Fandomspecific<br> (not included)</span>
                         </div>
                     </div>
                 </div>
@@ -220,7 +215,7 @@
 
     <footer id="footer">
         <p class="footer-author"></p>
-            <div class="footer-links">
+        <div class="footer-links">
             <a href="https://clicksforficsprocess.netlify.app/" target="_blank">Documentation</a>
             <a href="https://github.com/imahrahim/Clicks-for-Fics" target="_blank">GitHub</a>
             <a href="https://www.instagram.com/imahleaf/" target="_blank">Instagram</a>
