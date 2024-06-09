@@ -63,6 +63,7 @@ export function tagsSketch(isReverse) {
         p.draw = function () {
             p.clear();
             p.background(fandomColors[currentFandom].color)
+            console.log(currentFandom)
             if (tags.length > 0) {
                 drawTags();
             } else {
