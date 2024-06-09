@@ -70,7 +70,7 @@ p.clear();
     p.fill(255)
     p.textStyle(p.NORMAL)
     p.text("gender of character", 150, 20);
-    p.text("frequency of character", 150, 155);
+    p.text("frequency of character = (f)", 150, 155);
     p.text("frequency of relationships", 150, 280);
 
     p.stroke(255);

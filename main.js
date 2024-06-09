@@ -80,6 +80,7 @@ function showPage(page) {
 
     if (page === 'relationships') {
         document.getElementById('relationships-visualization').style.display = 'block';
+        loadData('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/data/Overall.json', 'Overall');
         loadSketch(relationshipsSketch, 'relationships-visualization');
         setActiveButton(document.getElementById('Overall-relationships'));
         togglePopup('popup-relationships');
@@ -178,7 +179,7 @@ function initializePage() {
     showHomePage();
     loadData('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/data/Overall.json', 'Overall');
 
-        loadTagData('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/data/Additional_Tags_Overall.csv', 'Overall');
+loadTagData('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/data/Additional_Tags_Overall.csv', 'Overall');
 }
 
 window.showHomePage = showHomePage;
