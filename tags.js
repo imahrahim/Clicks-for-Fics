@@ -14,22 +14,22 @@ export function tagsSketch(isReverse) {
             "Overall": { 
                 ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall.png", 
                 color: "#8056c4af",
-                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall_T.png",
+                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/OverallT.png",
             },
             "Marvel": { 
                 ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/marvel.png",
                 color: "#f0519ebf",
-                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Marvel_T.png",
+                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/MarvelT.png",
             },
             "Harry Potter": { 
                 ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/HarryPotter.png",
                 color: "#589bcfae",
-                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Harry_T.png",
+                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/HarryT.png",
             },
             "Boku No Hero": { 
                 ordered: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/BokuNoHero.png",
                 color: "#87d4a4bf",
-                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Boku_T.png",
+                overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/BokuT.png",
             }
         };
 

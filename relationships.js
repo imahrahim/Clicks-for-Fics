@@ -2,10 +2,10 @@ let dataShips;
 let nodes = [];
 let links = [];
 let xScale, yCharacterScale, yFandomScale;
-let h = 2000;
+let h = 3000;
 let currentRelationshipType = 'romantic';
 let visibleFandomNodes = [];
-let fandomText = 200;
+let fandomText = 250;
 
 let selectedNode = null;
 
@@ -15,6 +15,14 @@ const fandomColors = {
   "Boku no Hero Academia": "#87D4A5",
   "Boku No Hero Academia": "#87D4A5",
   other: "#ffffff81",
+};
+
+const fandomStroke = {
+  "Harry Potter - J. K. Rowling": 1,
+  "Marvel": 1,
+  "Boku no Hero Academia": 1,
+  "Boku No Hero Academia": 1,
+  other: 0,
 };
 
 const otherColors = {
@@ -49,14 +57,36 @@ const linksColors = {
 
 const font = ('Whyte')
 
+
 export function relationshipsSketch(p) {
- 
+
+  const customFandomOrder = [
+    "Marvel",
+    "Harry Potter - J. K. Rowling",
+    "Boku no Hero Academia",
+    "Boku No Hero Academia"
+  ];
+
+  function customSortFandoms(a, b) {
+    const indexA = customFandomOrder.indexOf(a);
+    const indexB = customFandomOrder.indexOf(b);
+    if (indexA !== -1 && indexB !== -1) {
+      return indexA - indexB;
+    } else if (indexA !== -1) {
+      return -1;
+    } else if (indexB !== -1) {
+      return 1;
+    } else {
+      return a.localeCompare(b);
+    }
+  }
+
   p.setup = function () {
     let canvasContainer = document.getElementById("relationships-visualization");
-    let canvas = p.createCanvas(canvasContainer.offsetWidth, 2000).parent("relationships-visualization");
+    let canvas = p.createCanvas(canvasContainer.offsetWidth, h).parent("relationships-visualization");
     canvas.mouseClicked(p.handleClick);
 
-    p.loadData("https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/data/Overall.json");
+    p.loadData("/data/Overall.json");
 
     window.addEventListener('resize', () => {
       p.updateXScale();
@@ -122,10 +152,11 @@ export function relationshipsSketch(p) {
     p.updateXScale();
     p.initializeCharacterScale();
 
-    let index = 0;
-    visibleFandomNodes = Array.from(fandomNodes);
+    // Sortiere die Fandoms nach der benutzerdefinierten Reihenfolge
+    visibleFandomNodes = Array.from(fandomNodes).sort(customSortFandoms);
     p.updateFandomScale(); 
 
+    let index = 0;
     visibleFandomNodes.forEach((fandom) => {
       nodes.push({
         id: fandom,
@@ -141,6 +172,11 @@ export function relationshipsSketch(p) {
     p.updateVisibility();
   };
 
+  p.draw = function () {
+    p.clear();
+    p.drawVisualization();
+    p.checkHover();
+  };
 
   p.draw = function () {
     p.clear();
@@ -251,9 +287,9 @@ p.drawVisualization = function () {
               p.fill(fandomColors[node.id] || 'black');
               p.ellipse(node.x, node.y, 4);
               p.textAlign(p.RIGHT, p.CENTER);
-              p.strokeWeight(1);
-              p.stroke(0);
-              p.fill(fandomColors[node.id] || 'white');
+              p.strokeWeight(fandomStroke[node.id] || 0);
+              p.stroke(255);
+              p.fill(fandomColors[node.id] || 'black');
               p.textFont(font);
               p.textStyle(p.BOLD);
               p.textSize(10);
@@ -266,7 +302,7 @@ p.drawVisualization = function () {
   for (const node of nodes) {
       if (node.visible && node.isHovered) {
           p.noStroke();
-          let rectWidth = 300;
+          let rectWidth = 330;
           let rectHeight = 25;
           let textSize = 14;
 
@@ -312,12 +348,12 @@ p.drawVisualization = function () {
             p.fill(fandomColors[node.id] || 'black');
             p.ellipse(node.x, node.y, 8);  
             p.textAlign(p.RIGHT, p.CENTER);
-            p.strokeWeight(1);
-            p.stroke(0);
-            p.fill(fandomColors[node.id] || 'white');
+            p.strokeWeight(fandomStroke[node.id] || 0);
+            p.stroke(fandomColors[node.id] || 'white');
+            p.fill(255);
             p.textFont(font);
             p.textStyle(p.BOLD);
-            p.textSize(12);  
+            p.textSize(11);  
             p.text(node.id.toUpperCase(), node.x - 10, node.y);
         }
       }
@@ -442,7 +478,7 @@ p.drawVisualization = function () {
 
     xScale = d3.scaleLog()
     .domain([1, d3.max(nodes, (d) => d.frequency) || 1])
-    .range([200, w - 150]);
+    .range([250, w - 150]);
   };
 
   p.updateFandomScale = function () {

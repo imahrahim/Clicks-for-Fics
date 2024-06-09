@@ -10,22 +10,22 @@ window.popupLegendP5Tags = null;
 const fandomColors = {
     "Overall": { 
         relationship: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall.png", 
-        overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall_T.png",
+        overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/OverallT.png",
         color: "rgba(225, 255, 0, 0.475)" 
     },
     "Marvel": { 
         relationship: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/marvel.png", 
-        overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Marvel_T.png",
+        overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/MarvelT.png",
         color: "rgba(255, 0, 0, 0.473)" 
     },
     "Harry Potter": { 
         relationship: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/HarryPotter.png", 
-        overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Harry_T.png",
+        overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/HarryT.png",
         color: "rgba(0, 255, 0, 0.509)" 
     },
     "Boku No Hero": { 
         relationship: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/BokuNoHero.png", 
-        overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Boku_T.png",
+        overlay: "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/BokuT.png",
         color: "rgba(0, 0, 255, 0.465)" 
     }
 };
@@ -87,8 +87,8 @@ function showPage(page) {
         document.getElementById('tags-visualization').style.display = 'block';
         loadSketch(tagsSketch(false), 'banner-container-1', false);
         setActiveButton(document.getElementById('Overall-tags'));
-        document.getElementById('tags-overlay').style.backgroundImage = `url( "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/Overall_T.png")`;
-        document.getElementById('tags-overlay').style.backgroundSize = 'contain';
+        document.getElementById('tags-overlay').style.backgroundImage = `url( "https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/content/background/OverallT.png")`;
+        document.getElementById('tags-overlay').style.backgroundSize = 'scalw-down';
         document.getElementById('tags-overlay').style.backgroundRepeat = 'no-repeat';
         document.getElementById('tags-overlay').style.backgroundAttachment = 'fixed';
         togglePopup('popup-tags');
