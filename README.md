@@ -1,4 +1,5 @@
 # Clicks for Fics
+
 ### Overview
 The Clicks for Fics project analyzes and visualizes the most popular fan fiction works and fandoms on the Archive of Our Own platform. It provides insights into the most common themes, characters, and relationships found in these works. The results are displayed through interactive data visualizations that showcase the diversity and creativity of the fan fiction community.
 
@@ -10,7 +11,13 @@ The project consists of several main files, each serving a specific purpose:
 - `relationships.js`: Contains the logic for displaying the relationship networks between characters.
 - `tags.js`: Contains the logic for displaying additional tags and their categories.
 - `style.css`: The CSS file that defines the appearance and layout of the page.
-Files and Their Functions
+
+### Versions of the Code
+This project includes two versions of the code:
+1. **GitHub Version**: This version includes links to data and media that are hosted on GitHub. This ensures that all resources are accessible when the project is viewed online via GitHub Pages or directly from the repository. This version is found in the branch `links`.
+2. **Local Version**: This version includes links to data and media that are hosted locally. This is useful for development and testing purposes on your local machine. This version is found in the branch `ClicksForFics`.
+
+### Project Structure
 
 #### `index.html`
 This file defines the basic structure of the webpage. It includes links to the CSS and JavaScript files and sets up the different sections of the page.
@@ -28,10 +35,8 @@ This script processes the additional tags associated with fan fiction works and 
 This file contains the CSS rules that define the appearance and layout of the page. Special fonts, colors, and layouts are used to make the visualizations appealing.
 
 ### Interactive Elements
-`Relationship Visualization`: Displays the networks of character relationships. Users can switch between different fandoms and change the relationship types.
-`Tags Visualization`: Displays the most common tags and their categories. Users can switch between different fandoms and explore the tags.
+- **Relationship Visualization**: Displays the networks of character relationships. Users can switch between different fandoms and change the relationship types.
+- **Tags Visualization**: Displays the most common tags and their categories. Users can switch between different fandoms and explore the tags.
 
 ### Contact
 For questions or support, you can contact me via [GitHub](https://github.com/imahrahim), [Instagram](https://www.instagram.com/imahleaf/), or [email](mailto:imah.rahim@me.com).
-
-
