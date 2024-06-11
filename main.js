@@ -186,7 +186,7 @@ let inactivityTimeout;
 
 function resetInactivityTimeout() {
     clearTimeout(inactivityTimeout);
-    inactivityTimeout = setTimeout(initializePage, 1 * 60 * 1000); 
+    inactivityTimeout = setTimeout(initializePage, 1 * 30 * 1000); 
 }
 
 document.addEventListener('mousemove', resetInactivityTimeout);
