@@ -182,10 +182,22 @@ function initializePage() {
 loadTagData('https://raw.githubusercontent.com/imahrahim/Clicks-for-Fics/links/data/Additional_Tags_Overall.csv', 'Overall');
 }
 
+let inactivityTimeout;
+
+function resetInactivityTimeout() {
+    clearTimeout(inactivityTimeout);
+    inactivityTimeout = setTimeout(initializePage, 1 * 60 * 1000); 
+}
+
+document.addEventListener('mousemove', resetInactivityTimeout);
+
 window.showHomePage = showHomePage;
 window.showPage = showPage;
 window.loadData = loadData;
 window.loadTagData = loadTagData;
 window.updateRelationshipType = updateRelationshipType;
 window.setActiveButton = setActiveButton;
-window.onload = initializePage;
+window.onload = () => {
+    initializePage();
+    resetInactivityTimeout(); 
+};
